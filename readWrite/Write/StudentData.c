@@ -4,28 +4,28 @@ The function creates a document that writes the data used to generate a school s
 
 
 Date:           8/11
-Version:        1.02
+Version:        1.03
 */
 
 #include <stdlib.h>
 #include <string.h>
- #if defined(_WIN32)
-    _mkdir("./data");
- #else 
-    mkdir("./data", 0700); 
- #endif    
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <unistd.h>
+#include <stdio.h>
+   
 
 
 int StudentData(int *studentData,char studentFirstName,char studentLastName,int numOfStudents){
-
-
-
-
+    #if defined(_WIN32)
+    _mkdir("./data");
+     #else 
+    mkdir("./data", 0700); 
+     #endif
     int i;
     FILE *fptr;
 
-    if ((fptr=fopen("data/StudentData.txt","r"))!=NULL){
-        
+    if ((fptr=fopen("data/StudentData.txt","r"))==NULL){ 
         printf("Did not find file, creating new\n");
         fptr = fopen("data/StudentData.txt", "w"); 
         fputs("//This entire document is dedicated to the processing of a school schedule.\n",fptr);
@@ -49,32 +49,36 @@ int StudentData(int *studentData,char studentFirstName,char studentLastName,int 
         fputs("//Mundtlig Biologi:          Mb:\n",fptr);
         fputs("//Mundtlig kom/it:           Mki:\n",fptr);
         fputs("//Mundtlig Samfundsfag:      Ms:\n\n\n\n",fptr);
+
         fputs("-------ALL STUDENTS--------\n",fptr);
         for(i = 0;i<numOfStudents;i++){
+
             fputs("--Student start--\n",fptr);
-            fputs("Student nr: %i\n",fptr,i);
-            fputs("ID: %i\n",fptr,studentData[0]);
-            fputs("Name: %s %s\n",fptr,studentFirstName,studentLastName);
-            fputs("Mm: %i\n",fptr,studentData[1]);
-            fputs("Sm: %i\n",fptr,studentData[2]);
-            fputs("Md: %i\n",fptr,studentData[3]);
-            fputs("Sd: %i\n",fptr,studentData[4]);
-            fputs("Mf: %i\n",fptr,studentData[5]);
-            fputs("Sf: %i\n",fptr,studentData[6]);
-            fputs("Me: %i\n",fptr,studentData[7]);
-            fputs("Se: %i\n",fptr,studentData[8]);
-            fputs("Mk: %i\n",fptr,studentData[9]);
-            fputs("Sk: %i\n",fptr,studentData[10]);
-            fputs("Mt: %i\n",fptr,studentData[11]);
-            fputs("Mp: %i\n",fptr,studentData[12]);
-            fputs("Mi: %i\n",fptr,studentData[13]);
-            fputs("Mb: %i\n",fptr,studentData[14]);
-            fputs("Mki: %i\n",fptr,studentData[15]);
-            fputs("Ms: %i\n",fptr,studentData[16]);
+            fprintf(fptr, "Student nr: %i\n",i );
+            fprintf(fptr,"ID: %i\n",studentData[0]);
+            fprintf(fptr, "Name: %s %s\n",studentFirstName,studentLastName );
+            fprintf(fptr,"Mm: %i\n",studentData[1]);
+            fprintf(fptr,"Sm: %i\n",studentData[2]);
+            fprintf(fptr,"Md: %i\n",studentData[3]);
+            fprintf(fptr,"Sd: %i\n",studentData[4]);
+            fprintf(fptr,"Mf: %i\n",studentData[5]);
+            fprintf(fptr,"Sf: %i\n",studentData[6]);
+            fprintf(fptr,"Me: %i\n",studentData[7]);
+            fprintf(fptr,"Se: %i\n",studentData[8]);
+            fprintf(fptr,"Mk: %i\n",studentData[9]);
+            fprintf(fptr,"Sk: %i\n",studentData[10]);
+            fprintf(fptr,"Mt: %i\n",studentData[11]);
+            fprintf(fptr,"Mp: %i\n",studentData[12]);
+            fprintf(fptr,"Mi: %i\n",studentData[13]);
+            fprintf(fptr,"Mb: %i\n",studentData[14]);
+            fprintf(fptr,"Mki: %i\n",studentData[15]);
+            fprintf(fptr,"Ms: %i\n",studentData[16]);
             fputs("--Student end--\n\n",fptr);
         }
     }
         
         fclose(fptr);
+
+    
     return 0;
 }
