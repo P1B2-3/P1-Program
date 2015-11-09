@@ -3,8 +3,8 @@ This function is created by: Asger Geel Weirsøe for use only in the P1-Project.
 The function creates a document that writes the data used to generate a school schedule.
 
 
-Date:           8/11
-Version:        1.02
+Date:           9/11
+Version:        1.03
 */
 
 #include <stdlib.h>
