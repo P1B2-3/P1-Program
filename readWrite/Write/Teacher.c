@@ -58,24 +58,24 @@ int TeacherData(int *teacherData, char teacherFirstName, char teacherLastName, i
         for(i = 0;i<numOfTeachers;i++){
             fputs("--Teacher Start--\n",fptr);
             fprintf(fptr, "Teacher nr: %i\n",i );
-            fprintf(fptr,"ID: %i\n",teacherData[0]);
+            fprintf(fptr,"ID: %i\n",teacherData.unikID[i]);
             fprintf(fptr, "Name: %s %s\n",teacherFirstName,teacherLastName );
-            fprintf(fptr,"Mm: %i\n",teacherData[1]);
-            fprintf(fptr,"Sm: %i\n",teacherData[2]);
-            fprintf(fptr,"Md: %i\n",teacherData[3]);
-            fprintf(fptr,"Sd: %i\n",teacherData[4]);
-            fprintf(fptr,"Mf: %i\n",teacherData[5]);
-            fprintf(fptr,"Sf: %i\n",teacherData[6]);
-            fprintf(fptr,"Me: %i\n",teacherData[7]);
-            fprintf(fptr,"Se: %i\n",teacherData[8]);
-            fprintf(fptr,"Mk: %i\n",teacherData[9]);
-            fprintf(fptr,"Sk: %i\n",teacherData[10]);
-            fprintf(fptr,"Mt: %i\n",teacherData[11]);
-            fprintf(fptr,"Mp: %i\n",teacherData[12]);
-            fprintf(fptr,"Mi: %i\n",teacherData[13]);
-            fprintf(fptr,"Mb: %i\n",teacherData[14]);
-            fprintf(fptr,"Mki: %i\n",teacherData[15]);
-            fprintf(fptr,"Ms: %i\n",teacherData[16]);
+            fprintf(fptr,"Mm: %i\n",teacherData.Mm[i]);
+            fprintf(fptr,"Sm: %i\n",teacherData.Sm[i]);
+            fprintf(fptr,"Md: %i\n",teacherData.Md[i]);
+            fprintf(fptr,"Sd: %i\n",teacherData.Sd[i]);
+            fprintf(fptr,"Mf: %i\n",teacherData.Mf[i]);
+            fprintf(fptr,"Sf: %i\n",teacherData.Sf[i]);
+            fprintf(fptr,"Me: %i\n",teacherData.Me[i]);
+            fprintf(fptr,"Se: %i\n",teacherData.Se[i]);
+            fprintf(fptr,"Mk: %i\n",teacherData.Mk[i]);
+            fprintf(fptr,"Sk: %i\n",teacherData.Sk[i]);
+            fprintf(fptr,"Mt: %i\n",teacherData.Mt[i]);
+            fprintf(fptr,"Mp: %i\n",teacherData.Mp[i]);
+            fprintf(fptr,"Mi: %i\n",teacherData.Mi[i]);
+            fprintf(fptr,"Mb: %i\n",teacherData.Mb[i]);
+            fprintf(fptr,"Mki: %i\n",teacherData.Mki[i]);
+            fprintf(fptr,"Ms: %i\n",teacherData.Ms[i]);
             fputs("--Teacher End--\n\n",fptr);
         }
     }
