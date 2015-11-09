@@ -1,8 +1,6 @@
 
 struct Data{
     int unikID[10000];
-    char Fornavn[5000];
-    char Efternavn[5000];
     int Mm[5000];
     int Sm[5000];
     int Md[5000];
