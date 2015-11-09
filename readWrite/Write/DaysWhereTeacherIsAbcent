@@ -44,7 +44,7 @@ int DaysWhereTeacherIsAbcent(int *teacherDaysData, char teacherFirstName, char t
             fputs("--Teacher Start--\n",fptr);
             fprintf(fptr, "Teacher Nr: %i\n",i );
             ffprintf(fptr, "ID: %s %s\n",teacherDaysData.ID[i] );
-            fprintf(fptr, "Name: %s %s\n",studentFirstName,studentLastName );
+            fprintf(fptr, "Name: %s %s\n",teacherFirstName,teacherLastName );
             for(; i<teacherDaysData.numOfDays[i];k++){
                 fprintf(fptr, "Day: %s\n",teacherDaysData.day[k]);
             }
