@@ -55,24 +55,24 @@ int StudentData(int *studentData,char studentFirstName,char studentLastName,int 
 
             fputs("--Student start--\n",fptr);
             fprintf(fptr, "Student nr: %i\n",i );
-            fprintf(fptr,"ID: %i\n",studentData[0]);
+            fprintf(fptr,"ID: %i\n",studentData.unikID[i]);
             fprintf(fptr, "Name: %s %s\n",studentFirstName,studentLastName );
-            fprintf(fptr,"Mm: %i\n",studentData[1]);
-            fprintf(fptr,"Sm: %i\n",studentData[2]);
-            fprintf(fptr,"Md: %i\n",studentData[3]);
-            fprintf(fptr,"Sd: %i\n",studentData[4]);
-            fprintf(fptr,"Mf: %i\n",studentData[5]);
-            fprintf(fptr,"Sf: %i\n",studentData[6]);
-            fprintf(fptr,"Me: %i\n",studentData[7]);
-            fprintf(fptr,"Se: %i\n",studentData[8]);
-            fprintf(fptr,"Mk: %i\n",studentData[9]);
-            fprintf(fptr,"Sk: %i\n",studentData[10]);
-            fprintf(fptr,"Mt: %i\n",studentData[11]);
-            fprintf(fptr,"Mp: %i\n",studentData[12]);
-            fprintf(fptr,"Mi: %i\n",studentData[13]);
-            fprintf(fptr,"Mb: %i\n",studentData[14]);
-            fprintf(fptr,"Mki: %i\n",studentData[15]);
-            fprintf(fptr,"Ms: %i\n",studentData[16]);
+            fprintf(fptr,"Mm: %i\n",studentData.Mm[i]);
+            fprintf(fptr,"Sm: %i\n",studentData.Sm[i]);
+            fprintf(fptr,"Md: %i\n",studentData.Md[i]);
+            fprintf(fptr,"Sd: %i\n",studentData.Sd[i]);
+            fprintf(fptr,"Mf: %i\n",studentData.Mf[i]);
+            fprintf(fptr,"Sf: %i\n",studentData.Sf[i]);
+            fprintf(fptr,"Me: %i\n",studentData.Me[i]);
+            fprintf(fptr,"Se: %i\n",studentData.Se[i]);
+            fprintf(fptr,"Mk: %i\n",studentData.Mk[i]);
+            fprintf(fptr,"Sk: %i\n",studentData.Sk[i]);
+            fprintf(fptr,"Mt: %i\n",studentData.Mt[i]);
+            fprintf(fptr,"Mp: %i\n",studentData.Mp[i]);
+            fprintf(fptr,"Mi: %i\n",studentData.Mi[i]);
+            fprintf(fptr,"Mb: %i\n",studentData.Mb[i]);
+            fprintf(fptr,"Mki: %i\n",studentData.Mki[i]);
+            fprintf(fptr,"Ms: %i\n",studentData.Ms[i]);
             fputs("--Student end--\n\n",fptr);
         }
     }
