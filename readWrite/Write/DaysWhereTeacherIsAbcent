@@ -23,7 +23,7 @@ int DaysWhereTeacherIsAbcent(int *teacherDaysData, char teacherFirstName, char t
      #else 
     mkdir("./data", 0700); 
      #endif   
-    int i;
+    int i,k=0;
     FILE *fptr;
 
     if ((fptr=fopen("data/TeacherIsAbcent.txt","r"))==NULL){
@@ -43,10 +43,10 @@ int DaysWhereTeacherIsAbcent(int *teacherDaysData, char teacherFirstName, char t
         for(i = 0;i<numOfTeachers;i++){
             fputs("--Teacher Start--\n",fptr);
             fprintf(fptr, "Teacher Nr: %i\n",i );
-            ffprintf(fptr, "ID: %s %s\n",teacherDaysData[0] );
+            ffprintf(fptr, "ID: %s %s\n",teacherDaysData.ID[i] );
             fprintf(fptr, "Name: %s %s\n",studentFirstName,studentLastName );
-            for(i = 0; i<numOfDaysForTeacher[i];i++){
-                fprintf(fptr, "Day%s\n",teacherDaysData[i]);
+            for(; i<teacherDaysData.numOfDays[i];k++){
+                fprintf(fptr, "Day: %s\n",teacherDaysData.day[k]);
             }
             fputs("--Teacher End--\n\n",fptr);
         }
