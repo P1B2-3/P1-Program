@@ -1,7 +1,33 @@
-#include <stdlib.h>
-#include <stdio.h>
+/*
+Qsort funktionen her, kan sortere ud fra eksamner.
+Man skal blot give denne, structen med studenter, længden og en string som indbefatter:
+- "matmund"
+- "matskrif"
+- "damund"
+- "daskrif"
+- "fysmund"
+- "fysskrif"
+- "engmund"
+- "engskrif"
+- "kemmund"
+- "kemskrif"
+- "tek"
+- "prog"
+- "ideh"
+- "bio"
+- "komit"
+- "samf"
+og for teknologihistorie
+skal man ikke give den noget.
 
-void Sort_data_student(data student_t[], int last,char * examen) {
+Skrevet af Asger Geel Weirsøe
+20/11-2015
+V. 1.00
+*/
+
+#include <stdlib.h>
+
+void Sort_data_student(data Data_elever_t[], int last,char * examen) {
   if(examen == "matmund") {
     qsort(stydebt_t,last+1,sizeof(data),qsort_mat_mundtlig);
   }else if(examen == "matskrif") {
