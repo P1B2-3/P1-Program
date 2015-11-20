@@ -20,5 +20,3 @@ struct Data{
     int Mth; /*Mundlig teknologi historie */
 
 };
-
-int main(){
