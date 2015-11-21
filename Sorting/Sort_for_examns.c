@@ -24,9 +24,64 @@ Skrevet af Asger Geel Weirsøe
 20/11-2015
 V. 1.00
 */
-
 #include <stdlib.h>
 
+char examn_var[20]; 
+
+void Sort_data_student(data Data_elever_t[], int last,char * examen) {
+if(examen == "matmund") {
+    examn_var ="Mm";
+  }else if(examen == "matskrif") {
+    examn_var ="Sm";
+  }else if(examen == "damund") {
+    examn_var ="Md";
+  }else if(examen == "daskrif") {
+    examn_var ="Sd";
+  }else if(examen == "fysmund") {
+    examn_var ="Mf";
+  }else if(examen == "fysskrif") {
+    examn_var ="Sf";
+  }else if(examen == "engmund") {
+    examn_var ="Me";
+  }else if(examen == "engskrif") {
+    examn_var ="Se";
+  }else if(examen == "kemmund") {
+    examn_var ="Mk";
+  }else if(examen == "kemskrif") {
+    examn_var ="Sk";
+  }else if(examen == "tek") {
+    examn_var ="Mt";
+  }else if(examen == "prog") {
+    examn_var ="Mp";
+  }else if(examen == "ideh") {
+    examn_var ="Mi";
+  }else if(examen == "bio") {
+    examn_var ="Mb";
+  }else if(examen == "komit") {
+    examn_var ="Mki";
+  }else if(examen == "samf") {
+    examn_var ="Ms";
+  }else {
+    examn_var ="Mth";
+  }
+  qsort(stydebt_t,last+1,sizeof(data),qsort_examen);
+}
+int qsort_examen(const void* p1,const void* p2) {
+  data *a,*b;
+    a = (data*)p1;
+    b = (data*)p2;
+    if(a->examn_var && b->examn_var) {
+      if(a->unikID < b->unikID) {
+        return 1;
+      }
+    }
+    else if(a->examn_var && !(b->examn_var) {
+      return 1;
+    }
+  return -1;
+}
+    
+/*
 void Sort_data_student(data Data_elever_t[], int last,char * examen) {
   if(examen == "matmund") {
     qsort(stydebt_t,last+1,sizeof(data),qsort_mat_mundtlig);
@@ -304,3 +359,4 @@ int qsort_tekhis(const void* p1,const void* p2) {
   }
   return -1;
 }
+*/
