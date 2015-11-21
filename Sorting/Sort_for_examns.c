@@ -65,6 +65,7 @@ if(examen == "matmund") {
     examn_var ="Mth";
   }
   qsort(stydebt_t,last+1,sizeof(data),qsort_examen);
+  free examn_var;
 }
 int qsort_examen(const void* p1,const void* p2) {
   data *a,*b;
