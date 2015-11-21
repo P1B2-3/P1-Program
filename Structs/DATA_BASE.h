@@ -54,10 +54,15 @@ struct Data_lokale_t{
     int dato;
     int tid;
 };
+struct Data_elever_after_sorting_t{
+    int unikID;
+    char for_navn;
+    char efter_navn;
+};
 
 /* typedef */
 typedef struct Data_elever_t Data_elever_t;
 typedef struct Data_lærer_t Data_lærer_t;
 typedef struct Data_eksamen_t Data_eksamen_t;
 typedef struct Data_lokale_t Data_lokale_t;
-
+typedef struct Data_elever_after_sorting_t Data_after_sorting_t;
