@@ -22,7 +22,7 @@ skal man ikke give den noget.
 
 Skrevet af Asger Geel Weirsøe
 20/11-2015
-V. 1.00
+V. 1.02
 */
 #include <stdlib.h>
 
