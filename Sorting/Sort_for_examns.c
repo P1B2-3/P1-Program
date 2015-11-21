@@ -28,7 +28,7 @@ V. 1.02
 
 char examn_var[20]; 
 
-void Sort_data_student(data Data_elever_t[], int last,char * examen) {
+void Sort_data_student(Data_elever_t Data_elever_t[], int last,char * examen) {
 if(examen == "matmund") {
     examn_var ="Mm";
   }else if(examen == "matskrif") {
