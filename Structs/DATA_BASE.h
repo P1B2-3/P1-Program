@@ -25,7 +25,7 @@ struct Data_elever_t{
     int Mth;    /*Mundlig teknologi historie */
 };
 
-struct Data_lærer_t{
+struct Data_laerer_t{
     char navn;
     char fag;               /* hvilke eksamner læreren kan tage */
     int afbud[Antal_dage];  /* indehoder 0 og 1 for hvilke dage de ikke kan påtage sig eksamner */
@@ -34,14 +34,14 @@ struct Data_lærer_t{
 
 struct Data_eksamen_t{
     char elev_navn;
-    char lærer_navn;
+    char laerer_navn;
     char sensor_navn;
 
     char bygning;
     int lokale;
 
     char eksamen_navn;
-    int eksamen_nummer
+    int eksamen_nummer;
 
     int dato;
     int tid;
@@ -62,7 +62,7 @@ struct Data_elever_after_sorting_t{
 
 /* typedef */
 typedef struct Data_elever_t Data_elever_t;
-typedef struct Data_lærer_t Data_lærer_t;
+typedef struct Data_laerer_t Data_laerer_t;
 typedef struct Data_eksamen_t Data_eksamen_t;
 typedef struct Data_lokale_t Data_lokale_t;
 typedef struct Data_elever_after_sorting_t Data_after_sorting_t;
