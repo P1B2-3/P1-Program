@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include "Structs/DATA_BASE.h" /* struct data */
-
+#include "TheIncludeFile.c" /*File to include!*/
 /* input af antal */
 
 int main(void){
