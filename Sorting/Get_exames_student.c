@@ -3,15 +3,13 @@ Denne funktion, skal kunne fortælle i et nyt array hvilke studenter der skal op
 Dette skal den gøre ved at køre qsort funktionen ->INSERT NAME HERE<-
 
 Programmet er skrevet af: Asger Geel Weirsøe
-21/11-2015
-V. 1.00
+24/11-2015
+V. 1.02
 */
 char * exmn_var;
 int Get_examens_student(Data_elever_t Data_elever_t[], int last,char * examen, Data_after_sorting_t Data_elever_after_sorting_t[];) {
     Sort_for_examns(Data_elever_t[], Data_elever_after_sorting_t[])
     exmn_var = examen;
-  
-  
 }
 
 void Create_new_database(Data_after_sorting_t Data_elever_t[],Data_after_sorting_t Data_elever_after_sorting_t[]){
