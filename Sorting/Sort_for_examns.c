@@ -24,7 +24,7 @@ Skrevet af Asger Geel Weirsøe
 20/11-2015
 V. 1.02
 */
-#include <stdlib.h>
+
 
 char examn_var[20]; 
 
