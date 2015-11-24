@@ -1,4 +1,4 @@
-#include <stdio.h>
+
 #include "TheIncludeFile.c" /*File to include!*/
 /* input af antal */
 
