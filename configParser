@@ -1,5 +1,5 @@
 /*
-This function (getConfig(string)) will search and read a given string's value
+This function (getConfig(string)) will search for, and read a given string's value
 in the config.ini file.
 
 example:
