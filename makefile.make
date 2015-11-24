@@ -1,11 +1,12 @@
 CC=gcc
 CFLAGS= -Wall -pedantic -ansi
 TARGET = main
+LIBS = -lm
 
 .PHONY: default all clean
 
-HEADERS = Structs/DATA_BASE.h readWrite/Write/DaysWhereTeacherIsAbcent.h
-OBJECTS = main.o Structs/TeacherDays.o Sorting/Get_exams_student.o Sorting/Sort_for_exams.o readWrite/Write/StudentData.o readWrite/Write/TeacherData.o readWrite/Write/DaysWhereTeacherIsAbcent.o
+OBJECTS = $(patsubst %.c, %.o, $(wildcard *.c)) Structs/$(patsubst %.c, %.o, $(wildcard *.c)) Sorting/$(patsubst %.c, %.o, $(wildcard *.c)) readWrite/$(patsubst %.c, %.o, $(wildcard *.c))
+HEADERS = Structs/$(wildcard *.h)
 
 default: $(TARGET)
 all: default
