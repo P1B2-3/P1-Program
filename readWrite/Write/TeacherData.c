@@ -7,16 +7,6 @@ Date:           9/11
 Version:        1.03
 */
 
-#include <stdlib.h>
-#include <string.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <unistd.h>
-#include <stdio.h>
-
-  
-
-
 int TeacherData(int *teacherData, char teacherFirstName, char teacherLastName, int numOfTeachers){
     #if defined(_WIN32)
     _mkdir("./data");
