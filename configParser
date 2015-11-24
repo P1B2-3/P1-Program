@@ -1,0 +1,41 @@
+/*
+This function (getConfig(string)) will search and read a given string's value
+in the config.ini file.
+
+example:
+getConfig(s.numberOfStudents) - returns the value 24
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+char *getConfig(char* string) {
+
+  FILE *input_file_pointer;
+  int i;
+
+  char value[16];
+
+  input_file_pointer = fopen("config.ini", "r");
+
+  if (input_file_pointer != NULL) {
+    while (*str != '\0'){
+      
+      /*Do stuff
+
+      search for given string, and read the corosponing value,
+      to store in value[16]
+      */
+
+    }
+
+    fclose(input_file_pointer);
+  }
+  else{
+    printf("ERROR: Config.ini not found.");
+    exit(EXIT_FAILURE);
+  }
+
+  return value;
+}
