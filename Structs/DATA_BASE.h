@@ -23,8 +23,8 @@ struct Data_elever_t{
     int Mki;    /*Mundlig kom it */ 
     int Ms;     /*Mundlig samfundsfag */
     int Mth;    /*Mundlig teknologi historie */
-    char elev_for_navn
-    char elev_efter_navn
+    char elev_for_navn;
+    char elev_efter_navn;
 };
 
 struct Data_laerer_t{
