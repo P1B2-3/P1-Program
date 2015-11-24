@@ -10,32 +10,40 @@ getConfig(s.numberOfStudents) - returns the value 24
 #include <stdlib.h>
 #include <string.h>
 
-char *getConfig(char* string) {
+char* getConfig(char* str) {
 
   FILE *input_file_pointer;
-  int i;
 
-  char value[16];
+  char *value[16];
+  char tmp[1024];
 
   input_file_pointer = fopen("config.ini", "r");
 
   if (input_file_pointer != NULL) {
-    while (*str != '\0'){
       
-      /*Do stuff
+        /*Do stuff
 
-      search for given string, and read the corosponing value,
-      to store in value[16]
-      */
+        search for given string, and read the corresponding value,
+        to store in value[16]
+        */
 
+    while(fgets(tmp, 1024, input_file_pointer) != NULL) {
+        
+        if((strstr(tmp, str)) != NULL) {
+
+            strcpy(*value, (strchr(tmp, *str)) );
+
+        }
+        
     }
-
     fclose(input_file_pointer);
+    return *value;
   }
+
   else{
     printf("ERROR: Config.ini not found.");
     exit(EXIT_FAILURE);
+    return 0;
   }
-
-  return value;
+  
 }
