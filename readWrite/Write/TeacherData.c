@@ -4,10 +4,10 @@ The function creates a document that writes the data used to generate a school s
 
 
 Date:           9/11
-Version:        1.03
+Version:        1.04
 */
 
-int TeacherData(int *teacherData, char teacherFirstName, char teacherLastName, int numOfTeachers){
+int TeacherData(Data_laerer_t /*->array with teachers<-*/[], char teacherFirstName, char teacherLastName, int numOfTeachers){
     #if defined(_WIN32)
     _mkdir("./data");
      #else 
@@ -48,24 +48,24 @@ int TeacherData(int *teacherData, char teacherFirstName, char teacherLastName, i
         for(i = 0;i<numOfTeachers;i++){
             fputs("--Teacher Start--\n",fptr);
             fprintf(fptr, "Teacher nr: %i\n",i );
-            fprintf(fptr,"ID: %i\n",teacherData.unikID[i]);
+            fprintf(fptr,"ID: %i\n",/*->array with teachers<-*/.unikID[i]);
             fprintf(fptr, "Name: %s %s\n",teacherFirstName,teacherLastName );
-            fprintf(fptr,"Mm: %i\n",teacherData.Mm[i]);
-            fprintf(fptr,"Sm: %i\n",teacherData.Sm[i]);
-            fprintf(fptr,"Md: %i\n",teacherData.Md[i]);
-            fprintf(fptr,"Sd: %i\n",teacherData.Sd[i]);
-            fprintf(fptr,"Mf: %i\n",teacherData.Mf[i]);
-            fprintf(fptr,"Sf: %i\n",teacherData.Sf[i]);
-            fprintf(fptr,"Me: %i\n",teacherData.Me[i]);
-            fprintf(fptr,"Se: %i\n",teacherData.Se[i]);
-            fprintf(fptr,"Mk: %i\n",teacherData.Mk[i]);
-            fprintf(fptr,"Sk: %i\n",teacherData.Sk[i]);
-            fprintf(fptr,"Mt: %i\n",teacherData.Mt[i]);
-            fprintf(fptr,"Mp: %i\n",teacherData.Mp[i]);
-            fprintf(fptr,"Mi: %i\n",teacherData.Mi[i]);
-            fprintf(fptr,"Mb: %i\n",teacherData.Mb[i]);
-            fprintf(fptr,"Mki: %i\n",teacherData.Mki[i]);
-            fprintf(fptr,"Ms: %i\n",teacherData.Ms[i]);
+            fprintf(fptr,"Mm: %i\n",/*->array with teachers<-*/[i].Mm);
+            fprintf(fptr,"Sm: %i\n",/*->array with teachers<-*/[i].Sm);
+            fprintf(fptr,"Md: %i\n",/*->array with teachers<-*/[i].Md);
+            fprintf(fptr,"Sd: %i\n",/*->array with teachers<-*/[i].Sd);
+            fprintf(fptr,"Mf: %i\n",/*->array with teachers<-*/[i].Mf);
+            fprintf(fptr,"Sf: %i\n",/*->array with teachers<-*/[i].Sf);
+            fprintf(fptr,"Me: %i\n",/*->array with teachers<-*/[i].Me);
+            fprintf(fptr,"Se: %i\n",/*->array with teachers<-*/[i].Se);
+            fprintf(fptr,"Mk: %i\n",/*->array with teachers<-*/[i].Mk);
+            fprintf(fptr,"Sk: %i\n",/*->array with teachers<-*/[i].Sk);
+            fprintf(fptr,"Mt: %i\n",/*->array with teachers<-*/[i].Mt);
+            fprintf(fptr,"Mp: %i\n",/*->array with teachers<-*/[i].Mp);
+            fprintf(fptr,"Mi: %i\n",/*->array with teachers<-*/[i].Mi);
+            fprintf(fptr,"Mb: %i\n",/*->array with teachers<-*/[i].Mb);
+            fprintf(fptr,"Mki: %i\n",/*->array with teachers<-*/[i].Mki);
+            fprintf(fptr,"Ms: %i\n",/*->array with teachers<-*/[i].Ms);
             fputs("--Teacher End--\n\n",fptr);
         }
     }
