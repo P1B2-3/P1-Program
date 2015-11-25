@@ -25,6 +25,7 @@ Skrevet af Asger Geel Weirsøe
 V. 1.02
 */
 
+/* TO DO, indsættelse af hver enkel elevs tid til eksamen xx.xx -> xx.xx */
 
 char examn_var[20]; 
 
