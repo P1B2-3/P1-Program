@@ -4,7 +4,7 @@ The function creates a document that writes the data used to generate a school s
 
 
 Date:           9/11
-Version:        1.04
+Version:        1.05
 */
 
 int StudentData(Data_elever_t /*->array with students<-*/[]){
