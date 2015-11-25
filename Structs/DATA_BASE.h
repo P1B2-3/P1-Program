@@ -28,7 +28,7 @@ struct Data_students_t{
 };
 
 struct Data_Teachers_t{
-    int unikID
+    int unikID;
     char teacherName;
     char teacherSurname;
     char studentClass;

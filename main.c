@@ -1,5 +1,5 @@
 
-#include "TheIncludeFile.c" /*File to include!*/
+#include "TheIncludeFile.h" /*File to include!*/
 /* input af antal */
 
 

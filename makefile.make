@@ -6,7 +6,7 @@ LIBS = -lm
 .PHONY: default all clean
 
 OBJECTS = $(patsubst %.c, %.o, $(wildcard *.c)) Structs/$(patsubst %.c, %.o, $(wildcard *.c)) Sorting/$(patsubst %.c, %.o, $(wildcard *.c)) readWrite/$(patsubst %.c, %.o, $(wildcard *.c))
-HEADERS = Structs/$(wildcard *.h)
+HEADERS = $(wildcard *.h)
 
 default: $(TARGET)
 all: default
