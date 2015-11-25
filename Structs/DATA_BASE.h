@@ -1,13 +1,12 @@
 /* main.c,  */
 
-
 /* antal dage skal komme ind hvor lang eksamens perioden er. Antal_dage */ 
 /* struct med data for alle eksamnerne */
 
-struct Data_elever_t{
+struct data_students_t{
     int unikID;
-    char elev_for_navn;
-    char elev_efter_navn;
+    char studentName;
+    char studentSurname;
     int Mm;     /*Mundlig matmatik */ 
     int Sm;     /*Skriftlig matmatik */ 
     int Md;     /*Mundlig dansk */ 
@@ -27,10 +26,10 @@ struct Data_elever_t{
     int Mth;    /*Mundlig teknologi historie */
 };
 
-struct Data_laerer_t{
+struct data_Teachers_t{
     int unikID
-    char laerer_for_navn;
-    char laerer_efter_navn;
+    char teacherName;
+    char teacherSurname;
     int Mm;     /*Mundlig matmatik */ 
     int Sm;     /*Skriftlig matmatik */ 
     int Md;     /*Mundlig dansk */ 
@@ -48,42 +47,42 @@ struct Data_laerer_t{
     int Mki;    /*Mundlig kom it */ 
     int Ms;     /*Mundlig samfundsfag */
     int Mth;    /*Mundlig teknologi historie */
-    int afbud[Antal_dage];  /* indehoder 0 og 1 for hvilke dage de ikke kan påtage sig eksamner */
-    int ude_sensor[Antal_dage];
+    int cancelled[numberOfDays];  /* indehoder 0 og 1 for hvilke dage de ikke kan påtage sig eksamner */
+    int sensor[numberOfDays];
 };
 
-struct Data_eksamen_t{
-    char elev_for_navn;
-    char elev_efter_navn;
-    char laerer_navn;
-    char sensor_navn;
+struct data_eksamen_t{
+    char studentName;
+    char studentSurname;
+    char teacherName;
+    char teacherSurname;
 
-    char bygning;
-    int lokale;
+    char building;
+    int room;
 
-    char eksamen_navn;
-    int eksamen_nummer;
+    char examName;
+    int examNumber;
 
-    int dato;
-    int tid;
+    int date;
+    int time;
 };
 
-struct Data_lokale_t{
-    char bygning;
-    int lokale;
+struct data_lokale_t{
+    char building;
+    int room;
 
-    int dato;
-    int tid;
+    int date;
+    int time;
 };
-struct Data_elever_after_sorting_t{
+struct data_after_sorting_t{
     int unikID;
-    char for_navn;
-    char efter_navn;
+    char name;
+    char surname;
 };
 
 /* typedef */
-typedef struct Data_elever_t Data_elever_t;
-typedef struct Data_laerer_t Data_laerer_t;
-typedef struct Data_eksamen_t Data_eksamen_t;
-typedef struct Data_lokale_t Data_lokale_t;
-typedef struct Data_elever_after_sorting_t Data_after_sorting_t;
+typedef struct data_students_t data_students_t;
+typedef struct data_Teachers_t data_Teachers_t;
+typedef struct data_eksamen_t data_eksamen_t;
+typedef struct data_lokale_t data_lokale_t;
+typedef struct data_after_sorting_t data_after_sorting_t;
