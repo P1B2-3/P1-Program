@@ -47,8 +47,8 @@ struct data_Teachers_t{
     int Mki;    /*Mundlig kom it */ 
     int Ms;     /*Mundlig samfundsfag */
     int Mth;    /*Mundlig teknologi historie */
-    int cancelled[numberOfDays];  /* indehoder 0 og 1 for hvilke dage de ikke kan påtage sig eksamner */
-    int sensor[numberOfDays];
+    int cancelled[numOfDays];  /* indehoder 0 og 1 for hvilke dage de ikke kan påtage sig eksamner */
+    int sensor[numOfDays];
 };
 
 struct data_eksamen_t{
@@ -74,6 +74,7 @@ struct data_lokale_t{
     int date;
     int time;
 };
+
 struct data_after_sorting_t{
     int unikID;
     char name;
