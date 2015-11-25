@@ -1,7 +1,5 @@
 
-#include "TheIncludeFile.h" /*File to include!*/
-/* input af antal */
-
+#include "TheIncludeFile.c" /*File to include!*/
 
 
 int main(void){
@@ -11,7 +9,6 @@ int main(void){
 		eksamenAmount = getConfig(),
 		roomAmount    = getConfig();
 
-
 	/* Array af structs */
 	Data_students_t 		StudentData[studentAmount];
 	Data_Teachers_t 		TeacherData[teacherAmount];
@@ -19,19 +16,13 @@ int main(void){
 	Data_room_t 			RoomData[roomAmount];
 	Data_after_sorting_t 	DataSort[];	
 
-	/* */
-
-
-	Make_database();
-
-	Load_database();
+	/* funtion der indsætter elev data */
+	/* funtion der indsætter eksamner for eleverne fra klasserne */
 
 
 
-
-	return 0;
+	return (0);
 }
-
 
 /* items */
 /* databasen */
