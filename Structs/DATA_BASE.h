@@ -6,6 +6,8 @@
 
 struct Data_elever_t{
     int unikID;
+    char elev_for_navn;
+    char elev_efter_navn;
     int Mm;     /*Mundlig matmatik */ 
     int Sm;     /*Skriftlig matmatik */ 
     int Md;     /*Mundlig dansk */ 
@@ -23,13 +25,29 @@ struct Data_elever_t{
     int Mki;    /*Mundlig kom it */ 
     int Ms;     /*Mundlig samfundsfag */
     int Mth;    /*Mundlig teknologi historie */
-    char elev_for_navn;
-    char elev_efter_navn;
 };
 
 struct Data_laerer_t{
-    char navn;
-    char fag;               /* hvilke eksamner læreren kan tage */
+    int unikID
+    char laerer_for_navn;
+    char laerer_efter_navn;
+    int Mm;     /*Mundlig matmatik */ 
+    int Sm;     /*Skriftlig matmatik */ 
+    int Md;     /*Mundlig dansk */ 
+    int Sd;     /*Skriftlig dansk */ 
+    int Mf;     /*Mundlig fysik */ 
+    int Sf;     /*Skriftlig fysik */ 
+    int Me;     /*Mundlig engelsk */ 
+    int Se;     /*Skriftlig engelsk */ 
+    int Mk;     /*Mundlig kemi */ 
+    int Sk;     /*Skriftlig kemi */ 
+    int Mt;     /*Mundlig teknologi */ 
+    int Mp;     /*Mundlig programmering */ 
+    int Mi;     /*Mundlig indehistorie */ 
+    int Mb;     /*Mundlig biologi */ 
+    int Mki;    /*Mundlig kom it */ 
+    int Ms;     /*Mundlig samfundsfag */
+    int Mth;    /*Mundlig teknologi historie */
     int afbud[Antal_dage];  /* indehoder 0 og 1 for hvilke dage de ikke kan påtage sig eksamner */
     int ude_sensor[Antal_dage];
 };
