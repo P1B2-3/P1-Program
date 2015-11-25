@@ -49,7 +49,7 @@ int TeacherData(Data_laerer_t /*->array with teachers<-*/[], char teacherFirstNa
             fputs("--Teacher Start--\n",fptr);
             fprintf(fptr, "Teacher nr: %i\n",i );
             fprintf(fptr,"ID: %i\n",/*->array with teachers<-*/.unikID[i]);
-            fprintf(fptr, "Name: %s %s\n",teacherFirstName,teacherLastName );
+            fprintf(fptr, "Name: %s %s\n",laerer_for_navn,laerer_efternavn );
             fprintf(fptr,"Mm: %i\n",/*->array with teachers<-*/[i].Mm);
             fprintf(fptr,"Sm: %i\n",/*->array with teachers<-*/[i].Sm);
             fprintf(fptr,"Md: %i\n",/*->array with teachers<-*/[i].Md);
