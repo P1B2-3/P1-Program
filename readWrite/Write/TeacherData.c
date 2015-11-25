@@ -9,15 +9,15 @@ Version:        1.04
 
 int TeacherData(Data_laerer_t /*->array with teachers<-*/[], char teacherFirstName, char teacherLastName, int numOfTeachers){
     #if defined(_WIN32)
-    _mkdir("./data");
+        _mkdir("./data");
      #else 
-    mkdir("./data", 0700); 
+        mkdir("./data", 0700); 
      #endif
+
     int i;
     FILE *fptr;
 
-    if ((fptr=fopen("data/TeacherData.txt","r"))==NULL){
-        
+    if ((fptr=fopen("data/TeacherData.txt","r"))==NULL){ /* hvis at filen ikke er lavet */
         printf("Did not find file, creating new\n");
         fptr = fopen("data/TeacherData.txt", "w"); 
         fputs("//This entire document is dedicated to the processing of a school schedule.\n",fptr);
@@ -44,7 +44,7 @@ int TeacherData(Data_laerer_t /*->array with teachers<-*/[], char teacherFirstNa
         fputs("//Mundtlig kom/it:           Mki:\n",fptr);
         fputs("//Mundtlig Samfundsfag:      Ms:\n\n\n\n",fptr);
 
-        fputs("--------ALL TEACHERS--------\n",fptr);
+        fputs("------------ALL TEACHERS------------\n",fptr);
         for(i = 0;i<numOfTeachers;i++){
             fputs("--Teacher Start--\n",fptr);
             fprintf(fptr, "Teacher nr: %i\n",i );
@@ -70,6 +70,7 @@ int TeacherData(Data_laerer_t /*->array with teachers<-*/[], char teacherFirstNa
         }
     }
         
-        fclose(fptr);
-    return 0;
+    fclose(fptr);
+
+    return (0);
 }

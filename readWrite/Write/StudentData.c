@@ -8,15 +8,16 @@ Version:        1.05
 */
 
 int StudentData(Data_elever_t /*->array with students<-*/[]){
-    #if defined(_WIN32)
-    _mkdir("./data");
-     #else 
-    mkdir("./data", 0700); 
-     #endif
-    int i;
-    FILE *fptr;
+    #if defined(_WIN32)     /* den tjekker om det er windows til at lave en folder */
+        _mkdir("./data");
+    #else                   /* laver en en text fil i linux */
+        mkdir("./data", 0700); 
+    #endif     
 
-    if ((fptr=fopen("data/StudentData.txt","r"))==NULL){ 
+    int i;
+    FILE *fptr; /* filpointer */
+
+    if ((fptr=fopen("data/StudentData.txt","r"))==NULL){    /*  */
         printf("Did not find file, creating new\n");
         fptr = fopen("data/StudentData.txt", "w"); 
         fputs("//This entire document is dedicated to the processing of a school schedule.\n",fptr);
@@ -41,9 +42,9 @@ int StudentData(Data_elever_t /*->array with students<-*/[]){
         fputs("//Mundtlig kom/it:           Mki:\n",fptr);
         fputs("//Mundtlig Samfundsfag:      Ms:\n\n\n\n",fptr);
 
-        fputs("-------ALL STUDENTS--------\n",fptr);
-        for(i = 0;i<numOfStudents;i++){
+        fputs("-------------ALL STUDENTS--------------\n",fptr);
 
+        for(i = 0;i<numOfStudents;i++){
             fputs("--Student start--\n",fptr);
             fprintf(fptr, "Student nr: %i\n",i );
             fprintf(fptr,"ID: %i\n",/*->array with students<-*/[i]->unikID);
@@ -67,9 +68,8 @@ int StudentData(Data_elever_t /*->array with students<-*/[]){
             fputs("--Student end--\n\n",fptr);
         }
     }
-        
-        fclose(fptr);
-
     
-    return 0;
+    fclose(fptr);
+
+    return (0);
 }
