@@ -7,7 +7,7 @@ Date:           9/11
 Version:        1.04
 */
 
-int StudentData(int *studentData,char studentFirstName,char studentLastName,int numOfStudents){
+int StudentData(Data_elever_t /*->array with students<-*/[]){
     #if defined(_WIN32)
     _mkdir("./data");
      #else 
@@ -46,24 +46,24 @@ int StudentData(int *studentData,char studentFirstName,char studentLastName,int 
 
             fputs("--Student start--\n",fptr);
             fprintf(fptr, "Student nr: %i\n",i );
-            fprintf(fptr,"ID: %i\n",studentData.unikID[i]);
-            fprintf(fptr, "Name: %s %s\n",studentFirstName,studentLastName );
-            fprintf(fptr,"Mm: %i\n",studentData.Mm[i]);
-            fprintf(fptr,"Sm: %i\n",studentData.Sm[i]);
-            fprintf(fptr,"Md: %i\n",studentData.Md[i]);
-            fprintf(fptr,"Sd: %i\n",studentData.Sd[i]);
-            fprintf(fptr,"Mf: %i\n",studentData.Mf[i]);
-            fprintf(fptr,"Sf: %i\n",studentData.Sf[i]);
-            fprintf(fptr,"Me: %i\n",studentData.Me[i]);
-            fprintf(fptr,"Se: %i\n",studentData.Se[i]);
-            fprintf(fptr,"Mk: %i\n",studentData.Mk[i]);
-            fprintf(fptr,"Sk: %i\n",studentData.Sk[i]);
-            fprintf(fptr,"Mt: %i\n",studentData.Mt[i]);
-            fprintf(fptr,"Mp: %i\n",studentData.Mp[i]);
-            fprintf(fptr,"Mi: %i\n",studentData.Mi[i]);
-            fprintf(fptr,"Mb: %i\n",studentData.Mb[i]);
-            fprintf(fptr,"Mki: %i\n",studentData.Mki[i]);
-            fprintf(fptr,"Ms: %i\n",studentData.Ms[i]);
+            fprintf(fptr,"ID: %i\n",/*->array with students<-*/[i]->unikID);
+            fprintf(fptr, "Name: %s %s\n",/*->array with students<-*/[i]->elev_for_navn,/*->array with students<-*/[i]->elev_efter_navn );
+            fprintf(fptr,"Mm: %i\n",/*->array with students<-*/[i]->Mm);
+            fprintf(fptr,"Sm: %i\n",/*->array with students<-*/[i]->Sm);
+            fprintf(fptr,"Md: %i\n",/*->array with students<-*/[i]->Md);
+            fprintf(fptr,"Sd: %i\n",/*->array with students<-*/[i]->Sd);
+            fprintf(fptr,"Mf: %i\n",/*->array with students<-*/[i]->Mf);
+            fprintf(fptr,"Sf: %i\n",/*->array with students<-*/[i]->Sf);
+            fprintf(fptr,"Me: %i\n",/*->array with students<-*/[i]->Me);
+            fprintf(fptr,"Se: %i\n",/*->array with students<-*/[i]->Se);
+            fprintf(fptr,"Mk: %i\n",/*->array with students<-*/[i]->Mk);
+            fprintf(fptr,"Sk: %i\n",/*->array with students<-*/[i]->Sk);
+            fprintf(fptr,"Mt: %i\n",/*->array with students<-*/[i]->Mt);
+            fprintf(fptr,"Mp: %i\n",/*->array with students<-*/[i]->Mp);
+            fprintf(fptr,"Mi: %i\n",/*->array with students<-*/[i]->Mi);
+            fprintf(fptr,"Mb: %i\n",/*->array with students<-*/[i]->Mb);
+            fprintf(fptr,"Mki: %i\n",/*->array with students<-*/[i]->Mki);
+            fprintf(fptr,"Ms: %i\n",/*->array with students<-*/[i]->Ms);
             fputs("--Student end--\n\n",fptr);
         }
     }
