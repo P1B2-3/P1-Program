@@ -138,7 +138,7 @@ int main() {
                     (class == 21 && aar == 1) ? "F" :
                     (class == 22 && aar == 1) ? "G" : "H");
             fprintf(fptr, "First name: %s\n",elev_for_navn[rand()%182]);
-            fprintf(fptr, "Last name %s\n",elev_efternavn[rand()%234]);
+            fprintf(fptr, "Last name: %s\n",elev_efternavn[rand()%234]);
             fputs("--Student end--\n\n",fptr);
         }
     }
