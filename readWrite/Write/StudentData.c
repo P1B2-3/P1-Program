@@ -47,7 +47,7 @@ int StudentData(Data_elever_t /*->array with students<-*/[]){
             fputs("--Student start--\n",fptr);
             fprintf(fptr, "Student nr: %i\n",i );
             fprintf(fptr,"ID: %i\n",/*->array with students<-*/[i]->unikID);
-            fprintf(fptr, "Name: %s %s\n",/*->array with students<-*/[i]->elev_for_navn,/*->array with students<-*/[i]->elev_efter_navn );
+            fprintf(fptr, "Name: %s %s\n",/*->array with students<-*/[i]->elev_for_navn,/*->array with students<-*/[i]->elev_efternavn );
             fprintf(fptr,"Mm: %i\n",/*->array with students<-*/[i]->Mm);
             fprintf(fptr,"Sm: %i\n",/*->array with students<-*/[i]->Sm);
             fprintf(fptr,"Md: %i\n",/*->array with students<-*/[i]->Md);
