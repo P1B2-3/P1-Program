@@ -3,10 +3,11 @@
 /* antal dage skal komme ind hvor lang eksamens perioden er. Antal_dage */ 
 /* struct med data for alle eksamnerne */
 
-struct data_students_t{
+struct Data_students_t{
     int unikID;
     char studentName;
     char studentSurname;
+    char studentClass;
     int Mm;     /*Mundlig matmatik */ 
     int Sm;     /*Skriftlig matmatik */ 
     int Md;     /*Mundlig dansk */ 
@@ -26,10 +27,11 @@ struct data_students_t{
     int Mth;    /*Mundlig teknologi historie */
 };
 
-struct data_Teachers_t{
+struct Data_Teachers_t{
     int unikID
     char teacherName;
     char teacherSurname;
+    char studentClass;
     int Mm;     /*Mundlig matmatik */ 
     int Sm;     /*Skriftlig matmatik */ 
     int Md;     /*Mundlig dansk */ 
@@ -51,7 +53,7 @@ struct data_Teachers_t{
     int sensor[numOfDays];
 };
 
-struct data_eksamen_t{
+struct Data_eksamen_t{
     char studentName;
     char studentSurname;
     char teacherName;
@@ -67,7 +69,7 @@ struct data_eksamen_t{
     int time;
 };
 
-struct data_lokale_t{
+struct Data_room_t{
     char building;
     int room;
 
@@ -75,15 +77,15 @@ struct data_lokale_t{
     int time;
 };
 
-struct data_after_sorting_t{
+struct Data_after_sorting_t{
     int unikID;
     char name;
     char surname;
 };
 
 /* typedef */
-typedef struct data_students_t data_students_t;
-typedef struct data_Teachers_t data_Teachers_t;
-typedef struct data_eksamen_t data_eksamen_t;
-typedef struct data_lokale_t data_lokale_t;
-typedef struct data_after_sorting_t data_after_sorting_t;
+typedef struct Data_students_t      Data_students_t;
+typedef struct Data_Teachers_t      Data_Teachers_t;
+typedef struct Data_eksamen_t       Data_eksamen_t;
+typedef struct Data_room_t          Data_room_t;
+typedef struct Data_after_sorting_t Data_after_sorting_t;
