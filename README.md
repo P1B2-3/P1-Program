@@ -22,7 +22,7 @@
 ▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄▄▄               ▄▄▄▄▄▄▄▄▄█░▌
 ▐░░░░░░░░░░▌ ▐░░░░░░░░░░░▌             ▐░░░░░░░░░░░▌
  ▀▀▀▀▀▀▀▀▀▀   ▀▀▀▀▀▀▀▀▀▀▀               ▀▀▀▀▀▀▀▀▀▀▀ 
-                                                    
+^det ser bedre ud hvis du trykke edit!
 
 # HOW TO MAKEFILE (Currently not compiling)
   1. Navigate to folder (using MinGW terminal)
