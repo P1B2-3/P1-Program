@@ -1,5 +1,5 @@
 
-#include "TheIncludeFile.c" /*File to include!*/
+#include "TheIncludeFile.h" /*File to include!*/
 
 
 int main(void){
@@ -14,7 +14,8 @@ int main(void){
 	Data_Teachers_t 		TeacherData[teacherAmount];
 	Data_eksamen_t 			EksamenData[eksamenAmount]:
 	Data_room_t 			RoomData[roomAmount];
-	Data_after_sorting_t 	DataSort[];	
+	Data_after_sorting_t 		DataSort[studentAmount];
+	 
 
 	/* funtion der indsætter elev data */
 	/* funtion der indsætter eksamner for eleverne fra klasserne */
