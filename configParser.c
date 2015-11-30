@@ -10,40 +10,47 @@ getConfig(s.numberOfStudents) - returns the value 24
 #include <stdlib.h>
 #include <string.h>
 
-char* getConfig(char* str) {
+int main(void) {
 
-  FILE *input_file_pointer;
+    FILE *input_file_pointer;
 
-  char *value[16];
-  char tmp[1024];
+    char *str = "s.numberOfStudents";
+    char *value[16];
+    char tmp[1024];
+    const char s[] = {':', ';'};
+    char *pch[128];
 
-  input_file_pointer = fopen("config.ini", "r");
+    int line_num = 1;
+    int find_result = 0;
 
-  if (input_file_pointer != NULL) {
-      
-        /*Do stuff
+    input_file_pointer = fopen("config.ini", "r");
 
-        search for given string, and read the corresponding value,
-        to store in value[16]
-        */
+    if (input_file_pointer != NULL) {
 
-    while(fgets(tmp, 1024, input_file_pointer) != NULL) {
+        while(fgets(tmp, 1024, input_file_pointer) != NULL) {
+            
+            if((strstr(tmp, *str)) != NULL) {
+
+
+                /*line_num here = line with word on it*/
+
+                /*pch = strtok(getline(line_num, 100, input_file_pointer));*/
+
+                printf("%s\n", getline(line_num, 100, input_file_pointer) );
+            }
+
+            line_num++;
         
-        if((strstr(tmp, str)) != NULL) {
-
-            strcpy(*value, (strchr(tmp, *str)) );
-
         }
-        
-    }
-    fclose(input_file_pointer);
-    return *value;
-  }
 
-  else{
-    printf("ERROR: Config.ini not found.");
-    exit(EXIT_FAILURE);
-    return 0;
-  }
-  
+        fclose(input_file_pointer);
+        return *value;
+
+    }
+
+    else{
+        printf("ERROR: Config.ini not found.");
+        exit(EXIT_FAILURE);
+        return 0;
+    }
 }
