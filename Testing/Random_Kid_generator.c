@@ -1,6 +1,10 @@
 /*
 Random generating students with names, klasses, and other stuff and things.
 
+
+Author Asger Geel Weirsøe
+
+Version: 2.01
 */
 #include <stdlib.h>
 #include <stdio.h>
