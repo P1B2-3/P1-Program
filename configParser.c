@@ -12,20 +12,20 @@ getConfig("s.numberOfStudents") - returns the value 24
 
 #define LINES_TO_READ 200
 
-int getConfig(char* in);
+/*int getConfig(char* in);*/
 
 struct line{
     char line[1024];
     int value;
 };
-
+/*
 int main(void){
 
-    printf("%i\n", getConfig("s.numberOfStudents"));
+    printf("%i\n", getConfig("w.numberOfClasses"));
 
     return 0;
 }
-
+*/
 int getConfig(char* in) {
 
     struct line line[LINES_TO_READ];
