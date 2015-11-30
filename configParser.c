@@ -10,6 +10,8 @@ getConfig("s.numberOfStudents") - returns the value 24
 #include <stdlib.h>
 #include <string.h>
 
+#define LINES_TO_READ 200
+
 int getConfig(char* in);
 
 struct line{
@@ -19,14 +21,14 @@ struct line{
 
 int main(void){
 
-    printf("%i\n", getConfig("g.totalExamPeriodTo"));
+    printf("%i\n", getConfig("s.numberOfStudents"));
 
     return 0;
 }
 
 int getConfig(char* in) {
 
-    struct line line[20];
+    struct line line[LINES_TO_READ];
     int i;
 
     FILE *file;
@@ -34,7 +36,7 @@ int getConfig(char* in) {
     file = fopen("config.ini", "r");
 
     /*LOAD LINES TO STRUCT*/
-    for(i = 0; i <= 20; i++){
+    for(i = 0; i <= LINES_TO_READ; i++){
 
         fscanf(file," %[a-zA-Z.] - %i" ,line[i].line, &line[i].value);
         fgetc(file);
@@ -47,7 +49,7 @@ int getConfig(char* in) {
     fclose(file);
 
     /*CHECK IF == INPUT*/
-    for(i = 0; i <= 20 ; i++){
+    for(i = 0; i <= LINES_TO_READ ; i++){
         if(strstr(in, line[i].line)){
             return line[i].value;
         }
