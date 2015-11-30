@@ -17,8 +17,8 @@ int main(void){
 	Data_after_sorting_t 		DataSort[studentAmount];
 	 
 
-	/* funtion der indsætter elev data */
-	/* funtion der indsætter eksamner for eleverne fra klasserne */
+	/* funktion der indsætter elev data */
+	/* funktion der indsætter eksamner for eleverne fra klasserne */
 
 
 
