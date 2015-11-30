@@ -42,8 +42,6 @@ typedef struct {
         BMs[SIZE_OF_ARRAYS],    /*Mundlig samfundsfag */
         BMth[SIZE_OF_ARRAYS];   /*Mundlig teknologi historie */
         
-        CMe[SIZE_OF_ARRAYS],    /*Mundlig engelsk */
-        CSe[SIZE_OF_ARRAYS],    /*Skriftlig engelsk */
         CMp[SIZE_OF_ARRAYS],    /*Mundlig programmering */
         CMb[SIZE_OF_ARRAYS],    /*Mundlig biologi */
         CMki[SIZE_OF_ARRAYS],   /*Mundlig kom it */ 
