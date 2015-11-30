@@ -3,54 +3,55 @@ This function (getConfig(string)) will search for, and read a given string's val
 in the config.ini file.
 
 example:
-getConfig(s.numberOfStudents) - returns the value 24
+getConfig("s.numberOfStudents") - returns the value 24
 */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-int main(void) {
+int getConfig(char* in);
 
-    FILE *input_file_pointer;
+struct line{
+    char line[1024];
+    int value;
+};
 
-    char *str = "s.numberOfStudents";
-    char *value[16];
-    char tmp[1024];
-    const char s[] = {':', ';'};
-    char *pch[128];
+int main(void){
 
-    int line_num = 1;
-    int find_result = 0;
+    printf("%i\n", getConfig("g.totalExamPeriodTo"));
 
-    input_file_pointer = fopen("config.ini", "r");
+    return 0;
+}
 
-    if (input_file_pointer != NULL) {
+int getConfig(char* in) {
 
-        while(fgets(tmp, 1024, input_file_pointer) != NULL) {
-            
-            if((strstr(tmp, *str)) != NULL) {
+    struct line line[20];
+    int i;
 
+    FILE *file;
 
-                /*line_num here = line with word on it*/
+    file = fopen("config.ini", "r");
 
-                /*pch = strtok(getline(line_num, 100, input_file_pointer));*/
+    /*LOAD LINES TO STRUCT*/
+    for(i = 0; i <= 20; i++){
 
-                printf("%s\n", getline(line_num, 100, input_file_pointer) );
-            }
+        fscanf(file," %[a-zA-Z.] - %i" ,line[i].line, &line[i].value);
+        fgetc(file);
 
-            line_num++;
-        
+        if (feof(file)){
+            break;
         }
-
-        fclose(input_file_pointer);
-        return *value;
-
     }
 
-    else{
-        printf("ERROR: Config.ini not found.");
-        exit(EXIT_FAILURE);
-        return 0;
+    fclose(file);
+
+    /*CHECK IF == INPUT*/
+    for(i = 0; i <= 20 ; i++){
+        if(strstr(in, line[i].line)){
+            return line[i].value;
+        }
     }
+
+    return 0; /*If this returns, input did not find corosponding*/
 }
