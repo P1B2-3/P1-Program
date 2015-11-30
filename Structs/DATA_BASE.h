@@ -13,23 +13,39 @@ typedef struct {
          studentSurname[SIZE_OF_NAMES],
          studentClass[SIZE_OF_NAMES];
     int unikID,
-        Mm[SIZE_OF_ARRAYS],     /*Mundlig matmatik */ 
-        Sm[SIZE_OF_ARRAYS],     /*Skriftlig matmatik */ 
-        Md[SIZE_OF_ARRAYS],     /*Mundlig dansk */ 
-        Sd[SIZE_OF_ARRAYS],     /*Skriftlig dansk */ 
-        Mf[SIZE_OF_ARRAYS],     /*Mundlig fysik */ 
-        Sf[SIZE_OF_ARRAYS],     /*Skriftlig fysik */ 
-        Me[SIZE_OF_ARRAYS],     /*Mundlig engelsk */ 
-        Se[SIZE_OF_ARRAYS],     /*Skriftlig engelsk */ 
-        Mk[SIZE_OF_ARRAYS],     /*Mundlig kemi */ 
+        AMm[SIZE_OF_ARRAYS],
+        BMm[SIZE_OF_ARRAYS],    /*Mundlig matmatik */ 
+        ASm[SIZE_OF_ARRAYS],
+        BSm[SIZE_OF_ARRAYS],    /*Skriftlig matmatik */ 
+        AMd[SIZE_OF_ARRAYS],    /*Mundlig dansk */ 
+        ASd[SIZE_OF_ARRAYS],    /*Skriftlig dansk */ 
+        AMf[SIZE_OF_ARRAYS],
+        BMf[SIZE_OF_ARRAYS],    /*Mundlig fysik */ 
+        ASf[SIZE_OF_ARRAYS],
+        BSf[SIZE_OF_ARRAYS],    /*Skriftlig fysik */ 
+        AMe[SIZE_OF_ARRAYS],
+        BMe[SIZE_OF_ARRAYS],
+        CMe[SIZE_OF_ARRAYS],    /*Mundlig engelsk */ 
+        ASe[SIZE_OF_ARRAYS],
+        BSe[SIZE_OF_ARRAYS],
+        CSe[SIZE_OF_ARRAYS],    /*Skriftlig engelsk */ 
+        AMk[SIZE_OF_ARRAYS],
+        BMk[SIZE_OF_ARRAYS],    /*Mundlig kemi */ 
+        ASk[SIZE_OF_ARRAYS],
         Sk[SIZE_OF_ARRAYS],     /*Skriftlig kemi */ 
-        Mt[SIZE_OF_ARRAYS],     /*Mundlig teknologi */ 
-        Mp[SIZE_OF_ARRAYS],     /*Mundlig programmering */ 
-        Mi[SIZE_OF_ARRAYS],     /*Mundlig indehistorie */ 
-        Mb[SIZE_OF_ARRAYS],     /*Mundlig biologi */ 
-        Mki[SIZE_OF_ARRAYS],    /*Mundlig kom it */ 
-        Ms[SIZE_OF_ARRAYS],    /*Mundlig samfundsfag */
-        Mth[SIZE_OF_ARRAYS];    /*Mundlig teknologi historie */
+        AMt[SIZE_OF_ARRAYS],
+        BMt[SIZE_OF_ARRAYS],    /*Mundlig teknologi */ 
+        CMp[SIZE_OF_ARRAYS],    /*Mundlig programmering */ 
+        BMi[SIZE_OF_ARRAYS],    /*Mundlig indehistorie */ 
+        BMb[SIZE_OF_ARRAYS],
+        CMb[SIZE_OF_ARRAYS],    /*Mundlig biologi */ 
+        AMbi[SIZE_OF_ARRAYS];   /*Mundlig bioteknologi*/
+        AMki[SIZE_OF_ARRAYS],
+        BMki[SIZE_OF_ARRAYS],
+        CMki[SIZE_OF_ARRAYS],   /*Mundlig kom it */ 
+        BMs[SIZE_OF_ARRAYS],
+        Ms[SIZE_OF_ARRAYS],     /*Mundlig samfundsfag */
+        BMth[SIZE_OF_ARRAYS];    /*Mundlig teknologi historie */
 }Data_students_t;
 
 typedef struct {
@@ -37,23 +53,39 @@ typedef struct {
          teacherSurname[SIZE_OF_NAMES],
          studentClass[SIZE_OF_NAMES];
     int unikID,
-        Mm[SIZE_OF_ARRAYS],     /*Mundlig matmatik */ 
-        Sm[SIZE_OF_ARRAYS],     /*Skriftlig matmatik */ 
-        Md[SIZE_OF_ARRAYS],     /*Mundlig dansk */ 
-        Sd[SIZE_OF_ARRAYS],     /*Skriftlig dansk */ 
-        Mf[SIZE_OF_ARRAYS],     /*Mundlig fysik */ 
-        Sf[SIZE_OF_ARRAYS],     /*Skriftlig fysik */ 
-        Me[SIZE_OF_ARRAYS],     /*Mundlig engelsk */ 
-        Se[SIZE_OF_ARRAYS],     /*Skriftlig engelsk */ 
-        Mk[SIZE_OF_ARRAYS],     /*Mundlig kemi */ 
+        AMm[SIZE_OF_ARRAYS],
+        BMm[SIZE_OF_ARRAYS],    /*Mundlig matmatik */ 
+        ASm[SIZE_OF_ARRAYS],
+        BSm[SIZE_OF_ARRAYS],    /*Skriftlig matmatik */ 
+        AMd[SIZE_OF_ARRAYS],    /*Mundlig dansk */ 
+        ASd[SIZE_OF_ARRAYS],    /*Skriftlig dansk */ 
+        AMf[SIZE_OF_ARRAYS],
+        BMf[SIZE_OF_ARRAYS],    /*Mundlig fysik */ 
+        ASf[SIZE_OF_ARRAYS],
+        BSf[SIZE_OF_ARRAYS],    /*Skriftlig fysik */ 
+        AMe[SIZE_OF_ARRAYS],
+        BMe[SIZE_OF_ARRAYS],
+        CMe[SIZE_OF_ARRAYS],    /*Mundlig engelsk */ 
+        ASe[SIZE_OF_ARRAYS],
+        BSe[SIZE_OF_ARRAYS],
+        CSe[SIZE_OF_ARRAYS],    /*Skriftlig engelsk */ 
+        AMk[SIZE_OF_ARRAYS],
+        BMk[SIZE_OF_ARRAYS],    /*Mundlig kemi */ 
+        ASk[SIZE_OF_ARRAYS],
         Sk[SIZE_OF_ARRAYS],     /*Skriftlig kemi */ 
-        Mt[SIZE_OF_ARRAYS],     /*Mundlig teknologi */ 
-        Mp[SIZE_OF_ARRAYS],     /*Mundlig programmering */ 
-        Mi[SIZE_OF_ARRAYS],     /*Mundlig indehistorie */ 
-        Mb[SIZE_OF_ARRAYS],     /*Mundlig biologi */ 
-        Mki[SIZE_OF_ARRAYS],    /*Mundlig kom it */ 
+        AMt[SIZE_OF_ARRAYS],
+        BMt[SIZE_OF_ARRAYS],    /*Mundlig teknologi */ 
+        CMp[SIZE_OF_ARRAYS],    /*Mundlig programmering */ 
+        BMi[SIZE_OF_ARRAYS],    /*Mundlig indehistorie */ 
+        BMb[SIZE_OF_ARRAYS],
+        CMb[SIZE_OF_ARRAYS],    /*Mundlig biologi */ 
+        AMbi[SIZE_OF_ARRAYS];   /*Mundlig bioteknologi*/
+        AMki[SIZE_OF_ARRAYS],
+        BMki[SIZE_OF_ARRAYS],
+        CMki[SIZE_OF_ARRAYS],   /*Mundlig kom it */ 
+        BMs[SIZE_OF_ARRAYS],
         Ms[SIZE_OF_ARRAYS],     /*Mundlig samfundsfag */
-        Mth[SIZE_OF_ARRAYS],    /*Mundlig teknologi historie */
+        BMth[SIZE_OF_ARRAYS];    /*Mundlig teknologi historie */
         cancelled[numOfDays],  /* indehoder 0 og 1 for hvilke dage de ikke kan påtage sig eksamner */
         sensor[numOfDays];
 }Data_Teachers_t;
