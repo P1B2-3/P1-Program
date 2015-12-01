@@ -17,3 +17,4 @@ We love you special kids! <3
 #include "readWrite/Write/TeacherData.c"
 #include "Sorting/Get_exames_student.c"
 #include "Sorting/Sort_for_examns.c"
+#include "configParser.c"
