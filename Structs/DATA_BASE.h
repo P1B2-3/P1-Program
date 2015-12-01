@@ -45,9 +45,16 @@ typedef struct {
         CMp[SIZE_OF_ARRAYS],    /*Mundlig programmering */
         CMb[SIZE_OF_ARRAYS],    /*Mundlig biologi */
         CMki[SIZE_OF_ARRAYS],   /*Mundlig kom it */ 
-        CMs[SIZE_OF_ARRAYS],    /*Mundlig samfundsfag */    
+        CMs[SIZE_OF_ARRAYS],    /*Mundlig samfundsfag */
+        CMth[SIZE_OF_ARRAYS];   /*Mundlig teknologi historie */
         
-        /*A = 14
+        /*Valgfag*/
+        CMps[SIze_OF_ARRAYS];    /*Mundtlig psykologi*/
+        CMa[SIze_OF_ARRAYS];    /*Mundtlig astronomi*/
+        
+        
+        
+        /*A = 12
           B = 13
           C = 6*/
 }Data_students_t;
