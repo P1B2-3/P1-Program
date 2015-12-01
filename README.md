@@ -48,7 +48,7 @@ _eksempel_
 
 # KONFIGURATION
 
-I filen _config.ini_ har vi en række vædier som vi benytter som konstanter i vores program. Vi ønsker ikke at disse skal være hardcoded i vores program, og derfor importere vi data fra en tekstfil. Dette gør brugen af programmet nemmere, samt giver programmet et bredere brug muligheder.
+I filen _config.ini_ har vi en række vædier som vi benytter som konstanter i vores program. Vi ønsker ikke at disse skal være hardcoded i vores program, og derfor importere vi data fra en tekstfil. Dette gør brugen af programmet lettere, samt giver programmet et bredere brugs muligheder.
 <br>
 <br>
 Vi benytter et tag i starten af hvert paramter, til at bestemme typen af parameteren. Altså, i hvilken kontekst de skal indgå. Disse benyttes kun af organiserings grunde, og ikke tekniske grunde. Herunder ses definitionerne af tags'ene.
