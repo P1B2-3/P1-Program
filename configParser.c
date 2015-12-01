@@ -1,5 +1,5 @@
 /*
-This function (getConfig(string)) will search for, and read a given string's value
+The function getConfig(string) will search for, and read a given string's value
 in the config.ini file.
 
 example:
@@ -10,34 +10,27 @@ getConfig("s.numberOfStudents") - returns the value 24
 #include <stdlib.h>
 #include <string.h>
 
+/*THIS VALUE SHOULD BE LARGER THAN THE AMOUNT
+OF LINES IN THE CONFIG.INI FILE*/
 #define LINES_TO_READ 200
 
-/*int getConfig(char* in);*/
-
+/*STRUCT TO STORE EACH LINE'S STRING AND VALUE*/
 struct line{
     char line[1024];
     int value;
 };
-/*
-int main(void){
 
-    printf("%i\n", getConfig("w.numberOfClasses"));
-
-    return 0;
-}
-*/
 int getConfig(char* in) {
 
     struct line line[LINES_TO_READ];
     int i;
 
+    /*OPEN .INI FILE*/
     FILE *file;
-
     file = fopen("config.ini", "r");
 
-    /*LOAD LINES TO STRUCT*/
+    /*LOAD LINES INTO STRUCT*/
     for(i = 0; i <= LINES_TO_READ; i++){
-
         fscanf(file," %[a-zA-Z.] - %i" ,line[i].line, &line[i].value);
         fgetc(file);
 
@@ -55,5 +48,7 @@ int getConfig(char* in) {
         }
     }
 
-    return 0; /*If this returns, input did not find corosponding*/
+    /*IF THIS VALUE IS RETURNED, THE GIVEN STRING
+    COULD NOT BE FOUND IN CONFIG.INI FILE.*/
+    return 999;
 }
