@@ -4,7 +4,7 @@ Random generating students with names, klasses, and other stuff and things.
 
 Author Asger Geel Weirsøe
 
-Version: 2.01
+Version: 2.02 (nu uden HjemISIS)
 */
 #include <stdlib.h>
 #include <stdio.h>
@@ -132,7 +132,7 @@ int main() {
                              "Mikkelsen", "Schroeder", "Brandt", "Kvist", "Bergh" ,         /*40*/
                              "Vraa", "Krog", "Bach" ,"Mogensen", "Vinter" ,
                              "Winter" ,"Moelgaard", "Vium", "Rask", "Husin",                /*50*/
-                             "HjemISIS", "Larsen", "Tovgaard", "Elkaaer", "Staal", 
+                             "Iversen", "Larsen", "Tovgaard", "Elkaaer", "Staal", 
                              "Iversen", "Asp", "Bertelsen", "Bunkegaard", "Bacbeth" ,       /*60*/
                              "Heindoff", "Dofensmirtch", "Busk", "Bush", "Proeksen", 
                              "Nielsen", "Bassam", "Oestergaard", "Alfter", "Kefil",         /*70*/
