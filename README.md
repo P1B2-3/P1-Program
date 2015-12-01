@@ -40,7 +40,7 @@ _eksempel_
 <br>
 <br>
 
-# Konfiguration
+# KONFIGURATION
 
 I filen _config.ini_ har vi en række vædier som vi benytter som konstanter i vores program. Vi ønsker ikke at disse skal være hardcoded i vores program, og derfor importere vi data fra en tekstfil. Dette gør brugen af programmet nemmere, samt giver programmet et bredere brug muligheder.
 <br>
