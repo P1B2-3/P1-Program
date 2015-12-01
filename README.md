@@ -37,14 +37,14 @@ _getConfig("s.numberOfStudents")_ retunerer int-værdien _24_
 <br>
 <br>
 
-  - <b>Titel</b> _fil_ <br>
+  - <b>Funktion</b> _fil_ <br>
  Beskrivelse... <br>
 F.eks. <br>
 _eksempel_
 <br>
 <br>
 
-  - <b>Titel</b> _fil_ <br>
+  - <b>Funktion</b> _fil_ <br>
  Beskrivelse... <br>
 F.eks. <br>
 _eksempel_
