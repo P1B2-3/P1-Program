@@ -1,5 +1,16 @@
 # P1-Program
 
+Indhold
+=================
+
+  * [Makefile](#HOW TO MAKEFILE)
+  * [Table of contents](#table-of-contents)
+  * [Installation](#installation)
+
+
+
+
+
 # HOW TO MAKEFILE (Currently not compiling)
   1. Naviger til mappe (med MinGW terminal)
   2. Brug komando: _make -f makefile.make_
