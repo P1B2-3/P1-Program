@@ -31,6 +31,6 @@
  
 # FUNCTIONS
   - getConfig(string) <br>
-  - fdsfdsghhhhhhhhhhhhhhhhhhh
+ fdsfdsghhhhhhhhhhhhhhhhhhh
   -  fdsfdsfs
   - fdsfdsfsdf
