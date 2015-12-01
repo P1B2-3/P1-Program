@@ -30,7 +30,7 @@
   2. _make -f makefile.make_
  
 # FUNCTIONS
-  - getConfig(string)
- ggsgssdfsdfds
+  - getConfig(string) <br>
+  - fdsfdsghhhhhhhhhhhhhhhhhhh
   -  fdsfdsfs
   - fdsfdsfsdf
