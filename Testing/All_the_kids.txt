@@ -18,6 +18,7 @@ ASk = 0
 AMt = 1
 AMbi = 1
 AMki = 0
+Nr in class: 1
 First name: Emilie
 Last name: Haxvig
 --Student end--
@@ -38,6 +39,7 @@ ASk = 0
 AMt = 1
 AMbi = 1
 AMki = 0
+Nr in class: 2
 First name: Sofia
 Last name: Moeller
 --Student end--
@@ -58,6 +60,7 @@ ASk = 0
 AMt = 1
 AMbi = 1
 AMki = 0
+Nr in class: 3
 First name: Dorte
 Last name: Ahmmed
 --Student end--
@@ -78,6 +81,7 @@ ASk = 0
 AMt = 1
 AMbi = 1
 AMki = 0
+Nr in class: 4
 First name: Aksel
 Last name: Burnsen
 --Student end--
@@ -98,6 +102,7 @@ ASk = 0
 AMt = 1
 AMbi = 1
 AMki = 0
+Nr in class: 5
 First name: Anas
 Last name: Vangsen
 --Student end--
@@ -118,6 +123,7 @@ ASk = 0
 AMt = 1
 AMbi = 1
 AMki = 0
+Nr in class: 6
 First name: Oliver
 Last name: Nielsen
 --Student end--
@@ -138,6 +144,7 @@ ASk = 0
 AMt = 1
 AMbi = 1
 AMki = 0
+Nr in class: 7
 First name: Kristian
 Last name: Majer
 --Student end--
@@ -158,6 +165,7 @@ ASk = 0
 AMt = 1
 AMbi = 1
 AMki = 0
+Nr in class: 8
 First name: Amanda
 Last name: Hem
 --Student end--
@@ -178,6 +186,7 @@ ASk = 0
 AMt = 1
 AMbi = 1
 AMki = 0
+Nr in class: 9
 First name: Mia
 Last name: Vindrue
 --Student end--
@@ -198,6 +207,7 @@ ASk = 0
 AMt = 1
 AMbi = 1
 AMki = 0
+Nr in class: 10
 First name: Oliver
 Last name: Jensen
 --Student end--
@@ -218,6 +228,7 @@ ASk = 0
 AMt = 1
 AMbi = 1
 AMki = 0
+Nr in class: 11
 First name: Aase
 Last name: Jacobsen
 --Student end--
@@ -238,6 +249,7 @@ ASk = 0
 AMt = 1
 AMbi = 1
 AMki = 0
+Nr in class: 12
 First name: Valde
 Last name: Pedersen
 --Student end--
@@ -258,6 +270,7 @@ ASk = 0
 AMt = 1
 AMbi = 1
 AMki = 0
+Nr in class: 13
 First name: Leen
 Last name: Moelgaard
 --Student end--
@@ -278,6 +291,7 @@ ASk = 0
 AMt = 1
 AMbi = 1
 AMki = 0
+Nr in class: 14
 First name: Jonas
 Last name: Andersen
 --Student end--
@@ -298,6 +312,7 @@ ASk = 0
 AMt = 1
 AMbi = 1
 AMki = 0
+Nr in class: 15
 First name: Pelle
 Last name: Roegen
 --Student end--
@@ -318,6 +333,7 @@ ASk = 0
 AMt = 1
 AMbi = 1
 AMki = 0
+Nr in class: 16
 First name: David
 Last name: Gjoederum
 --Student end--
@@ -338,6 +354,7 @@ ASk = 0
 AMt = 1
 AMbi = 1
 AMki = 0
+Nr in class: 17
 First name: Maria
 Last name: Pedersen
 --Student end--
@@ -358,6 +375,7 @@ ASk = 0
 AMt = 1
 AMbi = 1
 AMki = 0
+Nr in class: 18
 First name: Line
 Last name: Kvist
 --Student end--
@@ -378,6 +396,7 @@ ASk = 0
 AMt = 1
 AMbi = 1
 AMki = 0
+Nr in class: 19
 First name: Laura
 Last name: Elgaard
 --Student end--
@@ -398,6 +417,7 @@ ASk = 0
 AMt = 1
 AMbi = 1
 AMki = 0
+Nr in class: 20
 First name: Albert
 Last name: Nybo
 --Student end--
@@ -418,6 +438,7 @@ ASk = 0
 AMt = 1
 AMbi = 1
 AMki = 0
+Nr in class: 21
 First name: Matias
 Last name: Andersen
 --Student end--
@@ -438,6 +459,7 @@ ASk = 0
 AMt = 1
 AMbi = 1
 AMki = 0
+Nr in class: 22
 First name: Wiktor
 Last name: Andersen
 --Student end--
@@ -458,6 +480,7 @@ ASk = 0
 AMt = 1
 AMbi = 1
 AMki = 0
+Nr in class: 23
 First name: Aksel
 Last name: Lindberg
 --Student end--
@@ -478,6 +501,7 @@ ASk = 0
 AMt = 1
 AMbi = 1
 AMki = 0
+Nr in class: 24
 First name: Victoria
 Last name: Krig
 --Student end--
@@ -498,6 +522,7 @@ ASk = 0
 AMt = 1
 AMbi = 1
 AMki = 0
+Nr in class: 25
 First name: Viktor
 Last name: Pedersen
 --Student end--
@@ -518,6 +543,7 @@ ASk = 0
 AMt = 1
 AMbi = 1
 AMki = 0
+Nr in class: 26
 First name: Anne
 Last name: Schou
 --Student end--
@@ -525,10 +551,10 @@ Last name: Schou
 --Student start--
 Student unikID: 27
 Klasse nr: 3.B
-AMm = 1
+AMm = 0
 ASm = 0
 AMd = 0
-ASd = 0
+ASd = 1
 AMf = 0
 ASf = 0
 AMe = 1
@@ -538,6 +564,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 1
 First name: Martin
 Last name: Vive
 --Student end--
@@ -545,10 +572,10 @@ Last name: Vive
 --Student start--
 Student unikID: 28
 Klasse nr: 3.B
-AMm = 1
+AMm = 0
 ASm = 0
 AMd = 0
-ASd = 0
+ASd = 1
 AMf = 0
 ASf = 0
 AMe = 1
@@ -558,6 +585,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 2
 First name: Hjalte
 Last name: Luttah
 --Student end--
@@ -565,10 +593,10 @@ Last name: Luttah
 --Student start--
 Student unikID: 29
 Klasse nr: 3.B
-AMm = 1
+AMm = 0
 ASm = 0
 AMd = 0
-ASd = 0
+ASd = 1
 AMf = 0
 ASf = 0
 AMe = 1
@@ -578,6 +606,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 3
 First name: Falke
 Last name: Bertelsen
 --Student end--
@@ -585,10 +614,10 @@ Last name: Bertelsen
 --Student start--
 Student unikID: 30
 Klasse nr: 3.B
-AMm = 1
+AMm = 0
 ASm = 0
 AMd = 0
-ASd = 0
+ASd = 1
 AMf = 0
 ASf = 0
 AMe = 1
@@ -598,6 +627,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 4
 First name: Kristian
 Last name: Valback
 --Student end--
@@ -605,10 +635,10 @@ Last name: Valback
 --Student start--
 Student unikID: 31
 Klasse nr: 3.B
-AMm = 1
+AMm = 0
 ASm = 0
 AMd = 0
-ASd = 0
+ASd = 1
 AMf = 0
 ASf = 0
 AMe = 1
@@ -618,6 +648,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 5
 First name: Lisa
 Last name: Bentsen
 --Student end--
@@ -625,10 +656,10 @@ Last name: Bentsen
 --Student start--
 Student unikID: 32
 Klasse nr: 3.B
-AMm = 1
+AMm = 0
 ASm = 0
 AMd = 0
-ASd = 0
+ASd = 1
 AMf = 0
 ASf = 0
 AMe = 1
@@ -638,6 +669,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 6
 First name: Emma
 Last name: Kvist
 --Student end--
@@ -645,10 +677,10 @@ Last name: Kvist
 --Student start--
 Student unikID: 33
 Klasse nr: 3.B
-AMm = 1
+AMm = 0
 ASm = 0
 AMd = 0
-ASd = 0
+ASd = 1
 AMf = 0
 ASf = 0
 AMe = 1
@@ -658,6 +690,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 7
 First name: Mathias
 Last name: Bertelsen
 --Student end--
@@ -665,10 +698,10 @@ Last name: Bertelsen
 --Student start--
 Student unikID: 34
 Klasse nr: 3.B
-AMm = 1
+AMm = 0
 ASm = 0
 AMd = 0
-ASd = 0
+ASd = 1
 AMf = 0
 ASf = 0
 AMe = 1
@@ -678,6 +711,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 8
 First name: Marvin
 Last name: Kraeft
 --Student end--
@@ -685,10 +719,10 @@ Last name: Kraeft
 --Student start--
 Student unikID: 35
 Klasse nr: 3.B
-AMm = 1
+AMm = 0
 ASm = 0
 AMd = 0
-ASd = 0
+ASd = 1
 AMf = 0
 ASf = 0
 AMe = 1
@@ -698,6 +732,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 9
 First name: Viktor
 Last name: Thomsen
 --Student end--
@@ -705,10 +740,10 @@ Last name: Thomsen
 --Student start--
 Student unikID: 36
 Klasse nr: 3.B
-AMm = 1
+AMm = 0
 ASm = 0
 AMd = 0
-ASd = 0
+ASd = 1
 AMf = 0
 ASf = 0
 AMe = 1
@@ -718,6 +753,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 10
 First name: Sine
 Last name: Pedersen
 --Student end--
@@ -725,10 +761,10 @@ Last name: Pedersen
 --Student start--
 Student unikID: 37
 Klasse nr: 3.B
-AMm = 1
+AMm = 0
 ASm = 0
 AMd = 0
-ASd = 0
+ASd = 1
 AMf = 0
 ASf = 0
 AMe = 1
@@ -738,6 +774,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 11
 First name: Maja
 Last name: Bentsen
 --Student end--
@@ -745,10 +782,10 @@ Last name: Bentsen
 --Student start--
 Student unikID: 38
 Klasse nr: 3.B
-AMm = 1
+AMm = 0
 ASm = 0
 AMd = 0
-ASd = 0
+ASd = 1
 AMf = 0
 ASf = 0
 AMe = 1
@@ -758,6 +795,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 12
 First name: Camilla
 Last name: Klitgaard
 --Student end--
@@ -765,10 +803,10 @@ Last name: Klitgaard
 --Student start--
 Student unikID: 39
 Klasse nr: 3.B
-AMm = 1
+AMm = 0
 ASm = 0
 AMd = 0
-ASd = 0
+ASd = 1
 AMf = 0
 ASf = 0
 AMe = 1
@@ -778,6 +816,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 13
 First name: Frida
 Last name: Nielsen
 --Student end--
@@ -785,10 +824,10 @@ Last name: Nielsen
 --Student start--
 Student unikID: 40
 Klasse nr: 3.B
-AMm = 1
+AMm = 0
 ASm = 0
 AMd = 0
-ASd = 0
+ASd = 1
 AMf = 0
 ASf = 0
 AMe = 1
@@ -798,6 +837,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 14
 First name: Sofie
 Last name: Roemmer
 --Student end--
@@ -805,10 +845,10 @@ Last name: Roemmer
 --Student start--
 Student unikID: 41
 Klasse nr: 3.B
-AMm = 1
+AMm = 0
 ASm = 0
 AMd = 0
-ASd = 0
+ASd = 1
 AMf = 0
 ASf = 0
 AMe = 1
@@ -818,6 +858,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 15
 First name: Albert
 Last name: Gunder
 --Student end--
@@ -825,10 +866,10 @@ Last name: Gunder
 --Student start--
 Student unikID: 42
 Klasse nr: 3.B
-AMm = 1
+AMm = 0
 ASm = 0
 AMd = 0
-ASd = 0
+ASd = 1
 AMf = 0
 ASf = 0
 AMe = 1
@@ -838,6 +879,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 16
 First name: Frida
 Last name: Bentsen
 --Student end--
@@ -845,10 +887,10 @@ Last name: Bentsen
 --Student start--
 Student unikID: 43
 Klasse nr: 3.B
-AMm = 1
+AMm = 0
 ASm = 0
 AMd = 0
-ASd = 0
+ASd = 1
 AMf = 0
 ASf = 0
 AMe = 1
@@ -858,6 +900,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 17
 First name: Leen
 Last name: Luttah
 --Student end--
@@ -865,10 +908,10 @@ Last name: Luttah
 --Student start--
 Student unikID: 44
 Klasse nr: 3.B
-AMm = 1
+AMm = 0
 ASm = 0
 AMd = 0
-ASd = 0
+ASd = 1
 AMf = 0
 ASf = 0
 AMe = 1
@@ -878,6 +921,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 18
 First name: Jakob
 Last name: Alfter
 --Student end--
@@ -885,10 +929,10 @@ Last name: Alfter
 --Student start--
 Student unikID: 45
 Klasse nr: 3.B
-AMm = 1
+AMm = 0
 ASm = 0
 AMd = 0
-ASd = 0
+ASd = 1
 AMf = 0
 ASf = 0
 AMe = 1
@@ -898,6 +942,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 19
 First name: Gabriel
 Last name: Magnusen
 --Student end--
@@ -905,10 +950,10 @@ Last name: Magnusen
 --Student start--
 Student unikID: 46
 Klasse nr: 3.B
-AMm = 1
+AMm = 0
 ASm = 0
 AMd = 0
-ASd = 0
+ASd = 1
 AMf = 0
 ASf = 0
 AMe = 1
@@ -918,6 +963,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 20
 First name: Dorte
 Last name: Abgardi
 --Student end--
@@ -925,10 +971,10 @@ Last name: Abgardi
 --Student start--
 Student unikID: 47
 Klasse nr: 3.B
-AMm = 1
+AMm = 0
 ASm = 0
 AMd = 0
-ASd = 0
+ASd = 1
 AMf = 0
 ASf = 0
 AMe = 1
@@ -938,6 +984,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 21
 First name: Layal
 Last name: Noeremark
 --Student end--
@@ -945,10 +992,10 @@ Last name: Noeremark
 --Student start--
 Student unikID: 48
 Klasse nr: 3.B
-AMm = 1
+AMm = 0
 ASm = 0
 AMd = 0
-ASd = 0
+ASd = 1
 AMf = 0
 ASf = 0
 AMe = 1
@@ -958,6 +1005,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 22
 First name: Frida
 Last name: Kirkby
 --Student end--
@@ -965,10 +1013,10 @@ Last name: Kirkby
 --Student start--
 Student unikID: 49
 Klasse nr: 3.B
-AMm = 1
+AMm = 0
 ASm = 0
 AMd = 0
-ASd = 0
+ASd = 1
 AMf = 0
 ASf = 0
 AMe = 1
@@ -978,6 +1026,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 23
 First name: Margrethe
 Last name: Burnsen
 --Student end--
@@ -985,10 +1034,10 @@ Last name: Burnsen
 --Student start--
 Student unikID: 50
 Klasse nr: 3.B
-AMm = 1
+AMm = 0
 ASm = 0
 AMd = 0
-ASd = 0
+ASd = 1
 AMf = 0
 ASf = 0
 AMe = 1
@@ -998,6 +1047,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 24
 First name: Oliver
 Last name: Thomsen
 --Student end--
@@ -1005,10 +1055,10 @@ Last name: Thomsen
 --Student start--
 Student unikID: 51
 Klasse nr: 3.B
-AMm = 1
+AMm = 0
 ASm = 0
 AMd = 0
-ASd = 0
+ASd = 1
 AMf = 0
 ASf = 0
 AMe = 1
@@ -1018,6 +1068,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 25
 First name: Maria
 Last name: Poulesen
 --Student end--
@@ -1025,10 +1076,10 @@ Last name: Poulesen
 --Student start--
 Student unikID: 52
 Klasse nr: 3.B
-AMm = 1
+AMm = 0
 ASm = 0
 AMd = 0
-ASd = 0
+ASd = 1
 AMf = 0
 ASf = 0
 AMe = 1
@@ -1038,6 +1089,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 26
 First name: Viktor
 Last name: Falk
 --Student end--
@@ -1045,10 +1097,10 @@ Last name: Falk
 --Student start--
 Student unikID: 53
 Klasse nr: 3.B
-AMm = 1
+AMm = 0
 ASm = 0
 AMd = 0
-ASd = 0
+ASd = 1
 AMf = 0
 ASf = 0
 AMe = 1
@@ -1058,6 +1110,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 1
 First name: Markus
 Last name: Rodensen
 --Student end--
@@ -1078,6 +1131,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 2
 First name: Elisabeth
 Last name: Grundvig
 --Student end--
@@ -1098,6 +1152,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 3
 First name: Filippa
 Last name: Schou
 --Student end--
@@ -1118,6 +1173,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 4
 First name: Amanda
 Last name: Larsen
 --Student end--
@@ -1138,6 +1194,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 5
 First name: Nicoline
 Last name: Larsen
 --Student end--
@@ -1158,6 +1215,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 6
 First name: Fenja
 Last name: Brorholt
 --Student end--
@@ -1178,6 +1236,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 7
 First name: Muhammed
 Last name: Thomsen
 --Student end--
@@ -1198,6 +1257,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 8
 First name: Ruben
 Last name: Gjoederum
 --Student end--
@@ -1218,6 +1278,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 9
 First name: Christoffer
 Last name: Larsen
 --Student end--
@@ -1238,6 +1299,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 10
 First name: Joakim
 Last name: Caspersen
 --Student end--
@@ -1258,6 +1320,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 11
 First name: Jonathan
 Last name: Andersen
 --Student end--
@@ -1278,6 +1341,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 12
 First name: Leen
 Last name: Jensen
 --Student end--
@@ -1298,6 +1362,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 13
 First name: Jens
 Last name: Elgaard
 --Student end--
@@ -1318,6 +1383,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 14
 First name: Osama
 Last name: Hitler
 --Student end--
@@ -1338,6 +1404,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 15
 First name: Aase
 Last name: Rask
 --Student end--
@@ -1358,6 +1425,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 16
 First name: Alexander
 Last name: Stalin
 --Student end--
@@ -1378,6 +1446,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 17
 First name: Mikkel
 Last name: Hardmann
 --Student end--
@@ -1398,6 +1467,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 18
 First name: Julian
 Last name: Brams
 --Student end--
@@ -1418,6 +1488,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 19
 First name: Melissa
 Last name: Bertelsen
 --Student end--
@@ -1438,6 +1509,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 20
 First name: Hector
 Last name: Rossen
 --Student end--
@@ -1458,6 +1530,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 21
 First name: Anders
 Last name: Grosen
 --Student end--
@@ -1478,6 +1551,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 22
 First name: Sine
 Last name: Bentsen
 --Student end--
@@ -1498,6 +1572,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 23
 First name: Andreas
 Last name: Nielsen
 --Student end--
@@ -1518,6 +1593,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 24
 First name: Clara-Ann
 Last name: Pind
 --Student end--
@@ -1538,6 +1614,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 25
 First name: Ilyas
 Last name: Bonderup
 --Student end--
@@ -1558,6 +1635,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 26
 First name: Malthe
 Last name: Elgaard
 --Student end--
@@ -1578,6 +1656,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 1
 First name: Sofie
 Last name: Hansen
 --Student end--
@@ -1598,6 +1677,7 @@ ASk = 1
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 2
 First name: Christoffer
 Last name: Jensen
 --Student end--
@@ -1618,6 +1698,7 @@ ASk = 0
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 3
 First name: Hanna
 Last name: Rask
 --Student end--
@@ -1638,6 +1719,7 @@ ASk = 0
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 4
 First name: Valde
 Last name: Grosen
 --Student end--
@@ -1658,6 +1740,7 @@ ASk = 0
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 5
 First name: Rohan
 Last name: Rask
 --Student end--
@@ -1678,6 +1761,7 @@ ASk = 0
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 6
 First name: Jens
 Last name: Jhaf
 --Student end--
@@ -1698,6 +1782,7 @@ ASk = 0
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 7
 First name: Nicosia
 Last name: Ortmann
 --Student end--
@@ -1718,6 +1803,7 @@ ASk = 0
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 8
 First name: Marcus
 Last name: Vraa
 --Student end--
@@ -1738,6 +1824,7 @@ ASk = 0
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 9
 First name: Lia
 Last name: Grundvig
 --Student end--
@@ -1758,6 +1845,7 @@ ASk = 0
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 10
 First name: Hemen
 Last name: Thomsen
 --Student end--
@@ -1778,6 +1866,7 @@ ASk = 0
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 11
 First name: Muniba
 Last name: Bach
 --Student end--
@@ -1798,6 +1887,7 @@ ASk = 0
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 12
 First name: Mads-Emil
 Last name: Hermannson
 --Student end--
@@ -1818,6 +1908,7 @@ ASk = 0
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 13
 First name: Kristian
 Last name: Burnsen
 --Student end--
@@ -1838,6 +1929,7 @@ ASk = 0
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 14
 First name: Maj
 Last name: Kirk
 --Student end--
@@ -1858,6 +1950,7 @@ ASk = 0
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 15
 First name: Camilla
 Last name: Sommer
 --Student end--
@@ -1878,6 +1971,7 @@ ASk = 0
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 16
 First name: Signe
 Last name: Grundvig
 --Student end--
@@ -1898,6 +1992,7 @@ ASk = 0
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 17
 First name: Conrad
 Last name: Kvist
 --Student end--
@@ -1918,6 +2013,7 @@ ASk = 0
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 18
 First name: Ida
 Last name: Holm
 --Student end--
@@ -1938,6 +2034,7 @@ ASk = 0
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 19
 First name: Louise
 Last name: Lykke
 --Student end--
@@ -1958,6 +2055,7 @@ ASk = 0
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 20
 First name: Adelina
 Last name: Larsen
 --Student end--
@@ -1978,6 +2076,7 @@ ASk = 0
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 21
 First name: Emilie
 Last name: Christensen
 --Student end--
@@ -1998,6 +2097,7 @@ ASk = 0
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 22
 First name: Falke
 Last name: Ostenfeld
 --Student end--
@@ -2018,6 +2118,7 @@ ASk = 0
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 23
 First name: Jonas
 Last name: Gruberg
 --Student end--
@@ -2038,6 +2139,7 @@ ASk = 0
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 24
 First name: Vincent
 Last name: Weirsoee
 --Student end--
@@ -2058,6 +2160,7 @@ ASk = 0
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 25
 First name: Ditte
 Last name: Bøndergaard
 --Student end--
@@ -2078,6 +2181,7 @@ ASk = 0
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 26
 First name: Laura
 Last name: Hammer
 --Student end--
@@ -2098,6 +2202,7 @@ ASk = 0
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 1
 First name: Sine
 Last name: Vinkler
 --Student end--
@@ -2118,6 +2223,7 @@ ASk = 0
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 2
 First name: Leen
 Last name: Madsen
 --Student end--
@@ -2138,6 +2244,7 @@ ASk = 0
 AMt = 0
 AMbi = 1
 AMki = 0
+Nr in class: 3
 First name: Fine
 Last name: Holmsgaard
 --Student end--
@@ -2158,6 +2265,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 4
 First name: Rasmus
 Last name: Petersen
 --Student end--
@@ -2178,6 +2286,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 5
 First name: Elisabeth
 Last name: Pedersen
 --Student end--
@@ -2198,6 +2307,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 6
 First name: Asbjorn
 Last name: Thomsen
 --Student end--
@@ -2218,6 +2328,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 7
 First name: Jakob
 Last name: Madsen
 --Student end--
@@ -2238,6 +2349,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 8
 First name: Adelina
 Last name: Hem
 --Student end--
@@ -2258,6 +2370,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 9
 First name: Andreas
 Last name: Kvist
 --Student end--
@@ -2278,6 +2391,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 10
 First name: Maja
 Last name: Bach
 --Student end--
@@ -2298,6 +2412,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 11
 First name: Frida
 Last name: Pihi
 --Student end--
@@ -2318,6 +2433,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 12
 First name: Tosh
 Last name: Hem
 --Student end--
@@ -2338,6 +2454,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 13
 First name: Mads
 Last name: Loekke
 --Student end--
@@ -2358,6 +2475,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 14
 First name: Tina
 Last name: Lassen
 --Student end--
@@ -2378,6 +2496,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 15
 First name: Malthe
 Last name: Ostenfeld
 --Student end--
@@ -2398,6 +2517,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 16
 First name: Fenja
 Last name: Husien
 --Student end--
@@ -2418,6 +2538,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 17
 First name: Klara
 Last name: Engesgaard
 --Student end--
@@ -2438,6 +2559,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 18
 First name: Thor
 Last name: Bacbeth
 --Student end--
@@ -2458,6 +2580,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 19
 First name: Anders
 Last name: Aardestrup
 --Student end--
@@ -2478,6 +2601,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 20
 First name: Anton
 Last name: Soernesen
 --Student end--
@@ -2498,6 +2622,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 21
 First name: Tryne
 Last name: Thomsen
 --Student end--
@@ -2518,6 +2643,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 22
 First name: Emina
 Last name: Pihi
 --Student end--
@@ -2538,6 +2664,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 23
 First name: Fine
 Last name: Odinssoen
 --Student end--
@@ -2558,6 +2685,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 24
 First name: Samuel
 Last name: Nuur
 --Student end--
@@ -2578,6 +2706,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 25
 First name: Anna
 Last name: Baagoee
 --Student end--
@@ -2598,6 +2727,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 26
 First name: Emil
 Last name: Bach
 --Student end--
@@ -2618,6 +2748,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 1
 First name: Muniba
 Last name: Henriksen
 --Student end--
@@ -2638,6 +2769,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 2
 First name: Eva
 Last name: Holmsgaard
 --Student end--
@@ -2658,6 +2790,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 3
 First name: Asbjorn
 Last name: Hald
 --Student end--
@@ -2678,6 +2811,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 4
 First name: Markus
 Last name: Sillesen
 --Student end--
@@ -2698,6 +2832,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 5
 First name: Mia
 Last name: Dofensmirtch
 --Student end--
@@ -2718,6 +2853,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 6
 First name: Otto
 Last name: Madsen
 --Student end--
@@ -2738,6 +2874,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 7
 First name: Amanda
 Last name: Vindrue
 --Student end--
@@ -2758,6 +2895,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 8
 First name: Isabella
 Last name: Jensen
 --Student end--
@@ -2778,6 +2916,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 9
 First name: Sabri
 Last name: Caspersen
 --Student end--
@@ -2798,6 +2937,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 10
 First name: Thea
 Last name: Mathiasen
 --Student end--
@@ -2818,6 +2958,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 11
 First name: Sofie
 Last name: Kvist
 --Student end--
@@ -2838,6 +2979,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 12
 First name: Rohan
 Last name: Christensen
 --Student end--
@@ -2858,6 +3000,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 13
 First name: Markus
 Last name: Asp
 --Student end--
@@ -2878,6 +3021,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 14
 First name: Gustav
 Last name: John
 --Student end--
@@ -2898,6 +3042,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 15
 First name: Victoria
 Last name: Jensen
 --Student end--
@@ -2918,6 +3063,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 16
 First name: Tosh
 Last name: Proeksen
 --Student end--
@@ -2938,6 +3084,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 17
 First name: Lars
 Last name: Iversen
 --Student end--
@@ -2958,6 +3105,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 18
 First name: Kaya
 Last name: Nash
 --Student end--
@@ -2978,6 +3126,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 19
 First name: Carl
 Last name: Gruberg
 --Student end--
@@ -2998,6 +3147,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 20
 First name: Pelle
 Last name: staermose
 --Student end--
@@ -3018,6 +3168,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 21
 First name: Zeynep
 Last name: Bresson
 --Student end--
@@ -3038,6 +3189,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 22
 First name: Celina
 Last name: Abgardi
 --Student end--
@@ -3058,6 +3210,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 23
 First name: Frida
 Last name: Krause-Kjaer
 --Student end--
@@ -3078,6 +3231,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 24
 First name: Filippa
 Last name: Johannesen
 --Student end--
@@ -3098,6 +3252,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 25
 First name: Anne
 Last name: Jensen
 --Student end--
@@ -3118,6 +3273,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 26
 First name: Wiktor
 Last name: Bresson
 --Student end--
@@ -3138,6 +3294,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 1
 First name: Carl
 Last name: Lassen
 --Student end--
@@ -3158,6 +3315,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 2
 First name: Andreas
 Last name: Lindberg
 --Student end--
@@ -3178,6 +3336,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 3
 First name: Ida
 Last name: Klausen
 --Student end--
@@ -3198,6 +3357,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 4
 First name: Asger
 Last name: Lassen
 --Student end--
@@ -3218,6 +3378,7 @@ ASk = 1
 AMt = 0
 AMbi = 0
 AMki = 0
+Nr in class: 5
 First name: Joakim
 Last name: Larsen
 --Student end--
@@ -3238,6 +3399,7 @@ ASk = 1
 AMt = 1
 AMbi = 0
 AMki = 0
+Nr in class: 6
 First name: Jonathan
 Last name: Krose
 --Student end--
@@ -3258,6 +3420,7 @@ ASk = 1
 AMt = 1
 AMbi = 0
 AMki = 0
+Nr in class: 7
 First name: Filte
 Last name: Nuur
 --Student end--
@@ -3278,6 +3441,7 @@ ASk = 1
 AMt = 1
 AMbi = 0
 AMki = 0
+Nr in class: 8
 First name: Marie
 Last name: Umnus
 --Student end--
@@ -3298,6 +3462,7 @@ ASk = 1
 AMt = 1
 AMbi = 0
 AMki = 0
+Nr in class: 9
 First name: Osama
 Last name: Jacobsen
 --Student end--
@@ -3318,6 +3483,7 @@ ASk = 1
 AMt = 1
 AMbi = 0
 AMki = 0
+Nr in class: 10
 First name: Otto
 Last name: Bassam
 --Student end--
@@ -3338,6 +3504,7 @@ ASk = 1
 AMt = 1
 AMbi = 0
 AMki = 0
+Nr in class: 11
 First name: Victoria
 Last name: Asp
 --Student end--
@@ -3358,6 +3525,7 @@ ASk = 1
 AMt = 1
 AMbi = 0
 AMki = 0
+Nr in class: 12
 First name: Jacob
 Last name: Dahl
 --Student end--
@@ -3378,6 +3546,7 @@ ASk = 1
 AMt = 1
 AMbi = 0
 AMki = 0
+Nr in class: 13
 First name: Hemen
 Last name: Jensen
 --Student end--
@@ -3398,6 +3567,7 @@ ASk = 1
 AMt = 1
 AMbi = 0
 AMki = 0
+Nr in class: 14
 First name: Mulle
 Last name: Holst
 --Student end--
@@ -3418,6 +3588,7 @@ ASk = 1
 AMt = 1
 AMbi = 0
 AMki = 0
+Nr in class: 15
 First name: Frida
 Last name: Juul-Nyholm
 --Student end--
@@ -3438,6 +3609,7 @@ ASk = 1
 AMt = 1
 AMbi = 0
 AMki = 0
+Nr in class: 16
 First name: Grant
 Last name: Flak
 --Student end--
@@ -3458,6 +3630,7 @@ ASk = 1
 AMt = 1
 AMbi = 0
 AMki = 0
+Nr in class: 17
 First name: Bente
 Last name: Kirk
 --Student end--
@@ -3478,6 +3651,7 @@ ASk = 1
 AMt = 1
 AMbi = 0
 AMki = 0
+Nr in class: 18
 First name: Eva
 Last name: Elkaaer
 --Student end--
@@ -3498,6 +3672,7 @@ ASk = 1
 AMt = 1
 AMbi = 0
 AMki = 0
+Nr in class: 19
 First name: Octavian
 Last name: Madsen
 --Student end--
@@ -3518,6 +3693,7 @@ ASk = 1
 AMt = 1
 AMbi = 0
 AMki = 0
+Nr in class: 20
 First name: Caroline
 Last name: Loekke
 --Student end--
@@ -3538,6 +3714,7 @@ ASk = 1
 AMt = 1
 AMbi = 0
 AMki = 0
+Nr in class: 21
 First name: Troels
 Last name: Thomsen
 --Student end--
@@ -3558,6 +3735,7 @@ ASk = 1
 AMt = 1
 AMbi = 0
 AMki = 0
+Nr in class: 22
 First name: Gro
 Last name: Gundersen
 --Student end--
@@ -3578,6 +3756,7 @@ ASk = 1
 AMt = 1
 AMbi = 0
 AMki = 0
+Nr in class: 23
 First name: Layal
 Last name: Caspersen
 --Student end--
@@ -3598,6 +3777,7 @@ ASk = 1
 AMt = 1
 AMbi = 0
 AMki = 0
+Nr in class: 24
 First name: Frida
 Last name: Ferslev
 --Student end--
@@ -3618,6 +3798,7 @@ ASk = 1
 AMt = 1
 AMbi = 0
 AMki = 0
+Nr in class: 25
 First name: Hanna
 Last name: Madsen
 --Student end--
@@ -3638,6 +3819,7 @@ ASk = 1
 AMt = 1
 AMbi = 0
 AMki = 0
+Nr in class: 26
 First name: Odin
 Last name: Haslund
 --Student end--
@@ -3658,6 +3840,7 @@ ASk = 1
 AMt = 1
 AMbi = 0
 AMki = 0
+Nr in class: 1
 First name: Frey
 Last name: Frisgaard
 --Student end--
@@ -3678,6 +3861,7 @@ ASk = 1
 AMt = 1
 AMbi = 0
 AMki = 0
+Nr in class: 2
 First name: Asmus
 Last name: Købsted
 --Student end--
@@ -3698,6 +3882,7 @@ ASk = 1
 AMt = 1
 AMbi = 0
 AMki = 0
+Nr in class: 3
 First name: Filte
 Last name: Lassen
 --Student end--
@@ -3718,6 +3903,7 @@ ASk = 1
 AMt = 1
 AMbi = 0
 AMki = 0
+Nr in class: 4
 First name: Philip
 Last name: Dahl
 --Student end--
@@ -3738,6 +3924,7 @@ ASk = 1
 AMt = 1
 AMbi = 0
 AMki = 0
+Nr in class: 5
 First name: Hector
 Last name: Mallerup
 --Student end--
@@ -3758,6 +3945,7 @@ ASk = 1
 AMt = 1
 AMbi = 0
 AMki = 0
+Nr in class: 6
 First name: Klara
 Last name: staermose
 --Student end--
@@ -3778,6 +3966,7 @@ ASk = 480
 AMt = 0
 AMbi = 8
 AMki = 0
+Nr in class: 7
 First name: Alexander
 Last name: Bisgaard
 --Student end--
@@ -3798,6 +3987,7 @@ ASk = 480
 AMt = 0
 AMbi = 8
 AMki = 0
+Nr in class: 8
 First name: Caroline
 Last name: Gydesen
 --Student end--
@@ -3818,6 +4008,7 @@ ASk = 480
 AMt = 0
 AMbi = 8
 AMki = 0
+Nr in class: 9
 First name: Anne
 Last name: Christiansen
 --Student end--
@@ -3838,6 +4029,7 @@ ASk = 480
 AMt = 0
 AMbi = 8
 AMki = 0
+Nr in class: 10
 First name: Signe
 Last name: Petersen
 --Student end--
@@ -3858,6 +4050,7 @@ ASk = 480
 AMt = 0
 AMbi = 8
 AMki = 0
+Nr in class: 11
 First name: Philip
 Last name: Sommer
 --Student end--
@@ -3878,6 +4071,7 @@ ASk = 480
 AMt = 0
 AMbi = 8
 AMki = 0
+Nr in class: 12
 First name: Sofia
 Last name: Waterbuck
 --Student end--
@@ -3898,6 +4092,7 @@ ASk = 480
 AMt = 0
 AMbi = 8
 AMki = 0
+Nr in class: 13
 First name: Matt
 Last name: Noer
 --Student end--
@@ -3918,6 +4113,7 @@ ASk = 480
 AMt = 0
 AMbi = 8
 AMki = 0
+Nr in class: 14
 First name: Esther
 Last name: Lykke
 --Student end--
@@ -3938,6 +4134,7 @@ ASk = 480
 AMt = 0
 AMbi = 8
 AMki = 0
+Nr in class: 15
 First name: Odin
 Last name: Fuglesang
 --Student end--
@@ -3958,6 +4155,7 @@ ASk = 480
 AMt = 0
 AMbi = 8
 AMki = 0
+Nr in class: 16
 First name: Oliver
 Last name: Hardmann
 --Student end--
@@ -3978,6 +4176,7 @@ ASk = 480
 AMt = 0
 AMbi = 8
 AMki = 0
+Nr in class: 17
 First name: Thor
 Last name: Nielsen
 --Student end--
@@ -3998,6 +4197,7 @@ ASk = 480
 AMt = 0
 AMbi = 8
 AMki = 0
+Nr in class: 18
 First name: Maria
 Last name: Rask
 --Student end--
@@ -4018,6 +4218,7 @@ ASk = 480
 AMt = 0
 AMbi = 8
 AMki = 0
+Nr in class: 19
 First name: Ludvig
 Last name: Nybo
 --Student end--
@@ -4038,6 +4239,7 @@ ASk = 480
 AMt = 0
 AMbi = 8
 AMki = 0
+Nr in class: 20
 First name: Vera
 Last name: Dofensmirtch
 --Student end--
@@ -4058,6 +4260,7 @@ ASk = 480
 AMt = 0
 AMbi = 8
 AMki = 0
+Nr in class: 21
 First name: Octavian
 Last name: Proeksen
 --Student end--
@@ -4078,6 +4281,7 @@ ASk = 480
 AMt = 0
 AMbi = 8
 AMki = 0
+Nr in class: 22
 First name: Frey
 Last name: Krog
 --Student end--
@@ -4098,6 +4302,7 @@ ASk = 480
 AMt = 0
 AMbi = 8
 AMki = 0
+Nr in class: 23
 First name: Bryndhilda
 Last name: Vinkler
 --Student end--
@@ -4118,6 +4323,7 @@ ASk = 480
 AMt = 0
 AMbi = 8
 AMki = 0
+Nr in class: 24
 First name: Sofia
 Last name: Tovgaard
 --Student end--
@@ -4138,6 +4344,7 @@ ASk = 480
 AMt = 0
 AMbi = 8
 AMki = 0
+Nr in class: 25
 First name: Andreas
 Last name: Gruberg
 --Student end--
@@ -4158,6 +4365,7 @@ ASk = 480
 AMt = 0
 AMbi = 8
 AMki = 0
+Nr in class: 26
 First name: Elisabeth
 Last name: Juul-Nyholm
 --Student end--
@@ -4178,6 +4386,7 @@ ASk = 480
 AMt = 0
 AMbi = 8
 AMki = 0
+Nr in class: 1
 First name: Clara-Ann
 Last name: Moelgaard
 --Student end--
@@ -4191,14 +4400,15 @@ BMf = 2210
 BSf = 1
 BMe = 1
 BSe = 0
-BMk = 1985785128
-BSk = 32552
-BMt = -573417008
-BMi = 32766
-BMb = 1985795328
-BMki = 32552
-BMs = -573416816
-BMth = 32766
+BMk = -931939032
+BSk = 32755
+BMt = 1103284448
+BMi = 32767
+BMb = -931928832
+BMki = 32755
+BMs = 1103284640
+BMth = 32767
+Nr in class: 2
 First name: Camilla
 Last name: Hammer
 --Student end--
@@ -4212,14 +4422,15 @@ BMf = 2210
 BSf = 1
 BMe = 1
 BSe = 0
-BMk = 1985785128
-BSk = 32552
-BMt = -573417008
-BMi = 32766
-BMb = 1985795328
-BMki = 32552
-BMs = -573416816
-BMth = 32766
+BMk = -931939032
+BSk = 32755
+BMt = 1103284448
+BMi = 32767
+BMb = -931928832
+BMki = 32755
+BMs = 1103284640
+BMth = 32767
+Nr in class: 3
 First name: Gro
 Last name: Gunder
 --Student end--
@@ -4233,14 +4444,15 @@ BMf = 2210
 BSf = 1
 BMe = 1
 BSe = 0
-BMk = 1985785128
-BSk = 32552
-BMt = -573417008
-BMi = 32766
-BMb = 1985795328
-BMki = 32552
-BMs = -573416816
-BMth = 32766
+BMk = -931939032
+BSk = 32755
+BMt = 1103284448
+BMi = 32767
+BMb = -931928832
+BMki = 32755
+BMs = 1103284640
+BMth = 32767
+Nr in class: 4
 First name: Mulle
 Last name: Gjoederum
 --Student end--
@@ -4254,14 +4466,15 @@ BMf = 2210
 BSf = 1
 BMe = 1
 BSe = 0
-BMk = 1985785128
-BSk = 32552
-BMt = -573417008
-BMi = 32766
-BMb = 1985795328
-BMki = 32552
-BMs = -573416816
-BMth = 32766
+BMk = -931939032
+BSk = 32755
+BMt = 1103284448
+BMi = 32767
+BMb = -931928832
+BMki = 32755
+BMs = 1103284640
+BMth = 32767
+Nr in class: 5
 First name: Fenja
 Last name: Vergerakis
 --Student end--
@@ -4275,14 +4488,15 @@ BMf = 2210
 BSf = 1
 BMe = 1
 BSe = 0
-BMk = 1985785128
-BSk = 32552
-BMt = -573417008
-BMi = 32766
-BMb = 1985795328
-BMki = 32552
-BMs = -573416816
-BMth = 32766
+BMk = -931939032
+BSk = 32755
+BMt = 1103284448
+BMi = 32767
+BMb = -931928832
+BMki = 32755
+BMs = 1103284640
+BMth = 32767
+Nr in class: 6
 First name: Sigrid
 Last name: Bisgaard
 --Student end--
@@ -4296,14 +4510,15 @@ BMf = 2210
 BSf = 1
 BMe = 1
 BSe = 0
-BMk = 1985785128
-BSk = 32552
-BMt = -573417008
-BMi = 32766
-BMb = 1985795328
-BMki = 32552
-BMs = -573416816
-BMth = 32766
+BMk = -931939032
+BSk = 32755
+BMt = 1103284448
+BMi = 32767
+BMb = -931928832
+BMki = 32755
+BMs = 1103284640
+BMth = 32767
+Nr in class: 7
 First name: Jonas
 Last name: Noer
 --Student end--
@@ -4316,15 +4531,16 @@ BSm = 0
 BMf = 0
 BSf = 0
 BMe = 0
-BSe = 0
+BSe = 1
 BMk = 0
-BSk = 0
+BSk = 1
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 8
 First name: Magnus
 Last name: Roegen
 --Student end--
@@ -4337,15 +4553,16 @@ BSm = 0
 BMf = 0
 BSf = 0
 BMe = 0
-BSe = 0
+BSe = 1
 BMk = 0
-BSk = 0
+BSk = 1
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 9
 First name: Layal
 Last name: Lindberg
 --Student end--
@@ -4358,15 +4575,16 @@ BSm = 0
 BMf = 0
 BSf = 0
 BMe = 0
-BSe = 0
+BSe = 1
 BMk = 0
-BSk = 0
+BSk = 1
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 10
 First name: Otto
 Last name: Jensen
 --Student end--
@@ -4379,15 +4597,16 @@ BSm = 0
 BMf = 0
 BSf = 0
 BMe = 0
-BSe = 0
+BSe = 1
 BMk = 0
-BSk = 0
+BSk = 1
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 11
 First name: Carl
 Last name: Rasmussen
 --Student end--
@@ -4400,15 +4619,16 @@ BSm = 0
 BMf = 0
 BSf = 0
 BMe = 0
-BSe = 0
+BSe = 1
 BMk = 0
-BSk = 0
+BSk = 1
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 12
 First name: Evander
 Last name: Pedersen
 --Student end--
@@ -4421,15 +4641,16 @@ BSm = 0
 BMf = 0
 BSf = 0
 BMe = 0
-BSe = 0
+BSe = 1
 BMk = 0
-BSk = 0
+BSk = 1
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 13
 First name: Marcus
 Last name: Pedersen
 --Student end--
@@ -4442,15 +4663,16 @@ BSm = 0
 BMf = 0
 BSf = 0
 BMe = 0
-BSe = 0
+BSe = 1
 BMk = 0
-BSk = 0
+BSk = 1
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 14
 First name: Joakim
 Last name: Asp
 --Student end--
@@ -4463,15 +4685,16 @@ BSm = 0
 BMf = 0
 BSf = 0
 BMe = 0
-BSe = 0
+BSe = 1
 BMk = 0
-BSk = 0
+BSk = 1
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 15
 First name: Matias
 Last name: Soernesen
 --Student end--
@@ -4484,15 +4707,16 @@ BSm = 0
 BMf = 0
 BSf = 0
 BMe = 0
-BSe = 0
+BSe = 1
 BMk = 0
-BSk = 0
+BSk = 1
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 16
 First name: Line
 Last name: Nygaard
 --Student end--
@@ -4505,15 +4729,16 @@ BSm = 0
 BMf = 0
 BSf = 0
 BMe = 0
-BSe = 0
+BSe = 1
 BMk = 0
-BSk = 0
+BSk = 1
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 17
 First name: Marcus
 Last name: Bach
 --Student end--
@@ -4526,15 +4751,16 @@ BSm = 0
 BMf = 0
 BSf = 0
 BMe = 0
-BSe = 0
+BSe = 1
 BMk = 0
-BSk = 0
+BSk = 1
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 18
 First name: Frey
 Last name: Brams
 --Student end--
@@ -4547,15 +4773,16 @@ BSm = 0
 BMf = 0
 BSf = 0
 BMe = 0
-BSe = 0
+BSe = 1
 BMk = 0
-BSk = 0
+BSk = 1
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 19
 First name: Joakim
 Last name: Hammer
 --Student end--
@@ -4568,15 +4795,16 @@ BSm = 0
 BMf = 0
 BSf = 0
 BMe = 0
-BSe = 0
+BSe = 1
 BMk = 0
-BSk = 0
+BSk = 1
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 20
 First name: Lars
 Last name: Babera
 --Student end--
@@ -4589,15 +4817,16 @@ BSm = 0
 BMf = 0
 BSf = 0
 BMe = 0
-BSe = 0
+BSe = 1
 BMk = 0
-BSk = 0
+BSk = 1
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 21
 First name: Asger
 Last name: Proeksen
 --Student end--
@@ -4610,15 +4839,16 @@ BSm = 0
 BMf = 0
 BSf = 0
 BMe = 0
-BSe = 0
+BSe = 1
 BMk = 0
-BSk = 0
+BSk = 1
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 22
 First name: Filippa
 Last name: Sofie
 --Student end--
@@ -4631,15 +4861,16 @@ BSm = 0
 BMf = 0
 BSf = 0
 BMe = 0
-BSe = 0
+BSe = 1
 BMk = 0
-BSk = 0
+BSk = 1
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 23
 First name: Anton
 Last name: Krose
 --Student end--
@@ -4652,15 +4883,16 @@ BSm = 0
 BMf = 0
 BSf = 0
 BMe = 0
-BSe = 0
+BSe = 1
 BMk = 0
-BSk = 0
+BSk = 1
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 24
 First name: Bryndhilda
 Last name: Dahl
 --Student end--
@@ -4673,15 +4905,16 @@ BSm = 0
 BMf = 0
 BSf = 0
 BMe = 0
-BSe = 0
+BSe = 1
 BMk = 0
-BSk = 0
+BSk = 1
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 25
 First name: Anton
 Last name: Kristiansen
 --Student end--
@@ -4694,15 +4927,16 @@ BSm = 0
 BMf = 0
 BSf = 0
 BMe = 0
-BSe = 0
+BSe = 1
 BMk = 0
-BSk = 0
+BSk = 1
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 26
 First name: Frej
 Last name: Bøndergaard
 --Student end--
@@ -4715,15 +4949,16 @@ BSm = 0
 BMf = 0
 BSf = 0
 BMe = 0
-BSe = 0
+BSe = 1
 BMk = 0
-BSk = 0
+BSk = 1
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 1
 First name: Frej
 Last name: Mathiasen
 --Student end--
@@ -4736,15 +4971,16 @@ BSm = 0
 BMf = 0
 BSf = 0
 BMe = 0
-BSe = 0
+BSe = 1
 BMk = 0
-BSk = 0
+BSk = 1
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 2
 First name: Jakob
 Last name: Moeller
 --Student end--
@@ -4757,15 +4993,16 @@ BSm = 0
 BMf = 0
 BSf = 0
 BMe = 0
-BSe = 0
+BSe = 1
 BMk = 0
-BSk = 0
+BSk = 1
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 3
 First name: Magnus
 Last name: Larsen
 --Student end--
@@ -4778,15 +5015,16 @@ BSm = 0
 BMf = 0
 BSf = 0
 BMe = 0
-BSe = 0
+BSe = 1
 BMk = 0
-BSk = 0
+BSk = 1
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 4
 First name: Andreas
 Last name: Jensen
 --Student end--
@@ -4799,15 +5037,16 @@ BSm = 0
 BMf = 0
 BSf = 0
 BMe = 0
-BSe = 0
+BSe = 1
 BMk = 0
-BSk = 0
+BSk = 1
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 5
 First name: Victoria
 Last name: Vinter
 --Student end--
@@ -4820,15 +5059,16 @@ BSm = 0
 BMf = 0
 BSf = 0
 BMe = 0
-BSe = 0
+BSe = 1
 BMk = 0
-BSk = 0
+BSk = 1
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 6
 First name: Samuel
 Last name: Rossen
 --Student end--
@@ -4841,15 +5081,16 @@ BSm = 0
 BMf = 0
 BSf = 0
 BMe = 0
-BSe = 0
+BSe = 1
 BMk = 0
-BSk = 0
+BSk = 1
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 7
 First name: Celina
 Last name: Jensen
 --Student end--
@@ -4862,15 +5103,16 @@ BSm = 0
 BMf = 0
 BSf = 0
 BMe = 0
-BSe = 0
+BSe = 1
 BMk = 0
-BSk = 0
+BSk = 1
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 8
 First name: David
 Last name: Guldborg
 --Student end--
@@ -4878,20 +5120,21 @@ Last name: Guldborg
 --Student start--
 Student unikID: 243
 Klasse nr: 2.B
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
-BMe = 0
+BMe = 1
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 1
+BMt = 0
 BMi = 0
 BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 9
 First name: Hector
 Last name: Jensen
 --Student end--
@@ -4899,20 +5142,21 @@ Last name: Jensen
 --Student start--
 Student unikID: 244
 Klasse nr: 2.B
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
-BMe = 0
+BMe = 1
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 1
+BMt = 0
 BMi = 0
 BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 10
 First name: Marcus
 Last name: Kirkby
 --Student end--
@@ -4920,20 +5164,21 @@ Last name: Kirkby
 --Student start--
 Student unikID: 245
 Klasse nr: 2.B
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
-BMe = 0
+BMe = 1
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 1
+BMt = 0
 BMi = 0
 BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 11
 First name: Nicolaj
 Last name: Larsen
 --Student end--
@@ -4941,20 +5186,21 @@ Last name: Larsen
 --Student start--
 Student unikID: 246
 Klasse nr: 2.B
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
-BMe = 0
+BMe = 1
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 1
+BMt = 0
 BMi = 0
 BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 12
 First name: Ruben
 Last name: Hitler
 --Student end--
@@ -4962,20 +5208,21 @@ Last name: Hitler
 --Student start--
 Student unikID: 247
 Klasse nr: 2.B
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
-BMe = 0
+BMe = 1
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 1
+BMt = 0
 BMi = 0
 BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 13
 First name: Jens
 Last name: Weirsoee
 --Student end--
@@ -4983,20 +5230,21 @@ Last name: Weirsoee
 --Student start--
 Student unikID: 248
 Klasse nr: 2.B
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
-BMe = 0
+BMe = 1
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 1
+BMt = 0
 BMi = 0
 BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 14
 First name: Ludvig
 Last name: Jensen
 --Student end--
@@ -5004,20 +5252,21 @@ Last name: Jensen
 --Student start--
 Student unikID: 249
 Klasse nr: 2.B
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
-BMe = 0
+BMe = 1
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 1
+BMt = 0
 BMi = 0
 BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 15
 First name: Benjamin
 Last name: Nielsen
 --Student end--
@@ -5025,20 +5274,21 @@ Last name: Nielsen
 --Student start--
 Student unikID: 250
 Klasse nr: 2.B
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
-BMe = 0
+BMe = 1
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 1
+BMt = 0
 BMi = 0
 BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 16
 First name: Anne
 Last name: Købsted
 --Student end--
@@ -5046,20 +5296,21 @@ Last name: Købsted
 --Student start--
 Student unikID: 251
 Klasse nr: 2.B
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
-BMe = 0
+BMe = 1
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 1
+BMt = 0
 BMi = 0
 BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 17
 First name: Olivia
 Last name: Alfter
 --Student end--
@@ -5067,20 +5318,21 @@ Last name: Alfter
 --Student start--
 Student unikID: 252
 Klasse nr: 2.B
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
-BMe = 0
+BMe = 1
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 1
+BMt = 0
 BMi = 0
 BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 18
 First name: Frida
 Last name: Christensen
 --Student end--
@@ -5088,20 +5340,21 @@ Last name: Christensen
 --Student start--
 Student unikID: 253
 Klasse nr: 2.B
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
-BMe = 0
+BMe = 1
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 1
+BMt = 0
 BMi = 0
 BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 19
 First name: Gabriel
 Last name: Loekke
 --Student end--
@@ -5109,20 +5362,21 @@ Last name: Loekke
 --Student start--
 Student unikID: 254
 Klasse nr: 2.B
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
-BMe = 0
+BMe = 1
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 1
+BMt = 0
 BMi = 0
 BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 20
 First name: David
 Last name: Vergerakis
 --Student end--
@@ -5130,20 +5384,21 @@ Last name: Vergerakis
 --Student start--
 Student unikID: 255
 Klasse nr: 2.B
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
-BMe = 0
+BMe = 1
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 1
+BMt = 0
 BMi = 0
 BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 21
 First name: Tosh
 Last name: Nygaard
 --Student end--
@@ -5151,20 +5406,21 @@ Last name: Nygaard
 --Student start--
 Student unikID: 256
 Klasse nr: 2.B
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
-BMe = 0
+BMe = 1
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 1
+BMt = 0
 BMi = 0
 BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 22
 First name: Anton
 Last name: Holm
 --Student end--
@@ -5172,20 +5428,21 @@ Last name: Holm
 --Student start--
 Student unikID: 257
 Klasse nr: 2.B
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
-BMe = 0
+BMe = 1
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 1
+BMt = 0
 BMi = 0
 BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 23
 First name: Ida
 Last name: Gydesen
 --Student end--
@@ -5193,20 +5450,21 @@ Last name: Gydesen
 --Student start--
 Student unikID: 258
 Klasse nr: 2.B
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
-BMe = 0
+BMe = 1
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 1
+BMt = 0
 BMi = 0
 BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 24
 First name: Grant
 Last name: Rasmussen
 --Student end--
@@ -5214,20 +5472,21 @@ Last name: Rasmussen
 --Student start--
 Student unikID: 259
 Klasse nr: 2.B
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
-BMe = 0
+BMe = 1
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 1
+BMt = 0
 BMi = 0
 BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 25
 First name: Jacob
 Last name: Juul-Nyholm
 --Student end--
@@ -5235,20 +5494,21 @@ Last name: Juul-Nyholm
 --Student start--
 Student unikID: 260
 Klasse nr: 2.B
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
-BMe = 0
+BMe = 1
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 1
+BMt = 0
 BMi = 0
 BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 26
 First name: Frej
 Last name: Nielsen
 --Student end--
@@ -5256,20 +5516,21 @@ Last name: Nielsen
 --Student start--
 Student unikID: 261
 Klasse nr: 2.B
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
-BMe = 0
+BMe = 1
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 1
+BMt = 0
 BMi = 0
 BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 1
 First name: Octavian
 Last name: Gydesen
 --Student end--
@@ -5277,20 +5538,21 @@ Last name: Gydesen
 --Student start--
 Student unikID: 262
 Klasse nr: 2.B
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
-BMe = 0
+BMe = 1
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 1
+BMt = 0
 BMi = 0
 BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 2
 First name: Clara-Ann
 Last name: Schroeder
 --Student end--
@@ -5298,20 +5560,21 @@ Last name: Schroeder
 --Student start--
 Student unikID: 263
 Klasse nr: 2.B
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
-BMe = 0
+BMe = 1
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 1
+BMt = 0
 BMi = 0
 BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 3
 First name: Aase
 Last name: Tybo
 --Student end--
@@ -5319,20 +5582,21 @@ Last name: Tybo
 --Student start--
 Student unikID: 264
 Klasse nr: 2.B
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
-BMe = 0
+BMe = 1
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 1
+BMt = 0
 BMi = 0
 BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 4
 First name: Caroline
 Last name: Pihi
 --Student end--
@@ -5340,20 +5604,21 @@ Last name: Pihi
 --Student start--
 Student unikID: 265
 Klasse nr: 2.B
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
-BMe = 0
+BMe = 1
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 1
+BMt = 0
 BMi = 0
 BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 5
 First name: Ludvig
 Last name: Mathiasen
 --Student end--
@@ -5361,20 +5626,21 @@ Last name: Mathiasen
 --Student start--
 Student unikID: 266
 Klasse nr: 2.B
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
-BMe = 0
+BMe = 1
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 1
+BMt = 0
 BMi = 0
 BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 6
 First name: Sofie
 Last name: Grundvig
 --Student end--
@@ -5382,20 +5648,21 @@ Last name: Grundvig
 --Student start--
 Student unikID: 267
 Klasse nr: 2.B
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
-BMe = 0
+BMe = 1
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 1
+BMt = 0
 BMi = 0
 BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 7
 First name: Thobias
 Last name: Jendal
 --Student end--
@@ -5403,20 +5670,21 @@ Last name: Jendal
 --Student start--
 Student unikID: 268
 Klasse nr: 2.B
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
-BMe = 0
+BMe = 1
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 1
+BMt = 0
 BMi = 0
 BMb = 0
 BMki = 0
-BMs = 1
+BMs = 0
 BMth = 0
+Nr in class: 8
 First name: Mads
 Last name: Ibsen
 --Student end--
@@ -5424,9 +5692,31 @@ Last name: Ibsen
 --Student start--
 Student unikID: 269
 Klasse nr: 2.B
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
+BSf = 0
+BMe = 1
+BSe = 0
+BMk = 0
+BSk = 0
+BMt = 0
+BMi = 0
+BMb = 0
+BMki = 0
+BMs = 0
+BMth = 0
+Nr in class: 9
+First name: Andreas
+Last name: Enghaven
+--Student end--
+
+--Student start--
+Student unikID: 270
+Klasse nr: 2.C
+BMm = 0
+BSm = 0
+BMf = 1
 BSf = 0
 BMe = 0
 BSe = 0
@@ -5436,29 +5726,9 @@ BMt = 1
 BMi = 0
 BMb = 0
 BMki = 0
-BMs = 1
-BMth = 0
-First name: Andreas
-Last name: Enghaven
---Student end--
-
---Student start--
-Student unikID: 270
-Klasse nr: 2.C
-BMm = 1
-BSm = 0
-BMf = 0
-BSf = 0
-BMe = 0
-BSe = 0
-BMk = 0
-BSk = 0
-BMt = 0
-BMi = 1
-BMb = 0
-BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 10
 First name: Ilyas
 Last name: Pesic
 --Student end--
@@ -5466,20 +5736,21 @@ Last name: Pesic
 --Student start--
 Student unikID: 271
 Klasse nr: 2.C
-BMm = 1
+BMm = 0
 BSm = 0
-BMf = 0
+BMf = 1
 BSf = 0
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 1
+BMt = 1
+BMi = 0
 BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 11
 First name: Viktor
 Last name: Larsen
 --Student end--
@@ -5487,20 +5758,21 @@ Last name: Larsen
 --Student start--
 Student unikID: 272
 Klasse nr: 2.C
-BMm = 1
+BMm = 0
 BSm = 0
-BMf = 0
+BMf = 1
 BSf = 0
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 1
+BMt = 1
+BMi = 0
 BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 12
 First name: Gabriel
 Last name: Schou
 --Student end--
@@ -5508,20 +5780,21 @@ Last name: Schou
 --Student start--
 Student unikID: 273
 Klasse nr: 2.C
-BMm = 1
+BMm = 0
 BSm = 0
-BMf = 0
+BMf = 1
 BSf = 0
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 1
+BMt = 1
+BMi = 0
 BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 13
 First name: Sofie
 Last name: Mikkelsen
 --Student end--
@@ -5529,20 +5802,21 @@ Last name: Mikkelsen
 --Student start--
 Student unikID: 274
 Klasse nr: 2.C
-BMm = 1
+BMm = 0
 BSm = 0
-BMf = 0
+BMf = 1
 BSf = 0
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 1
+BMt = 1
+BMi = 0
 BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 14
 First name: David
 Last name: Thomsen
 --Student end--
@@ -5550,20 +5824,21 @@ Last name: Thomsen
 --Student start--
 Student unikID: 275
 Klasse nr: 2.C
-BMm = 1
+BMm = 0
 BSm = 0
-BMf = 0
+BMf = 1
 BSf = 0
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 1
+BMt = 1
+BMi = 0
 BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 15
 First name: Laura
 Last name: Majer
 --Student end--
@@ -5571,20 +5846,21 @@ Last name: Majer
 --Student start--
 Student unikID: 276
 Klasse nr: 2.C
-BMm = 1
+BMm = 0
 BSm = 0
-BMf = 0
+BMf = 1
 BSf = 0
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 1
+BMt = 1
+BMi = 0
 BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 16
 First name: Thobias
 Last name: Larsen
 --Student end--
@@ -5592,20 +5868,21 @@ Last name: Larsen
 --Student start--
 Student unikID: 277
 Klasse nr: 2.C
-BMm = 1
+BMm = 0
 BSm = 0
-BMf = 0
+BMf = 1
 BSf = 0
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 1
+BMt = 1
+BMi = 0
 BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 17
 First name: Rohan
 Last name: Jensen
 --Student end--
@@ -5613,20 +5890,21 @@ Last name: Jensen
 --Student start--
 Student unikID: 278
 Klasse nr: 2.C
-BMm = 1
+BMm = 0
 BSm = 0
-BMf = 0
+BMf = 1
 BSf = 0
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 1
+BMt = 1
+BMi = 0
 BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 18
 First name: Conrad
 Last name: Sirut
 --Student end--
@@ -5634,20 +5912,21 @@ Last name: Sirut
 --Student start--
 Student unikID: 279
 Klasse nr: 2.C
-BMm = 1
+BMm = 0
 BSm = 0
-BMf = 0
+BMf = 1
 BSf = 0
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 1
+BMt = 1
+BMi = 0
 BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 19
 First name: Odin
 Last name: Hald
 --Student end--
@@ -5655,20 +5934,21 @@ Last name: Hald
 --Student start--
 Student unikID: 280
 Klasse nr: 2.C
-BMm = 1
+BMm = 0
 BSm = 0
-BMf = 0
+BMf = 1
 BSf = 0
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 1
+BMt = 1
+BMi = 0
 BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 20
 First name: Frida
 Last name: Guldborg
 --Student end--
@@ -5676,20 +5956,21 @@ Last name: Guldborg
 --Student start--
 Student unikID: 281
 Klasse nr: 2.C
-BMm = 1
+BMm = 0
 BSm = 0
-BMf = 0
+BMf = 1
 BSf = 0
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 1
+BMt = 1
+BMi = 0
 BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 21
 First name: Mille
 Last name: Brandtoft
 --Student end--
@@ -5697,20 +5978,21 @@ Last name: Brandtoft
 --Student start--
 Student unikID: 282
 Klasse nr: 2.C
-BMm = 1
+BMm = 0
 BSm = 0
-BMf = 0
+BMf = 1
 BSf = 0
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 1
+BMt = 1
+BMi = 0
 BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 22
 First name: Sine
 Last name: Rask
 --Student end--
@@ -5718,20 +6000,21 @@ Last name: Rask
 --Student start--
 Student unikID: 283
 Klasse nr: 2.C
-BMm = 1
+BMm = 0
 BSm = 0
-BMf = 0
+BMf = 1
 BSf = 0
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 1
+BMt = 1
+BMi = 0
 BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 23
 First name: Lars
 Last name: Noeremark
 --Student end--
@@ -5739,20 +6022,21 @@ Last name: Noeremark
 --Student start--
 Student unikID: 284
 Klasse nr: 2.C
-BMm = 1
+BMm = 0
 BSm = 0
-BMf = 0
+BMf = 1
 BSf = 0
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 1
+BMt = 1
+BMi = 0
 BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 24
 First name: Sofie
 Last name: Bisgaard
 --Student end--
@@ -5760,20 +6044,21 @@ Last name: Bisgaard
 --Student start--
 Student unikID: 285
 Klasse nr: 2.C
-BMm = 1
+BMm = 0
 BSm = 0
-BMf = 0
+BMf = 1
 BSf = 0
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 1
+BMt = 1
+BMi = 0
 BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 25
 First name: Kristian
 Last name: Stalin
 --Student end--
@@ -5781,20 +6066,21 @@ Last name: Stalin
 --Student start--
 Student unikID: 286
 Klasse nr: 2.C
-BMm = 1
+BMm = 0
 BSm = 0
-BMf = 0
+BMf = 1
 BSf = 0
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 1
+BMt = 1
+BMi = 0
 BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 26
 First name: Line
 Last name: Vinkler
 --Student end--
@@ -5802,20 +6088,21 @@ Last name: Vinkler
 --Student start--
 Student unikID: 287
 Klasse nr: 2.C
-BMm = 1
+BMm = 0
 BSm = 0
-BMf = 0
+BMf = 1
 BSf = 0
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 1
+BMt = 1
+BMi = 0
 BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 1
 First name: Muhammed
 Last name: Roemmer
 --Student end--
@@ -5823,20 +6110,21 @@ Last name: Roemmer
 --Student start--
 Student unikID: 288
 Klasse nr: 2.C
-BMm = 1
+BMm = 0
 BSm = 0
-BMf = 0
+BMf = 1
 BSf = 0
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 1
+BMt = 1
+BMi = 0
 BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 2
 First name: Lars
 Last name: Kirk
 --Student end--
@@ -5844,20 +6132,21 @@ Last name: Kirk
 --Student start--
 Student unikID: 289
 Klasse nr: 2.C
-BMm = 1
+BMm = 0
 BSm = 0
-BMf = 0
+BMf = 1
 BSf = 0
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 1
+BMt = 1
+BMi = 0
 BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 3
 First name: Nicolaj
 Last name: Husien
 --Student end--
@@ -5865,20 +6154,21 @@ Last name: Husien
 --Student start--
 Student unikID: 290
 Klasse nr: 2.C
-BMm = 1
+BMm = 0
 BSm = 0
-BMf = 0
+BMf = 1
 BSf = 0
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 1
+BMt = 1
+BMi = 0
 BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 4
 First name: Pelle
 Last name: Dofensmirtch
 --Student end--
@@ -5886,20 +6176,21 @@ Last name: Dofensmirtch
 --Student start--
 Student unikID: 291
 Klasse nr: 2.C
-BMm = 1
+BMm = 0
 BSm = 0
-BMf = 0
+BMf = 1
 BSf = 0
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 1
+BMt = 1
+BMi = 0
 BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 5
 First name: Fenja
 Last name: Kirkby
 --Student end--
@@ -5907,20 +6198,21 @@ Last name: Kirkby
 --Student start--
 Student unikID: 292
 Klasse nr: 2.C
-BMm = 1
+BMm = 0
 BSm = 0
-BMf = 0
+BMf = 1
 BSf = 0
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 1
+BMt = 1
+BMi = 0
 BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 6
 First name: Clara-Ann
 Last name: Klitgaard
 --Student end--
@@ -5928,20 +6220,21 @@ Last name: Klitgaard
 --Student start--
 Student unikID: 293
 Klasse nr: 2.C
-BMm = 1
+BMm = 0
 BSm = 0
-BMf = 0
+BMf = 1
 BSf = 0
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 1
+BMt = 1
+BMi = 0
 BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 7
 First name: Martin
 Last name: Kusk
 --Student end--
@@ -5949,20 +6242,21 @@ Last name: Kusk
 --Student start--
 Student unikID: 294
 Klasse nr: 2.C
-BMm = 1
+BMm = 0
 BSm = 0
-BMf = 0
+BMf = 1
 BSf = 0
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 1
+BMt = 1
+BMi = 0
 BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 8
 First name: Anders
 Last name: Klausen
 --Student end--
@@ -5970,20 +6264,21 @@ Last name: Klausen
 --Student start--
 Student unikID: 295
 Klasse nr: 2.C
-BMm = 1
+BMm = 0
 BSm = 0
-BMf = 0
+BMf = 1
 BSf = 0
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 1
+BMt = 1
+BMi = 0
 BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 9
 First name: Signe
 Last name: Hansen
 --Student end--
@@ -5991,20 +6286,21 @@ Last name: Hansen
 --Student start--
 Student unikID: 296
 Klasse nr: 2.C
-BMm = 1
+BMm = 0
 BSm = 0
-BMf = 0
+BMf = 1
 BSf = 0
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 1
+BMt = 1
+BMi = 0
 BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 10
 First name: Odin
 Last name: Vandre
 --Student end--
@@ -6012,7 +6308,7 @@ Last name: Vandre
 --Student start--
 Student unikID: 297
 Klasse nr: 2.D
-BMm = 1
+BMm = 0
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6020,12 +6316,13 @@ BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 0
+BMt = 1
+BMi = 1
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 11
 First name: Otto
 Last name: Klitgaard
 --Student end--
@@ -6033,7 +6330,7 @@ Last name: Klitgaard
 --Student start--
 Student unikID: 298
 Klasse nr: 2.D
-BMm = 1
+BMm = 0
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6041,12 +6338,13 @@ BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 0
+BMt = 1
+BMi = 1
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 12
 First name: Laura
 Last name: Madsen
 --Student end--
@@ -6054,7 +6352,7 @@ Last name: Madsen
 --Student start--
 Student unikID: 299
 Klasse nr: 2.D
-BMm = 1
+BMm = 0
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6062,12 +6360,13 @@ BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 0
+BMt = 1
+BMi = 1
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 13
 First name: Sabri
 Last name: Larsen
 --Student end--
@@ -6075,7 +6374,7 @@ Last name: Larsen
 --Student start--
 Student unikID: 300
 Klasse nr: 2.D
-BMm = 1
+BMm = 0
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6083,12 +6382,13 @@ BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 0
+BMt = 1
+BMi = 1
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 14
 First name: Malthe
 Last name: Waterbuck
 --Student end--
@@ -6096,7 +6396,7 @@ Last name: Waterbuck
 --Student start--
 Student unikID: 301
 Klasse nr: 2.D
-BMm = 1
+BMm = 0
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6104,12 +6404,13 @@ BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 0
+BMt = 1
+BMi = 1
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 15
 First name: Melda
 Last name: Jensen
 --Student end--
@@ -6117,7 +6418,7 @@ Last name: Jensen
 --Student start--
 Student unikID: 302
 Klasse nr: 2.D
-BMm = 1
+BMm = 0
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6125,12 +6426,13 @@ BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 0
+BMt = 1
+BMi = 1
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 16
 First name: Martin
 Last name: Jensen
 --Student end--
@@ -6138,7 +6440,7 @@ Last name: Jensen
 --Student start--
 Student unikID: 303
 Klasse nr: 2.D
-BMm = 1
+BMm = 0
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6146,12 +6448,13 @@ BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 0
+BMt = 1
+BMi = 1
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 17
 First name: Matt
 Last name: Bonderup
 --Student end--
@@ -6159,7 +6462,7 @@ Last name: Bonderup
 --Student start--
 Student unikID: 304
 Klasse nr: 2.D
-BMm = 1
+BMm = 0
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6167,12 +6470,13 @@ BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 0
+BMt = 1
+BMi = 1
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 18
 First name: Sine
 Last name: Moelgaard
 --Student end--
@@ -6180,7 +6484,7 @@ Last name: Moelgaard
 --Student start--
 Student unikID: 305
 Klasse nr: 2.D
-BMm = 1
+BMm = 0
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6188,12 +6492,13 @@ BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 0
+BMt = 1
+BMi = 1
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 19
 First name: Loke
 Last name: Gjoederum
 --Student end--
@@ -6201,7 +6506,7 @@ Last name: Gjoederum
 --Student start--
 Student unikID: 306
 Klasse nr: 2.D
-BMm = 1
+BMm = 0
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6209,12 +6514,13 @@ BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 0
+BMt = 1
+BMi = 1
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 20
 First name: Eren
 Last name: Rasmussen
 --Student end--
@@ -6222,7 +6528,7 @@ Last name: Rasmussen
 --Student start--
 Student unikID: 307
 Klasse nr: 2.D
-BMm = 1
+BMm = 0
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6230,12 +6536,13 @@ BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 0
+BMt = 1
+BMi = 1
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 21
 First name: Natasha
 Last name: Jensen
 --Student end--
@@ -6243,7 +6550,7 @@ Last name: Jensen
 --Student start--
 Student unikID: 308
 Klasse nr: 2.D
-BMm = 1
+BMm = 0
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6251,12 +6558,13 @@ BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 0
+BMt = 1
+BMi = 1
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 22
 First name: Gustav
 Last name: Jensen
 --Student end--
@@ -6264,7 +6572,7 @@ Last name: Jensen
 --Student start--
 Student unikID: 309
 Klasse nr: 2.D
-BMm = 1
+BMm = 0
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6272,12 +6580,13 @@ BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 0
+BMt = 1
+BMi = 1
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 23
 First name: Asta
 Last name: Simonsen
 --Student end--
@@ -6285,7 +6594,7 @@ Last name: Simonsen
 --Student start--
 Student unikID: 310
 Klasse nr: 2.D
-BMm = 1
+BMm = 0
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6293,12 +6602,13 @@ BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 0
+BMt = 1
+BMi = 1
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 24
 First name: Frey
 Last name: Lindberg
 --Student end--
@@ -6306,7 +6616,7 @@ Last name: Lindberg
 --Student start--
 Student unikID: 311
 Klasse nr: 2.D
-BMm = 1
+BMm = 0
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6314,12 +6624,13 @@ BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 0
+BMt = 1
+BMi = 1
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 25
 First name: Maria
 Last name: Elkaaer
 --Student end--
@@ -6327,7 +6638,7 @@ Last name: Elkaaer
 --Student start--
 Student unikID: 312
 Klasse nr: 2.D
-BMm = 1
+BMm = 0
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6335,12 +6646,13 @@ BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 0
+BMt = 1
+BMi = 1
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 26
 First name: Otto
 Last name: Kjaer
 --Student end--
@@ -6348,7 +6660,7 @@ Last name: Kjaer
 --Student start--
 Student unikID: 313
 Klasse nr: 2.D
-BMm = 1
+BMm = 0
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6356,12 +6668,13 @@ BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 0
+BMt = 1
+BMi = 1
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 1
 First name: Frederik
 Last name: Vandre
 --Student end--
@@ -6369,7 +6682,7 @@ Last name: Vandre
 --Student start--
 Student unikID: 314
 Klasse nr: 2.D
-BMm = 1
+BMm = 0
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6377,12 +6690,13 @@ BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 0
+BMt = 1
+BMi = 1
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 2
 First name: Anna
 Last name: Larsen
 --Student end--
@@ -6390,7 +6704,7 @@ Last name: Larsen
 --Student start--
 Student unikID: 315
 Klasse nr: 2.D
-BMm = 1
+BMm = 0
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6398,12 +6712,13 @@ BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 0
+BMt = 1
+BMi = 1
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 3
 First name: Joakim
 Last name: Schou
 --Student end--
@@ -6411,7 +6726,7 @@ Last name: Schou
 --Student start--
 Student unikID: 316
 Klasse nr: 2.D
-BMm = 1
+BMm = 0
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6419,12 +6734,13 @@ BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 0
+BMt = 1
+BMi = 1
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 4
 First name: Valde
 Last name: Bentsen
 --Student end--
@@ -6432,7 +6748,7 @@ Last name: Bentsen
 --Student start--
 Student unikID: 317
 Klasse nr: 2.D
-BMm = 1
+BMm = 0
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6440,12 +6756,13 @@ BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 0
+BMt = 1
+BMi = 1
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 5
 First name: Jeppe
 Last name: Caspersen
 --Student end--
@@ -6453,7 +6770,7 @@ Last name: Caspersen
 --Student start--
 Student unikID: 318
 Klasse nr: 2.D
-BMm = 1
+BMm = 0
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6461,12 +6778,13 @@ BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 0
+BMt = 1
+BMi = 1
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 6
 First name: Naja
 Last name: Madsen
 --Student end--
@@ -6474,7 +6792,7 @@ Last name: Madsen
 --Student start--
 Student unikID: 319
 Klasse nr: 2.D
-BMm = 1
+BMm = 0
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6482,12 +6800,13 @@ BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 0
+BMt = 1
+BMi = 1
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 7
 First name: Emilie
 Last name: Madsen
 --Student end--
@@ -6495,7 +6814,7 @@ Last name: Madsen
 --Student start--
 Student unikID: 320
 Klasse nr: 2.D
-BMm = 1
+BMm = 0
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6503,12 +6822,13 @@ BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 0
+BMt = 1
+BMi = 1
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 8
 First name: Emilie
 Last name: Joergensen
 --Student end--
@@ -6516,7 +6836,7 @@ Last name: Joergensen
 --Student start--
 Student unikID: 321
 Klasse nr: 2.D
-BMm = 1
+BMm = 0
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6524,12 +6844,13 @@ BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 0
+BMt = 1
+BMi = 1
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 9
 First name: Victoria
 Last name: Pedersen
 --Student end--
@@ -6537,7 +6858,7 @@ Last name: Pedersen
 --Student start--
 Student unikID: 322
 Klasse nr: 2.D
-BMm = 1
+BMm = 0
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6545,12 +6866,13 @@ BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
-BMt = 0
-BMi = 0
+BMt = 1
+BMi = 1
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 10
 First name: Phillip
 Last name: Pedersen
 --Student end--
@@ -6558,6 +6880,28 @@ Last name: Pedersen
 --Student start--
 Student unikID: 323
 Klasse nr: 2.D
+BMm = 0
+BSm = 0
+BMf = 0
+BSf = 0
+BMe = 0
+BSe = 0
+BMk = 0
+BSk = 0
+BMt = 1
+BMi = 1
+BMb = 0
+BMki = 0
+BMs = 0
+BMth = 0
+Nr in class: 11
+First name: Bryndhilda
+Last name: Rodensen
+--Student end--
+
+--Student start--
+Student unikID: 324
+Klasse nr: 2.E
 BMm = 1
 BSm = 0
 BMf = 0
@@ -6569,30 +6913,10 @@ BSk = 0
 BMt = 0
 BMi = 0
 BMb = 0
-BMki = 1
-BMs = 0
-BMth = 0
-First name: Bryndhilda
-Last name: Rodensen
---Student end--
-
---Student start--
-Student unikID: 324
-Klasse nr: 2.E
-BMm = 0
-BSm = 0
-BMf = 0
-BSf = 0
-BMe = 0
-BSe = 0
-BMk = 0
-BSk = 0
-BMt = 0
-BMi = 0
-BMb = 1
 BMki = 0
 BMs = 0
 BMth = 1
+Nr in class: 12
 First name: Line
 Last name: Henriksen
 --Student end--
@@ -6600,7 +6924,7 @@ Last name: Henriksen
 --Student start--
 Student unikID: 325
 Klasse nr: 2.E
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6610,10 +6934,11 @@ BMk = 0
 BSk = 0
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 1
+Nr in class: 13
 First name: Marcus
 Last name: Hem
 --Student end--
@@ -6621,7 +6946,7 @@ Last name: Hem
 --Student start--
 Student unikID: 326
 Klasse nr: 2.E
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6631,10 +6956,11 @@ BMk = 0
 BSk = 0
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 1
+Nr in class: 14
 First name: Cecilie
 Last name: Larsen
 --Student end--
@@ -6642,7 +6968,7 @@ Last name: Larsen
 --Student start--
 Student unikID: 327
 Klasse nr: 2.E
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6652,10 +6978,11 @@ BMk = 0
 BSk = 0
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 1
+Nr in class: 15
 First name: Ruben
 Last name: Larsen
 --Student end--
@@ -6663,7 +6990,7 @@ Last name: Larsen
 --Student start--
 Student unikID: 328
 Klasse nr: 2.E
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6673,10 +7000,11 @@ BMk = 0
 BSk = 0
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 1
+Nr in class: 16
 First name: Filippa
 Last name: Klitgaard
 --Student end--
@@ -6684,7 +7012,7 @@ Last name: Klitgaard
 --Student start--
 Student unikID: 329
 Klasse nr: 2.E
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6694,10 +7022,11 @@ BMk = 0
 BSk = 0
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 1
+Nr in class: 17
 First name: Malthe
 Last name: Frederiksen
 --Student end--
@@ -6705,7 +7034,7 @@ Last name: Frederiksen
 --Student start--
 Student unikID: 330
 Klasse nr: 2.E
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6715,10 +7044,11 @@ BMk = 0
 BSk = 0
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 1
+Nr in class: 18
 First name: Jens
 Last name: Mortensen
 --Student end--
@@ -6726,7 +7056,7 @@ Last name: Mortensen
 --Student start--
 Student unikID: 331
 Klasse nr: 2.E
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6736,10 +7066,11 @@ BMk = 0
 BSk = 0
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 1
+Nr in class: 19
 First name: Sine
 Last name: Sommer
 --Student end--
@@ -6747,7 +7078,7 @@ Last name: Sommer
 --Student start--
 Student unikID: 332
 Klasse nr: 2.E
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6757,10 +7088,11 @@ BMk = 0
 BSk = 0
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 1
+Nr in class: 20
 First name: Matt
 Last name: Engesgaard
 --Student end--
@@ -6768,7 +7100,7 @@ Last name: Engesgaard
 --Student start--
 Student unikID: 333
 Klasse nr: 2.E
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6778,10 +7110,11 @@ BMk = 0
 BSk = 0
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 1
+Nr in class: 21
 First name: Falke
 Last name: Falck
 --Student end--
@@ -6789,7 +7122,7 @@ Last name: Falck
 --Student start--
 Student unikID: 334
 Klasse nr: 2.E
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6799,10 +7132,11 @@ BMk = 0
 BSk = 0
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 1
+Nr in class: 22
 First name: Christoffer
 Last name: Ortmann
 --Student end--
@@ -6810,7 +7144,7 @@ Last name: Ortmann
 --Student start--
 Student unikID: 335
 Klasse nr: 2.E
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6820,10 +7154,11 @@ BMk = 0
 BSk = 0
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 1
+Nr in class: 23
 First name: Eren
 Last name: Gjoederum
 --Student end--
@@ -6831,7 +7166,7 @@ Last name: Gjoederum
 --Student start--
 Student unikID: 336
 Klasse nr: 2.E
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6841,10 +7176,11 @@ BMk = 0
 BSk = 0
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 1
+Nr in class: 24
 First name: Fine
 Last name: Roegen
 --Student end--
@@ -6852,7 +7188,7 @@ Last name: Roegen
 --Student start--
 Student unikID: 337
 Klasse nr: 2.E
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6862,10 +7198,11 @@ BMk = 0
 BSk = 0
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 1
+Nr in class: 25
 First name: Andreas
 Last name: Hardmann
 --Student end--
@@ -6873,7 +7210,7 @@ Last name: Hardmann
 --Student start--
 Student unikID: 338
 Klasse nr: 2.E
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6883,10 +7220,11 @@ BMk = 0
 BSk = 0
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 1
+Nr in class: 26
 First name: Gro
 Last name: Juul-Nyholm
 --Student end--
@@ -6894,7 +7232,7 @@ Last name: Juul-Nyholm
 --Student start--
 Student unikID: 339
 Klasse nr: 2.E
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6904,10 +7242,11 @@ BMk = 0
 BSk = 0
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 1
+Nr in class: 1
 First name: Anas
 Last name: Valback
 --Student end--
@@ -6915,7 +7254,7 @@ Last name: Valback
 --Student start--
 Student unikID: 340
 Klasse nr: 2.E
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6925,10 +7264,11 @@ BMk = 0
 BSk = 0
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 1
+Nr in class: 2
 First name: Louise
 Last name: Ekici
 --Student end--
@@ -6936,7 +7276,7 @@ Last name: Ekici
 --Student start--
 Student unikID: 341
 Klasse nr: 2.E
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6946,10 +7286,11 @@ BMk = 0
 BSk = 0
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 1
+Nr in class: 3
 First name: Maria
 Last name: Umnus
 --Student end--
@@ -6957,7 +7298,7 @@ Last name: Umnus
 --Student start--
 Student unikID: 342
 Klasse nr: 2.E
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6967,10 +7308,11 @@ BMk = 0
 BSk = 0
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 1
+Nr in class: 4
 First name: Bente
 Last name: Moelgaard
 --Student end--
@@ -6978,7 +7320,7 @@ Last name: Moelgaard
 --Student start--
 Student unikID: 343
 Klasse nr: 2.E
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
@@ -6988,10 +7330,11 @@ BMk = 0
 BSk = 0
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 1
+Nr in class: 5
 First name: Fine
 Last name: Haslund
 --Student end--
@@ -6999,7 +7342,7 @@ Last name: Haslund
 --Student start--
 Student unikID: 344
 Klasse nr: 2.E
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
@@ -7009,10 +7352,11 @@ BMk = 0
 BSk = 0
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 1
+Nr in class: 6
 First name: Line
 Last name: Ortmann
 --Student end--
@@ -7020,7 +7364,7 @@ Last name: Ortmann
 --Student start--
 Student unikID: 345
 Klasse nr: 2.E
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
@@ -7030,10 +7374,11 @@ BMk = 0
 BSk = 0
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 1
+Nr in class: 7
 First name: Simon
 Last name: Nielsen
 --Student end--
@@ -7041,7 +7386,7 @@ Last name: Nielsen
 --Student start--
 Student unikID: 346
 Klasse nr: 2.E
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
@@ -7051,10 +7396,11 @@ BMk = 0
 BSk = 0
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 1
+Nr in class: 8
 First name: Robin
 Last name: Grundvig
 --Student end--
@@ -7062,7 +7408,7 @@ Last name: Grundvig
 --Student start--
 Student unikID: 347
 Klasse nr: 2.E
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
@@ -7072,10 +7418,11 @@ BMk = 0
 BSk = 0
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 1
+Nr in class: 9
 First name: Ruben
 Last name: Moellnitz
 --Student end--
@@ -7083,7 +7430,7 @@ Last name: Moellnitz
 --Student start--
 Student unikID: 348
 Klasse nr: 2.E
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
@@ -7093,10 +7440,11 @@ BMk = 0
 BSk = 0
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 1
+Nr in class: 10
 First name: Jonas
 Last name: Proeksen
 --Student end--
@@ -7104,7 +7452,7 @@ Last name: Proeksen
 --Student start--
 Student unikID: 349
 Klasse nr: 2.E
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
@@ -7114,10 +7462,11 @@ BMk = 0
 BSk = 0
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 1
+Nr in class: 11
 First name: Fine
 Last name: Mikkelsen
 --Student end--
@@ -7125,7 +7474,7 @@ Last name: Mikkelsen
 --Student start--
 Student unikID: 350
 Klasse nr: 2.E
-BMm = 0
+BMm = 1
 BSm = 0
 BMf = 0
 BSf = 0
@@ -7135,10 +7484,11 @@ BMk = 0
 BSk = 0
 BMt = 0
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 1
+Nr in class: 12
 First name: Maja
 Last name: Rask
 --Student end--
@@ -7149,17 +7499,18 @@ Klasse nr: 2.F
 BMm = 0
 BSm = 0
 BMf = 0
-BSf = 0
+BSf = 1
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
 BMt = 1
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 13
 First name: Fine
 Last name: Larsen
 --Student end--
@@ -7170,17 +7521,18 @@ Klasse nr: 2.F
 BMm = 0
 BSm = 0
 BMf = 0
-BSf = 0
+BSf = 1
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
 BMt = 1
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 14
 First name: Lia
 Last name: Vindrue
 --Student end--
@@ -7191,17 +7543,18 @@ Klasse nr: 2.F
 BMm = 0
 BSm = 0
 BMf = 0
-BSf = 0
+BSf = 1
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
 BMt = 1
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 15
 First name: Pelle
 Last name: Haxvig
 --Student end--
@@ -7212,17 +7565,18 @@ Klasse nr: 2.F
 BMm = 0
 BSm = 0
 BMf = 0
-BSf = 0
+BSf = 1
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
 BMt = 1
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 16
 First name: Natasha
 Last name: Holm
 --Student end--
@@ -7233,17 +7587,18 @@ Klasse nr: 2.F
 BMm = 0
 BSm = 0
 BMf = 0
-BSf = 0
+BSf = 1
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
 BMt = 1
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 17
 First name: Markus
 Last name: Sofie
 --Student end--
@@ -7254,17 +7609,18 @@ Klasse nr: 2.F
 BMm = 0
 BSm = 0
 BMf = 0
-BSf = 0
+BSf = 1
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
 BMt = 1
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 18
 First name: Marvin
 Last name: Larsen
 --Student end--
@@ -7275,17 +7631,18 @@ Klasse nr: 2.F
 BMm = 0
 BSm = 0
 BMf = 0
-BSf = 0
+BSf = 1
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
 BMt = 1
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 19
 First name: Mads-Emil
 Last name: Kirk
 --Student end--
@@ -7296,17 +7653,18 @@ Klasse nr: 2.F
 BMm = 0
 BSm = 0
 BMf = 0
-BSf = 0
+BSf = 1
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
 BMt = 1
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 20
 First name: Isabella
 Last name: Rask
 --Student end--
@@ -7317,17 +7675,18 @@ Klasse nr: 2.F
 BMm = 0
 BSm = 0
 BMf = 0
-BSf = 0
+BSf = 1
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
 BMt = 1
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 21
 First name: Elisabeth
 Last name: Lykke
 --Student end--
@@ -7338,17 +7697,18 @@ Klasse nr: 2.F
 BMm = 0
 BSm = 0
 BMf = 0
-BSf = 0
+BSf = 1
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
 BMt = 1
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 22
 First name: Victoria
 Last name: Husien
 --Student end--
@@ -7359,17 +7719,18 @@ Klasse nr: 2.F
 BMm = 0
 BSm = 0
 BMf = 0
-BSf = 0
+BSf = 1
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
 BMt = 1
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 23
 First name: Lia
 Last name: Luttah
 --Student end--
@@ -7380,17 +7741,18 @@ Klasse nr: 2.F
 BMm = 0
 BSm = 0
 BMf = 0
-BSf = 0
+BSf = 1
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
 BMt = 1
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 24
 First name: Tilte
 Last name: Asp
 --Student end--
@@ -7401,17 +7763,18 @@ Klasse nr: 2.F
 BMm = 0
 BSm = 0
 BMf = 0
-BSf = 0
+BSf = 1
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
 BMt = 1
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 25
 First name: Lars
 Last name: Soernesen
 --Student end--
@@ -7422,17 +7785,18 @@ Klasse nr: 2.F
 BMm = 0
 BSm = 0
 BMf = 0
-BSf = 0
+BSf = 1
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
 BMt = 1
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 26
 First name: Jonas
 Last name: Vinkler
 --Student end--
@@ -7443,17 +7807,18 @@ Klasse nr: 2.F
 BMm = 0
 BSm = 0
 BMf = 0
-BSf = 0
+BSf = 1
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
 BMt = 1
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 1
 First name: Vera
 Last name: Nielsen
 --Student end--
@@ -7464,17 +7829,18 @@ Klasse nr: 2.F
 BMm = 0
 BSm = 0
 BMf = 0
-BSf = 0
+BSf = 1
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
 BMt = 1
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 2
 First name: Benjamin
 Last name: Nielsen
 --Student end--
@@ -7485,17 +7851,18 @@ Klasse nr: 2.F
 BMm = 0
 BSm = 0
 BMf = 0
-BSf = 0
+BSf = 1
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
 BMt = 1
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 3
 First name: Elisabeth
 Last name: Henriksen
 --Student end--
@@ -7506,17 +7873,18 @@ Klasse nr: 2.F
 BMm = 0
 BSm = 0
 BMf = 0
-BSf = 0
+BSf = 1
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
 BMt = 1
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 4
 First name: Falke
 Last name: Pedersen
 --Student end--
@@ -7527,17 +7895,18 @@ Klasse nr: 2.F
 BMm = 0
 BSm = 0
 BMf = 0
-BSf = 0
+BSf = 1
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
 BMt = 1
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 5
 First name: Eren
 Last name: Iversen
 --Student end--
@@ -7548,17 +7917,18 @@ Klasse nr: 2.F
 BMm = 0
 BSm = 0
 BMf = 0
-BSf = 0
+BSf = 1
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
 BMt = 1
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 6
 First name: Elias
 Last name: Tomsen
 --Student end--
@@ -7569,17 +7939,18 @@ Klasse nr: 2.F
 BMm = 0
 BSm = 0
 BMf = 0
-BSf = 0
+BSf = 1
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
 BMt = 1
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 7
 First name: Oliver
 Last name: Holm
 --Student end--
@@ -7590,17 +7961,18 @@ Klasse nr: 2.F
 BMm = 0
 BSm = 0
 BMf = 0
-BSf = 0
+BSf = 1
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
 BMt = 1
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 8
 First name: Nicosia
 Last name: Vinter
 --Student end--
@@ -7611,17 +7983,18 @@ Klasse nr: 2.F
 BMm = 0
 BSm = 0
 BMf = 0
-BSf = 0
+BSf = 1
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
 BMt = 1
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 9
 First name: Patrick
 Last name: Loekke
 --Student end--
@@ -7632,17 +8005,18 @@ Klasse nr: 2.F
 BMm = 0
 BSm = 0
 BMf = 0
-BSf = 0
+BSf = 1
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
 BMt = 1
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 10
 First name: Lasse
 Last name: Soehus
 --Student end--
@@ -7653,17 +8027,18 @@ Klasse nr: 2.F
 BMm = 0
 BSm = 0
 BMf = 0
-BSf = 0
+BSf = 1
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
 BMt = 1
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 11
 First name: Zeynep
 Last name: Nash
 --Student end--
@@ -7674,17 +8049,18 @@ Klasse nr: 2.F
 BMm = 0
 BSm = 0
 BMf = 0
-BSf = 0
+BSf = 1
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
 BMt = 1
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 12
 First name: Philippa
 Last name: Vinter
 --Student end--
@@ -7695,17 +8071,18 @@ Klasse nr: 2.F
 BMm = 0
 BSm = 0
 BMf = 0
-BSf = 0
+BSf = 1
 BMe = 0
 BSe = 0
 BMk = 0
 BSk = 0
 BMt = 1
 BMi = 0
-BMb = 1
+BMb = 0
 BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 13
 First name: Thea
 Last name: Johansen
 --Student end--
@@ -7719,14 +8096,15 @@ BMf = 0
 BSf = 0
 BMe = 0
 BSe = 0
-BMk = 0
-BSk = 0
+BMk = 1
+BSk = 1
 BMt = 0
-BMi = 1
+BMi = 0
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 14
 First name: Sofie
 Last name: Luder
 --Student end--
@@ -7740,14 +8118,15 @@ BMf = 0
 BSf = 0
 BMe = 0
 BSe = 0
-BMk = 0
-BSk = 0
+BMk = 1
+BSk = 1
 BMt = 0
-BMi = 1
+BMi = 0
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 15
 First name: Caroline
 Last name: Baagoee
 --Student end--
@@ -7761,14 +8140,15 @@ BMf = 0
 BSf = 0
 BMe = 0
 BSe = 0
-BMk = 0
-BSk = 0
+BMk = 1
+BSk = 1
 BMt = 0
-BMi = 1
+BMi = 0
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 16
 First name: Kaya
 Last name: Brobak
 --Student end--
@@ -7782,14 +8162,15 @@ BMf = 0
 BSf = 0
 BMe = 0
 BSe = 0
-BMk = 0
-BSk = 0
+BMk = 1
+BSk = 1
 BMt = 0
-BMi = 1
+BMi = 0
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 17
 First name: Sofie
 Last name: Golobvanv
 --Student end--
@@ -7803,14 +8184,15 @@ BMf = 0
 BSf = 0
 BMe = 0
 BSe = 0
-BMk = 0
-BSk = 0
+BMk = 1
+BSk = 1
 BMt = 0
-BMi = 1
+BMi = 0
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 18
 First name: Frida
 Last name: Roegen
 --Student end--
@@ -7824,14 +8206,15 @@ BMf = 0
 BSf = 0
 BMe = 0
 BSe = 0
-BMk = 0
-BSk = 0
+BMk = 1
+BSk = 1
 BMt = 0
-BMi = 1
+BMi = 0
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 19
 First name: Jonas
 Last name: Nygaard
 --Student end--
@@ -7845,14 +8228,15 @@ BMf = 0
 BSf = 0
 BMe = 0
 BSe = 0
-BMk = 0
-BSk = 0
+BMk = 1
+BSk = 1
 BMt = 0
-BMi = 1
+BMi = 0
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 20
 First name: Muhammed
 Last name: Caspersen
 --Student end--
@@ -7866,14 +8250,15 @@ BMf = 0
 BSf = 0
 BMe = 0
 BSe = 0
-BMk = 0
-BSk = 0
+BMk = 1
+BSk = 1
 BMt = 0
-BMi = 1
+BMi = 0
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 21
 First name: Malthe
 Last name: Mortensen
 --Student end--
@@ -7887,14 +8272,15 @@ BMf = 0
 BSf = 0
 BMe = 0
 BSe = 0
-BMk = 0
-BSk = 0
+BMk = 1
+BSk = 1
 BMt = 0
-BMi = 1
+BMi = 0
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 22
 First name: Nicoline
 Last name: Kraeft
 --Student end--
@@ -7908,14 +8294,15 @@ BMf = 0
 BSf = 0
 BMe = 0
 BSe = 0
-BMk = 0
-BSk = 0
+BMk = 1
+BSk = 1
 BMt = 0
-BMi = 1
+BMi = 0
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 23
 First name: Louise
 Last name: Mogensen
 --Student end--
@@ -7929,14 +8316,15 @@ BMf = 0
 BSf = 0
 BMe = 0
 BSe = 0
-BMk = 0
-BSk = 0
+BMk = 1
+BSk = 1
 BMt = 0
-BMi = 1
+BMi = 0
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 24
 First name: Tryne
 Last name: Thomsen
 --Student end--
@@ -7950,14 +8338,15 @@ BMf = 0
 BSf = 0
 BMe = 0
 BSe = 0
-BMk = 0
-BSk = 0
+BMk = 1
+BSk = 1
 BMt = 0
-BMi = 1
+BMi = 0
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 25
 First name: Malthe
 Last name: Kjaer
 --Student end--
@@ -7971,14 +8360,15 @@ BMf = 0
 BSf = 0
 BMe = 0
 BSe = 0
-BMk = 0
-BSk = 0
+BMk = 1
+BSk = 1
 BMt = 0
-BMi = 1
+BMi = 0
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 26
 First name: Seier
 Last name: Burnsen
 --Student end--
@@ -7992,14 +8382,15 @@ BMf = 0
 BSf = 0
 BMe = 0
 BSe = 0
-BMk = 0
-BSk = 0
+BMk = 1
+BSk = 1
 BMt = 0
-BMi = 1
+BMi = 0
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 1
 First name: David
 Last name: Jensen
 --Student end--
@@ -8013,14 +8404,15 @@ BMf = 0
 BSf = 0
 BMe = 0
 BSe = 0
-BMk = 0
-BSk = 0
+BMk = 1
+BSk = 1
 BMt = 0
-BMi = 1
+BMi = 0
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 2
 First name: Maria
 Last name: Frederiksen
 --Student end--
@@ -8034,14 +8426,15 @@ BMf = 0
 BSf = 0
 BMe = 0
 BSe = 0
-BMk = 0
-BSk = 0
+BMk = 1
+BSk = 1
 BMt = 0
-BMi = 1
+BMi = 0
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 3
 First name: Jakob
 Last name: Randers
 --Student end--
@@ -8055,14 +8448,15 @@ BMf = 0
 BSf = 0
 BMe = 0
 BSe = 0
-BMk = 0
-BSk = 0
+BMk = 1
+BSk = 1
 BMt = 0
-BMi = 1
+BMi = 0
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 4
 First name: Adelina
 Last name: Tomsen
 --Student end--
@@ -8076,14 +8470,15 @@ BMf = 0
 BSf = 0
 BMe = 0
 BSe = 0
-BMk = 0
-BSk = 0
+BMk = 1
+BSk = 1
 BMt = 0
-BMi = 1
+BMi = 0
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 5
 First name: Sabri
 Last name: Flak
 --Student end--
@@ -8097,14 +8492,15 @@ BMf = 0
 BSf = 0
 BMe = 0
 BSe = 0
-BMk = 0
-BSk = 0
+BMk = 1
+BSk = 1
 BMt = 0
-BMi = 1
+BMi = 0
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 6
 First name: Eva
 Last name: Pind
 --Student end--
@@ -8118,14 +8514,15 @@ BMf = 0
 BSf = 0
 BMe = 0
 BSe = 0
-BMk = 0
-BSk = 0
+BMk = 1
+BSk = 1
 BMt = 0
-BMi = 1
+BMi = 0
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 7
 First name: Hanna
 Last name: Vinkler
 --Student end--
@@ -8139,14 +8536,15 @@ BMf = 0
 BSf = 0
 BMe = 0
 BSe = 0
-BMk = 0
-BSk = 0
+BMk = 1
+BSk = 1
 BMt = 0
-BMi = 1
+BMi = 0
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 8
 First name: Asmus
 Last name: Kraeft
 --Student end--
@@ -8160,14 +8558,15 @@ BMf = 0
 BSf = 0
 BMe = 0
 BSe = 0
-BMk = 0
-BSk = 0
+BMk = 1
+BSk = 1
 BMt = 0
-BMi = 1
+BMi = 0
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 9
 First name: Kaya
 Last name: Kjaer
 --Student end--
@@ -8181,14 +8580,15 @@ BMf = 0
 BSf = 0
 BMe = 0
 BSe = 0
-BMk = 0
-BSk = 0
+BMk = 1
+BSk = 1
 BMt = 0
-BMi = 1
+BMi = 0
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 10
 First name: Sabri
 Last name: Bentsen
 --Student end--
@@ -8202,14 +8602,15 @@ BMf = 0
 BSf = 0
 BMe = 0
 BSe = 0
-BMk = 0
-BSk = 0
+BMk = 1
+BSk = 1
 BMt = 0
-BMi = 1
+BMi = 0
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 11
 First name: Andreas
 Last name: Købsted
 --Student end--
@@ -8223,14 +8624,15 @@ BMf = 0
 BSf = 0
 BMe = 0
 BSe = 0
-BMk = 0
-BSk = 0
+BMk = 1
+BSk = 1
 BMt = 0
-BMi = 1
+BMi = 0
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 12
 First name: Kaya
 Last name: Abgardi
 --Student end--
@@ -8244,14 +8646,15 @@ BMf = 0
 BSf = 0
 BMe = 0
 BSe = 0
-BMk = 0
-BSk = 0
+BMk = 1
+BSk = 1
 BMt = 0
-BMi = 1
+BMi = 0
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 13
 First name: Ilyas
 Last name: Larsen
 --Student end--
@@ -8265,14 +8668,15 @@ BMf = 0
 BSf = 0
 BMe = 0
 BSe = 0
-BMk = 0
-BSk = 0
+BMk = 1
+BSk = 1
 BMt = 0
-BMi = 1
+BMi = 0
 BMb = 0
-BMki = 1
+BMki = 0
 BMs = 0
 BMth = 0
+Nr in class: 14
 First name: Matt
 Last name: Bøndergaard
 --Student end--
@@ -8286,14 +8690,15 @@ BMf = 2210
 BSf = 1
 BMe = 1
 BSe = 0
-BMk = 1985785128
-BSk = 32552
-BMt = -573417008
-BMi = 32766
-BMb = 1985795328
-BMki = 32552
-BMs = -573416816
-BMth = 32766
+BMk = -931939032
+BSk = 32755
+BMt = 1103284448
+BMi = 32767
+BMb = -931928832
+BMki = 32755
+BMs = 1103284640
+BMth = 32767
+Nr in class: 15
 First name: Gustav
 Last name: Bergh
 --Student end--
@@ -8307,14 +8712,15 @@ BMf = 2210
 BSf = 1
 BMe = 1
 BSe = 0
-BMk = 1985785128
-BSk = 32552
-BMt = -573417008
-BMi = 32766
-BMb = 1985795328
-BMki = 32552
-BMs = -573416816
-BMth = 32766
+BMk = -931939032
+BSk = 32755
+BMt = 1103284448
+BMi = 32767
+BMb = -931928832
+BMki = 32755
+BMs = 1103284640
+BMth = 32767
+Nr in class: 16
 First name: Mads-Emil
 Last name: Brorholt
 --Student end--
@@ -8328,14 +8734,15 @@ BMf = 2210
 BSf = 1
 BMe = 1
 BSe = 0
-BMk = 1985785128
-BSk = 32552
-BMt = -573417008
-BMi = 32766
-BMb = 1985795328
-BMki = 32552
-BMs = -573416816
-BMth = 32766
+BMk = -931939032
+BSk = 32755
+BMt = 1103284448
+BMi = 32767
+BMb = -931928832
+BMki = 32755
+BMs = 1103284640
+BMth = 32767
+Nr in class: 17
 First name: Tosh
 Last name: Christiansen
 --Student end--
@@ -8349,14 +8756,15 @@ BMf = 2210
 BSf = 1
 BMe = 1
 BSe = 0
-BMk = 1985785128
-BSk = 32552
-BMt = -573417008
-BMi = 32766
-BMb = 1985795328
-BMki = 32552
-BMs = -573416816
-BMth = 32766
+BMk = -931939032
+BSk = 32755
+BMt = 1103284448
+BMi = 32767
+BMb = -931928832
+BMki = 32755
+BMs = 1103284640
+BMth = 32767
+Nr in class: 18
 First name: Frida
 Last name: Husin
 --Student end--
@@ -8370,14 +8778,15 @@ BMf = 2210
 BSf = 1
 BMe = 1
 BSe = 0
-BMk = 1985785128
-BSk = 32552
-BMt = -573417008
-BMi = 32766
-BMb = 1985795328
-BMki = 32552
-BMs = -573416816
-BMth = 32766
+BMk = -931939032
+BSk = 32755
+BMt = 1103284448
+BMi = 32767
+BMb = -931928832
+BMki = 32755
+BMs = 1103284640
+BMth = 32767
+Nr in class: 19
 First name: Camilla
 Last name: Joergensen
 --Student end--
@@ -8391,14 +8800,15 @@ BMf = 2210
 BSf = 1
 BMe = 1
 BSe = 0
-BMk = 1985785128
-BSk = 32552
-BMt = -573417008
-BMi = 32766
-BMb = 1985795328
-BMki = 32552
-BMs = -573416816
-BMth = 32766
+BMk = -931939032
+BSk = 32755
+BMt = 1103284448
+BMi = 32767
+BMb = -931928832
+BMki = 32755
+BMs = 1103284640
+BMth = 32767
+Nr in class: 20
 First name: Anton
 Last name: Gundersen
 --Student end--
@@ -8412,14 +8822,15 @@ BMf = 2210
 BSf = 1
 BMe = 1
 BSe = 0
-BMk = 1985785128
-BSk = 32552
-BMt = -573417008
-BMi = 32766
-BMb = 1985795328
-BMki = 32552
-BMs = -573416816
-BMth = 32766
+BMk = -931939032
+BSk = 32755
+BMt = 1103284448
+BMi = 32767
+BMb = -931928832
+BMki = 32755
+BMs = 1103284640
+BMth = 32767
+Nr in class: 21
 First name: Frida
 Last name: Nielsen
 --Student end--
@@ -8433,14 +8844,15 @@ BMf = 2210
 BSf = 1
 BMe = 1
 BSe = 0
-BMk = 1985785128
-BSk = 32552
-BMt = -573417008
-BMi = 32766
-BMb = 1985795328
-BMki = 32552
-BMs = -573416816
-BMth = 32766
+BMk = -931939032
+BSk = 32755
+BMt = 1103284448
+BMi = 32767
+BMb = -931928832
+BMki = 32755
+BMs = 1103284640
+BMth = 32767
+Nr in class: 22
 First name: Thobias
 Last name: Flak
 --Student end--
@@ -8454,14 +8866,15 @@ BMf = 2210
 BSf = 1
 BMe = 1
 BSe = 0
-BMk = 1985785128
-BSk = 32552
-BMt = -573417008
-BMi = 32766
-BMb = 1985795328
-BMki = 32552
-BMs = -573416816
-BMth = 32766
+BMk = -931939032
+BSk = 32755
+BMt = 1103284448
+BMi = 32767
+BMb = -931928832
+BMki = 32755
+BMs = 1103284640
+BMth = 32767
+Nr in class: 23
 First name: Philip
 Last name: Burnsen
 --Student end--
@@ -8475,14 +8888,15 @@ BMf = 2210
 BSf = 1
 BMe = 1
 BSe = 0
-BMk = 1985785128
-BSk = 32552
-BMt = -573417008
-BMi = 32766
-BMb = 1985795328
-BMki = 32552
-BMs = -573416816
-BMth = 32766
+BMk = -931939032
+BSk = 32755
+BMt = 1103284448
+BMi = 32767
+BMb = -931928832
+BMki = 32755
+BMs = 1103284640
+BMth = 32767
+Nr in class: 24
 First name: Julian
 Last name: Kirk
 --Student end--
@@ -8496,14 +8910,15 @@ BMf = 2210
 BSf = 1
 BMe = 1
 BSe = 0
-BMk = 1985785128
-BSk = 32552
-BMt = -573417008
-BMi = 32766
-BMb = 1985795328
-BMki = 32552
-BMs = -573416816
-BMth = 32766
+BMk = -931939032
+BSk = 32755
+BMt = 1103284448
+BMi = 32767
+BMb = -931928832
+BMki = 32755
+BMs = 1103284640
+BMth = 32767
+Nr in class: 25
 First name: David
 Last name: Holmsgaard
 --Student end--
@@ -8517,14 +8932,15 @@ BMf = 2210
 BSf = 1
 BMe = 1
 BSe = 0
-BMk = 1985785128
-BSk = 32552
-BMt = -573417008
-BMi = 32766
-BMb = 1985795328
-BMki = 32552
-BMs = -573416816
-BMth = 32766
+BMk = -931939032
+BSk = 32755
+BMt = 1103284448
+BMi = 32767
+BMb = -931928832
+BMki = 32755
+BMs = 1103284640
+BMth = 32767
+Nr in class: 26
 First name: Anna
 Last name: Caspersen
 --Student end--
@@ -8538,14 +8954,15 @@ BMf = 2210
 BSf = 1
 BMe = 1
 BSe = 0
-BMk = 1985785128
-BSk = 32552
-BMt = -573417008
-BMi = 32766
-BMb = 1985795328
-BMki = 32552
-BMs = -573416816
-BMth = 32766
+BMk = -931939032
+BSk = 32755
+BMt = 1103284448
+BMi = 32767
+BMb = -931928832
+BMki = 32755
+BMs = 1103284640
+BMth = 32767
+Nr in class: 1
 First name: Elisabeth
 Last name: Klausen
 --Student end--
@@ -8555,11 +8972,12 @@ Student unikID: 418
 Klasse nr: 1.H
 CMp = 0
 CMb = 0
-CMki = 1985784336
-CMs = 32552
-CMth = 1985782976
+CMki = -931939824
+CMs = 32755
+CMth = -931941184
 CMp = 0
 CMa = 4195246
+Nr in class: 2
 First name: Martin
 Last name: Rasmussen
 --Student end--
@@ -8569,11 +8987,12 @@ Student unikID: 419
 Klasse nr: 1.H
 CMp = 0
 CMb = 0
-CMki = 1985784336
-CMs = 32552
-CMth = 1985782976
+CMki = -931939824
+CMs = 32755
+CMth = -931941184
 CMp = 0
 CMa = 4195246
+Nr in class: 3
 First name: Thor
 Last name: Bertelsen
 --Student end--
@@ -8583,11 +9002,12 @@ Student unikID: 420
 Klasse nr: 1.H
 CMp = 0
 CMb = 0
-CMki = 1985784336
-CMs = 32552
-CMth = 1985782976
+CMki = -931939824
+CMs = 32755
+CMth = -931941184
 CMp = 0
 CMa = 4195246
+Nr in class: 4
 First name: Adelina
 Last name: Rask
 --Student end--
@@ -8597,11 +9017,12 @@ Student unikID: 421
 Klasse nr: 1.H
 CMp = 0
 CMb = 0
-CMki = 1985784336
-CMs = 32552
-CMth = 1985782976
+CMki = -931939824
+CMs = 32755
+CMth = -931941184
 CMp = 0
 CMa = 4195246
+Nr in class: 5
 First name: Evander
 Last name: Abgardi
 --Student end--
@@ -8611,11 +9032,12 @@ Student unikID: 422
 Klasse nr: 1.H
 CMp = 0
 CMb = 0
-CMki = 1985784336
-CMs = 32552
-CMth = 1985782976
+CMki = -931939824
+CMs = 32755
+CMth = -931941184
 CMp = 0
 CMa = 4195246
+Nr in class: 6
 First name: Andreas
 Last name: Finduersen
 --Student end--
@@ -8625,11 +9047,12 @@ Student unikID: 423
 Klasse nr: 1.H
 CMp = 0
 CMb = 0
-CMki = 1985784336
-CMs = 32552
-CMth = 1985782976
+CMki = -931939824
+CMs = 32755
+CMth = -931941184
 CMp = 0
 CMa = 4195246
+Nr in class: 7
 First name: Andreas
 Last name: Gnu
 --Student end--
@@ -8639,11 +9062,12 @@ Student unikID: 424
 Klasse nr: 1.H
 CMp = 0
 CMb = 0
-CMki = 1985784336
-CMs = 32552
-CMth = 1985782976
+CMki = -931939824
+CMs = 32755
+CMth = -931941184
 CMp = 0
 CMa = 4195246
+Nr in class: 8
 First name: Pelle
 Last name: Jacobsen
 --Student end--
@@ -8653,11 +9077,12 @@ Student unikID: 425
 Klasse nr: 1.H
 CMp = 0
 CMb = 0
-CMki = 1985784336
-CMs = 32552
-CMth = 1985782976
+CMki = -931939824
+CMs = 32755
+CMth = -931941184
 CMp = 0
 CMa = 4195246
+Nr in class: 9
 First name: Anas
 Last name: Nielsen
 --Student end--
@@ -8667,11 +9092,12 @@ Student unikID: 426
 Klasse nr: 1.H
 CMp = 0
 CMb = 0
-CMki = 1985784336
-CMs = 32552
-CMth = 1985782976
+CMki = -931939824
+CMs = 32755
+CMth = -931941184
 CMp = 0
 CMa = 4195246
+Nr in class: 10
 First name: Celina
 Last name: Madsen
 --Student end--
@@ -8681,11 +9107,12 @@ Student unikID: 427
 Klasse nr: 1.H
 CMp = 0
 CMb = 0
-CMki = 1985784336
-CMs = 32552
-CMth = 1985782976
+CMki = -931939824
+CMs = 32755
+CMth = -931941184
 CMp = 0
 CMa = 4195246
+Nr in class: 11
 First name: Emilie
 Last name: Hitler
 --Student end--
@@ -8695,11 +9122,12 @@ Student unikID: 428
 Klasse nr: 1.H
 CMp = 0
 CMb = 0
-CMki = 1985784336
-CMs = 32552
-CMth = 1985782976
+CMki = -931939824
+CMs = 32755
+CMth = -931941184
 CMp = 0
 CMa = 4195246
+Nr in class: 12
 First name: Mads-Emil
 Last name: Bush
 --Student end--
@@ -8709,11 +9137,12 @@ Student unikID: 429
 Klasse nr: 1.H
 CMp = 0
 CMb = 0
-CMki = 1985784336
-CMs = 32552
-CMth = 1985782976
+CMki = -931939824
+CMs = 32755
+CMth = -931941184
 CMp = 0
 CMa = 4195246
+Nr in class: 13
 First name: Nicolaj
 Last name: Gardaffi
 --Student end--
@@ -8723,11 +9152,12 @@ Student unikID: 430
 Klasse nr: 1.H
 CMp = 0
 CMb = 0
-CMki = 1985784336
-CMs = 32552
-CMth = 1985782976
+CMki = -931939824
+CMs = 32755
+CMth = -931941184
 CMp = 0
 CMa = 4195246
+Nr in class: 14
 First name: Tine
 Last name: Hansen
 --Student end--
@@ -8737,11 +9167,12 @@ Student unikID: 431
 Klasse nr: 1.H
 CMp = 0
 CMb = 0
-CMki = 1985784336
-CMs = 32552
-CMth = 1985782976
+CMki = -931939824
+CMs = 32755
+CMth = -931941184
 CMp = 0
 CMa = 4195246
+Nr in class: 15
 First name: Rasmus
 Last name: Sofie
 --Student end--
@@ -8749,13 +9180,14 @@ Last name: Sofie
 --Student start--
 Student unikID: 432
 Klasse nr: 1.A
-CMp = 1
-CMb = 0
+CMp = 0
+CMb = 1
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 16
 First name: Ruben
 Last name: Thomsen
 --Student end--
@@ -8763,13 +9195,14 @@ Last name: Thomsen
 --Student start--
 Student unikID: 433
 Klasse nr: 1.A
-CMp = 1
-CMb = 0
+CMp = 0
+CMb = 1
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 17
 First name: Jakob
 Last name: Soernesen
 --Student end--
@@ -8777,13 +9210,14 @@ Last name: Soernesen
 --Student start--
 Student unikID: 434
 Klasse nr: 1.A
-CMp = 1
-CMb = 0
+CMp = 0
+CMb = 1
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 18
 First name: Cecilie
 Last name: Kirkby
 --Student end--
@@ -8791,13 +9225,14 @@ Last name: Kirkby
 --Student start--
 Student unikID: 435
 Klasse nr: 1.A
-CMp = 1
-CMb = 0
+CMp = 0
+CMb = 1
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 19
 First name: Thobias
 Last name: Lindberg
 --Student end--
@@ -8805,13 +9240,14 @@ Last name: Lindberg
 --Student start--
 Student unikID: 436
 Klasse nr: 1.A
-CMp = 1
-CMb = 0
+CMp = 0
+CMb = 1
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 20
 First name: Jacob
 Last name: Vergerakis
 --Student end--
@@ -8819,13 +9255,14 @@ Last name: Vergerakis
 --Student start--
 Student unikID: 437
 Klasse nr: 1.A
-CMp = 1
-CMb = 0
+CMp = 0
+CMb = 1
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 21
 First name: Hjalte
 Last name: Thomsen
 --Student end--
@@ -8833,13 +9270,14 @@ Last name: Thomsen
 --Student start--
 Student unikID: 438
 Klasse nr: 1.A
-CMp = 1
-CMb = 0
+CMp = 0
+CMb = 1
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 22
 First name: Jeppe
 Last name: Nielsen
 --Student end--
@@ -8847,13 +9285,14 @@ Last name: Nielsen
 --Student start--
 Student unikID: 439
 Klasse nr: 1.A
-CMp = 1
-CMb = 0
+CMp = 0
+CMb = 1
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 23
 First name: Robin
 Last name: Vangsen
 --Student end--
@@ -8861,13 +9300,14 @@ Last name: Vangsen
 --Student start--
 Student unikID: 440
 Klasse nr: 1.A
-CMp = 1
-CMb = 0
+CMp = 0
+CMb = 1
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 24
 First name: Naja
 Last name: Karkov
 --Student end--
@@ -8875,13 +9315,14 @@ Last name: Karkov
 --Student start--
 Student unikID: 441
 Klasse nr: 1.A
-CMp = 1
-CMb = 0
+CMp = 0
+CMb = 1
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 25
 First name: Lars
 Last name: Bøndergaard
 --Student end--
@@ -8889,13 +9330,14 @@ Last name: Bøndergaard
 --Student start--
 Student unikID: 442
 Klasse nr: 1.A
-CMp = 1
-CMb = 0
+CMp = 0
+CMb = 1
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 26
 First name: Dorte
 Last name: Olsen
 --Student end--
@@ -8903,13 +9345,14 @@ Last name: Olsen
 --Student start--
 Student unikID: 443
 Klasse nr: 1.A
-CMp = 1
-CMb = 0
+CMp = 0
+CMb = 1
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 1
 First name: Amanda
 Last name: Almind
 --Student end--
@@ -8917,13 +9360,14 @@ Last name: Almind
 --Student start--
 Student unikID: 444
 Klasse nr: 1.A
-CMp = 1
-CMb = 0
+CMp = 0
+CMb = 1
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 2
 First name: Troels
 Last name: Ibsen
 --Student end--
@@ -8931,13 +9375,14 @@ Last name: Ibsen
 --Student start--
 Student unikID: 445
 Klasse nr: 1.A
-CMp = 1
-CMb = 0
+CMp = 0
+CMb = 1
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 3
 First name: Eren
 Last name: Thomsen
 --Student end--
@@ -8945,13 +9390,14 @@ Last name: Thomsen
 --Student start--
 Student unikID: 446
 Klasse nr: 1.A
-CMp = 1
-CMb = 0
+CMp = 0
+CMb = 1
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 4
 First name: Clara-Ann
 Last name: Mikkelsen
 --Student end--
@@ -8959,13 +9405,14 @@ Last name: Mikkelsen
 --Student start--
 Student unikID: 447
 Klasse nr: 1.A
-CMp = 1
-CMb = 0
+CMp = 0
+CMb = 1
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 5
 First name: Naja
 Last name: Vraa
 --Student end--
@@ -8973,13 +9420,14 @@ Last name: Vraa
 --Student start--
 Student unikID: 448
 Klasse nr: 1.A
-CMp = 1
-CMb = 0
+CMp = 0
+CMb = 1
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 6
 First name: Mathias
 Last name: Thomsen
 --Student end--
@@ -8987,13 +9435,14 @@ Last name: Thomsen
 --Student start--
 Student unikID: 449
 Klasse nr: 1.A
-CMp = 1
-CMb = 0
+CMp = 0
+CMb = 1
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 7
 First name: Jeppe
 Last name: Gydesen
 --Student end--
@@ -9001,13 +9450,14 @@ Last name: Gydesen
 --Student start--
 Student unikID: 450
 Klasse nr: 1.A
-CMp = 1
-CMb = 0
+CMp = 0
+CMb = 1
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 8
 First name: Isabella
 Last name: Magnusen
 --Student end--
@@ -9015,13 +9465,14 @@ Last name: Magnusen
 --Student start--
 Student unikID: 451
 Klasse nr: 1.A
-CMp = 1
-CMb = 0
+CMp = 0
+CMb = 1
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 9
 First name: Anna
 Last name: Nielsen
 --Student end--
@@ -9029,13 +9480,14 @@ Last name: Nielsen
 --Student start--
 Student unikID: 452
 Klasse nr: 1.A
-CMp = 1
-CMb = 0
+CMp = 0
+CMb = 1
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 10
 First name: Louise
 Last name: Pedersen
 --Student end--
@@ -9043,13 +9495,14 @@ Last name: Pedersen
 --Student start--
 Student unikID: 453
 Klasse nr: 1.A
-CMp = 1
-CMb = 0
+CMp = 0
+CMb = 1
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 11
 First name: Melissa
 Last name: Nygaard
 --Student end--
@@ -9057,13 +9510,14 @@ Last name: Nygaard
 --Student start--
 Student unikID: 454
 Klasse nr: 1.A
-CMp = 1
-CMb = 0
+CMp = 0
+CMb = 1
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 12
 First name: Stephanie
 Last name: Nygaard
 --Student end--
@@ -9071,13 +9525,14 @@ Last name: Nygaard
 --Student start--
 Student unikID: 455
 Klasse nr: 1.A
-CMp = 1
-CMb = 0
+CMp = 0
+CMb = 1
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 13
 First name: Malthe
 Last name: Bentsen
 --Student end--
@@ -9085,13 +9540,14 @@ Last name: Bentsen
 --Student start--
 Student unikID: 456
 Klasse nr: 1.A
-CMp = 1
-CMb = 0
+CMp = 0
+CMb = 1
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 14
 First name: Klara
 Last name: Nielsen
 --Student end--
@@ -9099,13 +9555,14 @@ Last name: Nielsen
 --Student start--
 Student unikID: 457
 Klasse nr: 1.A
-CMp = 1
-CMb = 0
+CMp = 0
+CMb = 1
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 15
 First name: Elisabeth
 Last name: Jensen
 --Student end--
@@ -9113,13 +9570,14 @@ Last name: Jensen
 --Student start--
 Student unikID: 458
 Klasse nr: 1.A
-CMp = 1
-CMb = 0
+CMp = 0
+CMb = 1
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 16
 First name: Emilie
 Last name: Thomsen
 --Student end--
@@ -9127,13 +9585,14 @@ Last name: Thomsen
 --Student start--
 Student unikID: 459
 Klasse nr: 1.B
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 17
 First name: Bente
 Last name: Pind
 --Student end--
@@ -9141,13 +9600,14 @@ Last name: Pind
 --Student start--
 Student unikID: 460
 Klasse nr: 1.B
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 18
 First name: Vincent
 Last name: Joergensen
 --Student end--
@@ -9155,13 +9615,14 @@ Last name: Joergensen
 --Student start--
 Student unikID: 461
 Klasse nr: 1.B
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 19
 First name: Natasha
 Last name: Gardaffi
 --Student end--
@@ -9169,13 +9630,14 @@ Last name: Gardaffi
 --Student start--
 Student unikID: 462
 Klasse nr: 1.B
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 20
 First name: Emilie
 Last name: Sillesen
 --Student end--
@@ -9183,13 +9645,14 @@ Last name: Sillesen
 --Student start--
 Student unikID: 463
 Klasse nr: 1.B
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 21
 First name: Julian
 Last name: Golobvanv
 --Student end--
@@ -9197,13 +9660,14 @@ Last name: Golobvanv
 --Student start--
 Student unikID: 464
 Klasse nr: 1.B
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 22
 First name: David
 Last name: Holmsgaard
 --Student end--
@@ -9211,13 +9675,14 @@ Last name: Holmsgaard
 --Student start--
 Student unikID: 465
 Klasse nr: 1.B
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 23
 First name: Hjalte
 Last name: Baagoee
 --Student end--
@@ -9225,13 +9690,14 @@ Last name: Baagoee
 --Student start--
 Student unikID: 466
 Klasse nr: 1.B
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 24
 First name: Sebastian
 Last name: Bisgaard
 --Student end--
@@ -9239,13 +9705,14 @@ Last name: Bisgaard
 --Student start--
 Student unikID: 467
 Klasse nr: 1.B
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 25
 First name: Kristian
 Last name: Schou
 --Student end--
@@ -9253,13 +9720,14 @@ Last name: Schou
 --Student start--
 Student unikID: 468
 Klasse nr: 1.B
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 26
 First name: Layal
 Last name: Mortensen
 --Student end--
@@ -9267,13 +9735,14 @@ Last name: Mortensen
 --Student start--
 Student unikID: 469
 Klasse nr: 1.B
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 1
 First name: Odin
 Last name: Ferslev
 --Student end--
@@ -9281,13 +9750,14 @@ Last name: Ferslev
 --Student start--
 Student unikID: 470
 Klasse nr: 1.B
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 2
 First name: Nicolaj
 Last name: Grundvig
 --Student end--
@@ -9295,13 +9765,14 @@ Last name: Grundvig
 --Student start--
 Student unikID: 471
 Klasse nr: 1.B
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 3
 First name: Otto
 Last name: Madsen
 --Student end--
@@ -9309,13 +9780,14 @@ Last name: Madsen
 --Student start--
 Student unikID: 472
 Klasse nr: 1.B
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 4
 First name: Filippa
 Last name: Gunder
 --Student end--
@@ -9323,13 +9795,14 @@ Last name: Gunder
 --Student start--
 Student unikID: 473
 Klasse nr: 1.B
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 5
 First name: Joakim
 Last name: Hermannson
 --Student end--
@@ -9337,13 +9810,14 @@ Last name: Hermannson
 --Student start--
 Student unikID: 474
 Klasse nr: 1.B
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 6
 First name: Oliver
 Last name: Dountsen
 --Student end--
@@ -9351,13 +9825,14 @@ Last name: Dountsen
 --Student start--
 Student unikID: 475
 Klasse nr: 1.B
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 7
 First name: Anton
 Last name: Vindrue
 --Student end--
@@ -9365,13 +9840,14 @@ Last name: Vindrue
 --Student start--
 Student unikID: 476
 Klasse nr: 1.B
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 8
 First name: Lasse
 Last name: Kristiansen
 --Student end--
@@ -9379,13 +9855,14 @@ Last name: Kristiansen
 --Student start--
 Student unikID: 477
 Klasse nr: 1.B
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 9
 First name: Matias
 Last name: Alfter
 --Student end--
@@ -9393,13 +9870,14 @@ Last name: Alfter
 --Student start--
 Student unikID: 478
 Klasse nr: 1.B
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 10
 First name: Samuel
 Last name: Andersen
 --Student end--
@@ -9407,13 +9885,14 @@ Last name: Andersen
 --Student start--
 Student unikID: 479
 Klasse nr: 1.B
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 11
 First name: Dorte
 Last name: Guldborg
 --Student end--
@@ -9421,13 +9900,14 @@ Last name: Guldborg
 --Student start--
 Student unikID: 480
 Klasse nr: 1.B
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 12
 First name: Muniba
 Last name: Burnsen
 --Student end--
@@ -9435,13 +9915,14 @@ Last name: Burnsen
 --Student start--
 Student unikID: 481
 Klasse nr: 1.B
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 13
 First name: Naja
 Last name: staermose
 --Student end--
@@ -9449,13 +9930,14 @@ Last name: staermose
 --Student start--
 Student unikID: 482
 Klasse nr: 1.B
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 14
 First name: Adelina
 Last name: Tomsen
 --Student end--
@@ -9463,13 +9945,14 @@ Last name: Tomsen
 --Student start--
 Student unikID: 483
 Klasse nr: 1.B
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 15
 First name: Nicosia
 Last name: Nielsen
 --Student end--
@@ -9477,13 +9960,14 @@ Last name: Nielsen
 --Student start--
 Student unikID: 484
 Klasse nr: 1.B
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 16
 First name: Asta
 Last name: Pihi
 --Student end--
@@ -9491,13 +9975,14 @@ Last name: Pihi
 --Student start--
 Student unikID: 485
 Klasse nr: 1.B
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 17
 First name: Clara
 Last name: Johannesen
 --Student end--
@@ -9505,13 +9990,14 @@ Last name: Johannesen
 --Student start--
 Student unikID: 486
 Klasse nr: 1.C
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 18
 First name: Hemen
 Last name: Kjaer
 --Student end--
@@ -9519,13 +10005,14 @@ Last name: Kjaer
 --Student start--
 Student unikID: 487
 Klasse nr: 1.C
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 19
 First name: Laura
 Last name: Gadegaard
 --Student end--
@@ -9533,13 +10020,14 @@ Last name: Gadegaard
 --Student start--
 Student unikID: 488
 Klasse nr: 1.C
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 20
 First name: Frey
 Last name: Larsen
 --Student end--
@@ -9547,13 +10035,14 @@ Last name: Larsen
 --Student start--
 Student unikID: 489
 Klasse nr: 1.C
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 21
 First name: Signe
 Last name: Gunder
 --Student end--
@@ -9561,13 +10050,14 @@ Last name: Gunder
 --Student start--
 Student unikID: 490
 Klasse nr: 1.C
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 22
 First name: Mads-Emil
 Last name: Larsen
 --Student end--
@@ -9575,13 +10065,14 @@ Last name: Larsen
 --Student start--
 Student unikID: 491
 Klasse nr: 1.C
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 23
 First name: Nicolaj
 Last name: Christiansen
 --Student end--
@@ -9589,13 +10080,14 @@ Last name: Christiansen
 --Student start--
 Student unikID: 492
 Klasse nr: 1.C
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 24
 First name: Anders
 Last name: Gunder
 --Student end--
@@ -9603,13 +10095,14 @@ Last name: Gunder
 --Student start--
 Student unikID: 493
 Klasse nr: 1.C
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 25
 First name: Ruben
 Last name: Tybo
 --Student end--
@@ -9617,13 +10110,14 @@ Last name: Tybo
 --Student start--
 Student unikID: 494
 Klasse nr: 1.C
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 26
 First name: Frej
 Last name: Soernesen
 --Student end--
@@ -9631,13 +10125,14 @@ Last name: Soernesen
 --Student start--
 Student unikID: 495
 Klasse nr: 1.C
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 1
 First name: Gry
 Last name: Nash
 --Student end--
@@ -9645,13 +10140,14 @@ Last name: Nash
 --Student start--
 Student unikID: 496
 Klasse nr: 1.C
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 2
 First name: Signe
 Last name: Rasmussen
 --Student end--
@@ -9659,13 +10155,14 @@ Last name: Rasmussen
 --Student start--
 Student unikID: 497
 Klasse nr: 1.C
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 3
 First name: Conrad
 Last name: Vindrue
 --Student end--
@@ -9673,13 +10170,14 @@ Last name: Vindrue
 --Student start--
 Student unikID: 498
 Klasse nr: 1.C
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 4
 First name: Bryndhilda
 Last name: Bonderup
 --Student end--
@@ -9687,13 +10185,14 @@ Last name: Bonderup
 --Student start--
 Student unikID: 499
 Klasse nr: 1.C
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 5
 First name: Jens
 Last name: Juul-Nyholm
 --Student end--
@@ -9701,13 +10200,14 @@ Last name: Juul-Nyholm
 --Student start--
 Student unikID: 500
 Klasse nr: 1.C
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 6
 First name: Lasse
 Last name: Asp
 --Student end--
@@ -9715,13 +10215,14 @@ Last name: Asp
 --Student start--
 Student unikID: 501
 Klasse nr: 1.C
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 7
 First name: Mads
 Last name: Olsen
 --Student end--
@@ -9729,13 +10230,14 @@ Last name: Olsen
 --Student start--
 Student unikID: 502
 Klasse nr: 1.C
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 8
 First name: Naja
 Last name: Gardaffi
 --Student end--
@@ -9743,13 +10245,14 @@ Last name: Gardaffi
 --Student start--
 Student unikID: 503
 Klasse nr: 1.C
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 9
 First name: Hector
 Last name: Jensen
 --Student end--
@@ -9757,13 +10260,14 @@ Last name: Jensen
 --Student start--
 Student unikID: 504
 Klasse nr: 1.C
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 10
 First name: Patrick
 Last name: Simonsen
 --Student end--
@@ -9771,13 +10275,14 @@ Last name: Simonsen
 --Student start--
 Student unikID: 505
 Klasse nr: 1.C
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 11
 First name: Odin
 Last name: Sirut
 --Student end--
@@ -9785,13 +10290,14 @@ Last name: Sirut
 --Student start--
 Student unikID: 506
 Klasse nr: 1.C
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 12
 First name: Patrick
 Last name: Dofensmirtch
 --Student end--
@@ -9799,13 +10305,14 @@ Last name: Dofensmirtch
 --Student start--
 Student unikID: 507
 Klasse nr: 1.C
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 13
 First name: Asbjorn
 Last name: Haslund
 --Student end--
@@ -9813,13 +10320,14 @@ Last name: Haslund
 --Student start--
 Student unikID: 508
 Klasse nr: 1.C
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 14
 First name: Conrad
 Last name: Thomsen
 --Student end--
@@ -9827,13 +10335,14 @@ Last name: Thomsen
 --Student start--
 Student unikID: 509
 Klasse nr: 1.C
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 15
 First name: Filippa
 Last name: Andersen
 --Student end--
@@ -9841,13 +10350,14 @@ Last name: Andersen
 --Student start--
 Student unikID: 510
 Klasse nr: 1.C
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 16
 First name: Phillip
 Last name: Larsen
 --Student end--
@@ -9855,13 +10365,14 @@ Last name: Larsen
 --Student start--
 Student unikID: 511
 Klasse nr: 1.C
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 17
 First name: Fenja
 Last name: Grosen
 --Student end--
@@ -9869,13 +10380,14 @@ Last name: Grosen
 --Student start--
 Student unikID: 512
 Klasse nr: 1.C
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 18
 First name: Troels
 Last name: Frederiksen
 --Student end--
@@ -9885,11 +10397,12 @@ Student unikID: 513
 Klasse nr: 1.D
 CMp = 0
 CMb = 0
-CMki = 1
+CMki = 0
 CMs = 0
 CMth = 0
 CMp = 0
 CMa = 0
+Nr in class: 19
 First name: Frida
 Last name: Jensen
 --Student end--
@@ -9899,11 +10412,12 @@ Student unikID: 514
 Klasse nr: 1.D
 CMp = 0
 CMb = 0
-CMki = 1
+CMki = 0
 CMs = 0
 CMth = 0
 CMp = 0
 CMa = 0
+Nr in class: 20
 First name: Valde
 Last name: Roegen
 --Student end--
@@ -9913,11 +10427,12 @@ Student unikID: 515
 Klasse nr: 1.D
 CMp = 0
 CMb = 0
-CMki = 1
+CMki = 0
 CMs = 0
 CMth = 0
 CMp = 0
 CMa = 0
+Nr in class: 21
 First name: Pelle
 Last name: Noeremark
 --Student end--
@@ -9927,11 +10442,12 @@ Student unikID: 516
 Klasse nr: 1.D
 CMp = 0
 CMb = 0
-CMki = 1
+CMki = 0
 CMs = 0
 CMth = 0
 CMp = 0
 CMa = 0
+Nr in class: 22
 First name: Bryndhilda
 Last name: Vraa
 --Student end--
@@ -9941,11 +10457,12 @@ Student unikID: 517
 Klasse nr: 1.D
 CMp = 0
 CMb = 0
-CMki = 1
+CMki = 0
 CMs = 0
 CMth = 0
 CMp = 0
 CMa = 0
+Nr in class: 23
 First name: Dorte
 Last name: Mortensen
 --Student end--
@@ -9955,11 +10472,12 @@ Student unikID: 518
 Klasse nr: 1.D
 CMp = 0
 CMb = 0
-CMki = 1
+CMki = 0
 CMs = 0
 CMth = 0
 CMp = 0
 CMa = 0
+Nr in class: 24
 First name: Malthe
 Last name: Jensen
 --Student end--
@@ -9969,11 +10487,12 @@ Student unikID: 519
 Klasse nr: 1.D
 CMp = 0
 CMb = 0
-CMki = 1
+CMki = 0
 CMs = 0
 CMth = 0
 CMp = 0
 CMa = 0
+Nr in class: 25
 First name: Jonas
 Last name: Hammer
 --Student end--
@@ -9983,11 +10502,12 @@ Student unikID: 520
 Klasse nr: 1.D
 CMp = 0
 CMb = 0
-CMki = 1
+CMki = 0
 CMs = 0
 CMth = 0
 CMp = 0
 CMa = 0
+Nr in class: 26
 First name: Anton
 Last name: Madsen
 --Student end--
@@ -9997,11 +10517,12 @@ Student unikID: 521
 Klasse nr: 1.D
 CMp = 0
 CMb = 0
-CMki = 1
+CMki = 0
 CMs = 0
 CMth = 0
 CMp = 0
 CMa = 0
+Nr in class: 1
 First name: Andreas
 Last name: Christiansen
 --Student end--
@@ -10011,11 +10532,12 @@ Student unikID: 522
 Klasse nr: 1.D
 CMp = 0
 CMb = 0
-CMki = 1
+CMki = 0
 CMs = 0
 CMth = 0
 CMp = 0
 CMa = 0
+Nr in class: 2
 First name: Tina
 Last name: Andersen
 --Student end--
@@ -10025,11 +10547,12 @@ Student unikID: 523
 Klasse nr: 1.D
 CMp = 0
 CMb = 0
-CMki = 1
+CMki = 0
 CMs = 0
 CMth = 0
 CMp = 0
 CMa = 0
+Nr in class: 3
 First name: Robin
 Last name: Elgaard
 --Student end--
@@ -10039,11 +10562,12 @@ Student unikID: 524
 Klasse nr: 1.D
 CMp = 0
 CMb = 0
-CMki = 1
+CMki = 0
 CMs = 0
 CMth = 0
 CMp = 0
 CMa = 0
+Nr in class: 4
 First name: Rasmus
 Last name: Petersen
 --Student end--
@@ -10053,11 +10577,12 @@ Student unikID: 525
 Klasse nr: 1.D
 CMp = 0
 CMb = 0
-CMki = 1
+CMki = 0
 CMs = 0
 CMth = 0
 CMp = 0
 CMa = 0
+Nr in class: 5
 First name: Olivia
 Last name: Vraa
 --Student end--
@@ -10067,11 +10592,12 @@ Student unikID: 526
 Klasse nr: 1.D
 CMp = 0
 CMb = 0
-CMki = 1
+CMki = 0
 CMs = 0
 CMth = 0
 CMp = 0
 CMa = 0
+Nr in class: 6
 First name: Matt
 Last name: Hammer
 --Student end--
@@ -10081,11 +10607,12 @@ Student unikID: 527
 Klasse nr: 1.D
 CMp = 0
 CMb = 0
-CMki = 1
+CMki = 0
 CMs = 0
 CMth = 0
 CMp = 0
 CMa = 0
+Nr in class: 7
 First name: David
 Last name: Vergerakis
 --Student end--
@@ -10095,11 +10622,12 @@ Student unikID: 528
 Klasse nr: 1.D
 CMp = 0
 CMb = 0
-CMki = 1
+CMki = 0
 CMs = 0
 CMth = 0
 CMp = 0
 CMa = 0
+Nr in class: 8
 First name: Clara
 Last name: Vium
 --Student end--
@@ -10109,11 +10637,12 @@ Student unikID: 529
 Klasse nr: 1.D
 CMp = 0
 CMb = 0
-CMki = 1
+CMki = 0
 CMs = 0
 CMth = 0
 CMp = 0
 CMa = 0
+Nr in class: 9
 First name: Margrethe
 Last name: Johansen
 --Student end--
@@ -10123,11 +10652,12 @@ Student unikID: 530
 Klasse nr: 1.D
 CMp = 0
 CMb = 0
-CMki = 1
+CMki = 0
 CMs = 0
 CMth = 0
 CMp = 0
 CMa = 0
+Nr in class: 10
 First name: Valde
 Last name: Jensen
 --Student end--
@@ -10137,11 +10667,12 @@ Student unikID: 531
 Klasse nr: 1.D
 CMp = 0
 CMb = 0
-CMki = 1
+CMki = 0
 CMs = 0
 CMth = 0
 CMp = 0
 CMa = 0
+Nr in class: 11
 First name: Laura
 Last name: Lindberg
 --Student end--
@@ -10151,11 +10682,12 @@ Student unikID: 532
 Klasse nr: 1.D
 CMp = 0
 CMb = 0
-CMki = 1
+CMki = 0
 CMs = 0
 CMth = 0
 CMp = 0
 CMa = 0
+Nr in class: 12
 First name: Celina
 Last name: Hermannson
 --Student end--
@@ -10165,11 +10697,12 @@ Student unikID: 533
 Klasse nr: 1.D
 CMp = 0
 CMb = 0
-CMki = 1
+CMki = 0
 CMs = 0
 CMth = 0
 CMp = 0
 CMa = 0
+Nr in class: 13
 First name: Sofia
 Last name: Kirkby
 --Student end--
@@ -10179,11 +10712,12 @@ Student unikID: 534
 Klasse nr: 1.D
 CMp = 0
 CMb = 0
-CMki = 1
+CMki = 0
 CMs = 0
 CMth = 0
 CMp = 0
 CMa = 0
+Nr in class: 14
 First name: Ida
 Last name: Baagoee
 --Student end--
@@ -10193,11 +10727,12 @@ Student unikID: 535
 Klasse nr: 1.D
 CMp = 0
 CMb = 0
-CMki = 1
+CMki = 0
 CMs = 0
 CMth = 0
 CMp = 0
 CMa = 0
+Nr in class: 15
 First name: Malthe
 Last name: Fuglesang
 --Student end--
@@ -10207,11 +10742,12 @@ Student unikID: 536
 Klasse nr: 1.D
 CMp = 0
 CMb = 0
-CMki = 1
+CMki = 0
 CMs = 0
 CMth = 0
 CMp = 0
 CMa = 0
+Nr in class: 16
 First name: Gabriel
 Last name: Kvist
 --Student end--
@@ -10221,11 +10757,12 @@ Student unikID: 537
 Klasse nr: 1.D
 CMp = 0
 CMb = 0
-CMki = 1
+CMki = 0
 CMs = 0
 CMth = 0
 CMp = 0
 CMa = 0
+Nr in class: 17
 First name: Kristian
 Last name: Tomsen
 --Student end--
@@ -10235,11 +10772,12 @@ Student unikID: 538
 Klasse nr: 1.D
 CMp = 0
 CMb = 0
-CMki = 1
+CMki = 0
 CMs = 0
 CMth = 0
 CMp = 0
 CMa = 0
+Nr in class: 18
 First name: Conrad
 Last name: Heindoff
 --Student end--
@@ -10249,11 +10787,12 @@ Student unikID: 539
 Klasse nr: 1.D
 CMp = 0
 CMb = 0
-CMki = 1
+CMki = 0
 CMs = 0
 CMth = 0
 CMp = 0
 CMa = 0
+Nr in class: 19
 First name: Jeppe
 Last name: Thomsen
 --Student end--
@@ -10261,13 +10800,14 @@ Last name: Thomsen
 --Student start--
 Student unikID: 540
 Klasse nr: 1.E
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 20
 First name: Sebastian
 Last name: Proeksen
 --Student end--
@@ -10275,13 +10815,14 @@ Last name: Proeksen
 --Student start--
 Student unikID: 541
 Klasse nr: 1.E
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 21
 First name: Jens
 Last name: Falck
 --Student end--
@@ -10289,13 +10830,14 @@ Last name: Falck
 --Student start--
 Student unikID: 542
 Klasse nr: 1.E
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 22
 First name: Thea
 Last name: Klitgaard
 --Student end--
@@ -10303,13 +10845,14 @@ Last name: Klitgaard
 --Student start--
 Student unikID: 543
 Klasse nr: 1.E
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 23
 First name: Mads
 Last name: Købsted
 --Student end--
@@ -10317,13 +10860,14 @@ Last name: Købsted
 --Student start--
 Student unikID: 544
 Klasse nr: 1.E
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 24
 First name: Asger
 Last name: Ahmmed
 --Student end--
@@ -10331,13 +10875,14 @@ Last name: Ahmmed
 --Student start--
 Student unikID: 545
 Klasse nr: 1.E
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 25
 First name: Muniba
 Last name: Bacbeth
 --Student end--
@@ -10345,13 +10890,14 @@ Last name: Bacbeth
 --Student start--
 Student unikID: 546
 Klasse nr: 1.E
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 26
 First name: Jakob
 Last name: Iversen
 --Student end--
@@ -10359,13 +10905,14 @@ Last name: Iversen
 --Student start--
 Student unikID: 547
 Klasse nr: 1.E
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 1
 First name: Rohan
 Last name: Finduersen
 --Student end--
@@ -10373,13 +10920,14 @@ Last name: Finduersen
 --Student start--
 Student unikID: 548
 Klasse nr: 1.E
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 2
 First name: David
 Last name: Jacobsen
 --Student end--
@@ -10387,13 +10935,14 @@ Last name: Jacobsen
 --Student start--
 Student unikID: 549
 Klasse nr: 1.E
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 3
 First name: Hemen
 Last name: Lassen
 --Student end--
@@ -10401,13 +10950,14 @@ Last name: Lassen
 --Student start--
 Student unikID: 550
 Klasse nr: 1.E
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 4
 First name: Rasmus
 Last name: Grosen
 --Student end--
@@ -10415,13 +10965,14 @@ Last name: Grosen
 --Student start--
 Student unikID: 551
 Klasse nr: 1.E
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 5
 First name: Frej
 Last name: Pedersen
 --Student end--
@@ -10429,13 +10980,14 @@ Last name: Pedersen
 --Student start--
 Student unikID: 552
 Klasse nr: 1.E
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 6
 First name: Nicoline
 Last name: Andersen
 --Student end--
@@ -10443,13 +10995,14 @@ Last name: Andersen
 --Student start--
 Student unikID: 553
 Klasse nr: 1.E
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 7
 First name: Hemen
 Last name: Dountsen
 --Student end--
@@ -10457,13 +11010,14 @@ Last name: Dountsen
 --Student start--
 Student unikID: 554
 Klasse nr: 1.E
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 8
 First name: Hanna
 Last name: Larsen
 --Student end--
@@ -10471,13 +11025,14 @@ Last name: Larsen
 --Student start--
 Student unikID: 555
 Klasse nr: 1.E
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 9
 First name: Jonathan
 Last name: Guldborg
 --Student end--
@@ -10485,13 +11040,14 @@ Last name: Guldborg
 --Student start--
 Student unikID: 556
 Klasse nr: 1.E
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 10
 First name: Marcus
 Last name: Bacbeth
 --Student end--
@@ -10499,13 +11055,14 @@ Last name: Bacbeth
 --Student start--
 Student unikID: 557
 Klasse nr: 1.E
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 11
 First name: Tilte
 Last name: Sofie
 --Student end--
@@ -10513,13 +11070,14 @@ Last name: Sofie
 --Student start--
 Student unikID: 558
 Klasse nr: 1.E
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 12
 First name: Kaya
 Last name: Husin
 --Student end--
@@ -10527,13 +11085,14 @@ Last name: Husin
 --Student start--
 Student unikID: 559
 Klasse nr: 1.E
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 13
 First name: Emilie
 Last name: Kristiansen
 --Student end--
@@ -10541,13 +11100,14 @@ Last name: Kristiansen
 --Student start--
 Student unikID: 560
 Klasse nr: 1.E
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 14
 First name: Emma
 Last name: Købsted
 --Student end--
@@ -10555,13 +11115,14 @@ Last name: Købsted
 --Student start--
 Student unikID: 561
 Klasse nr: 1.E
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 15
 First name: Albert
 Last name: Moeller
 --Student end--
@@ -10569,13 +11130,14 @@ Last name: Moeller
 --Student start--
 Student unikID: 562
 Klasse nr: 1.E
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 16
 First name: Caroline
 Last name: Hem
 --Student end--
@@ -10583,13 +11145,14 @@ Last name: Hem
 --Student start--
 Student unikID: 563
 Klasse nr: 1.E
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 17
 First name: Gry
 Last name: Kristiansen
 --Student end--
@@ -10597,13 +11160,14 @@ Last name: Kristiansen
 --Student start--
 Student unikID: 564
 Klasse nr: 1.E
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 18
 First name: Valde
 Last name: Moelgaard
 --Student end--
@@ -10611,13 +11175,14 @@ Last name: Moelgaard
 --Student start--
 Student unikID: 565
 Klasse nr: 1.E
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 19
 First name: Tryne
 Last name: Husien
 --Student end--
@@ -10625,13 +11190,14 @@ Last name: Husien
 --Student start--
 Student unikID: 566
 Klasse nr: 1.E
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 20
 First name: Gabriel
 Last name: Grosen
 --Student end--
@@ -10639,13 +11205,14 @@ Last name: Grosen
 --Student start--
 Student unikID: 567
 Klasse nr: 1.F
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 21
 First name: Ilyas
 Last name: Vinkler
 --Student end--
@@ -10653,13 +11220,14 @@ Last name: Vinkler
 --Student start--
 Student unikID: 568
 Klasse nr: 1.F
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 22
 First name: Melda
 Last name: Loekke
 --Student end--
@@ -10667,13 +11235,14 @@ Last name: Loekke
 --Student start--
 Student unikID: 569
 Klasse nr: 1.F
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 23
 First name: Anders
 Last name: Juul-Nyholm
 --Student end--
@@ -10681,13 +11250,14 @@ Last name: Juul-Nyholm
 --Student start--
 Student unikID: 570
 Klasse nr: 1.F
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 24
 First name: Kristian
 Last name: Krose
 --Student end--
@@ -10695,13 +11265,14 @@ Last name: Krose
 --Student start--
 Student unikID: 571
 Klasse nr: 1.F
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 25
 First name: Leen
 Last name: Nielsen
 --Student end--
@@ -10709,13 +11280,14 @@ Last name: Nielsen
 --Student start--
 Student unikID: 572
 Klasse nr: 1.F
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 26
 First name: Noah
 Last name: Pedersen
 --Student end--
@@ -10723,13 +11295,14 @@ Last name: Pedersen
 --Student start--
 Student unikID: 573
 Klasse nr: 1.F
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 1
 First name: Anne
 Last name: Bach
 --Student end--
@@ -10737,13 +11310,14 @@ Last name: Bach
 --Student start--
 Student unikID: 574
 Klasse nr: 1.F
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 2
 First name: Naja
 Last name: Schou
 --Student end--
@@ -10751,13 +11325,14 @@ Last name: Schou
 --Student start--
 Student unikID: 575
 Klasse nr: 1.F
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 3
 First name: Loke
 Last name: Gunder
 --Student end--
@@ -10765,13 +11340,14 @@ Last name: Gunder
 --Student start--
 Student unikID: 576
 Klasse nr: 1.F
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 4
 First name: Nicosia
 Last name: Thomsen
 --Student end--
@@ -10779,13 +11355,14 @@ Last name: Thomsen
 --Student start--
 Student unikID: 577
 Klasse nr: 1.F
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 5
 First name: Anton
 Last name: Thomsen
 --Student end--
@@ -10793,13 +11370,14 @@ Last name: Thomsen
 --Student start--
 Student unikID: 578
 Klasse nr: 1.F
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 6
 First name: Ditte
 Last name: Iversen
 --Student end--
@@ -10807,13 +11385,14 @@ Last name: Iversen
 --Student start--
 Student unikID: 579
 Klasse nr: 1.F
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 7
 First name: Marvin
 Last name: Gundersen
 --Student end--
@@ -10821,13 +11400,14 @@ Last name: Gundersen
 --Student start--
 Student unikID: 580
 Klasse nr: 1.F
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 8
 First name: Sofie
 Last name: Loekke
 --Student end--
@@ -10835,13 +11415,14 @@ Last name: Loekke
 --Student start--
 Student unikID: 581
 Klasse nr: 1.F
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 9
 First name: Asta
 Last name: Brorholt
 --Student end--
@@ -10849,13 +11430,14 @@ Last name: Brorholt
 --Student start--
 Student unikID: 582
 Klasse nr: 1.F
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 10
 First name: Frida
 Last name: Finduersen
 --Student end--
@@ -10863,13 +11445,14 @@ Last name: Finduersen
 --Student start--
 Student unikID: 583
 Klasse nr: 1.F
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 11
 First name: Patrick
 Last name: Haxvig
 --Student end--
@@ -10877,13 +11460,14 @@ Last name: Haxvig
 --Student start--
 Student unikID: 584
 Klasse nr: 1.F
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 12
 First name: Matt
 Last name: Bacbeth
 --Student end--
@@ -10891,13 +11475,14 @@ Last name: Bacbeth
 --Student start--
 Student unikID: 585
 Klasse nr: 1.F
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 13
 First name: Thor
 Last name: Bush
 --Student end--
@@ -10905,13 +11490,14 @@ Last name: Bush
 --Student start--
 Student unikID: 586
 Klasse nr: 1.F
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 14
 First name: Silke
 Last name: Bargsteen
 --Student end--
@@ -10919,13 +11505,14 @@ Last name: Bargsteen
 --Student start--
 Student unikID: 587
 Klasse nr: 1.F
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 15
 First name: Viktor
 Last name: Falk
 --Student end--
@@ -10933,13 +11520,14 @@ Last name: Falk
 --Student start--
 Student unikID: 588
 Klasse nr: 1.F
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 16
 First name: Rohan
 Last name: Loekke
 --Student end--
@@ -10947,13 +11535,14 @@ Last name: Loekke
 --Student start--
 Student unikID: 589
 Klasse nr: 1.F
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 17
 First name: Andreas
 Last name: Gnu
 --Student end--
@@ -10961,13 +11550,14 @@ Last name: Gnu
 --Student start--
 Student unikID: 590
 Klasse nr: 1.F
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 18
 First name: Dorte
 Last name: Thomsen
 --Student end--
@@ -10975,13 +11565,14 @@ Last name: Thomsen
 --Student start--
 Student unikID: 591
 Klasse nr: 1.F
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 19
 First name: Kaya
 Last name: Sommer
 --Student end--
@@ -10989,13 +11580,14 @@ Last name: Sommer
 --Student start--
 Student unikID: 592
 Klasse nr: 1.F
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 20
 First name: Otto
 Last name: Jensen
 --Student end--
@@ -11003,13 +11595,14 @@ Last name: Jensen
 --Student start--
 Student unikID: 593
 Klasse nr: 1.F
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
-CMs = 0
+CMs = 1
 CMth = 0
-CMp = 1
+CMp = 0
 CMa = 0
+Nr in class: 21
 First name: Oliver
 Last name: Guldborg
 --Student end--
@@ -11017,13 +11610,14 @@ Last name: Guldborg
 --Student start--
 Student unikID: 594
 Klasse nr: 1.G
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
-CMa = 0
+CMp = 0
+CMa = 1
+Nr in class: 22
 First name: Ludvig
 Last name: Roegen
 --Student end--
@@ -11031,13 +11625,14 @@ Last name: Roegen
 --Student start--
 Student unikID: 595
 Klasse nr: 1.G
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
-CMa = 0
+CMp = 0
+CMa = 1
+Nr in class: 23
 First name: Thor
 Last name: Thomsen
 --Student end--
@@ -11045,13 +11640,14 @@ Last name: Thomsen
 --Student start--
 Student unikID: 596
 Klasse nr: 1.G
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
-CMa = 0
+CMp = 0
+CMa = 1
+Nr in class: 24
 First name: Carl
 Last name: Bacbeth
 --Student end--
@@ -11059,13 +11655,14 @@ Last name: Bacbeth
 --Student start--
 Student unikID: 597
 Klasse nr: 1.G
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
-CMa = 0
+CMp = 0
+CMa = 1
+Nr in class: 25
 First name: Emina
 Last name: Olsen
 --Student end--
@@ -11073,13 +11670,14 @@ Last name: Olsen
 --Student start--
 Student unikID: 598
 Klasse nr: 1.G
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
-CMa = 0
+CMp = 0
+CMa = 1
+Nr in class: 26
 First name: Samuel
 Last name: Burnsen
 --Student end--
@@ -11087,13 +11685,14 @@ Last name: Burnsen
 --Student start--
 Student unikID: 599
 Klasse nr: 1.G
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
-CMa = 0
+CMp = 0
+CMa = 1
+Nr in class: 1
 First name: Fenja
 Last name: Krause-Kjaer
 --Student end--
@@ -11101,13 +11700,14 @@ Last name: Krause-Kjaer
 --Student start--
 Student unikID: 600
 Klasse nr: 1.G
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
-CMa = 0
+CMp = 0
+CMa = 1
+Nr in class: 2
 First name: David
 Last name: Staal
 --Student end--
@@ -11115,13 +11715,14 @@ Last name: Staal
 --Student start--
 Student unikID: 601
 Klasse nr: 1.G
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
-CMa = 0
+CMp = 0
+CMa = 1
+Nr in class: 3
 First name: Gabriel
 Last name: Bassam
 --Student end--
@@ -11129,13 +11730,14 @@ Last name: Bassam
 --Student start--
 Student unikID: 602
 Klasse nr: 1.G
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
-CMa = 0
+CMp = 0
+CMa = 1
+Nr in class: 4
 First name: Margrethe
 Last name: Fuglesang
 --Student end--
@@ -11143,13 +11745,14 @@ Last name: Fuglesang
 --Student start--
 Student unikID: 603
 Klasse nr: 1.G
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
-CMa = 0
+CMp = 0
+CMa = 1
+Nr in class: 5
 First name: Jakob
 Last name: Majer
 --Student end--
@@ -11157,13 +11760,14 @@ Last name: Majer
 --Student start--
 Student unikID: 604
 Klasse nr: 1.G
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
-CMa = 0
+CMp = 0
+CMa = 1
+Nr in class: 6
 First name: Ruben
 Last name: Rossen
 --Student end--
@@ -11171,13 +11775,14 @@ Last name: Rossen
 --Student start--
 Student unikID: 605
 Klasse nr: 1.G
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
-CMa = 0
+CMp = 0
+CMa = 1
+Nr in class: 7
 First name: Sidelya
 Last name: Krause-Kjaer
 --Student end--
@@ -11185,13 +11790,14 @@ Last name: Krause-Kjaer
 --Student start--
 Student unikID: 606
 Klasse nr: 1.G
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
-CMa = 0
+CMp = 0
+CMa = 1
+Nr in class: 8
 First name: Zeynep
 Last name: Weirsoee
 --Student end--
@@ -11199,13 +11805,14 @@ Last name: Weirsoee
 --Student start--
 Student unikID: 607
 Klasse nr: 1.G
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
-CMa = 0
+CMp = 0
+CMa = 1
+Nr in class: 9
 First name: Frej
 Last name: Gnu
 --Student end--
@@ -11213,13 +11820,14 @@ Last name: Gnu
 --Student start--
 Student unikID: 608
 Klasse nr: 1.G
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
-CMa = 0
+CMp = 0
+CMa = 1
+Nr in class: 10
 First name: Lucas
 Last name: Christensen
 --Student end--
@@ -11227,13 +11835,14 @@ Last name: Christensen
 --Student start--
 Student unikID: 609
 Klasse nr: 1.G
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
-CMa = 0
+CMp = 0
+CMa = 1
+Nr in class: 11
 First name: Phillip
 Last name: Brobak
 --Student end--
@@ -11241,13 +11850,14 @@ Last name: Brobak
 --Student start--
 Student unikID: 610
 Klasse nr: 1.G
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
-CMa = 0
+CMp = 0
+CMa = 1
+Nr in class: 12
 First name: Sine
 Last name: Flak
 --Student end--
@@ -11255,13 +11865,14 @@ Last name: Flak
 --Student start--
 Student unikID: 611
 Klasse nr: 1.G
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
-CMa = 0
+CMp = 0
+CMa = 1
+Nr in class: 13
 First name: Sara
 Last name: Bacbeth
 --Student end--
@@ -11269,13 +11880,14 @@ Last name: Bacbeth
 --Student start--
 Student unikID: 612
 Klasse nr: 1.G
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
-CMa = 0
+CMp = 0
+CMa = 1
+Nr in class: 14
 First name: Line
 Last name: Iversen
 --Student end--
@@ -11283,13 +11895,14 @@ Last name: Iversen
 --Student start--
 Student unikID: 613
 Klasse nr: 1.G
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
-CMa = 0
+CMp = 0
+CMa = 1
+Nr in class: 15
 First name: Naja
 Last name: Vejgaard
 --Student end--
@@ -11297,13 +11910,14 @@ Last name: Vejgaard
 --Student start--
 Student unikID: 614
 Klasse nr: 1.G
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
-CMa = 0
+CMp = 0
+CMa = 1
+Nr in class: 16
 First name: Jens
 Last name: Aabenraa
 --Student end--
@@ -11311,13 +11925,14 @@ Last name: Aabenraa
 --Student start--
 Student unikID: 615
 Klasse nr: 1.G
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
-CMa = 0
+CMp = 0
+CMa = 1
+Nr in class: 17
 First name: Silke
 Last name: Fuglesang
 --Student end--
@@ -11325,13 +11940,14 @@ Last name: Fuglesang
 --Student start--
 Student unikID: 616
 Klasse nr: 1.G
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
-CMa = 0
+CMp = 0
+CMa = 1
+Nr in class: 18
 First name: Filte
 Last name: Stalin
 --Student end--
@@ -11339,13 +11955,14 @@ Last name: Stalin
 --Student start--
 Student unikID: 617
 Klasse nr: 1.G
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
-CMa = 0
+CMp = 0
+CMa = 1
+Nr in class: 19
 First name: Robin
 Last name: Loekke
 --Student end--
@@ -11353,13 +11970,14 @@ Last name: Loekke
 --Student start--
 Student unikID: 618
 Klasse nr: 1.G
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
-CMa = 0
+CMp = 0
+CMa = 1
+Nr in class: 20
 First name: Tryne
 Last name: Hammer
 --Student end--
@@ -11367,13 +11985,14 @@ Last name: Hammer
 --Student start--
 Student unikID: 619
 Klasse nr: 1.G
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
-CMa = 0
+CMp = 0
+CMa = 1
+Nr in class: 21
 First name: Fine
 Last name: Karkov
 --Student end--
@@ -11381,13 +12000,14 @@ Last name: Karkov
 --Student start--
 Student unikID: 620
 Klasse nr: 1.G
-CMp = 1
+CMp = 0
 CMb = 0
 CMki = 0
 CMs = 0
 CMth = 0
-CMp = 1
-CMa = 0
+CMp = 0
+CMa = 1
+Nr in class: 22
 First name: Carl
 Last name: Mallerup
 --Student end--
@@ -11397,11 +12017,12 @@ Student unikID: 621
 Klasse nr: 1.H
 CMp = 0
 CMb = 0
-CMki = 1985784336
-CMs = 32552
-CMth = 1985782976
+CMki = -931939824
+CMs = 32755
+CMth = -931941184
 CMp = 0
 CMa = 4195246
+Nr in class: 23
 First name: Asmus
 Last name: Juul-Nyholm
 --Student end--
@@ -11411,11 +12032,12 @@ Student unikID: 622
 Klasse nr: 1.H
 CMp = 0
 CMb = 0
-CMki = 1985784336
-CMs = 32552
-CMth = 1985782976
+CMki = -931939824
+CMs = 32755
+CMth = -931941184
 CMp = 0
 CMa = 4195246
+Nr in class: 24
 First name: Ruben
 Last name: Brobak
 --Student end--
@@ -11425,11 +12047,12 @@ Student unikID: 623
 Klasse nr: 1.H
 CMp = 0
 CMb = 0
-CMki = 1985784336
-CMs = 32552
-CMth = 1985782976
+CMki = -931939824
+CMs = 32755
+CMth = -931941184
 CMp = 0
 CMa = 4195246
+Nr in class: 25
 First name: Maria
 Last name: Kjaer
 --Student end--
@@ -11439,11 +12062,12 @@ Student unikID: 624
 Klasse nr: 1.H
 CMp = 0
 CMb = 0
-CMki = 1985784336
-CMs = 32552
-CMth = 1985782976
+CMki = -931939824
+CMs = 32755
+CMth = -931941184
 CMp = 0
 CMa = 4195246
+Nr in class: 26
 First name: Palle
 Last name: Larsen
 --Student end--
