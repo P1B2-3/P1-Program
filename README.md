@@ -5,7 +5,7 @@
 - [P1-Program](#)
 - [HOW TO MAKEFILE (Currently not compiling)](#)
 - [FUNKTIONER](#)
-- [KONFIGURATION](#KONFIGURATION)
+- [KONFIGURATION](#konfiguration)
 
 # HOW TO MAKEFILE (Currently not compiling)
   1. Naviger til mappe (med MinGW terminal)
