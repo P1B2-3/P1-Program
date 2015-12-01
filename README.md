@@ -28,3 +28,7 @@
 # HOW TO MAKEFILE (Currently not compiling)
   1. Navigate to folder (using MinGW terminal)
   2. _make -f makefile.make_
+ 
+# FUNCTIONS
+  - getConfig(string)
+     fdsfdsfs
