@@ -30,21 +30,21 @@
   2. _make -f makefile.make_
  
 # FUNKTIONER
-  - <b>getConfig(string)</b> <br>
+  - <b>getConfig(string)</b> _configParser.c_ <br>
  Denne funktion retunerer en int-værdi, korresponderende med den givne string. Denne bruges til at hente data fra config.ini filen, i resten af programmet. <br>
 F.eks. <br>
 _getConfig("s.numberOfStudents")_ retunerer int-værdien _24_
 <br>
 <br>
 
-  - <b>Titel</b> <br>
+  - <b>Titel</b> _fil_ <br>
  Beskrivelse... <br>
 F.eks. <br>
 _eksempel_
 <br>
 <br>
 
-  - <b>Titel</b> <br>
+  - <b>Titel</b> _fil_ <br>
  Beskrivelse... <br>
 F.eks. <br>
 _eksempel_
