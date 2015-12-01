@@ -2,7 +2,7 @@
 
 # HOW TO MAKEFILE (Currently not compiling)
   1. Naviger til mappe (med MinGW terminal)
-  2. brug komando: _make -f makefile.make_
+  2. Brug komando: _make -f makefile.make_
  
 # FUNKTIONER
   - <b>getConfig(string)</b> _configParser.c_ <br>
