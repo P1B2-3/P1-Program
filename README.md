@@ -47,9 +47,9 @@ I filen _config.ini_ har vi en række vædier som vi benytter som konstanter i v
 Vi benytter et tag i starten af hvert paramter, til at bestemme typen af parameteren. Altså, i hvilken kontekst de skal indgå. Disse benyttes kun af organiserings grunde, og ikke tekniske grunde. Herunder ses definitionerne af tags'ene.
 <br>
 
-_g.xxx_ = Global parameter
-_s.xxx_ = Spoken exam parameter
-_w.xxx_ = Written exam parameter
-_a.xxx_ = Algorithm parameter
+_g.xxx_ = Global parameter <br>
+_s.xxx_ = Spoken exam parameter <br>
+_w.xxx_ = Written exam parameter <br>
+_a.xxx_ = Algorithm parameter <br>
 
 
