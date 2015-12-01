@@ -6,7 +6,7 @@
 - [FUNKTIONER](#funktioner)
 - [KONFIGURATION](#konfiguration)
 
-# HOW TO MAKEFILE (Currently not compiling)
+# HOW TO MAKEFILE
   1. Naviger til mappe (med MinGW terminal)
   2. Brug komando: _make -f makefile.make_
  
