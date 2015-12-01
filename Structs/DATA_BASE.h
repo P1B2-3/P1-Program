@@ -3,8 +3,6 @@
 /* antal dage skal komme ind hvor lang eksamens perioden er. Antal_dage */ 
 /* struct med data for alle eksamnerne */
 
-/* To Do, indsættelse af C,B,A for eksamnerne 
-eks Mn = [0,1]->[False or True, 1->3] */
 
 #define SIZE_OF_ARRAYS 2
 #define SIZE_OF_NAMES 20
