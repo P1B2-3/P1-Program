@@ -3,9 +3,10 @@ Random generating students with names, klasses, and other stuff and things.
 
 Author Asger Geel Weirsøe
 
-Version: 2.03 
+Version: 2.24
 
-With a lot of new features
+With a lot of new features.
+Moved somethings and such
 */
 #include <stdlib.h>
 #include <stdio.h>
@@ -472,7 +473,20 @@ int main() {
                 Klasse_3H = TEMP_3G;            
         }
         for(i=0;i<24;i++){
-            
+            fputs("\n--Class start--\n\n",fptr);
+            fputs("Number in Class: 26\n",fptr);
+            fprintf(fptr,"Id range: %s\n\n",(i==0) ? "1-26" : (i==1) ? "27-52" :
+                                        (i==2) ? "53-78" : (i==3) ? "79-104" :
+                                        (i==4) ? "105-130" : (i==5) ? "131-156" :
+                                        (i==6) ? "157-182" : (i==7) ? "183-208" :
+                                        (i==8) ? "209-234" : (i==9) ? "235-260" :
+                                        (i==10) ? "261-286" : (i==11) ? "287-312" :
+                                        (i==12) ? "313-338" : (i==13) ? "339-364" :
+                                        (i==14) ? "365-390" : (i==15) ? "391-416" :
+                                        (i==16) ? "417-442" : (i==17) ? "443-468" :
+                                        (i==18) ? "469-494" : (i==19) ? "495-520" :
+                                        (i==20) ? "521-546" : (i==21) ? "547-572" :
+                                        (i==22) ? "573-598" : "599-624");
             for(taeller = 1; taeller < 27;taeller++) {
                 unikID++;
                 /*klass bliver brugt til at holde styr på at der kun skal være 26 i en klasse */
@@ -507,7 +521,13 @@ int main() {
                         (klass == 20 && aar == 1) ? 'E' :
                         (klass == 21 && aar == 1) ? 'F' :
                         (klass == 22 && aar == 1) ? 'G' : 'H');
-                if(klass_alfabet == 'A') {
+                
+                fprintf(fptr, "Nr in class: %i\n",taeller );
+                fprintf(fptr, "First name: %s\n",elev_for_navn[rand()%182]);
+                fprintf(fptr, "Last name: %s\n",elev_efternavn[rand()%234]);
+                fputs("--Student end--\n\n",fptr);
+            }
+            if(klass_alfabet == 'A') {
                     if(aar == 1) {
                         fprintf(fptr,"CMp = %i\n"
                                          "CMb = %i\n"
@@ -861,11 +881,7 @@ int main() {
                                          Klasse_3H.AMm,Klasse_3H.ASm,Klasse_3H.AMd,Klasse_3H.ASd,Klasse_3H.AMf,Klasse_3H.AMe,Klasse_3H.ASe,Klasse_3H.AMk,Klasse_3H.ASk,Klasse_3H.AMt,Klasse_3H.AMbi,Klasse_3H.AMki);
                     }
                 }
-                fprintf(fptr, "Nr in class: %i\n",taeller );
-                fprintf(fptr, "First name: %s\n",elev_for_navn[rand()%182]);
-                fprintf(fptr, "Last name: %s\n",elev_efternavn[rand()%234]);
-                fputs("--Student end--\n\n",fptr);
-            }
+                fputs("\n\n--Class end--\n",fptr);
             klass++;
         }
             
