@@ -2,9 +2,8 @@
 
 **Indhold**
 
-- [P1-Program](#)
-- [HOW TO MAKEFILE (Currently not compiling)](#)
-- [FUNKTIONER](#)
+- [HOW TO MAKEFILE](#how-to-makefile)
+- [FUNKTIONER](#funktioner)
 - [KONFIGURATION](#konfiguration)
 
 # HOW TO MAKEFILE (Currently not compiling)
