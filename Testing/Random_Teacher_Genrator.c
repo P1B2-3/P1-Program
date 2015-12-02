@@ -10,8 +10,6 @@
  * Version: 2.00 
 */
 
-#include <stdlib.h>
-#include <stdio.h>
 
 void RanTingWithTeachers(Data_Subject_t subjectdata_t[]) {
     int i,unikID=0;
