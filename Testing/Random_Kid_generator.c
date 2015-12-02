@@ -31,7 +31,7 @@ typedef struct {
 }tredjeG;
 
 
-void RandTing(Data_Student_t studentdata[],Data_Subject_t classubject[] Data_Class_t classdata[], Data_EksamensBlock_t eksamensblok[]) {
+void RandTing(Data_Student_t studentdata[], Data_Class_t classdata[]) {
 
     foersteG TEMP_1G;
     foersteG Klasse_1A;
