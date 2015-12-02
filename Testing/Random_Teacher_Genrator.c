@@ -8,7 +8,7 @@
  *
  * Author: Asger Geel Weirsøe
  * Version: 2.00 
-*/
+ */
 
 
 void RanTingWithTeachers(Data_Subject_t subjectdata_t[]) {
