@@ -6,7 +6,7 @@ typedef struct{
     int unikID,
     	examNumber;
 
-}Data_Student_t;
+}Data_Student_info_t;
 
 typedef struct{
 	char teacherName[SIZE_OF_NAMES],
@@ -50,7 +50,7 @@ int main(void){
 }
 
 
-void make_subjectdata(,Data_Student_t studentdata[], Data_Class_t   classdata[], Data_EksamensBlock_t eksamensblok[]){
+void make_subjectdata(){
 	char temp_str[1000];
 	FILE *fptr;
 	int number, i;
