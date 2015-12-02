@@ -11,44 +11,44 @@ typedef struct {
          studentSurname[SIZE_OF_NAMES],
          studentClass[SIZE_OF_NAMES];
     int unikID,
-     /*1*/   AMm[SIZE_OF_ARRAYS],    /*Mundlig matmatik */ 
-     /*2*/   ASm[SIZE_OF_ARRAYS],    /*Skriftlig matmatik */
-     /*3*/    AMd[SIZE_OF_ARRAYS],    /*Mundlig dansk */ 
-     /*4*/   ASd[SIZE_OF_ARRAYS],    /*Skriftlig dansk */ 
-     /*5*/   AMf[SIZE_OF_ARRAYS],    /*Mundlig fysik */ 
-     /*6*/   ASf[SIZE_OF_ARRAYS],    /*Skriftlig fysik */
-     /*7*/   AMe[SIZE_OF_ARRAYS],    /*Mundlig engelsk */
-     /*8*/   ASe[SIZE_OF_ARRAYS],    /*Skriftlig engelsk */
-     /*9*/   AMk[SIZE_OF_ARRAYS],    /*Mundlig kemi */
-     /*10*/   ASk[SIZE_OF_ARRAYS],    /*Skriftlig kemi */
-     /*11*/   AMt[SIZE_OF_ARRAYS],    /*Mundlig teknologi */
-     /*12*/   AMbi[SIZE_OF_ARRAYS];   /*Mundlig bioteknologi*/
-     /*13*/   AMki[SIZE_OF_ARRAYS],   /*Mundlig kom it */
+     /*0*/   AMm[SIZE_OF_ARRAYS],    /*Mundlig matmatik */ 
+     /*1*/   ASm[SIZE_OF_ARRAYS],    /*Skriftlig matmatik */
+     /*2*/    AMd[SIZE_OF_ARRAYS],    /*Mundlig dansk */ 
+     /*3*/   ASd[SIZE_OF_ARRAYS],    /*Skriftlig dansk */ 
+     /*4*/   AMf[SIZE_OF_ARRAYS],    /*Mundlig fysik */ 
+     /*5*/   ASf[SIZE_OF_ARRAYS],    /*Skriftlig fysik */
+     /*6*/   AMe[SIZE_OF_ARRAYS],    /*Mundlig engelsk */
+     /*7*/   ASe[SIZE_OF_ARRAYS],    /*Skriftlig engelsk */
+     /*8*/   AMk[SIZE_OF_ARRAYS],    /*Mundlig kemi */
+     /*9*/   ASk[SIZE_OF_ARRAYS],    /*Skriftlig kemi */
+     /*10*/   AMt[SIZE_OF_ARRAYS],    /*Mundlig teknologi */
+     /*11*/   AMbi[SIZE_OF_ARRAYS];   /*Mundlig bioteknologi*/
+     /*12*/   AMki[SIZE_OF_ARRAYS],   /*Mundlig kom it */
         
-     /*14*/   BMm[SIZE_OF_ARRAYS],    /*Mundlig matmatik */ 
-     /*15*/   BSm[SIZE_OF_ARRAYS],    /*Skriftlig matmatik */
-     /*16*/   BMf[SIZE_OF_ARRAYS],    /*Mundlig fysik */    
-     /*17*/   BSf[SIZE_OF_ARRAYS],    /*Skriftlig fysik */
-     /*18*/   BMe[SIZE_OF_ARRAYS],    /*Mundlig engelsk */
-     /*19*/   BSe[SIZE_OF_ARRAYS],    /*Skriftlig engelsk */
-     /*20*/   BMk[SIZE_OF_ARRAYS],    /*Mundlig kemi */        
-     /*21*/   BSk[SIZE_OF_ARRAYS],    /*Skriftlig kemi */    
-     /*22*/   BMt[SIZE_OF_ARRAYS],    /*Mundlig teknologi */
-     /*23*/   BMi[SIZE_OF_ARRAYS],    /*Mundlig indehistorie */ 
-     /*24*/   BMb[SIZE_OF_ARRAYS],    /*Mundlig biologi */   
-     /*25*/   BMki[SIZE_OF_ARRAYS],   /*Mundlig kom it */
-     /*26*/   BMs[SIZE_OF_ARRAYS],    /*Mundlig samfundsfag */
-     /*27*/   BMth[SIZE_OF_ARRAYS];   /*Mundlig teknologi historie */
+     /*13*/   BMm[SIZE_OF_ARRAYS],    /*Mundlig matmatik */ 
+     /*14*/   BSm[SIZE_OF_ARRAYS],    /*Skriftlig matmatik */
+     /*15*/   BMf[SIZE_OF_ARRAYS],    /*Mundlig fysik */    
+     /*16*/   BSf[SIZE_OF_ARRAYS],    /*Skriftlig fysik */
+     /*17*/   BMe[SIZE_OF_ARRAYS],    /*Mundlig engelsk */
+     /*18*/   BSe[SIZE_OF_ARRAYS],    /*Skriftlig engelsk */
+     /*19*/   BMk[SIZE_OF_ARRAYS],    /*Mundlig kemi */        
+     /*20*/   BSk[SIZE_OF_ARRAYS],    /*Skriftlig kemi */    
+     /*21*/   BMt[SIZE_OF_ARRAYS],    /*Mundlig teknologi */
+     /*22*/   BMi[SIZE_OF_ARRAYS],    /*Mundlig indehistorie */ 
+     /*23*/   BMb[SIZE_OF_ARRAYS],    /*Mundlig biologi */   
+     /*24*/   BMki[SIZE_OF_ARRAYS],   /*Mundlig kom it */
+     /*25*/   BMs[SIZE_OF_ARRAYS],    /*Mundlig samfundsfag */
+     /*26*/   BMth[SIZE_OF_ARRAYS];   /*Mundlig teknologi historie */
         
-     /*28*/   CMp[SIZE_OF_ARRAYS],    /*Mundlig programmering */
-     /*29*/   CMb[SIZE_OF_ARRAYS],    /*Mundlig biologi */
-     /*30*/   CMki[SIZE_OF_ARRAYS],   /*Mundlig kom it */ 
-     /*31*/   CMs[SIZE_OF_ARRAYS],    /*Mundlig samfundsfag */
-     /*32*/   CMth[SIZE_OF_ARRAYS];   /*Mundlig teknologi historie */
-        
+     /*27*/   CMp[SIZE_OF_ARRAYS],    /*Mundlig programmering */
+     /*28*/   CMb[SIZE_OF_ARRAYS],    /*Mundlig biologi */
+     /*29*/   CMki[SIZE_OF_ARRAYS],   /*Mundlig kom it */ 
+     /*30*/   CMs[SIZE_OF_ARRAYS],    /*Mundlig samfundsfag */
+     /*31*/   CMth[SIZE_OF_ARRAYS];   /*Mundlig teknologi historie */
+    
         /*Valgfag*/
-     /*33*/   CMps[SIze_OF_ARRAYS];    /*Mundtlig psykologi*/
-     /*34*/   CMa[SIze_OF_ARRAYS];    /*Mundtlig astronomi*/
+     /*32*/   CMps[SIze_OF_ARRAYS];    /*Mundtlig psykologi*/
+     /*33*/   CMa[SIze_OF_ARRAYS];    /*Mundtlig astronomi*/
         
         
         
