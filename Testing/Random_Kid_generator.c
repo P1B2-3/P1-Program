@@ -1,13 +1,13 @@
 /*
-Random generating students with names, klasses, and other stuff and things.
-
-Author Asger Geel Weirsøe
-
-Version: 2.25
-
-With a lot of new features.
-Moved somethings and such + made it compatible with program (perhaps)
-*/
+ * Random generating students with names, klasses, and other stuff and things.
+ * 
+ * Author Asger Geel Weirsøe
+ * 
+ * Version: 2.26
+ * 
+ * With a lot of new features.
+ * Moved somethings and such + made it compatible with program (perhaps)
+ */
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -31,7 +31,7 @@ typedef struct {
 }tredjeG;
 
 
-void RandTing(Data_Student_t studentdata[], Data_Class_t classdata[]) {
+void RandTing(Data_Student_t studentdata[],Data_Subject_t classubject[] Data_Class_t classdata[], Data_EksamensBlock_t eksamensblok[]) {
 
     foersteG TEMP_1G;
     foersteG Klasse_1A;
@@ -1081,6 +1081,7 @@ void RandTing(Data_Student_t studentdata[], Data_Class_t classdata[]) {
         }
         for(i=0;i<24;i++){
             fputs("\n--Class start--\n\n",fptr);
+            fputs("##",fptr);
             fprintf(fptr, "Number in Class: %i\n",classdata[i].amountOfStudent = 26 );
             fprintf(fptr,"Id range: %s\n\n",(i==0) ? "1-26" : (i==1) ? "27-52" :
                                         (i==2) ? "53-78" : (i==3) ? "79-104" :
