@@ -1,12 +1,13 @@
 typedef struct{
-    int room,
-        date,
+    int date,
         period;
 
 }Data_Exam_t;
 
 typedef struct{
-    Data_Exam_t exam[STUDENDTS_IN_CLASS]
+    Data_Exam_t exam[STUDENDTS_IN_CLASS];
+    int room;
+    int dates[LENGHT_OF_EXAM];
 
 }Data_Class_Exam_t;
 
