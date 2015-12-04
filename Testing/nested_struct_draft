@@ -1,0 +1,47 @@
+
+typedef struct{
+    typedef struct students[STUDENDTS_IN_CLASS]
+    {
+        char name[SIZE_OF_NAMES],
+             surname[SIZE_OF_NAMES];
+        int unikID,
+            exam_number;
+    }Data_Student_t;
+
+    typedef struct subject[NUMBER_OF_SUBJETS]
+    {
+        typedef struct censordata[NUMBER_OF_SUBJETS]
+        {
+            char name[SIZE_OF_NAMES],
+                 surname[SIZE_OF_NAMES];
+            int censor_ID;
+        }Data_Censor_t;
+
+        typedef struct teacherdata[NUMBER_OF_SUBJETS]
+        {
+            char name[SIZE_OF_NAMES],
+                 surname[SIZE_OF_NAMES];
+            int teacher_ID;   
+        }Data_Teacher_t;
+
+        typedef struct class_exam[NUMBER_OF_SUBJETS]
+        {
+            typedef struct exam[STUDENDTS_IN_CLASS]
+            {
+                int date,
+                    period;
+            }Data_Exam_t;
+
+            int room;
+            int dates[LENGHT_OF_EXAM];
+        }Data_Class_Exam_t;
+
+        char subject[SIZE_OF_NAMES];
+        int y_or_n;
+    }Data_Subject_t;
+
+    int students,
+        year;
+    char name;
+
+}Data_Class_t;
