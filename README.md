@@ -23,7 +23,9 @@ _getConfig("s.numberOfStudents")_ retunerer int-værdien _24_
 (indput\_nr\_class, indput\_nr\_subject, indput\_nr\_student, indput\_nr\_teacher, indput\_nr\_censor, indput\_nr\_classexam, indput\_nr\_exam, indput\_nr\_datablock) <br>
 Structen skal være Data\_block\_t datablock. <br>
 F.eks. <br>
-_ReturnSpeceficData(name\_surname,1,0,1,-1,-1,-1,0,0,0,datablock) vil returnere en char* værdi med elev 1 i klasse 1's efternavn_
+_ReturnSpeceficData(name\_surname,1,0,1,-1,-1,-1,0,0,0,datablock)_ vil returnere en char* værdi med elev 1 i klasse 1's efternavn.<br>
+Hvor imod hvis den så således ud:<br>
+_ReturnSpeceficData(unikID,1,0,1,-1,-1,-1,0,0,0,datablock)_ vil den returnere en int værdi med elev 1 i klasse 1's unikke ID.
 <br>
 <br>
 
