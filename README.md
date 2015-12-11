@@ -12,16 +12,20 @@
  
 # FUNKTIONER
   - <b>getConfig(string)</b> _configParser.c_ <br>
- Denne funktion retunerer en int-værdi, korresponderende med den givne string. Denne bruges til at hente data fra config.ini filen, i resten af programmet. <br>
+ Denne funktion retunerer en double-værdi, korresponderende med den givne string. Denne bruges til at hente data fra config.ini filen, i resten af programmet. <br>
 F.eks. <br>
-_getConfig("s.numberOfStudents")_ retunerer int-værdien _24_
+_getConfig("s.numberOfStudents")_ retunerer int-værdien _24.00_
 <br>
 <br>
 
-  - <b>Funktion</b> _fil_ <br>
- Beskrivelse... <br>
+  - <b>ReturnSpeceficData(string,int,int,int,int,int,int,int,int,struct)</b> _ReturnSpeceficData.c_ <br>
+ Funktionen skriver returner en pointer til enden char* eller int, og skal derfor fanges i en void pointer, for derefter at kunne blive sat til en specifik data senere (hvis der er behov for det). Det funktionen returnere afhænger af hvad du skriver i den første string, (examens\_class\_ID, name\_surname, Class, unikID, subject\_number, subject\_name, lokale, periodestart, periode_end) og de mange int bliver brugt til at beskrive hvor i arrayet der skal kigges. Så <br>
+(indput\_nr\_class, indput\_nr\_subject, indput\_nr\_student, indput\_nr\_teacher, indput\_nr\_censor, indput\_nr\_classexam, indput\_nr\_exam, indput\_nr\_datablock) <br>
+Structen skal være Data\_block\_t datablock. <br>
 F.eks. <br>
-_eksempel_
+_ReturnSpeceficData(name\_surname,1,0,1,-1,-1,-1,0,0,0,datablock)_ vil returnere en char* værdi med elev 1 i klasse 1's efternavn.<br>
+Hvor imod hvis den så således ud:<br>
+_ReturnSpeceficData(unikID,1,0,1,-1,-1,-1,0,0,0,datablock)_ vil den returnere en int værdi med elev 1 i klasse 1's unikke ID.
 <br>
 <br>
 
