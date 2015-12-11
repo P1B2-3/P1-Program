@@ -2,15 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 
-typedef struct{ 
-    Data_Student_t  student;
-    Data_Subject_t  subjects;
-    int lokale,
-        period_start,
-    int year;
-    char classname;
-}Data_block_t;
-
 void mutation(int skema, Data_block_t *****skema_data)
 {
     int numOfMut,
@@ -47,7 +38,14 @@ void mutation(int skema, Data_block_t *****skema_data)
                     skema_data[skema][week][day][room][0].year == skema_data[skema][week][day+days-1][room][0].year)
                 {
                     if (skema_data[skema][gWeek][gDay][gRoom][0].year == 0 && skema_data[skema][gWeek][gDay+gDays-1][gRoom][0].year == 0){
-                        change(skema, week, day, room, gWeek, gDay, gRoom, skema_data, 0);
+                        for (i = 0; i < 10; i++)
+                        {
+                            for (j = 0; j < 3; ++j)
+                            {
+                                skema_data[skema][gWeek][gDay+j][gRoom][i] = skema_data[skema][week][day+j][room][i];
+                                memset(skema_data[skema][week][day+j][room], 0, sizeof(Data_block_t)*10);
+                            }
+                        }
                         break;
                     }
                 }
@@ -60,7 +58,21 @@ void mutation(int skema, Data_block_t *****skema_data)
                 {
                     if (skema_data[skema][gWeek][gDay][gRoom][0].year == 0 && skema_data[skema][gWeek][gDay+gDays-1][gRoom][0].year == 0)
                     {
-                        change(skema, week, day, room, gWeek, gDay, gRoom, skema_data, 1);
+                        for (i = 0; i < 10; i++)
+                        {
+                            for (j = 0; j < 3; ++j)
+                            {
+                                if (day + j <= 4){
+                                    skema_data[skema][gWeek][gDay+j][gRoom][i] = skema_data[skema][week][day+j][room][i];
+                                    memset(skema_data[skema][week][day+j][room], 0, sizeof(Data_block_t)*10);
+                                }
+                                else{
+                                    skema_data[skema][gWeek][gDay+j][gRoom][i] = skema_data[skema][week+1][day+j-5][room][i];
+                                    memset(skema_data[skema][week+1][day+j-5][room], 0, sizeof(Data_block_t)*10);
+                                }
+
+                            }
+                        }
                         break;
                     }
                 }
@@ -73,7 +85,21 @@ void mutation(int skema, Data_block_t *****skema_data)
                 {
                     if (skema_data[skema][gWeek][gDay][gRoom][0].year == 0 && skema_data[skema][gWeek+1][gDay-gDays][gRoom][0].year == 0)
                     {
-                        change(skema, week, day, room, gWeek, gDay, gRoom, skema_data, 2);
+                        for (i = 0; i < 10; i++)
+                        {
+                            for (j = 0; j < 3; ++j)
+                            {
+                                if (gDay + j <= 4){
+                                    skema_data[skema][gWeek][gDay+j][gRoom][i] = skema_data[skema][week][day+j][room][i];
+                                    memset(skema_data[skema][week][day+j][room], 0, sizeof(Data_block_t)*10);
+                                }
+                                else{
+                                    skema_data[skema][gWeek+1][gDay+j-5][gRoom][i] = skema_data[skema][week][day+j][room][i];
+                                    memset(skema_data[skema][week][day+j][room], 0, sizeof(Data_block_t)*10);
+                                }
+
+                            }
+                        }
                     }
                 }
 
@@ -86,88 +112,31 @@ void mutation(int skema, Data_block_t *****skema_data)
                 {
                     if (skema_data[skema][gWeek][gDay][gRoom][0].year == 0 && skema_data[skema][gWeek+1][gDay-gDays][gRoom][0].year == 0)
                     {
-                        change(skema, week, day, room, gWeek, gDay, gRoom, skema_data, 3);
+                        for (i = 0; i < 10; i++)
+                        {
+                            for (j = 0; j < 3; ++j)
+                            {
+                                if (gDay + j <= 4 && day + j <=4){
+                                    skema_data[skema][gWeek][gDay+j][gRoom][i] = skema_data[skema][week][day+j][room][i];
+                                    memset(skema_data[skema][week][day+j][room], 0, sizeof(Data_block_t)*10);
+                                }
+                                else if (gDay + j <= 4 && day + j > 4){
+                                    skema_data[skema][gWeek][gDay+j][gRoom][i] = skema_data[skema][week+1][day+j-5][room][i];
+                                    memset(skema_data[skema][week+1][day+j-5][room], 0, sizeof(Data_block_t)*10);
+                                }
+                                else if (gDay + j > 4 && day + j <= 4){
+                                    skema_data[skema][gWeek+1][gDay+j-5][gRoom][i] = skema_data[skema][week][day+j][room][i];
+                                    memset(skema_data[skema][week][day+j][room], 0, sizeof(Data_block_t)*10);
+                                }
+                                else{
+                                    skema_data[skema][gWeek+1][gDay+j-5][gRoom][i] = skema_data[skema][week+1][day+j-5][room][i];
+                                    memset(skema_data[skema][week+1][day+j-5][room], 0, sizeof(Data_block_t)*10);
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
-    }
-}
-
-void change(int skema, int week, int day, int room, int gWeek, int gDay, int gRoom, Data_block_t *****skema_data, int type){
-    int i,j;
-
-    switch(type){
-        case 0:
-            for (i = 0; i < 10; i++)
-            {
-                for (j = 0; j < 3; ++j)
-                {
-                    skema_data[skema][gWeek][gDay+j][gRoom][i] = skema_data[skema][week][day+j][room][i];
-                    memset(skema_data[skema][week][day+j][room], 0, sizeof(Data_block_t)*10);
-                }
-            }
-            break;
-        case 1:
-            for (i = 0; i < 10; i++)
-            {
-                for (j = 0; j < 3; ++j)
-                {
-                    if (day + j <= 4){
-                        skema_data[skema][gWeek][gDay+j][gRoom][i] = skema_data[skema][week][day+j][room][i];
-                        memset(skema_data[skema][week][day+j][room], 0, sizeof(Data_block_t)*10);
-                    }
-                    else{
-                        skema_data[skema][gWeek][gDay+j][gRoom][i] = skema_data[skema][week+1][day+j-5][room][i];
-                        memset(skema_data[skema][week+1][day+j-5][room], 0, sizeof(Data_block_t)*10);
-                    }
-
-                }
-            }
-            break;
-        case 2:
-            for (i = 0; i < 10; i++)
-            {
-                for (j = 0; j < 3; ++j)
-                {
-                    if (gDay + j <= 4){
-                        skema_data[skema][gWeek][gDay+j][gRoom][i] = skema_data[skema][week][day+j][room][i];
-                        memset(skema_data[skema][week][day+j][room], 0, sizeof(Data_block_t)*10);
-                    }
-                    else{
-                        skema_data[skema][gWeek+1][gDay+j-5][gRoom][i] = skema_data[skema][week][day+j][room][i];
-                        memset(skema_data[skema][week][day+j][room], 0, sizeof(Data_block_t)*10);
-                    }
-
-                }
-            }
-            break;
-        case 3:
-            for (i = 0; i < 10; i++)
-            {
-                for (j = 0; j < 3; ++j)
-                {
-                    if (gDay + j <= 4 && day + j <=4){
-                        skema_data[skema][gWeek][gDay+j][gRoom][i] = skema_data[skema][week][day+j][room][i];
-                        memset(skema_data[skema][week][day+j][room], 0, sizeof(Data_block_t)*10);
-                    }
-                    else if (gDay + j <= 4 && day + j > 4){
-                        skema_data[skema][gWeek][gDay+j][gRoom][i] = skema_data[skema][week+1][day+j-5][room][i];
-                        memset(skema_data[skema][week+1][day+j-5][room], 0, sizeof(Data_block_t)*10);
-                    }
-                    else if (gDay + j > 4 && day + j <= 4){
-                        skema_data[skema][gWeek+1][gDay+j-5][gRoom][i] = skema_data[skema][week][day+j][room][i];
-                        memset(skema_data[skema][week][day+j][room], 0, sizeof(Data_block_t)*10);
-                    }
-                    else{
-                        skema_data[skema][gWeek+1][gDay+j-5][gRoom][i] = skema_data[skema][week+1][day+j-5][room][i];
-                        memset(skema_data[skema][week+1][day+j-5][room], 0, sizeof(Data_block_t)*10);
-                    }
-                }
-            }
-            break;
-        default:
-            printf("error in mutation\n");
-            exit(EXIT_FAILURE);
     }
 }
