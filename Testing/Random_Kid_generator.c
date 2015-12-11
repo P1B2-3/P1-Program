@@ -1,4 +1,4 @@
-/*
+    /*
  * Random generating students with names, klasses, and other stuff and things.
  * 
  * Author Asger Geel Weirsøe

@@ -47,7 +47,8 @@ typedef struct{
     Data_Teacher_t      teacher;
     Data_Class_Exam_t   class_Exam;
     char subject[SIZE_OF_NAMES];
-    int y_or_n;
+    int y_or_n,
+        s_or_m;
 
 }Data_Subject_t;
 
@@ -84,29 +85,39 @@ void RanTingWithTeachers(Data_Class_t classdata[]);
 
 int main(void){
 
-	Data_Class_t 				*classdata;
+    Data_Class_t                *classdata;
 
-	classdata = (Data_Class_t *) malloc(30 * sizeof(Data_Class_t));
-
-	if (classdata == NULL){
-			printf("No free memory\n");
-			return (0);
-		}
+    classdata = (Data_Class_t *) calloc(30 , sizeof(Data_Class_t));
+        if (classdata == NULL){
+                printf("No free memory\n");
+                return (0);
+            }
 
     printf("beforeRand\n");
-	RandTing(classdata);
+    RandTing(classdata);
+
     printf("middelRand\n");
-	RanTingWithTeachers(classdata);
+
+    RanTingWithTeachers(classdata);
     printf("afterRand\n");
 
-    printf("%i.%c\n", classdata[3].year,classdata[3].name);
-    
+    printf("%i.%c\n", classdata[0].year,classdata[0].name);
+    printf("%i\n", classdata[0].students[0].exam_number);
+    printf("%s\n", classdata[0].students[0].name);
+    printf("%s\n", classdata[0].students[0].surname);
+    printf("%i\n", classdata[0].students[0].unikID);
+    printf("%s\n", classdata[0].subjects[0].teacher.name);
+    printf("%s\n", classdata[0].subjects[0].teacher.surname);
+    printf("%s\n", classdata[0].subjects[0].censor.name);
+    printf("%s\n", classdata[0].subjects[0].censor.surname);
+    printf("%s\n", classdata[0].subjects[0].subject);
+
 
     free(classdata);
 
     printf("done main\n");
 
-	return 0;
+    return 0;
 }
 
 void RandTing(Data_Class_t classdata[]) {
@@ -142,11 +153,11 @@ void RandTing(Data_Class_t classdata[]) {
     tredjeG Klasse_3H;
 
     int i,
-    	unikID=0,
-		klass=0,
-		temp_nr,
-		taeller,
-		tempP=0;
+        unikID=0,
+        klass=0,
+        temp_nr,
+        taeller,
+        tempP=0;
     char yorn;
 
         /* Array med fornavne, og tallene til siden, er hvor mange navne der er talt op indtil da.*/
@@ -1167,13 +1178,13 @@ void RandTing(Data_Class_t classdata[]) {
                                         (i==20) ? "521-546" : (i==21) ? "547-572" :
                                         (i==22) ? "573-598" : "599-624");
             if(i<=8){
-            	classdata[i].year = 3;
+                classdata[i].year = 3;
             }
             else if(i > 8 && i<=16){
-            	classdata[i].year = 2;
+                classdata[i].year = 2;
             }
             else{
-            	classdata[i].year = 1;
+                classdata[i].year = 1;
             }
             fprintf(fptr,"Klasse nr: %i.%c\n",
                         classdata[i].year,
@@ -1568,15 +1579,15 @@ void RandTing(Data_Class_t classdata[]) {
                 *dette gør det muligt at have de samme abcdefgh klasser til alle årgangene.              */
                 fputs("--Student start--\n",fptr);
 
-                classdata[i].students[unikID].unikID = unikID;
+                classdata[i].students[taeller-1].unikID = unikID;
 
-                fprintf(fptr, "Student unikID: %i\n",classdata[i].students[unikID].unikID);
+                fprintf(fptr, "Student unikID: %i\n",classdata[i].students[taeller-1].unikID);
                 
-                strcpy(classdata[i].students[unikID].name,elev_for_navn[rand()%182]);
-                strcpy(classdata[i].students[unikID].surname,elev_efternavn[rand()%234]);
-                fprintf(fptr, "Nr in class: %i\n",classdata[i].students[unikID].exam_number = taeller );
-                fprintf(fptr, "First name: %s\n",classdata[i].students[unikID].name);
-                fprintf(fptr, "Last name: %s\n",classdata[i].students[unikID].surname);
+                strcpy(classdata[i].students[taeller-1].name,elev_for_navn[rand()%182]);
+                strcpy(classdata[i].students[taeller-1].surname,elev_efternavn[rand()%234]);
+                fprintf(fptr, "Nr in class: %i\n",classdata[i].students[taeller-1].exam_number = taeller );
+                fprintf(fptr, "First name: %s\n",classdata[i].students[taeller-1].name);
+                fprintf(fptr, "Last name: %s\n",classdata[i].students[taeller-1].surname);
                 fputs("--Student end--\n\n",fptr);
             }
             
@@ -1603,7 +1614,7 @@ void RandTing(Data_Class_t classdata[]) {
 }
 
 void RanTingWithTeachers(Data_Class_t classdata[]) {
-    int i,j,unikID=0;
+    int i,j,unikID_teacher=0, unikID_censor=0;
     char examType[SIZE_OF_NAMES];
             /* Array med fornavne, og tallene til siden, er hvor mange navne der er talt op indtil da.*/
     const char *elev_for_navn[] = {"Mathias", "Mads", "Magnus", "Emil", "Jakob", 
@@ -1701,18 +1712,20 @@ void RanTingWithTeachers(Data_Class_t classdata[]) {
             fptr = fopen("Teacher_to_sub.txt","w"); 
             fputs("//This entire document is dedicated to the processing of a school schedule.\n",fptr);
             fputs("//Please do not edit this file for any reasons. Unless you know what you are doing.\n\n\n",fptr);
-        for (j=0;j<30;j++){
+        for (j=0;j<24;j++){
 
-            for(i=0;i<23;i++){
-                unikID++;
+            for(i=0;i<34;i++){
+                asgererenspasser:
+                unikID_teacher++;
+                unikID_censor++;
                 switch (i){
-                      case 0:
+                       case 0:
                           /*Mundtlig matmatik*/
                           strcpy(examType,"AMm");
                           break;
                       case 1:
                           /*Skriftlig matmatik*/
-                          strcpy(examType,"ASm");
+                          strcpy(examType,"skip");
                           break;
                       case 2:
                           /*Mundtlig dansk*/
@@ -1720,7 +1733,7 @@ void RanTingWithTeachers(Data_Class_t classdata[]) {
                           break;
                       case 3:
                           /*Skriftlig dansk*/
-                          strcpy(examType,"ASd");
+                          strcpy(examType,"skip");
                           break;
                       case 4:
                           /*Mundtlig fysik*/ 
@@ -1728,7 +1741,7 @@ void RanTingWithTeachers(Data_Class_t classdata[]) {
                           break;
                       case 5:
                           /*Skriftlig fysik*/
-                          strcpy(examType,"ASf");
+                          strcpy(examType,"skip");
                           break;
                       case 6:
                           /*Mundtlig engelsk*/
@@ -1736,7 +1749,7 @@ void RanTingWithTeachers(Data_Class_t classdata[]) {
                           break;
                       case 7:
                           /*Skriftlig engelsk*/
-                          strcpy(examType,"ASe");
+                          strcpy(examType,"skip");
                           break;
                       case 8:
                           /*Mundtlig kemi*/
@@ -1744,7 +1757,7 @@ void RanTingWithTeachers(Data_Class_t classdata[]) {
                           break;
                       case 9:
                           /*Skriftlig kemi*/
-                          strcpy(examType,"ASk");
+                          strcpy(examType,"skip");
                           break;
                       case 10:
                           /*Mundtlig teknologi*/
@@ -1764,7 +1777,7 @@ void RanTingWithTeachers(Data_Class_t classdata[]) {
                           break;
                       case 14:
                           /*Skriftlig matmatik*/
-                          strcpy(examType,"BSm");
+                          strcpy(examType,"skip");
                           break;
                       case 15:
                           /*Mundtlig fysik*/
@@ -1772,7 +1785,7 @@ void RanTingWithTeachers(Data_Class_t classdata[]) {
                           break;
                       case 16:
                           /*Skriftlig fysik*/
-                          strcpy(examType,"BSf");
+                          strcpy(examType,"skip");
                           break;
                       case 17:
                           /*Mundtlig engelsk*/
@@ -1780,7 +1793,7 @@ void RanTingWithTeachers(Data_Class_t classdata[]) {
                           break;
                       case 18:
                           /*Skriftlig engelsk*/
-                          strcpy(examType,"BSe");
+                          strcpy(examType,"skip");
                           break;
                       case 19:
                           /*Mundtlig kemi*/
@@ -1788,7 +1801,7 @@ void RanTingWithTeachers(Data_Class_t classdata[]) {
                           break;
                       case 20:
                           /*Skriftlig kemi*/
-                          strcpy(examType,"BSk");
+                          strcpy(examType,"skip");
                           break;
                       case 21:
                           /*Mundtlig teknologi*/
@@ -1816,23 +1829,23 @@ void RanTingWithTeachers(Data_Class_t classdata[]) {
                           break;
                       case 27:
                           /*Mundtlig programmering*/
-                          strcpy(examType,"1Mp");
+                          strcpy(examType,"CMp");
                           break;
                       case 28:
                           /*Mundtlig biologi*/
-                          strcpy(examType,"1Mb");
+                          strcpy(examType,"CMb");
                           break;
                       case 29:
                           /*Mundtlig kom it*/
-                          strcpy(examType,"1Mki");
+                          strcpy(examType,"CMki");
                           break;
                       case 30:
                           /*Mundtlig samfundsfag*/
-                          strcpy(examType,"1Ms");
+                          strcpy(examType,"CMs");
                           break;
                       case 31:
                           /*Mundtlig teknologi historie*/
-                          strcpy(examType,"1Mth");
+                          strcpy(examType,"CMth");
                           break;
                       case 32:
                           /*Mundtlig psykologi*/
@@ -1845,6 +1858,12 @@ void RanTingWithTeachers(Data_Class_t classdata[]) {
                       default :
                           printf("faulty input\n");
                 }
+                if (strcmp(examType,"skip") == 0){
+                    i++;
+                    classdata[j].subjects[i].s_or_m = 1;
+                    goto asgererenspasser;
+                }
+
                 strcpy(classdata[j].subjects[i].subject,examType);
                 strcpy(classdata[j].subjects[i].teacher.name,elev_for_navn[rand()%182]);
                 strcpy(classdata[j].subjects[i].teacher.surname,elev_efternavn[rand()%234]);
@@ -1853,16 +1872,18 @@ void RanTingWithTeachers(Data_Class_t classdata[]) {
                   
                 fputs("--Subject Start--\n",fptr);
                 fprintf(fptr,"Examen: %s",examType);
-                fprintf(fptr, "Teacher unikID: %i\n",classdata[j].subjects[i].teacher.ID = unikID);
+                fprintf(fptr, "Teacher unikID: %i\n",classdata[j].subjects[i].teacher.ID = unikID_teacher);
                 fprintf(fptr, "Teacher first name: %s\n",classdata[j].subjects[i].teacher.name );
-                fprintf(fptr, "Teacher last name: %s\n",classdata[j].subjects[i].teacher.surname);
-                unikID++;
-                fprintf(fptr, "Teacher unikID: %i\n",classdata[j].subjects[i].teacher.ID = unikID);
-                fprintf(fptr, "Teacher first name: %s\n",classdata[j].subjects[i].censor.name );
-                fprintf(fptr, "Teacher last name: %s\n",classdata[j].subjects[i].censor.surname);
+                fprintf(fptr, "Teacher last name: %s\n\n",classdata[j].subjects[i].teacher.surname);
+
+                fprintf(fptr, "Censor unikID: %i\n",classdata[j].subjects[i].censor.ID = unikID_censor);
+                fprintf(fptr, "Censor first name: %s\n",classdata[j].subjects[i].censor.name );
+                fprintf(fptr, "Censor last name: %s\n",classdata[j].subjects[i].censor.surname);
+                classdata[j].subjects[i].s_or_m = 0; 
 
                 fputs("--Subject end--\n\n",fptr);
             }
         }
     }
 }
+

@@ -4,7 +4,7 @@ The function creates a document that writes the data used to generate a school s
 
 
 Date:           9/11
-Version:        1.02
+Version:        2.00
 */
 
 int DaysWhereTeacherIsAbcent(int *teacherDaysData, char teacherFirstName, char teacherLastName, int numOfTeachers){
