@@ -1,7 +1,7 @@
 
 void printScheduleGrid(void);
 
-int main(void) {
+int SkemaPrint(void) {
 	printf("This program will print a shedule grid: \n");
 	printScheduleGrid();
 
