@@ -8,7 +8,7 @@ Will have to be changed to work as function and might have to be tweaked in the 
 int AmountOfDays(int startDay, int startMonth, int startYear, int endDay, int endMonth, int endYear);
 int DaysInMonth(int month, int year);
 int IsLeapYear(int year);
-
+/*
 int main(void) {
     int startDay, startMonth, startYear, endDay, endMonth, endYear;
     printf("DD,MM,YYYY DD,MM,YYYY\n");
@@ -18,6 +18,7 @@ int main(void) {
 
     return 0;
 }
+*/
 
 int AmountOfDays(int startDay, int startMonth, int startYear, int endDay, int endMonth, int endYear) {
     int i, resDays;
