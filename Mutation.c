@@ -9,13 +9,20 @@ void mutation(int genome, Exam_block_t *****genome_data)
         week, gWeek,
         day, gDay,
         room, gRoom;
+        numOfMut,
+        numOfRooms,
+        numOfWeeks;
     time_t t;
     Exam_block_t temp_data[10];
 
     srand((unsigned) time(&t));
 
+    numOfMut = (int)getConfig("a.mutationSize");
+    numOfRooms = (int)getConfig("s.numberOfRooms");
+    numOfWeeks = (int)getConfig("s.numberOfWeeks");
+
     /*varierer mængden af mutation baseret på en config (foreslået på ca. 9)*/
-    numOfMut = rand() % numOfMutConfig;
+    numOfMut = rand() % numOfMut;
 
     for (l = 0; l < numOfMut; l++)
     {
@@ -23,13 +30,13 @@ void mutation(int genome, Exam_block_t *****genome_data)
         while(k < 30000)
         {
             k++;
-            week = rand() % numOfWeeksConfig; /*eksamensperiode længde, standard er 8*/
+            week = rand() % numOfWeeks; /*eksamensperiode længde, standard er 8*/
             day = rand() % 5;                 /*antal dage på en uge*/
-            room = rand() % numOfRoomsConfig; /*antal rum, standard er 10*/
+            room = rand() % numOfRooms; /*antal rum, standard er 10*/
 
-            gWeek = rand() % numOfWeeksConfig;
+            gWeek = rand() % numOfWeeks;
             gDay = rand() % 5;
-            gRoom = rand() % numOfRoomsConfig;
+            gRoom = rand() % numOfRooms;
 
             xamLenght = genome_data[genome][week][day][room][0].days; /*varigheden af eksamen*/
             gXamLenght = genome_data[genome][gWeek][gDay][gRoom][0].days; /*varighed af den flyttede eksamenslængde*/
@@ -46,12 +53,12 @@ void mutation(int genome, Exam_block_t *****genome_data)
                     if (genome_data[genome][gWeek][gDay][gRoom][0].year == 0 && 
                         genome_data[genome][gWeek][gDay+gXamLenght-1][gRoom][0].year == 0)
                     {   /*double for-loop indsætter al data i den næste position,*/
-                        for (i = 0; i < numOfRoomsConfig; i++)
+                        for (i = 0; i < numOfRooms; i++)
                         {
                             for (j = 0; j < xamLenght; j++)
                             {
                                 genome_data[genome][gWeek][gDay+j][gRoom][i] = genome_data[genome][week][day+j][room][i];
-                                memset(genome_data[genome][week][day+j][room], 0, sizeof(Exam_block_t)*numOfRoomsConfig);
+                                memset(genome_data[genome][week][day+j][room], 0, sizeof(Exam_block_t)*numOfRooms);
                             }
                         }
                         break;
@@ -63,7 +70,7 @@ void mutation(int genome, Exam_block_t *****genome_data)
                     genome_data[genome][gWeek][gDay][gRoom][0].year == 
                     genome_data[genome][gWeek][gDay+gXamLenght-1][gRoom][0].year)
                     {
-                        for (i = 0; i < numOfRoomsConfig; i++)
+                        for (i = 0; i < numOfRooms; i++)
                         {
                             for (j = 0; j < xamLenght; j++)
                             {
@@ -85,18 +92,18 @@ void mutation(int genome, Exam_block_t *****genome_data)
                 {
                     if (genome_data[genome][gWeek][gDay][gRoom][0].year == 0 && genome_data[genome][gWeek][gDay+gXamLenght-1][gRoom][0].year == 0)
                     {
-                        for (i = 0; i < numOfRoomsConfig; i++)
+                        for (i = 0; i < numOfRooms; i++)
                         {
                             for (j = 0; j < xamLenght; j++)
                             {
                                 if (day + j <= 4)
                                 {
                                     genome_data[genome][gWeek][gDay+j][gRoom][i] = genome_data[genome][week][day+j][room][i];
-                                    memset(genome_data[genome][week][day+j][room], 0, sizeof(Exam_block_t)*numOfRoomsConfig);
+                                    memset(genome_data[genome][week][day+j][room], 0, sizeof(Exam_block_t)*numOfRooms);
                                 }
                                 else{
                                     genome_data[genome][gWeek][gDay+j][gRoom][i] = genome_data[genome][week+1][day+j-5][room][i];
-                                    memset(genome_data[genome][week+1][day+j-5][room], 0, sizeof(Exam_block_t)*numOfRoomsConfig);
+                                    memset(genome_data[genome][week+1][day+j-5][room], 0, sizeof(Exam_block_t)*numOfRooms);
                                 }
                             }
                         }
@@ -107,7 +114,7 @@ void mutation(int genome, Exam_block_t *****genome_data)
                     genome_data[genome][gWeek][gDay][gRoom][0].classname == genome_data[genome][gWeek][gDay+gXamLenght-1][gRoom][0].classname &&
                     genome_data[genome][gWeek][gDay][gRoom][0].year == genome_data[genome][gWeek][gDay+gXamLenght-1][gRoom][0].year)
                     {
-                        for (i = 0; i < numOfRoomsConfig; i++)
+                        for (i = 0; i < numOfRooms; i++)
                         {
                             for (j = 0; j < xamLenght; j++)
                             {
@@ -137,18 +144,18 @@ void mutation(int genome, Exam_block_t *****genome_data)
                 {
                     if (genome_data[genome][gWeek][gDay][gRoom][0].year == 0 && genome_data[genome][gWeek+1][gDay-gXamLenght][gRoom][0].year == 0)
                     {
-                        for (i = 0; i < numOfRoomsConfig; i++)
+                        for (i = 0; i < numOfRooms; i++)
                         {
                             for (j = 0; j < xamLenght; j++)
                             {
                                 if (gDay + j <= 4)
                                 {
                                     genome_data[genome][gWeek][gDay+j][gRoom][i] = genome_data[genome][week][day+j][room][i];
-                                    memset(genome_data[genome][week][day+j][room], 0, sizeof(Exam_block_t)*numOfRoomsConfig);
+                                    memset(genome_data[genome][week][day+j][room], 0, sizeof(Exam_block_t)*numOfRooms);
                                 }
                                 else{
                                     genome_data[genome][gWeek+1][gDay+j-5][gRoom][i] = genome_data[genome][week][day+j][room][i];
-                                    memset(genome_data[genome][week][day+j][room], 0, sizeof(Exam_block_t)*numOfRoomsConfig);
+                                    memset(genome_data[genome][week][day+j][room], 0, sizeof(Exam_block_t)*numOfRooms);
                                 }
 
                             }
@@ -160,7 +167,7 @@ void mutation(int genome, Exam_block_t *****genome_data)
                     genome_data[genome][gWeek][gDay][gRoom][0].classname == genome_data[genome][gWeek+1][gDay-gXamLenght][gRoom][0].classname &&
                     genome_data[genome][gWeek][gDay][gRoom][0].year == genome_data[genome][gWeek+1][gDay-gXamLenght][gRoom][0].year)
                     {
-                        for (i = 0; i < numOfRoomsConfig; i++)
+                        for (i = 0; i < numOfRooms; i++)
                         {
                             for (j = 0; j < xamLenght; j++)
                             {
@@ -190,28 +197,28 @@ void mutation(int genome, Exam_block_t *****genome_data)
                 {
                     if (genome_data[genome][gWeek][gDay][gRoom][0].year == 0 && genome_data[genome][gWeek+1][gDay-gXamLenght][gRoom][0].year == 0)
                     {
-                        for (i = 0; i < numOfRoomsConfig; i++)
+                        for (i = 0; i < numOfRooms; i++)
                         {
                             for (j = 0; j < xamLenght; j++)
                             {
                                 if (gDay + j <= 4 && day + j <= 4)
                                 {
                                     genome_data[genome][gWeek][gDay+j][gRoom][i] = genome_data[genome][week][day+j][room][i];
-                                    memset(genome_data[genome][week][day+j][room], 0, sizeof(Exam_block_t)*numOfRoomsConfig);
+                                    memset(genome_data[genome][week][day+j][room], 0, sizeof(Exam_block_t)*numOfRooms);
                                 }
                                 else if (gDay + j <= 4 && day + j > 4)
                                 {
                                     genome_data[genome][gWeek][gDay+j][gRoom][i] = genome_data[genome][week+1][day+j-5][room][i];
-                                    memset(genome_data[genome][week+1][day+j-5][room], 0, sizeof(Exam_block_t)*numOfRoomsConfig);
+                                    memset(genome_data[genome][week+1][day+j-5][room], 0, sizeof(Exam_block_t)*numOfRooms);
                                 }
                                 else if (gDay + j > 4 && day + j <= 4)
                                 {
                                     genome_data[genome][gWeek+1][gDay+j-5][gRoom][i] = genome_data[genome][week][day+j][room][i];
-                                    memset(genome_data[genome][week][day+j][room], 0, sizeof(Exam_block_t)*numOfRoomsConfig);
+                                    memset(genome_data[genome][week][day+j][room], 0, sizeof(Exam_block_t)*numOfRooms);
                                 }
                                 else{
                                     genome_data[genome][gWeek+1][gDay+j-5][gRoom][i] = genome_data[genome][week+1][day+j-5][room][i];
-                                    memset(genome_data[genome][week+1][day+j-5][room], 0, sizeof(Exam_block_t)*numOfRoomsConfig);
+                                    memset(genome_data[genome][week+1][day+j-5][room], 0, sizeof(Exam_block_t)*numOfRooms);
                                 }
                             }
                         }
@@ -222,7 +229,7 @@ void mutation(int genome, Exam_block_t *****genome_data)
                     genome_data[genome][gWeek][gDay][gRoom][0].classname == genome_data[genome][gWeek+1][gDay-gXamLenght][gRoom][0].classname &&
                     genome_data[genome][gWeek][gDay][gRoom][0].year == genome_data[genome][gWeek+1][gDay-gXamLenght][gRoom][0].year)
                     {
-                        for (i = 0; i < numOfRoomsConfig; i++)
+                        for (i = 0; i < numOfRooms; i++)
                         {
                             for (j = 0; j < xamLenght; j++)
                             {
