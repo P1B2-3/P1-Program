@@ -37,7 +37,7 @@ We love you special kids! <3
 #define false 0
 
 /*Files*/
-#include "Structs/DATA_BASE.h" /* struct data */
+/*#include "Structs/DATA_BASE.h" struct data */
 #include "readWrite/Write/DaysWhereTeacherIsAbcent.c"
 #include "readWrite/Write/StudentData.c"
 #include "readWrite/Write/TeacherData.c"
