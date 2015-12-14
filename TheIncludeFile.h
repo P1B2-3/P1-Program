@@ -15,15 +15,6 @@ We love you special kids! <3
 #include <unistd.h>
 #include <stdio.h>
 
-/*Files*/
-#include "Structs/DATA_BASE.h" /* struct data */
-#include "readWrite/Write/DaysWhereTeacherIsAbcent.c"
-#include "readWrite/Write/StudentData.c"
-#include "readWrite/Write/TeacherData.c"
-#include "Sorting/Get_exames_student.c"
-#include "Sorting/Sort_for_examns.c"
-#include "configParser.c"
-
 /*Defines*/
 #define SIZE_OF_NAMES 200
 #define AMOUNT_OF_STUDENTS 624
@@ -38,3 +29,14 @@ We love you special kids! <3
 
 #define true 1
 #define false 0
+
+/*Files*/
+#include "Structs/DATA_BASE.h" /* struct data */
+#include "readWrite/Write/DaysWhereTeacherIsAbcent.c"
+#include "readWrite/Write/StudentData.c"
+#include "readWrite/Write/TeacherData.c"
+#include "Sorting/Get_exames_student.c"
+#include "Sorting/Sort_for_examns.c"
+#include "configParser.c"
+#include "Structs/Structs-1.h"
+
