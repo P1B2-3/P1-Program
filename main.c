@@ -1,8 +1,5 @@
 /*Defines*/
-#define SIZE_OF_NAMES 200
-#define AMOUNT_OF_STUDENTS 624
-#define STUDENDTS_IN_CLASS 30
-#define NUMBER_OF_SUBJECTS 40
+
 
 #define SCHEMA_SIZE 300
 #define WEEK_SIZE 8
