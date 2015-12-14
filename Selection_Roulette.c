@@ -79,8 +79,8 @@ void selection(Exam_block_t *****genome_data int fitness[]){
 }
 
 int sortFitness (const void *a, const void *b){
-    int f1 = ((fitness_struct tempFitness*)a->fitness);
-    int f2 = ((fitness_struct tempFitness*)b->fitness);
+    int f1 = ((fitness_struct *)a)->fitness;
+    int f2 = ((fitness_struct *)b)->fitness;
 
     if (f1 < f2 || f2 == 0) {
         return 1;
