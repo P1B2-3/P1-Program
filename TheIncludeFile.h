@@ -27,7 +27,7 @@ We love you special kids! <3
 #include "configParser.c"
 #include "Structs/Structs-1.h"
 #include "Schema-gen.c"
-#include "ArrayTilBlokke.c"
+/*#include "ArrayTilBlokke.c"*/
 #include "Mutation.c"
 #include "Skemaprint.c"
 #include "amountOfDays.c"
