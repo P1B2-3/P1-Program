@@ -18,18 +18,18 @@ We love you special kids! <3
 
 
 /*Files*/
-/*#include "Structs/DATA_BASE.h"*/
+/*#include "Structs/DATA_BASE.h"*/ /*Right now, of no use.*/
 #include "Structs/Structs-1.h"
-/*#include "readWrite/Write/DaysWhereTeacherIsAbcent.c"*/
+/*#include "readWrite/Write/DaysWhereTeacherIsAbcent.c"*/ /*Right now, of no use.*/
 #include "readWrite/Write/StudentData.c"
 #include "readWrite/Write/TeacherData.c"
 /*#include "Sorting/Get_exames_student.c"
-#include "Sorting/Sort_for_examns.c"*/
+#include "Sorting/Sort_for_examns.c"*/ /*Right now, of no use*/
 #include "configParser.c"
 
 #include "Schema-gen.c"
-/*#include "ArrayTilBlokke.c"*/
+/*#include "ArrayTilBlokke.c"*/ /*Not used for anything. + got a main in it*/
 #include "Mutation.c"
 #include "Skemaprint.c"
 #include "amountOfDays.c"
-/*#include "crossoverConcept.c"*/
+/*#include "crossoverConcept.c"*/ /*Right now, of no use.*/
