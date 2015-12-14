@@ -27,6 +27,8 @@ We love you special kids! <3
 #include "Sorting/Sort_for_examns.c"*/ /*Right now, of no use*/
 #include "configParser.c"
 
+#include "geneticAlgorithm.c"
+
 #include "Schema-gen.c"
 /*#include "ArrayTilBlokke.c"*/ /*Not used for anything. + got a main in it*/
 #include "Mutation.c"

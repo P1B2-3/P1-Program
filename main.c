@@ -1,5 +1,12 @@
 /*Defines*/
-
+#define GENERATION_SIZE 300
+#define GENERATION_HALF 150
+#define MAX_GENERATIONS 1000
+#define ENOUGH_FITNESS 666
+#define AMOUNT_OF_WEEKS 6
+#define AMOUNT_OF_DAYS 5
+#define AMOUNT_OF_HOURS 8
+#define AMOUNT_OF_ROOMS 10
 
 #define SCHEMA_SIZE 300
 #define WEEK_SIZE 8

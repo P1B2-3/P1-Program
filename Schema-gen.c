@@ -313,7 +313,7 @@ void Class_Generator(Class_t classdata[]) {
     /*De følgende "for" løkker skriver ind i structsne for at få tilfældige eksamener til at fremgå for de forskellige klasser*/
     /*3g*/
     
-    for(i = 1; i < 41; i++) {
+    for(i = 1; i < 82; i++) {
 
         randA3g: temp_nr = rand() % 13;
         if(temp_nr == 0) {
@@ -396,7 +396,7 @@ void Class_Generator(Class_t classdata[]) {
             }else
                 goto randA3g;
         }
-        if(i == 5) {
+        if(i == 10) {
             tempP++;
             if(TEMP_3G.AMm) {
                 classdata[tempP].subjects[0].y_or_n = true;
@@ -438,90 +438,6 @@ void Class_Generator(Class_t classdata[]) {
             TEMP_3G.ASk = 0;
             TEMP_3G.AMt = 0;
             TEMP_3G.AMbi = 0;  
-        }else if(i == 10) {
-            tempP++;
-            if(TEMP_3G.AMm) {
-                classdata[tempP].subjects[0].y_or_n = true;
-            }if(TEMP_3G.ASm) {
-                classdata[tempP].subjects[1].y_or_n = true;
-            }if(TEMP_3G.AMd) {
-                classdata[tempP].subjects[2].y_or_n = true;
-            }if(TEMP_3G.ASd) {
-                classdata[tempP].subjects[3].y_or_n = true;
-            }if(TEMP_3G.AMf) {
-                classdata[tempP].subjects[4].y_or_n = true;
-            }if(TEMP_3G.ASf) {
-                classdata[tempP].subjects[5].y_or_n = true;
-            }if(TEMP_3G.AMe) {
-                classdata[tempP].subjects[6].y_or_n = true;
-            }if(TEMP_3G.ASe) {
-                classdata[tempP].subjects[7].y_or_n = true;
-            }if(TEMP_3G.AMk) {
-                classdata[tempP].subjects[8].y_or_n = true;
-            }if(TEMP_3G.ASk) {
-                classdata[tempP].subjects[9].y_or_n = true;
-            }if(TEMP_3G.AMt) {
-                classdata[tempP].subjects[10].y_or_n = true; 
-            }if(TEMP_3G.AMbi) {
-                classdata[tempP].subjects[11].y_or_n = true;
-            }if(TEMP_3G.AMki) {
-                classdata[tempP].subjects[12].y_or_n = true;
-            }
-            TEMP_3G.AMk = 0;
-            TEMP_3G.AMm = 0; 
-            TEMP_3G.ASm = 0;
-            TEMP_3G.AMd = 0;
-            TEMP_3G.ASd = 0;
-            TEMP_3G.AMki = 0;
-            TEMP_3G.AMf = 0;
-            TEMP_3G.ASf = 0;
-            TEMP_3G.AMe = 0;
-            TEMP_3G.ASe = 0;
-            TEMP_3G.ASk = 0;
-            TEMP_3G.AMt = 0;
-            TEMP_3G.AMbi = 0;
-        }else if(i == 15) {
-            tempP++;
-            if(TEMP_3G.AMm) {
-                classdata[tempP].subjects[0].y_or_n = true;
-            }if(TEMP_3G.ASm) {
-                classdata[tempP].subjects[1].y_or_n = true;
-            }if(TEMP_3G.AMd) {
-                classdata[tempP].subjects[2].y_or_n = true;
-            }if(TEMP_3G.ASd) {
-                classdata[tempP].subjects[3].y_or_n = true;
-            }if(TEMP_3G.AMf) {
-                classdata[tempP].subjects[4].y_or_n = true;
-            }if(TEMP_3G.ASf) {
-                classdata[tempP].subjects[5].y_or_n = true;
-            }if(TEMP_3G.AMe) {
-                classdata[tempP].subjects[6].y_or_n = true;
-            }if(TEMP_3G.ASe) {
-                classdata[tempP].subjects[7].y_or_n = true;
-            }if(TEMP_3G.AMk) {
-                classdata[tempP].subjects[8].y_or_n = true;
-            }if(TEMP_3G.ASk) {
-                classdata[tempP].subjects[9].y_or_n = true;
-            }if(TEMP_3G.AMt) {
-                classdata[tempP].subjects[10].y_or_n = true; 
-            }if(TEMP_3G.AMbi) {
-                classdata[tempP].subjects[11].y_or_n = true;
-            }if(TEMP_3G.AMki) {
-                classdata[tempP].subjects[12].y_or_n = true;
-            }
-            TEMP_3G.AMk = 0;
-            TEMP_3G.AMm = 0; 
-            TEMP_3G.ASm = 0;
-            TEMP_3G.AMd = 0;
-            TEMP_3G.ASd = 0;
-            TEMP_3G.AMki = 0;
-            TEMP_3G.AMf = 0;
-            TEMP_3G.ASf = 0;
-            TEMP_3G.AMe = 0;
-            TEMP_3G.ASe = 0;
-            TEMP_3G.ASk = 0;
-            TEMP_3G.AMt = 0;
-            TEMP_3G.AMbi = 0;
         }else if(i == 20) {
             tempP++;
             if(TEMP_3G.AMm) {
@@ -563,49 +479,7 @@ void Class_Generator(Class_t classdata[]) {
             TEMP_3G.ASe = 0;
             TEMP_3G.ASk = 0;
             TEMP_3G.AMt = 0;
-            TEMP_3G.AMbi = 0;  
-        }else if(i == 25) {
-            tempP++;
-            if(TEMP_3G.AMm) {
-                classdata[tempP].subjects[0].y_or_n = true;
-            }if(TEMP_3G.ASm) {
-                classdata[tempP].subjects[1].y_or_n = true;
-            }if(TEMP_3G.AMd) {
-                classdata[tempP].subjects[2].y_or_n = true;
-            }if(TEMP_3G.ASd) {
-                classdata[tempP].subjects[3].y_or_n = true;
-            }if(TEMP_3G.AMf) {
-                classdata[tempP].subjects[4].y_or_n = true;
-            }if(TEMP_3G.ASf) {
-                classdata[tempP].subjects[5].y_or_n = true;
-            }if(TEMP_3G.AMe) {
-                classdata[tempP].subjects[6].y_or_n = true;
-            }if(TEMP_3G.ASe) {
-                classdata[tempP].subjects[7].y_or_n = true;
-            }if(TEMP_3G.AMk) {
-                classdata[tempP].subjects[8].y_or_n = true;
-            }if(TEMP_3G.ASk) {
-                classdata[tempP].subjects[9].y_or_n = true;
-            }if(TEMP_3G.AMt) {
-                classdata[tempP].subjects[10].y_or_n = true; 
-            }if(TEMP_3G.AMbi) {
-                classdata[tempP].subjects[11].y_or_n = true;
-            }if(TEMP_3G.AMki) {
-                classdata[tempP].subjects[12].y_or_n = true;
-            }
-            TEMP_3G.AMk = 0;
-            TEMP_3G.AMm = 0; 
-            TEMP_3G.ASm = 0;
-            TEMP_3G.AMd = 0;
-            TEMP_3G.ASd = 0;
-            TEMP_3G.AMki = 0;
-            TEMP_3G.AMf = 0;
-            TEMP_3G.ASf = 0;
-            TEMP_3G.AMe = 0;
-            TEMP_3G.ASe = 0;
-            TEMP_3G.ASk = 0;
-            TEMP_3G.AMt = 0;
-            TEMP_3G.AMbi = 0;  
+            TEMP_3G.AMbi = 0;
         }else if(i == 30) {
             tempP++;
             if(TEMP_3G.AMm) {
@@ -647,8 +521,134 @@ void Class_Generator(Class_t classdata[]) {
             TEMP_3G.ASe = 0;
             TEMP_3G.ASk = 0;
             TEMP_3G.AMt = 0;
+            TEMP_3G.AMbi = 0;
+        }else if(i == 40) {
+            tempP++;
+            if(TEMP_3G.AMm) {
+                classdata[tempP].subjects[0].y_or_n = true;
+            }if(TEMP_3G.ASm) {
+                classdata[tempP].subjects[1].y_or_n = true;
+            }if(TEMP_3G.AMd) {
+                classdata[tempP].subjects[2].y_or_n = true;
+            }if(TEMP_3G.ASd) {
+                classdata[tempP].subjects[3].y_or_n = true;
+            }if(TEMP_3G.AMf) {
+                classdata[tempP].subjects[4].y_or_n = true;
+            }if(TEMP_3G.ASf) {
+                classdata[tempP].subjects[5].y_or_n = true;
+            }if(TEMP_3G.AMe) {
+                classdata[tempP].subjects[6].y_or_n = true;
+            }if(TEMP_3G.ASe) {
+                classdata[tempP].subjects[7].y_or_n = true;
+            }if(TEMP_3G.AMk) {
+                classdata[tempP].subjects[8].y_or_n = true;
+            }if(TEMP_3G.ASk) {
+                classdata[tempP].subjects[9].y_or_n = true;
+            }if(TEMP_3G.AMt) {
+                classdata[tempP].subjects[10].y_or_n = true; 
+            }if(TEMP_3G.AMbi) {
+                classdata[tempP].subjects[11].y_or_n = true;
+            }if(TEMP_3G.AMki) {
+                classdata[tempP].subjects[12].y_or_n = true;
+            }
+            TEMP_3G.AMk = 0;
+            TEMP_3G.AMm = 0; 
+            TEMP_3G.ASm = 0;
+            TEMP_3G.AMd = 0;
+            TEMP_3G.ASd = 0;
+            TEMP_3G.AMki = 0;
+            TEMP_3G.AMf = 0;
+            TEMP_3G.ASf = 0;
+            TEMP_3G.AMe = 0;
+            TEMP_3G.ASe = 0;
+            TEMP_3G.ASk = 0;
+            TEMP_3G.AMt = 0;
             TEMP_3G.AMbi = 0;  
-        }else if(i == 35) {
+        }else if(i == 50) {
+            tempP++;
+            if(TEMP_3G.AMm) {
+                classdata[tempP].subjects[0].y_or_n = true;
+            }if(TEMP_3G.ASm) {
+                classdata[tempP].subjects[1].y_or_n = true;
+            }if(TEMP_3G.AMd) {
+                classdata[tempP].subjects[2].y_or_n = true;
+            }if(TEMP_3G.ASd) {
+                classdata[tempP].subjects[3].y_or_n = true;
+            }if(TEMP_3G.AMf) {
+                classdata[tempP].subjects[4].y_or_n = true;
+            }if(TEMP_3G.ASf) {
+                classdata[tempP].subjects[5].y_or_n = true;
+            }if(TEMP_3G.AMe) {
+                classdata[tempP].subjects[6].y_or_n = true;
+            }if(TEMP_3G.ASe) {
+                classdata[tempP].subjects[7].y_or_n = true;
+            }if(TEMP_3G.AMk) {
+                classdata[tempP].subjects[8].y_or_n = true;
+            }if(TEMP_3G.ASk) {
+                classdata[tempP].subjects[9].y_or_n = true;
+            }if(TEMP_3G.AMt) {
+                classdata[tempP].subjects[10].y_or_n = true; 
+            }if(TEMP_3G.AMbi) {
+                classdata[tempP].subjects[11].y_or_n = true;
+            }if(TEMP_3G.AMki) {
+                classdata[tempP].subjects[12].y_or_n = true;
+            }
+            TEMP_3G.AMk = 0;
+            TEMP_3G.AMm = 0; 
+            TEMP_3G.ASm = 0;
+            TEMP_3G.AMd = 0;
+            TEMP_3G.ASd = 0;
+            TEMP_3G.AMki = 0;
+            TEMP_3G.AMf = 0;
+            TEMP_3G.ASf = 0;
+            TEMP_3G.AMe = 0;
+            TEMP_3G.ASe = 0;
+            TEMP_3G.ASk = 0;
+            TEMP_3G.AMt = 0;
+            TEMP_3G.AMbi = 0;  
+        }else if(i == 70) {
+            tempP++;
+            if(TEMP_3G.AMm) {
+                classdata[tempP].subjects[0].y_or_n = true;
+            }if(TEMP_3G.ASm) {
+                classdata[tempP].subjects[1].y_or_n = true;
+            }if(TEMP_3G.AMd) {
+                classdata[tempP].subjects[2].y_or_n = true;
+            }if(TEMP_3G.ASd) {
+                classdata[tempP].subjects[3].y_or_n = true;
+            }if(TEMP_3G.AMf) {
+                classdata[tempP].subjects[4].y_or_n = true;
+            }if(TEMP_3G.ASf) {
+                classdata[tempP].subjects[5].y_or_n = true;
+            }if(TEMP_3G.AMe) {
+                classdata[tempP].subjects[6].y_or_n = true;
+            }if(TEMP_3G.ASe) {
+                classdata[tempP].subjects[7].y_or_n = true;
+            }if(TEMP_3G.AMk) {
+                classdata[tempP].subjects[8].y_or_n = true;
+            }if(TEMP_3G.ASk) {
+                classdata[tempP].subjects[9].y_or_n = true;
+            }if(TEMP_3G.AMt) {
+                classdata[tempP].subjects[10].y_or_n = true; 
+            }if(TEMP_3G.AMbi) {
+                classdata[tempP].subjects[11].y_or_n = true;
+            }if(TEMP_3G.AMki) {
+                classdata[tempP].subjects[12].y_or_n = true;
+            }
+            TEMP_3G.AMk = 0;
+            TEMP_3G.AMm = 0; 
+            TEMP_3G.ASm = 0;
+            TEMP_3G.AMd = 0;
+            TEMP_3G.ASd = 0;
+            TEMP_3G.AMki = 0;
+            TEMP_3G.AMf = 0;
+            TEMP_3G.ASf = 0;
+            TEMP_3G.AMe = 0;
+            TEMP_3G.ASe = 0;
+            TEMP_3G.ASk = 0;
+            TEMP_3G.AMt = 0;
+            TEMP_3G.AMbi = 0;  
+        }else if(i == 80) {
             tempP++;
             if(TEMP_3G.AMm) {
                 classdata[tempP].subjects[0].y_or_n = true;

@@ -15,18 +15,6 @@ Hvor skal fitness proppes hen? Skal det i rankarray? Så skal jeg sortere array 
 http://stackoverflow.com/questions/6076720/sorting-a-c-array-based-on-contents-of-another-array
 http://stackoverflow.com/questions/10584894/sort-an-array-based-on-members-of-another-array-in-c
 */
-
-#include <stdio.h>
-#include <stdlib.h>
-#define GENERATION_SIZE 300
-#define GENERATION_HALF 150
-#define MAX_GENERATIONS 1000
-#define ENOUGH_FITNESS 666
-#define AMOUNT_OF_WEEKS 6
-#define AMOUNT_OF_DAYS 5
-#define AMOUNT_OF_HOURS 8
-#define AMOUNT_OF_ROOMS 10
-
 int killPerGeneration = 0.5;
 int elitismAmount = 1;
 /*From config.*/

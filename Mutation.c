@@ -4,15 +4,16 @@
 
 void mutation(int genome, Exam_block_t *****genome_data)
 {
-    int numOfMut,
-        i, j, k, l,
+    int i, j, k, l,
         week, gWeek,
         day, gDay,
-        room, gRoom;
+        room, gRoom,
         numOfMut,
         numOfRooms,
         numOfWeeks,
-        numOfExams;
+        numOfExams,
+        xamLenght,
+        gXamLenght;
     time_t t;
     Exam_block_t *temp_data;
 
