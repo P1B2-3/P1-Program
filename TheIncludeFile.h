@@ -15,26 +15,7 @@ We love you special kids! <3
 #include <unistd.h>
 #include <stdio.h>
 
-/*Defines*/
-#define SIZE_OF_NAMES 200
-#define AMOUNT_OF_STUDENTS 624
-#define STUDENDTS_IN_CLASS 30
-#define NUMBER_OF_SUBJECTS 40
 
-#define SCHEMA_SIZE 300
-#define WEEK_SIZE 8
-#define DAY_SIZE 5
-#define ROOM_SIZE 10
-#define EXAM_SIZE 10
-#define LINES_TO_READ 200
-
-#define HOURS 8
-#define DAYS 5
-#define WEEKS 4
-#define MONTHS 1
-
-#define true 1
-#define false 0
 
 /*Files*/
 /*#include "Structs/DATA_BASE.h" struct data 
