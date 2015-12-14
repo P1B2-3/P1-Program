@@ -40,9 +40,9 @@ We love you special kids! <3
 /*#include "Structs/DATA_BASE.h" struct data 
 #include "readWrite/Write/DaysWhereTeacherIsAbcent.c"
 #include "readWrite/Write/StudentData.c"
-#include "readWrite/Write/TeacherData.c"*/
+#include "readWrite/Write/TeacherData.c"
 #include "Sorting/Get_exames_student.c"
-#include "Sorting/Sort_for_examns.c"
+#include "Sorting/Sort_for_examns.c"*/
 #include "configParser.c"
 #include "Structs/Structs-1.h"
 #include "Schema-gen.c"
