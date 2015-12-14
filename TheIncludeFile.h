@@ -18,14 +18,15 @@ We love you special kids! <3
 
 
 /*Files*/
-/*#include "Structs/DATA_BASE.h" struct data 
-#include "readWrite/Write/DaysWhereTeacherIsAbcent.c"
+/*#include "Structs/DATA_BASE.h"*/
+#include "Structs/Structs-1.h"
+/*#include "readWrite/Write/DaysWhereTeacherIsAbcent.c"*/
 #include "readWrite/Write/StudentData.c"
 #include "readWrite/Write/TeacherData.c"
-#include "Sorting/Get_exames_student.c"
+/*#include "Sorting/Get_exames_student.c"
 #include "Sorting/Sort_for_examns.c"*/
 #include "configParser.c"
-#include "Structs/Structs-1.h"
+
 #include "Schema-gen.c"
 /*#include "ArrayTilBlokke.c"*/
 #include "Mutation.c"
