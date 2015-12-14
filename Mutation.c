@@ -25,6 +25,10 @@ void mutation(int genome, Exam_block_t *****genome_data)
 
     temp_data = (Exam_block_t *) malloc(numOfExams*sizeof(Exam_block_t ));
 
+    if (temp_data == NULL){
+        printf("error not memory\n");
+    }
+
     /*varierer mængden af mutation baseret på en config (foreslået på ca. 9)*/
     numOfMut = rand() % numOfMut;
 
@@ -270,4 +274,5 @@ void mutation(int genome, Exam_block_t *****genome_data)
         printf("number of mutation tries: %i\n", k);
         k = 0;
     }
+    free(temp_data);
 }
