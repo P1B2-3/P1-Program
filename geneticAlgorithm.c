@@ -209,10 +209,13 @@ void PopulateNextGen(Exam_block_t *****solutions, rankings_t rankArray[], int ge
 /*---------------------------------------------------------------------------*/
 
 void KillPercentage(Exam_block_t *****solutions, Exam_block_t *****parents, rankings_t rankArray[], int generationNo) {
-    int killAmount = (killPerGeneration * GENERATION_SIZE) % (GENERATION_HALF + 1);
-    int i, j, k = 0, l, m, n, o, rand1, 
-        survivors[killAmount - GENERATION_SIZE], skip; /*ULOVLIGHEDER!!!! "ISO C90 forbids variable length array ‘survivors’"*/
-        /*NOGET MED MEMSET 999 ELLER LIGN, således den ikke skipper det nulte array*/
+    int killAmount = (killPerGeneration * GENERATION_SIZE) % (GENERATION_SIZE/2 + 1);
+    int i, j, k = 0, l, m, n, o, rand1, skip;
+    int survivors[killAmount - GENERATION_SIZE]; /*ULOVLIGHEDER!!!! "ISO C90 forbids variable length array ‘survivors’"*/
+    /*Der bliver ikke lagt noget over i survivors, så det du har her er et array fyldt med predeffinerede tegn, not good for buisness :P
+      Find ud af hvad der skal være i survivors, og kom tilbage til denher :P*/
+    
+    /*NOGET MED MEMSET 999 ELLER LIGN, således den ikke skipper det nulte array*/
 
     /*killPerGeneration from config is used. 
     Maximally half the generation, otherwise the array could 
@@ -262,7 +265,7 @@ void FillRest(Exam_block_t *****parents, Exam_block_t *****nextGen, rankings_t r
 
     srand((unsigned) generationNo);
     for (; nextGenCount < GENERATION_SIZE; nextGenCount++) {
-        rand1 = rand() % rankArray[GENERATION_HALF].max;
+        rand1 = rand() % rankArray[GENERATION_SIZE/2].max;
         /*The solution that has rand1 within its rank fitness will survive
         to build the next generation*/
         for (i = 0; 

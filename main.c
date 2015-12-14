@@ -1,6 +1,6 @@
 /*Defines*/
 #define GENERATION_SIZE 300
-#define GENERATION_HALF 150
+
 #define MAX_GENERATIONS 1000
 #define ENOUGH_FITNESS 666
 #define AMOUNT_OF_WEEKS 6
