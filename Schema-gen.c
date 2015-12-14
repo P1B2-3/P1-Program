@@ -1,4 +1,3 @@
-#include "Structs.h"
 
 /* Skema generator */
 void Class_Generator(Class_t classdata[]);

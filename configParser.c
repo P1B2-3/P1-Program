@@ -6,13 +6,11 @@ example:
 getConfig("s.numberOfStudents") - returns the value 24
 */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+
 
 /*THIS VALUE SHOULD BE LARGER THAN THE AMOUNT
 OF LINES IN THE CONFIG.INI FILE*/
-#define LINES_TO_READ 200
+
 
 /*STRUCT TO STORE EACH LINE'S STRING AND VALUE*/
 struct line{

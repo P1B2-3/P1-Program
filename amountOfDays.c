@@ -5,9 +5,6 @@ THERE IS NO INPUTVALIDATION NOR SAFETY FOR WHEN THE NUMBERS GET TOO HIGH TO HAND
 Will have to be changed to work as function and might have to be tweaked in the way it recieves input or handles it.
 80 line threshhold not taken into account properly.*/
 
-#include <stdio.h>
-#include <stdlib.h>
-
 int AmountOfDays(int startDay, int startMonth, int startYear, int endDay, int endMonth, int endYear);
 int DaysInMonth(int month, int year);
 int IsLeapYear(int year);

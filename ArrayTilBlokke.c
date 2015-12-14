@@ -1,11 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-#define HOURS 8
-#define DAYS 5
-#define WEEKS 4
-#define MONTHS 1
 
 int main(void)
 {

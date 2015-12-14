@@ -26,6 +26,12 @@ We love you special kids! <3
 #define DAY_SIZE 5
 #define ROOM_SIZE 10
 #define EXAM_SIZE 10
+#define LINES_TO_READ 200
+
+#define HOURS 8
+#define DAYS 5
+#define WEEKS 4
+#define MONTHS 1
 
 #define true 1
 #define false 0

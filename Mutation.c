@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 
 void mutation(int skema, Data_block_t *****skema_data)
 {
