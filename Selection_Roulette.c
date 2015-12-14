@@ -1,20 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+#define GENERATION_SIZE 300
+
 typedef struct{
     int fitness,
         position,
         saved;
 } fitness_struct;
 
-void selection(Exam_block_t *****genome_data int fitness[]){
+void makeChild(int parentPos, int childPos, Exam_block_t *****genome);
+int sortFitness (const void *a, const void *b);
+float select();
+void fill(Exam_block_t *****filled_data, Exam_block_t *****filling_data);
+void kill(int position, Exam_block_t *****genome);
+void breed(int breed, int survivors, fitness_struct fit[], Exam_block_t *****genome);
+void child(int numOfParents, int numOfChildren, fitness_struct fit[], Exam_block_t *****genome);
+void makeChild(int parentPos, int childPos, Exam_block_t *****genome);
+
+
+void selection(Exam_block_t *****genome_data, int fitness[]){
     int i, 
         survivors = 0,
         chosen,
         mutationRate,
-        killPerGen,
-        breedPerGen;
+        savePerGen,
+        breedPerGen,
+        totFitness;
     float survivalChance[GENERATION_SIZE],
           selected;
     fitness_struct tempFitness[GENERATION_SIZE];      
-    Exam_block_t *****temp_genome = Make_5D_Array(SCHEMA_SIZE, WEEK_SIZE, DAY_SIZE, ROOM_SIZE, EXAM_SIZE);
+    Exam_block_t *****temp_genome = Make_5D_Array(GENERATION_SIZE, WEEK_SIZE, DAY_SIZE, ROOM_SIZE, EXAM_SIZE);
 
     mutationRate = (int)getConfig("a.mutationRate");
 
@@ -104,14 +121,14 @@ float select(){
     return ((float)interger / 100);
 }
 
-void fill(Exam_block_t *****filled_data Exam_block_t *****filling_data){
+void fill(Exam_block_t *****filled_data, Exam_block_t *****filling_data){
     int i, k, l, m, n;
     
     for (i = 0; i < GENERATION_SIZE; i++) {
-        for (k = 0; k < AMOUNT_OF_WEEKS; k++) {
+        for (k = 0; k < WEEK_SIZE; k++) {
             for (l = 0; l < 5; l++) {
-                for (m = 0; m < AMOUNT_OF_ROOMS; m++) {
-                    for (n = 0; n < AMOUNT_OF_HOURS; n++) {
+                for (m = 0; m < ROOM_SIZE; m++) {
+                    for (n = 0; n < EXAM_SIZE; n++) {
                         filled_data[i][k][l][m][n] = filling_data[i][k][l][m][n];
                     }
                 }
@@ -172,7 +189,11 @@ void breed(int breed, int survivors, fitness_struct fit[], Exam_block_t *****gen
 }
 
 void child(int numOfParents, int numOfChildren, fitness_struct fit[], Exam_block_t *****genome){
-    int i;
+    int i, j,
+        totFitness,
+        chosen,
+        selected,
+        breedingChance[GENERATION_SIZE];
 
     for (i = 0; i < numOfChildren; i++)
     {
@@ -206,13 +227,13 @@ void child(int numOfParents, int numOfChildren, fitness_struct fit[], Exam_block
 void makeChild(int parentPos, int childPos, Exam_block_t *****genome){
     int k, l, m, n;
 
-    for (k = 0; k < numOfWeeks; k++) 
+    for (k = 0; k < WEEK_SIZE; k++) 
     {
         for (l = 0; l < 5; l++) 
         {
-            for (m = 0; m < numOfRooms; m++) 
+            for (m = 0; m < ROOM_SIZE; m++) 
             {
-                for (n = 0; n < numOfExams; n++) 
+                for (n = 0; n < EXAM_SIZE; n++) 
                 {
                     genome[childPos][k][l][m][n] = genome[parentPos][k][l][m][n];
                 }
