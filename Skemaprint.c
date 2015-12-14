@@ -26,7 +26,7 @@ void printScheduleGrid(void) {
 	printf("|                                                     \n");
 	printf("| Laerer:  %s  Censor: %s                             \n", teacher, censor);
 	printf("|                                                     \n");
-	printf("| Tid:     %d time(r)  %lf til %lf                    \n", examTime, timeFrom, timeTo);
+	printf("| Tid:     %d time(r)  %f til %f                    \n", examTime, timeFrom, timeTo);
 	printf("|                                                     \n");	
 	printf("| Dato:    %d/%d                                      \n", dateDay, dateMonth);
 	printf("|                                                     \n");

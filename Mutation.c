@@ -1,15 +1,16 @@
 void mutation(int genome, Exam_block_t *****genome_data)
 {
-    int numOfMut,
-        i, j, k, l,
+    int i, j, k, l,
         week, gWeek,
         day, gDay,
-        room, gRoom;
+        room, gRoom,
         numOfMut,
         numOfRooms,
-        numOfWeeks;
+        numOfWeeks,
+        xamLenght,
+        gXamLenght;
     time_t t;
-    Exam_block_t temp_data[10];
+    Exam_block_t temp_data[10]; /*Compiler says it is not used, but it is used.....*/
 
     srand((unsigned) time(&t));
 
@@ -35,7 +36,7 @@ void mutation(int genome, Exam_block_t *****genome_data)
             gRoom = rand() % numOfRooms;
 
             xamLenght = genome_data[genome][week][day][room][0].days; /*varigheden af eksamen*/
-            gXamLenght = genome_data[genome][gWeek][gDay][gRoom][0].days; /*varighed af den flyttede eksamenslængde*/
+            gXamLenght = genome_data[genome][gWeek][gDay][gRoom][0].days; /*varighed af den flyttede eksamenslængde.*/
             /*følgende if-else kæden finder ud af om eksamnen bliver placeret over en weekend eller ej*/
             if (day <= 2 && gDay <= 2)
             {

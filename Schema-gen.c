@@ -216,11 +216,9 @@ void Class_Generator(Class_t classdata[]) {
 
     int i,
         unikID=0,
-        klass=0,
         temp_nr,
-        taeller,
+        k,
         tempP=0;
-    char yorn;
 
     /* Array med fornavne, og tallene til siden, er hvor mange navne der er talt op indtil da.*/
     const char *elev_for_navn[] = {"Mathias", "Mads", "Magnus", "Emil", "Jakob", 
@@ -1448,48 +1446,46 @@ void Class_Generator(Class_t classdata[]) {
             }
             /*For hvert år skal der være klasser fra a til h*/
             classdata[i].name = 
-                        (i == 0 && classdata[i].year == 3
-                      || i == 8  && classdata[i].year == 2
-                      || i == 16 && classdata[i].year == 1)  ? 'A' :
+                        ((i == 0 && classdata[i].year == 3)
+                      || (i == 8  && classdata[i].year == 2)
+                      || (i == 16 && classdata[i].year == 1))  ? 'A' :
 
-                        (i == 1 && classdata[i].year == 3
-                      || i == 9  && classdata[i].year == 2
-                      || i == 17 && classdata[i].year == 1)  ? 'B' :
+                        ((i == 1  && classdata[i].year == 3)
+                      || (i == 9  && classdata[i].year == 2)
+                      || (i == 17 && classdata[i].year == 1))  ? 'B' :
 
-                        (i == 2 && classdata[i].year == 3
-                      || i == 10 && classdata[i].year == 2
-                      || i == 18 && classdata[i].year == 1)  ? 'C' :
+                        ((i ==  2 && classdata[i].year == 3)
+                      || (i == 10 && classdata[i].year == 2)
+                      || (i == 18 && classdata[i].year == 1))  ? 'C' :
 
-                        (i == 3 && classdata[i].year == 3
-                      || i == 11 && classdata[i].year == 2
-                      || i == 19 && classdata[i].year == 1)  ? 'D' :
+                        ((i ==  3 && classdata[i].year == 3)
+                      || (i == 11 && classdata[i].year == 2)
+                      || (i == 19 && classdata[i].year == 1))  ? 'D' :
 
-                        (i == 4 && classdata[i].year == 3
-                      || i == 12 && classdata[i].year == 2
-                      || i == 20 && classdata[i].year == 1)  ? 'E' :
+                        ((i == 4  && classdata[i].year == 3)
+                      || (i == 12 && classdata[i].year == 2)
+                      || (i == 20 && classdata[i].year == 1))  ? 'E' :
 
-                        (i == 5 && classdata[i].year == 3
-                      || i == 13 && classdata[i].year == 2
-                      || i == 21 && classdata[i].year == 1)  ? 'F' :
+                        ((i == 5  && classdata[i].year == 3)
+                      || (i == 13 && classdata[i].year == 2)
+                      || (i == 21 && classdata[i].year == 1))  ? 'F' :
 
-                        (i == 6 && classdata[i].year == 3
-                      || i == 14 && classdata[i].year == 2
-                      || i == 22 && classdata[i].year == 1  ? 'G' : 'H');
+                        ((i == 6  && classdata[i].year == 3)
+                      || (i == 14 && classdata[i].year == 2)
+                      || (i == 22 && classdata[i].year == 1)) ? 'G' : 'H';
 
 
-        for(taeller = 1; taeller < 27; taeller++) {
+        for(k = 1; k < 27; k++) {
             /*Genere elever yd fra klasser, der er 8 klaaser af 3 årgange, og i dette tilfælde er der 26 elever i hver klasse, dette giver 624 elver ialt.
               dette bliver der holdt styr på ved hjælp af unikID som er en tæller der tæller 1 op for hver elev. (og derfor er det nemmere at holde styr på.*/
 
             unikID++;
 
-            classdata[i].students[taeller-1].unikID = unikID;
-
-            classdata[i].students[taeller-1].unikID;
+            classdata[i].students[k-1].unikID = unikID;
             
-            strcpy(classdata[i].students[taeller-1].name,elev_for_navn[rand()%182]);
-            strcpy(classdata[i].students[taeller-1].surname,elev_efternavn[rand()%234]);
-            classdata[i].students[taeller-1].exam_number = taeller;
+            strcpy(classdata[i].students[k-1].name,elev_for_navn[rand()%182]);
+            strcpy(classdata[i].students[k-1].surname,elev_efternavn[rand()%234]);
+            classdata[i].students[k-1].exam_number = k;
         } 
     }
 }
