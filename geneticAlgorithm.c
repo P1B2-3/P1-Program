@@ -19,38 +19,24 @@ int killPerGeneration = 0.5;
 int elitismAmount = 1;
 /*From config.*/
 
-typedef struct {
-    int max, 
-        min,
-        fitness;
-} rankings;
 
-typedef struct{ 
-    int students, subjects;
-/*    Data_Student_t  student;
-    Data_Subject_t  subjects; */
-    int lokale,
-        period_start,
-        year;
-    char classname;
-}Data_block_t;
 
-void RankFitness(rankings rankArray[]);
-void GeneticAlgorithm(Data_block_t *****solutions);
-void Fitness(Data_block_t *****solutions);
+
+void RankFitness(rankings_t rankArray[]);
+void GeneticAlgorithm(Exam_block_t *****solutions);
+void Fitness(Exam_block_t *****solutions);
 int QsortByFitness (const void *a, const void *b);
-int FindHighestFitness(rankings rankArray[]);
+int FindHighestFitness(rankings_t rankArray[]);
 int FitnessLimit(int bestFitness);
-void PopulateNextGen(Data_block_t *****solutions, rankings rankArray[], int generationNo);
-void KillPercentage(Data_block_t *****solutions, Data_block_t *****parents, rankings rankArray[], int generationNo);
-void FillRest(Data_block_t *****parents, Data_block_t *****nextGen, rankings rankArray[], int generationNo, int nextGenCount);
-int Mutation(Data_block_t *****individual, int i);
-void ReplaceSolution(Data_block_t ****old, Data_block_t ****new);
+void PopulateNextGen(Exam_block_t *****solutions, rankings_t rankArray[], int generationNo);
+void KillPercentage(Exam_block_t *****solutions, Exam_block_t *****parents, rankings_t rankArray[], int generationNo);
+void FillRest(Exam_block_t *****parents, Exam_block_t *****nextGen, rankings_t rankArray[], int generationNo, int nextGenCount);
+void ReplaceSolution(Exam_block_t ****old, Exam_block_t ****new);
 
 
-void GeneticAlgorithm(Data_block_t *****solutions) {
+void GeneticAlgorithm(Exam_block_t *****solutions) {
     int i;
-    rankings rankArray[GENERATION_SIZE];
+    rankings_t rankArray[GENERATION_SIZE];
 
     RankFitness(rankArray);
     for (i = 0; i < MAX_GENERATIONS; i++) {
@@ -65,7 +51,7 @@ void GeneticAlgorithm(Data_block_t *****solutions) {
 
 /*---------------------------------------------------------------------------*/
 
-void RankFitness(rankings rankArray[]) {
+void RankFitness(rankings_t rankArray[]) {
     int i, curr;
     for (i = 0, curr = 0; i < GENERATION_SIZE; i++) {
         rankArray[i].min = curr;
@@ -76,15 +62,17 @@ void RankFitness(rankings rankArray[]) {
 
 /*---------------------------------------------------------------------------*/
 
-void Fitness(Data_block_t *****solutions) {
+void Fitness(Exam_block_t *****solutions) {
 /*Fill the array/struct with the fitness of the individuals.*/
 }
 
 /*---------------------------------------------------------------------------*/
 
 int QsortByFitness (const void *a, const void *b) {
-    int f1 = ((struct rankArray*)a)->fitness;
-    int f2 = ((struct rankArray*)b)->fitness;
+    int f1, f2;
+
+    f1 = (((struct rankArray*)a)->fitness);
+    f2 = (((struct rankArray*)b)->fitness);
 
     if (f1 < f2) {
         return 1;
@@ -103,7 +91,7 @@ int QsortByFitness (const void *a, const void *b) {
 
 /*---------------------------------------------------------------------------*/
 
-int FindHighestFitness(rankings rankArray[]) {
+int FindHighestFitness(rankings_t rankArray[]) {
 /*Only solution array was qsorted. To avoid having to sort the whole 
 rankArray this function simply finds the best fitness.*/
 int i, bestFitness = 0;
@@ -128,19 +116,74 @@ int FitnessLimit(int bestFitness) {
 
 /*---------------------------------------------------------------------------*/
 
-void PopulateNextGen(Data_block_t *****solutions, rankings rankArray[], int generationNo) {
+void PopulateNextGen(Exam_block_t *****solutions, rankings_t rankArray[], int generationNo) {
     int i, j, k, l, m, n;
-    Data_block_t nextGen[GENERATION_SIZE], 
-                 parents[GENERATION_HALF];
 
-/*LAV MAYBE MALLOC FUNCTION HER!*/
+    Exam_block_t *****nextGen;
+    Exam_block_t *****parents;
+
+    nextGen = (Exam_block_t *****) calloc(SCHEMA_SIZE,sizeof(Exam_block_t*****));
+        if (nextGen == NULL)
+            printf("error not memori for nextGen(1)\n");      /* fejl kode, hvor at (x) er hvilken dimission der er fejl i */
+
+        for (i = 0; i < SCHEMA_SIZE; i++) {
+            nextGen[i] = (Exam_block_t ****) calloc(WEEK_SIZE,sizeof(Exam_block_t ***));
+            if (nextGen == NULL)
+                printf("error not memori for nextGen(2)\n");
+
+            for (j = 0; j < WEEK_SIZE; j++) {
+                nextGen[i][j] = (Exam_block_t ***)calloc(DAY_SIZE,sizeof(Exam_block_t**));
+                if (nextGen == NULL)
+                    printf("error not memori for nextGen(3)\n");
+
+                for (k = 0; k < DAY_SIZE; k++) {
+                    nextGen[i][j][k] = (Exam_block_t **)calloc(ROOM_SIZE,sizeof(Exam_block_t*));
+                    if (nextGen == NULL)
+                        printf("error not memori for nextGen(4)\n");
+
+                    for (n = 0; n < ROOM_SIZE; n++) {
+                        nextGen[i][j][k][n] = (Exam_block_t *)calloc(EXAM_SIZE,sizeof(Exam_block_t));
+                        if (nextGen == NULL)
+                            printf("error not memori for nextGen(5)\n");
+                    }
+                }
+            }
+        }
+    
+    parents = (Exam_block_t *****) calloc(SCHEMA_SIZE,sizeof(Exam_block_t*****));
+        if (parents == NULL)
+            printf("error not memori for parents(1)\n");      /* fejl kode, hvor at (x) er hvilken dimission der er fejl i */
+
+        for (i = 0; i < SCHEMA_SIZE; i++) {
+            parents[i] = (Exam_block_t ****) calloc(WEEK_SIZE,sizeof(Exam_block_t ***));
+            if (parents == NULL)
+                printf("error not memori for parents(2)\n");
+
+            for (j = 0; j < WEEK_SIZE; j++) {
+                parents[i][j] = (Exam_block_t ***)calloc(DAY_SIZE,sizeof(Exam_block_t**));
+                if (parents == NULL)
+                    printf("error not memori for parents(3)\n");
+
+                for (k = 0; k < DAY_SIZE; k++) {
+                    parents[i][j][k] = (Exam_block_t **)calloc(ROOM_SIZE,sizeof(Exam_block_t*));
+                    if (parents == NULL)
+                        printf("error not memori for parents(4)\n");
+
+                    for (n = 0; n < ROOM_SIZE; n++) {
+                        parents[i][j][k][n] = (Exam_block_t *)calloc(EXAM_SIZE,sizeof(Exam_block_t));
+                        if (parents == NULL)
+                            printf("error not memori for parents(5)\n");
+                    }
+                }
+            }
+        }
 
     KillPercentage(solutions, parents, rankArray, generationNo);
     /*Put the surviving solution chromosomes into parent array*/
     
     FillRest(parents, nextGen, rankArray, generationNo, j);
     for (i = 0; i < GENERATION_SIZE; i++) {
-        Mutation(nextGen, i);
+        /*mutation(int genome, Exam_block_t *****genome_data);*/ /*<------- ATTENTION!!!!!!!!!!1!!*/
     }
 
     /*Replace the chromosomes in each solution in each generation.
@@ -152,7 +195,7 @@ void PopulateNextGen(Data_block_t *****solutions, rankings rankArray[], int gene
             for (l = 0; l < AMOUNT_OF_DAYS; l++) {
                 for (m = 0; m < AMOUNT_OF_ROOMS; m++) {
                     for (n = 0; n < AMOUNT_OF_HOURS; n++) {
-                        solutions[i][k][l][m][n] = nextGen[i][k][l][m][n];
+                        solutions[i][k][l][m][n] = nextGen[i][k][l][m][n]; 
                     }
                 }
             }
@@ -165,10 +208,10 @@ void PopulateNextGen(Data_block_t *****solutions, rankings rankArray[], int gene
 
 /*---------------------------------------------------------------------------*/
 
-void KillPercentage(Data_block_t *****solutions, Data_block_t *****parents, rankings rankArray[], int generationNo) {
+void KillPercentage(Exam_block_t *****solutions, Exam_block_t *****parents, rankings_t rankArray[], int generationNo) {
     int killAmount = (killPerGeneration * GENERATION_SIZE) % (GENERATION_HALF + 1);
     int i, j, k = 0, l, m, n, o, rand1, 
-        survivors[killAmount - GENERATION_SIZE], skip;
+        survivors[killAmount - GENERATION_SIZE], skip; /*ULOVLIGHEDER!!!! "ISO C90 forbids variable length array ‘survivors’"*/
         /*NOGET MED MEMSET 999 ELLER LIGN, således den ikke skipper det nulte array*/
 
     /*killPerGeneration from config is used. 
@@ -214,7 +257,7 @@ void KillPercentage(Data_block_t *****solutions, Data_block_t *****parents, rank
 
 /*---------------------------------------------------------------------------*/
 
-void FillRest(Data_block_t *****parents, Data_block_t *****nextGen, rankings rankArray[], int generationNo, int nextGenCount) {
+void FillRest(Exam_block_t *****parents, Exam_block_t *****nextGen, rankings_t rankArray[], int generationNo, int nextGenCount) {
     int i, rand1;
 
     srand((unsigned) generationNo);
@@ -234,15 +277,7 @@ void FillRest(Data_block_t *****parents, Data_block_t *****nextGen, rankings ran
 
 /*---------------------------------------------------------------------------*/
 
-int Mutation(Data_block_t *****individual, int i) {
-/*Mutate the single individual. 
-Change one (or more??) random part of a random gene.*/
-    return individual;
-}
-
-/*---------------------------------------------------------------------------*/
-
-void ReplaceSolution(Data_block_t ****old, Data_block_t ****new) {
+void ReplaceSolution(Exam_block_t ****old, Exam_block_t ****new) {
 int i, j, k, l;
 
     for (i = 0; i < AMOUNT_OF_WEEKS; i++){

@@ -49,6 +49,13 @@ typedef struct{
     char classname;
 }Exam_block_t;
 
+/*Genetic algorithm structs*/
+typedef struct {
+    int max, 
+        min,
+        fitness;
+} rankings_t;
+
 /* generator structs */	
 typedef struct{
     int CMp,CMb,CMki,CMs,
