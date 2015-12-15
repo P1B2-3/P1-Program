@@ -26,8 +26,9 @@ We love you special kids! <3
 /*#include "Sorting/Get_exames_student.c"
 #include "Sorting/Sort_for_examns.c"*/ /*Right now, of no use*/
 #include "configParser.c"
+/*
 #include "ReturnSpecificData.c"
-
+*/
 #include "geneticAlgorithm.c"
 /*#include "Selection_Roulette.c"*/
 

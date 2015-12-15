@@ -209,13 +209,18 @@ void PopulateNextGen(Exam_block_t *****solutions, rankings_t rankArray[], int ge
 /*---------------------------------------------------------------------------*/
 
 void KillPercentage(Exam_block_t *****solutions, Exam_block_t *****parents, rankings_t rankArray[], int generationNo) {
-    int tmp = killPerGeneration * GENERATION_SIZE;
-    int killAmount = (tmp != GENERATION_SIZE && tmp != 0)?(tmp):(Printf("Invalid killPerGeneration.")));
-    int tmp = GENERATION_SIZE - killAmount;
-    int survivingAmount = (tmp >= GENERATION_HALF)?(tmp):(Printf("Invalid killPerGeneration."));
+    int tmp, i, j, k = 0, l, m, n, o, rand1, skip;
+    int killAmount, survivingAmount;
+    int survivors[(tmp >= GENERATION_SIZE/2)?(tmp):(0)]; 
     /*FUNGERER DETTE? KillPerGen er en double.*/
-    int i, j, k = 0, l, m, n, o, rand1, skip;
-    int survivors[survivingAmount]; 
+    
+    
+    tmp = killPerGeneration * GENERATION_SIZE;
+    killAmount = (tmp != GENERATION_SIZE && tmp != 0) ? (tmp) : (Printf("Invalid killPerGeneration."));
+
+    tmp = GENERATION_SIZE - killAmount;
+    survivingAmount = (tmp >= GENERATION_SIZE/2)?(tmp):(Printf("Invalid killPerGeneration."));
+
     memset(survivors, (survivingAmount + 1), survivingAmount);
     /*ULOVLIGHEDER!!!! "ISO C90 forbids variable length array ‘survivors’"*/
     /*Der bliver ikke lagt noget over i survivors, så det du har her er et array fyldt med predeffinerede tegn, not good for buisness :P

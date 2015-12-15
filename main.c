@@ -36,19 +36,14 @@ int main (void) {
  
     Exam_block_t *****schema_data = Make_schema();
     int **array = Make_2D_Array_int(SCHEMA_SIZE, 100000);
- 
- 
-    int i,j;
-    for (i = 0; i < ROOM_SIZE; i++)
+    int i;
+
+    for (i = 0; i < 1000; i++)
     {
-        for (j = 0; j < DAY_SIZE; j++)
-        {
-            printf("year %i, day %i, room %i\n",schema_data[0][0][j][i][0].year, j, i);
-        }
+        length(schema_data, array)
+        Selection(schema_data, Fitness(schema_data, array));
     }
-    length(schema_data, array);
- 
+
     return 0;
 }
-/* items */
-/* databasen */
+
