@@ -45,9 +45,9 @@ void selection(Exam_block_t *****genome_data){
 
     for (i = 0; i < GENERATION_SIZE; i++)
     {
-        genome_data[i][0][0][0][0] = fitness[i];
-        genome_data[i][0][0][0][0].position = i;
-        genome_data[i][0][0][0][0].saved = false;
+        tempFitness[i].fitness = genome_data[i][0][0][0][0];
+        tempFitness[i].position = i;
+        tempFitness[i].saved = false;
     }
 
     while (survivors < GENERATION_SIZE / savePerGen)
