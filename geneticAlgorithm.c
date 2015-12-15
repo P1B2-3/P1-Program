@@ -124,27 +124,27 @@ void PopulateNextGen(Exam_block_t *****solutions, rankings_t rankArray[], int ge
 
     nextGen = (Exam_block_t *****) calloc(SCHEMA_SIZE,sizeof(Exam_block_t*****));
         if (nextGen == NULL)
-            printf("error not memori for nextGen(1)\n");      /* fejl kode, hvor at (x) er hvilken dimission der er fejl i */
+            printf("Error not memory for nextGen(1)\n");      /* fejl kode, hvor at (x) er hvilken dimission der er fejl i */
 
         for (i = 0; i < SCHEMA_SIZE; i++) {
             nextGen[i] = (Exam_block_t ****) calloc(WEEK_SIZE,sizeof(Exam_block_t ***));
             if (nextGen == NULL)
-                printf("error not memori for nextGen(2)\n");
+                printf("Error not memory for nextGen(2)\n");
 
             for (j = 0; j < WEEK_SIZE; j++) {
                 nextGen[i][j] = (Exam_block_t ***)calloc(DAY_SIZE,sizeof(Exam_block_t**));
                 if (nextGen == NULL)
-                    printf("error not memori for nextGen(3)\n");
+                    printf("Error not memory for nextGen(3)\n");
 
                 for (k = 0; k < DAY_SIZE; k++) {
                     nextGen[i][j][k] = (Exam_block_t **)calloc(ROOM_SIZE,sizeof(Exam_block_t*));
                     if (nextGen == NULL)
-                        printf("error not memori for nextGen(4)\n");
+                        printf("Error not memory for nextGen(4)\n");
 
                     for (n = 0; n < ROOM_SIZE; n++) {
                         nextGen[i][j][k][n] = (Exam_block_t *)calloc(EXAM_SIZE,sizeof(Exam_block_t));
                         if (nextGen == NULL)
-                            printf("error not memori for nextGen(5)\n");
+                            printf("Error not memory for nextGen(5)\n");
                     }
                 }
             }
@@ -152,27 +152,27 @@ void PopulateNextGen(Exam_block_t *****solutions, rankings_t rankArray[], int ge
     
     parents = (Exam_block_t *****) calloc(SCHEMA_SIZE,sizeof(Exam_block_t*****));
         if (parents == NULL)
-            printf("error not memori for parents(1)\n");      /* fejl kode, hvor at (x) er hvilken dimission der er fejl i */
+            printf("Error not memory for parents(1)\n");      /* fejl kode, hvor at (x) er hvilken dimission der er fejl i */
 
         for (i = 0; i < SCHEMA_SIZE; i++) {
             parents[i] = (Exam_block_t ****) calloc(WEEK_SIZE,sizeof(Exam_block_t ***));
             if (parents == NULL)
-                printf("error not memori for parents(2)\n");
+                printf("Error not memory for parents(2)\n");
 
             for (j = 0; j < WEEK_SIZE; j++) {
                 parents[i][j] = (Exam_block_t ***)calloc(DAY_SIZE,sizeof(Exam_block_t**));
                 if (parents == NULL)
-                    printf("error not memori for parents(3)\n");
+                    printf("Error not memory for parents(3)\n");
 
                 for (k = 0; k < DAY_SIZE; k++) {
                     parents[i][j][k] = (Exam_block_t **)calloc(ROOM_SIZE,sizeof(Exam_block_t*));
                     if (parents == NULL)
-                        printf("error not memori for parents(4)\n");
+                        printf("Error not memory for parents(4)\n");
 
                     for (n = 0; n < ROOM_SIZE; n++) {
                         parents[i][j][k][n] = (Exam_block_t *)calloc(EXAM_SIZE,sizeof(Exam_block_t));
                         if (parents == NULL)
-                            printf("error not memori for parents(5)\n");
+                            printf("Error not memory for parents(5)\n");
                     }
                 }
             }
