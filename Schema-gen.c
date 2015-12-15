@@ -313,7 +313,7 @@ void Class_Generator(Class_t classdata[]) {
     /*De følgende "for" løkker skriver ind i structsne for at få tilfældige eksamener til at fremgå for de forskellige klasser*/
     /*3g*/
     
-    for(i = 1; i < 82; i++) {
+    for(i = 1; i < 81; i++) {
 
         randA3g: temp_nr = rand() % 13;
         if(temp_nr == 0) {
@@ -606,6 +606,48 @@ void Class_Generator(Class_t classdata[]) {
             TEMP_3G.ASk = 0;
             TEMP_3G.AMt = 0;
             TEMP_3G.AMbi = 0;  
+        }else if(i == 60) {
+            tempP++;
+            if(TEMP_3G.AMm) {
+                classdata[tempP].subjects[0].y_or_n = true;
+            }if(TEMP_3G.ASm) {
+                classdata[tempP].subjects[1].y_or_n = true;
+            }if(TEMP_3G.AMd) {
+                classdata[tempP].subjects[2].y_or_n = true;
+            }if(TEMP_3G.ASd) {
+                classdata[tempP].subjects[3].y_or_n = true;
+            }if(TEMP_3G.AMf) {
+                classdata[tempP].subjects[4].y_or_n = true;
+            }if(TEMP_3G.ASf) {
+                classdata[tempP].subjects[5].y_or_n = true;
+            }if(TEMP_3G.AMe) {
+                classdata[tempP].subjects[6].y_or_n = true;
+            }if(TEMP_3G.ASe) {
+                classdata[tempP].subjects[7].y_or_n = true;
+            }if(TEMP_3G.AMk) {
+                classdata[tempP].subjects[8].y_or_n = true;
+            }if(TEMP_3G.ASk) {
+                classdata[tempP].subjects[9].y_or_n = true;
+            }if(TEMP_3G.AMt) {
+                classdata[tempP].subjects[10].y_or_n = true; 
+            }if(TEMP_3G.AMbi) {
+                classdata[tempP].subjects[11].y_or_n = true;
+            }if(TEMP_3G.AMki) {
+                classdata[tempP].subjects[12].y_or_n = true;
+            }
+            TEMP_3G.AMk = 0;
+            TEMP_3G.AMm = 0; 
+            TEMP_3G.ASm = 0;
+            TEMP_3G.AMd = 0;
+            TEMP_3G.ASd = 0;
+            TEMP_3G.AMki = 0;
+            TEMP_3G.AMf = 0;
+            TEMP_3G.ASf = 0;
+            TEMP_3G.AMe = 0;
+            TEMP_3G.ASe = 0;
+            TEMP_3G.ASk = 0;
+            TEMP_3G.AMt = 0;
+            TEMP_3G.AMbi = 0;  
         }else if(i == 70) {
             tempP++;
             if(TEMP_3G.AMm) {
@@ -648,49 +690,7 @@ void Class_Generator(Class_t classdata[]) {
             TEMP_3G.ASk = 0;
             TEMP_3G.AMt = 0;
             TEMP_3G.AMbi = 0;  
-        }else if(i == 80) {
-            tempP++;
-            if(TEMP_3G.AMm) {
-                classdata[tempP].subjects[0].y_or_n = true;
-            }if(TEMP_3G.ASm) {
-                classdata[tempP].subjects[1].y_or_n = true;
-            }if(TEMP_3G.AMd) {
-                classdata[tempP].subjects[2].y_or_n = true;
-            }if(TEMP_3G.ASd) {
-                classdata[tempP].subjects[3].y_or_n = true;
-            }if(TEMP_3G.AMf) {
-                classdata[tempP].subjects[4].y_or_n = true;
-            }if(TEMP_3G.ASf) {
-                classdata[tempP].subjects[5].y_or_n = true;
-            }if(TEMP_3G.AMe) {
-                classdata[tempP].subjects[6].y_or_n = true;
-            }if(TEMP_3G.ASe) {
-                classdata[tempP].subjects[7].y_or_n = true;
-            }if(TEMP_3G.AMk) {
-                classdata[tempP].subjects[8].y_or_n = true;
-            }if(TEMP_3G.ASk) {
-                classdata[tempP].subjects[9].y_or_n = true;
-            }if(TEMP_3G.AMt) {
-                classdata[tempP].subjects[10].y_or_n = true; 
-            }if(TEMP_3G.AMbi) {
-                classdata[tempP].subjects[11].y_or_n = true;
-            }if(TEMP_3G.AMki) {
-                classdata[tempP].subjects[12].y_or_n = true;
-            }
-            TEMP_3G.AMk = 0;
-            TEMP_3G.AMm = 0; 
-            TEMP_3G.ASm = 0;
-            TEMP_3G.AMd = 0;
-            TEMP_3G.ASd = 0;
-            TEMP_3G.AMki = 0;
-            TEMP_3G.AMf = 0;
-            TEMP_3G.ASf = 0;
-            TEMP_3G.AMe = 0;
-            TEMP_3G.ASe = 0;
-            TEMP_3G.ASk = 0;
-            TEMP_3G.AMt = 0;
-            TEMP_3G.AMbi = 0;  
-        }else if(i== 40) {
+        }else if(i== 80) {
             tempP++;
             if(TEMP_3G.AMm) {
                 classdata[tempP].subjects[0].y_or_n = true;
@@ -735,7 +735,7 @@ void Class_Generator(Class_t classdata[]) {
         }
     }
     /*2g*/
-    for(i = 1; i < 18; i++) {
+    for(i = 1; i < 33; i++) {
 
 
         randA2g:temp_nr = rand() % 14;
@@ -825,7 +825,7 @@ void Class_Generator(Class_t classdata[]) {
             }
         }
 
-       if(i == 2) {
+        if(i == 4) {
             tempP++;
             if(TEMP_2G.BMm) {
                 classdata[tempP].subjects[13].y_or_n = true;
@@ -870,142 +870,7 @@ void Class_Generator(Class_t classdata[]) {
             TEMP_2G.BSe = 0;
             TEMP_2G.BMk = 0;
             TEMP_2G.BSk = 0;
-        }else if(i == 4) {
-            tempP++;
-             if(TEMP_2G.BMm) {
-                classdata[tempP].subjects[13].y_or_n = true;
-            }if(TEMP_2G.BSm) {
-                classdata[tempP].subjects[14].y_or_n = true;
-            }if(TEMP_2G.BMf) {
-                classdata[tempP].subjects[15].y_or_n = true;
-            }if(TEMP_2G.BSf) {
-                classdata[tempP].subjects[16].y_or_n = true;
-            }if(TEMP_2G.BMe) {
-                classdata[tempP].subjects[17].y_or_n = true;
-            }if(TEMP_2G.BSe) {
-                classdata[tempP].subjects[18].y_or_n = true;
-            }if(TEMP_2G.BMk) {
-                classdata[tempP].subjects[19].y_or_n = true;
-            }if(TEMP_2G.BSk) {
-                classdata[tempP].subjects[20].y_or_n = true;
-            }if(TEMP_2G.BMt) {
-                classdata[tempP].subjects[21].y_or_n = true;
-            }if(TEMP_2G.BMi) {
-                classdata[tempP].subjects[22].y_or_n = true;
-            }if(TEMP_2G.BMb) {
-                classdata[tempP].subjects[23].y_or_n = true;
-            }if(TEMP_2G.BMki) {
-                classdata[tempP].subjects[24].y_or_n = true;
-            }if(TEMP_2G.BMs) {
-                classdata[tempP].subjects[25].y_or_n = true;
-            }if(TEMP_2G.BMth) {
-                classdata[tempP].subjects[26].y_or_n = true;
-            }
-            TEMP_2G.BMm = 0;
-            TEMP_2G.BSm = 0;
-            TEMP_2G.BMt = 0;
-            TEMP_2G.BMi = 0;
-            TEMP_2G.BMs = 0;
-            TEMP_2G.BMth = 0;
-            TEMP_2G.BMb = 0;
-            TEMP_2G.BMki = 0;
-            TEMP_2G.BMf = 0;
-            TEMP_2G.BSf = 0;
-            TEMP_2G.BMe = 0;
-            TEMP_2G.BSe = 0;
-            TEMP_2G.BMk = 0;
-            TEMP_2G.BSk = 0;
-        }else if(i == 6) {
-            tempP++;
-             if(TEMP_2G.BMm) {
-                classdata[tempP].subjects[13].y_or_n = true;
-            }if(TEMP_2G.BSm) {
-                classdata[tempP].subjects[14].y_or_n = true;
-            }if(TEMP_2G.BMf) {
-                classdata[tempP].subjects[15].y_or_n = true;
-            }if(TEMP_2G.BSf) {
-                classdata[tempP].subjects[16].y_or_n = true;
-            }if(TEMP_2G.BMe) {
-                classdata[tempP].subjects[17].y_or_n = true;
-            }if(TEMP_2G.BSe) {
-                classdata[tempP].subjects[18].y_or_n = true;
-            }if(TEMP_2G.BMk) {
-                classdata[tempP].subjects[19].y_or_n = true;
-            }if(TEMP_2G.BSk) {
-                classdata[tempP].subjects[20].y_or_n = true;
-            }if(TEMP_2G.BMt) {
-                classdata[tempP].subjects[21].y_or_n = true;
-            }if(TEMP_2G.BMi) {
-                classdata[tempP].subjects[22].y_or_n = true;
-            }if(TEMP_2G.BMb) {
-                classdata[tempP].subjects[23].y_or_n = true;
-            }if(TEMP_2G.BMki) {
-                classdata[tempP].subjects[24].y_or_n = true;
-            }if(TEMP_2G.BMs) {
-                classdata[tempP].subjects[25].y_or_n = true;
-            }if(TEMP_2G.BMth) {
-                classdata[tempP].subjects[26].y_or_n = true;
-            }
-            TEMP_2G.BMm = 0;
-            TEMP_2G.BSm = 0;
-            TEMP_2G.BMt = 0;
-            TEMP_2G.BMi = 0;
-            TEMP_2G.BMs = 0;
-            TEMP_2G.BMth = 0;
-            TEMP_2G.BMb = 0;
-            TEMP_2G.BMki = 0;
-            TEMP_2G.BMf = 0;
-            TEMP_2G.BSf = 0;
-            TEMP_2G.BMe = 0;
-            TEMP_2G.BSe = 0;
-            TEMP_2G.BMk = 0;
-            TEMP_2G.BSk = 0;
         }else if(i == 8) {
-            tempP++;
-             if(TEMP_2G.BMm) {
-                classdata[tempP].subjects[13].y_or_n = true;
-            }if(TEMP_2G.BSm) {
-                classdata[tempP].subjects[14].y_or_n = true;
-            }if(TEMP_2G.BMf) {
-                classdata[tempP].subjects[15].y_or_n = true;
-            }if(TEMP_2G.BSf) {
-                classdata[tempP].subjects[16].y_or_n = true;
-            }if(TEMP_2G.BMe) {
-                classdata[tempP].subjects[17].y_or_n = true;
-            }if(TEMP_2G.BSe) {
-                classdata[tempP].subjects[18].y_or_n = true;
-            }if(TEMP_2G.BMk) {
-                classdata[tempP].subjects[19].y_or_n = true;
-            }if(TEMP_2G.BSk) {
-                classdata[tempP].subjects[20].y_or_n = true;
-            }if(TEMP_2G.BMt) {
-                classdata[tempP].subjects[21].y_or_n = true;
-            }if(TEMP_2G.BMi) {
-                classdata[tempP].subjects[22].y_or_n = true;
-            }if(TEMP_2G.BMb) {
-                classdata[tempP].subjects[23].y_or_n = true;
-            }if(TEMP_2G.BMki) {
-                classdata[tempP].subjects[24].y_or_n = true;
-            }if(TEMP_2G.BMs) {
-                classdata[tempP].subjects[25].y_or_n = true;
-            }if(TEMP_2G.BMth) {
-                classdata[tempP].subjects[26].y_or_n = true;
-            }
-            TEMP_2G.BMm = 0;
-            TEMP_2G.BSm = 0;
-            TEMP_2G.BMt = 0;
-            TEMP_2G.BMi = 0;
-            TEMP_2G.BMs = 0;
-            TEMP_2G.BMth = 0;
-            TEMP_2G.BMb = 0;
-            TEMP_2G.BMki = 0;
-            TEMP_2G.BMf = 0;
-            TEMP_2G.BSf = 0;
-            TEMP_2G.BMe = 0;
-            TEMP_2G.BSe = 0;
-            TEMP_2G.BMk = 0;
-            TEMP_2G.BSk = 0;
-        }else if(i == 10) {
             tempP++;
              if(TEMP_2G.BMm) {
                 classdata[tempP].subjects[13].y_or_n = true;
@@ -1095,7 +960,7 @@ void Class_Generator(Class_t classdata[]) {
             TEMP_2G.BSe = 0;
             TEMP_2G.BMk = 0;
             TEMP_2G.BSk = 0;
-        }else if(i == 14) {
+        }else if(i == 16) {
             tempP++;
              if(TEMP_2G.BMm) {
                 classdata[tempP].subjects[13].y_or_n = true;
@@ -1140,7 +1005,142 @@ void Class_Generator(Class_t classdata[]) {
             TEMP_2G.BSe = 0;
             TEMP_2G.BMk = 0;
             TEMP_2G.BSk = 0;
-        }else if(i == 16) {
+        }else if(i == 20) {
+            tempP++;
+             if(TEMP_2G.BMm) {
+                classdata[tempP].subjects[13].y_or_n = true;
+            }if(TEMP_2G.BSm) {
+                classdata[tempP].subjects[14].y_or_n = true;
+            }if(TEMP_2G.BMf) {
+                classdata[tempP].subjects[15].y_or_n = true;
+            }if(TEMP_2G.BSf) {
+                classdata[tempP].subjects[16].y_or_n = true;
+            }if(TEMP_2G.BMe) {
+                classdata[tempP].subjects[17].y_or_n = true;
+            }if(TEMP_2G.BSe) {
+                classdata[tempP].subjects[18].y_or_n = true;
+            }if(TEMP_2G.BMk) {
+                classdata[tempP].subjects[19].y_or_n = true;
+            }if(TEMP_2G.BSk) {
+                classdata[tempP].subjects[20].y_or_n = true;
+            }if(TEMP_2G.BMt) {
+                classdata[tempP].subjects[21].y_or_n = true;
+            }if(TEMP_2G.BMi) {
+                classdata[tempP].subjects[22].y_or_n = true;
+            }if(TEMP_2G.BMb) {
+                classdata[tempP].subjects[23].y_or_n = true;
+            }if(TEMP_2G.BMki) {
+                classdata[tempP].subjects[24].y_or_n = true;
+            }if(TEMP_2G.BMs) {
+                classdata[tempP].subjects[25].y_or_n = true;
+            }if(TEMP_2G.BMth) {
+                classdata[tempP].subjects[26].y_or_n = true;
+            }
+            TEMP_2G.BMm = 0;
+            TEMP_2G.BSm = 0;
+            TEMP_2G.BMt = 0;
+            TEMP_2G.BMi = 0;
+            TEMP_2G.BMs = 0;
+            TEMP_2G.BMth = 0;
+            TEMP_2G.BMb = 0;
+            TEMP_2G.BMki = 0;
+            TEMP_2G.BMf = 0;
+            TEMP_2G.BSf = 0;
+            TEMP_2G.BMe = 0;
+            TEMP_2G.BSe = 0;
+            TEMP_2G.BMk = 0;
+            TEMP_2G.BSk = 0;
+        }else if(i == 24) {
+            tempP++;
+             if(TEMP_2G.BMm) {
+                classdata[tempP].subjects[13].y_or_n = true;
+            }if(TEMP_2G.BSm) {
+                classdata[tempP].subjects[14].y_or_n = true;
+            }if(TEMP_2G.BMf) {
+                classdata[tempP].subjects[15].y_or_n = true;
+            }if(TEMP_2G.BSf) {
+                classdata[tempP].subjects[16].y_or_n = true;
+            }if(TEMP_2G.BMe) {
+                classdata[tempP].subjects[17].y_or_n = true;
+            }if(TEMP_2G.BSe) {
+                classdata[tempP].subjects[18].y_or_n = true;
+            }if(TEMP_2G.BMk) {
+                classdata[tempP].subjects[19].y_or_n = true;
+            }if(TEMP_2G.BSk) {
+                classdata[tempP].subjects[20].y_or_n = true;
+            }if(TEMP_2G.BMt) {
+                classdata[tempP].subjects[21].y_or_n = true;
+            }if(TEMP_2G.BMi) {
+                classdata[tempP].subjects[22].y_or_n = true;
+            }if(TEMP_2G.BMb) {
+                classdata[tempP].subjects[23].y_or_n = true;
+            }if(TEMP_2G.BMki) {
+                classdata[tempP].subjects[24].y_or_n = true;
+            }if(TEMP_2G.BMs) {
+                classdata[tempP].subjects[25].y_or_n = true;
+            }if(TEMP_2G.BMth) {
+                classdata[tempP].subjects[26].y_or_n = true;
+            }
+            TEMP_2G.BMm = 0;
+            TEMP_2G.BSm = 0;
+            TEMP_2G.BMt = 0;
+            TEMP_2G.BMi = 0;
+            TEMP_2G.BMs = 0;
+            TEMP_2G.BMth = 0;
+            TEMP_2G.BMb = 0;
+            TEMP_2G.BMki = 0;
+            TEMP_2G.BMf = 0;
+            TEMP_2G.BSf = 0;
+            TEMP_2G.BMe = 0;
+            TEMP_2G.BSe = 0;
+            TEMP_2G.BMk = 0;
+            TEMP_2G.BSk = 0;
+        }else if(i == 28) {
+            tempP++;
+             if(TEMP_2G.BMm) {
+                classdata[tempP].subjects[13].y_or_n = true;
+            }if(TEMP_2G.BSm) {
+                classdata[tempP].subjects[14].y_or_n = true;
+            }if(TEMP_2G.BMf) {
+                classdata[tempP].subjects[15].y_or_n = true;
+            }if(TEMP_2G.BSf) {
+                classdata[tempP].subjects[16].y_or_n = true;
+            }if(TEMP_2G.BMe) {
+                classdata[tempP].subjects[17].y_or_n = true;
+            }if(TEMP_2G.BSe) {
+                classdata[tempP].subjects[18].y_or_n = true;
+            }if(TEMP_2G.BMk) {
+                classdata[tempP].subjects[19].y_or_n = true;
+            }if(TEMP_2G.BSk) {
+                classdata[tempP].subjects[20].y_or_n = true;
+            }if(TEMP_2G.BMt) {
+                classdata[tempP].subjects[21].y_or_n = true;
+            }if(TEMP_2G.BMi) {
+                classdata[tempP].subjects[22].y_or_n = true;
+            }if(TEMP_2G.BMb) {
+                classdata[tempP].subjects[23].y_or_n = true;
+            }if(TEMP_2G.BMki) {
+                classdata[tempP].subjects[24].y_or_n = true;
+            }if(TEMP_2G.BMs) {
+                classdata[tempP].subjects[25].y_or_n = true;
+            }if(TEMP_2G.BMth) {
+                classdata[tempP].subjects[26].y_or_n = true;
+            }
+            TEMP_2G.BMm = 0;
+            TEMP_2G.BSm = 0;
+            TEMP_2G.BMt = 0;
+            TEMP_2G.BMi = 0;
+            TEMP_2G.BMs = 0;
+            TEMP_2G.BMth = 0;
+            TEMP_2G.BMb = 0;
+            TEMP_2G.BMki = 0;
+            TEMP_2G.BMf = 0;
+            TEMP_2G.BSf = 0;
+            TEMP_2G.BMe = 0;
+            TEMP_2G.BSe = 0;
+            TEMP_2G.BMk = 0;
+            TEMP_2G.BSk = 0;
+        }else if(i == 32) {
             tempP++;
              if(TEMP_2G.BMm) {
                 classdata[tempP].subjects[13].y_or_n = true;
@@ -1188,7 +1188,7 @@ void Class_Generator(Class_t classdata[]) {
         }
     }
     /*1g*/
-    for(i = 1; i < 9; i++) {
+    for(i = 1; i < 17; i++) {
         
         randA1g: temp_nr = rand() % 7;
         if(temp_nr == 0) { 
@@ -1237,55 +1237,7 @@ void Class_Generator(Class_t classdata[]) {
                 goto randA1g;
             }  
         }
-        if(i == 1) {
-            tempP++;
-            if(TEMP_1G.CMp) {
-                classdata[tempP].subjects[27].y_or_n = true;
-            }if(TEMP_1G.CMb) {
-                classdata[tempP].subjects[28].y_or_n = true;
-            }if(TEMP_1G.CMki) {
-                classdata[tempP].subjects[29].y_or_n = true;
-            }if(TEMP_1G.CMs) {
-                classdata[tempP].subjects[30].y_or_n = true;
-            }if(TEMP_1G.CMth) {
-                classdata[tempP].subjects[31].y_or_n = true;
-            }if(TEMP_1G.CMps) {
-                classdata[tempP].subjects[32].y_or_n = true;
-            }if(TEMP_1G.CMa) {
-                classdata[tempP].subjects[33].y_or_n = true;
-            }
-            TEMP_1G.CMki = 0;
-            TEMP_1G.CMp = 0;
-            TEMP_1G.CMth = 0;
-            TEMP_1G.CMps = 0;
-            TEMP_1G.CMb = 0;
-            TEMP_1G.CMs = 0;
-            TEMP_1G.CMa = 0;
-        }else if(i == 2) {
-            tempP++;
-            if(TEMP_1G.CMp) {
-                classdata[tempP].subjects[27].y_or_n = true;
-            }if(TEMP_1G.CMb) {
-                classdata[tempP].subjects[28].y_or_n = true;
-            }if(TEMP_1G.CMki) {
-                classdata[tempP].subjects[29].y_or_n = true;
-            }if(TEMP_1G.CMs) {
-                classdata[tempP].subjects[30].y_or_n = true;
-            }if(TEMP_1G.CMth) {
-                classdata[tempP].subjects[31].y_or_n = true;
-            }if(TEMP_1G.CMps) {
-                classdata[tempP].subjects[32].y_or_n = true;
-            }if(TEMP_1G.CMa) {
-                classdata[tempP].subjects[33].y_or_n = true;
-            }
-            TEMP_1G.CMki = 0;
-            TEMP_1G.CMp = 0;
-            TEMP_1G.CMth = 0;
-            TEMP_1G.CMps = 0;
-            TEMP_1G.CMb = 0;
-            TEMP_1G.CMs = 0;
-            TEMP_1G.CMa = 0;
-        }else if(i == 3) {
+        if(i == 2) {
             tempP++;
             if(TEMP_1G.CMp) {
                 classdata[tempP].subjects[27].y_or_n = true;
@@ -1333,30 +1285,6 @@ void Class_Generator(Class_t classdata[]) {
             TEMP_1G.CMb = 0;
             TEMP_1G.CMs = 0;
             TEMP_1G.CMa = 0;
-        }else if(i == 5) {
-            tempP++;
-            if(TEMP_1G.CMp) {
-                classdata[tempP].subjects[27].y_or_n = true;
-            }if(TEMP_1G.CMb) {
-                classdata[tempP].subjects[28].y_or_n = true;
-            }if(TEMP_1G.CMki) {
-                classdata[tempP].subjects[29].y_or_n = true;
-            }if(TEMP_1G.CMs) {
-                classdata[tempP].subjects[30].y_or_n = true;
-            }if(TEMP_1G.CMth) {
-                classdata[tempP].subjects[31].y_or_n = true;
-            }if(TEMP_1G.CMps) {
-                classdata[tempP].subjects[32].y_or_n = true;
-            }if(TEMP_1G.CMa) {
-                classdata[tempP].subjects[33].y_or_n = true;
-            }
-            TEMP_1G.CMki = 0;
-            TEMP_1G.CMp = 0;
-            TEMP_1G.CMth = 0;
-            TEMP_1G.CMps = 0;
-            TEMP_1G.CMb = 0;
-            TEMP_1G.CMs = 0;
-            TEMP_1G.CMa = 0;
         }else if(i == 6) {
             tempP++;
             if(TEMP_1G.CMp) {
@@ -1381,7 +1309,7 @@ void Class_Generator(Class_t classdata[]) {
             TEMP_1G.CMb = 0;
             TEMP_1G.CMs = 0;
             TEMP_1G.CMa = 0;
-        }else if(i == 7) {
+        }else if(i == 8) {
             tempP++;
             if(TEMP_1G.CMp) {
                 classdata[tempP].subjects[27].y_or_n = true;
@@ -1405,7 +1333,79 @@ void Class_Generator(Class_t classdata[]) {
             TEMP_1G.CMb = 0;
             TEMP_1G.CMs = 0;
             TEMP_1G.CMa = 0;
-        }else if(i == 8) {
+        }else if(i == 10) {
+            tempP++;
+            if(TEMP_1G.CMp) {
+                classdata[tempP].subjects[27].y_or_n = true;
+            }if(TEMP_1G.CMb) {
+                classdata[tempP].subjects[28].y_or_n = true;
+            }if(TEMP_1G.CMki) {
+                classdata[tempP].subjects[29].y_or_n = true;
+            }if(TEMP_1G.CMs) {
+                classdata[tempP].subjects[30].y_or_n = true;
+            }if(TEMP_1G.CMth) {
+                classdata[tempP].subjects[31].y_or_n = true;
+            }if(TEMP_1G.CMps) {
+                classdata[tempP].subjects[32].y_or_n = true;
+            }if(TEMP_1G.CMa) {
+                classdata[tempP].subjects[33].y_or_n = true;
+            }
+            TEMP_1G.CMki = 0;
+            TEMP_1G.CMp = 0;
+            TEMP_1G.CMth = 0;
+            TEMP_1G.CMps = 0;
+            TEMP_1G.CMb = 0;
+            TEMP_1G.CMs = 0;
+            TEMP_1G.CMa = 0;
+        }else if(i == 12) {
+            tempP++;
+            if(TEMP_1G.CMp) {
+                classdata[tempP].subjects[27].y_or_n = true;
+            }if(TEMP_1G.CMb) {
+                classdata[tempP].subjects[28].y_or_n = true;
+            }if(TEMP_1G.CMki) {
+                classdata[tempP].subjects[29].y_or_n = true;
+            }if(TEMP_1G.CMs) {
+                classdata[tempP].subjects[30].y_or_n = true;
+            }if(TEMP_1G.CMth) {
+                classdata[tempP].subjects[31].y_or_n = true;
+            }if(TEMP_1G.CMps) {
+                classdata[tempP].subjects[32].y_or_n = true;
+            }if(TEMP_1G.CMa) {
+                classdata[tempP].subjects[33].y_or_n = true;
+            }
+            TEMP_1G.CMki = 0;
+            TEMP_1G.CMp = 0;
+            TEMP_1G.CMth = 0;
+            TEMP_1G.CMps = 0;
+            TEMP_1G.CMb = 0;
+            TEMP_1G.CMs = 0;
+            TEMP_1G.CMa = 0;
+        }else if(i == 14) {
+            tempP++;
+            if(TEMP_1G.CMp) {
+                classdata[tempP].subjects[27].y_or_n = true;
+            }if(TEMP_1G.CMb) {
+                classdata[tempP].subjects[28].y_or_n = true;
+            }if(TEMP_1G.CMki) {
+                classdata[tempP].subjects[29].y_or_n = true;
+            }if(TEMP_1G.CMs) {
+                classdata[tempP].subjects[30].y_or_n = true;
+            }if(TEMP_1G.CMth) {
+                classdata[tempP].subjects[31].y_or_n = true;
+            }if(TEMP_1G.CMps) {
+                classdata[tempP].subjects[32].y_or_n = true;
+            }if(TEMP_1G.CMa) {
+                classdata[tempP].subjects[33].y_or_n = true;
+            }
+            TEMP_1G.CMki = 0;
+            TEMP_1G.CMp = 0;
+            TEMP_1G.CMth = 0;
+            TEMP_1G.CMps = 0;
+            TEMP_1G.CMb = 0;
+            TEMP_1G.CMs = 0;
+            TEMP_1G.CMa = 0;
+        }else if(i == 16) {
             tempP++;
             if(TEMP_1G.CMp) {
                 classdata[tempP].subjects[27].y_or_n = true;
