@@ -41,7 +41,7 @@ int main (void) {
     for (i = 0; i < 1000; i++)
     {
         Length(schema_data, array);
-        selection(schema_data, fintness(schema_data, array));
+        selection(schema_data, calc_fitness_one_generation(schema_data, array));
     }
 
     return 0;
