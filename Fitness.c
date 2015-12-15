@@ -1,5 +1,4 @@
-void
-calc_fitness_one_generation( Exam_block_t *****schema_data,  int **array)    {
+void calc_fitness_one_generation( Exam_block_t *****schema_data,  int **array)    {
     int fitness = 0;
     int i, j, k, r, p;
     
