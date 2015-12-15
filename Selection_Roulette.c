@@ -23,7 +23,7 @@ void Crossover_1(int genome_p1,int genome_p2, Exam_block_t *****parent, Exam_blo
 void crossover(int genome_p1, int genome_p2, Exam_block_t *****parent, Exam_block_t *****child_1, Exam_block_t *****child_2);
 
 
-void selection(Exam_block_t *****genome_data, int fitness[]){
+void selection(Exam_block_t *****genome_data){
     int i, 
         survivors = 0,
         chosen,
@@ -45,9 +45,9 @@ void selection(Exam_block_t *****genome_data, int fitness[]){
 
     for (i = 0; i < GENERATION_SIZE; i++)
     {
-        tempFitness[i].fitness = fitness[i];
-        tempFitness[i].position = i;
-        tempFitness[i].saved = false;
+        genome_data[i][0][0][0][0] = fitness[i];
+        genome_data[i][0][0][0][0].position = i;
+        genome_data[i][0][0][0][0].saved = false;
     }
 
     while (survivors < GENERATION_SIZE / savePerGen)
