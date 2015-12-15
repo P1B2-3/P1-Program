@@ -16,7 +16,7 @@ void fill(Exam_block_t *****filled_data, Exam_block_t *****filling_data);
 void kill(int position, Exam_block_t *****genome);
 void nextGen(int breed, int survivors, fitness_struct fit[], Exam_block_t *****genome);
 void child(int numOfParents, int numOfChildren, fitness_struct fit[], Exam_block_t *****genome);
-void makeChild(int parentPos, int childPos, Exam_block_t *****genome);
+void makeChild(int parent1Pos, int parent2pos, int childPos, Exam_block_t *****genome);
 
 
 void selection(Exam_block_t *****genome_data, int fitness[]){
@@ -99,10 +99,10 @@ int sortFitness (const void *a, const void *b){
     int f1 = ((fitness_struct *)a)->fitness;
     int f2 = ((fitness_struct *)b)->fitness;
 
-    if (f1 < f2 || f2 == 0) {
+    if (f1 < f2 || f2 == 0 || f2 < 0) {
         return 1;
     }
-    else if (f1 > f2 || f1 == 0) {
+    else if (f1 > f2 || f1 == 0 || f1 < 0) {
         return -1;
     }
     else {
@@ -195,31 +195,45 @@ void nextGen(int breed, int survivors, fitness_struct fit[], Exam_block_t *****g
 void child(int numOfParents, int numOfChildren, fitness_struct fit[], Exam_block_t *****genome){
     int i, j,
         totFitness,
-        chosen,
-        selected,
+        parent1, parent2,
+        selected1, selected2,
         breedingChance[GENERATION_SIZE];
 
     for (i = 0; i < numOfChildren; i++)
     {
-        totFitness += fit[i].fitness;
+        if (fit[i].fitness > 0){
+            totFitness += fit[i].fitness;
+        }
     }
 
     for (i = 0; i < numOfChildren; i++)
     {
-        breedingChance[i] = (((float)fit[i].fitness / (float)totFitness) * 100);
+        if (fit[i].fitness > 0){
+            breedingChance[i] = (((float)fit[i].fitness / (float)totFitness) * 100);
+        }
     }
 
-    for ( i = 0; i < numOfChildren; i++)
+    selected1 = select();
+    selected2 = select();
+
+    for (i = 0; i < numOfChildren; i++)
     {
-        chosen += breedingChance[i];
-        if (chosen > selected)
+        parent1 += breedingChance[i];
+        if (parent1 > selected1)
         {
-            for (j = 0; j < numOfChildren; j++)
+            for (k = 0; k < numOfChildren; k++)
             {
-                if (fit[j].fitness == 0)
-                {
-                    makeChild(fit[i].position, fit[j].position, genome);
-                    fit[i].fitness = fit[fit[i].position].fitness;
+                parent2 += breedingChance[i];
+                if (parent2 > selected2){
+                    for (j = 0; j < numOfChildren; j++)
+                    {
+                        if (fit[j].fitness == 0)
+                        {
+                            makeChild(fit[i].position, fit[k].position, fit[j].position, genome);
+                            fit[j].fitness = -1;
+                            break;
+                        }
+                    }
                     break;
                 }
             }
@@ -228,24 +242,6 @@ void child(int numOfParents, int numOfChildren, fitness_struct fit[], Exam_block
     }
 }
 
-void makeChild(int parentPos, int childPos, Exam_block_t *****genome){
-    int k, l, m, n;
+void makeChild(int parent1Pos, int parent2pos, int childPos, Exam_block_t *****genome){
 
-    numOfRooms = (int)getConfig("s.numberOfRooms");
-    numOfWeeks = (int)getConfig("s.numberOfWeeks");
-    numOfExams = (int)getConfig("s.numberOfExams");
-
-    for (k = 0; k < numOfWeeks; k++) 
-    {
-        for (l = 0; l < 5; l++) 
-        {
-            for (m = 0; m < numOfRooms; m++) 
-            {
-                for (n = 0; n < numOfExams; n++) 
-                {
-                    genome[childPos][k][l][m][n] = genome[parentPos][k][l][m][n];
-                }
-            }
-        }
-    }
 }
