@@ -10,7 +10,6 @@ typedef struct{
         saved;
 } fitness_struct;
 
-void makeChild(int parentPos, int childPos, Exam_block_t *****genome);
 int sortFitness (const void *a, const void *b);
 float select();
 void fill(Exam_block_t *****filled_data, Exam_block_t *****filling_data);
@@ -124,12 +123,16 @@ float select(){
 
 void fill(Exam_block_t *****filled_data, Exam_block_t *****filling_data){
     int i, k, l, m, n;
+
+    numOfRooms = (int)getConfig("s.numberOfRooms");
+    numOfWeeks = (int)getConfig("s.numberOfWeeks");
+    numOfExams = (int)getConfig("s.numberOfExams");
     
     for (i = 0; i < GENERATION_SIZE; i++) {
-        for (k = 0; k < WEEK_SIZE; k++) {
+        for (k = 0; k < numOfWeeks; k++) {
             for (l = 0; l < 5; l++) {
-                for (m = 0; m < ROOM_SIZE; m++) {
-                    for (n = 0; n < EXAM_SIZE; n++) {
+                for (m = 0; m < numOfRooms; m++) {
+                    for (n = 0; n < numOfExams; n++) {
                         filled_data[i][k][l][m][n] = filling_data[i][k][l][m][n];
                     }
                 }
@@ -228,13 +231,17 @@ void child(int numOfParents, int numOfChildren, fitness_struct fit[], Exam_block
 void makeChild(int parentPos, int childPos, Exam_block_t *****genome){
     int k, l, m, n;
 
-    for (k = 0; k < WEEK_SIZE; k++) 
+    numOfRooms = (int)getConfig("s.numberOfRooms");
+    numOfWeeks = (int)getConfig("s.numberOfWeeks");
+    numOfExams = (int)getConfig("s.numberOfExams");
+
+    for (k = 0; k < numOfWeeks; k++) 
     {
         for (l = 0; l < 5; l++) 
         {
-            for (m = 0; m < ROOM_SIZE; m++) 
+            for (m = 0; m < numOfRooms; m++) 
             {
-                for (n = 0; n < EXAM_SIZE; n++) 
+                for (n = 0; n < numOfExams; n++) 
                 {
                     genome[childPos][k][l][m][n] = genome[parentPos][k][l][m][n];
                 }
