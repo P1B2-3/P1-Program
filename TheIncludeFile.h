@@ -20,6 +20,7 @@ We love you special kids! <3
 /*Files*/
 /*#include "Structs/DATA_BASE.h"*/ /*Right now, of no use.*/
 #include "Structs/Structs-1.h"
+#include "Schema-gen.c"
 /*#include "readWrite/Write/DaysWhereTeacherIsAbcent.c"*/ /*Right now, of no use.*/
 #include "readWrite/Write/StudentData.c"
 #include "readWrite/Write/TeacherData.c"
@@ -31,15 +32,18 @@ We love you special kids! <3
 *//*
 #include "geneticAlgorithm.c"
 */
-/*#include "Selection_Roulette.c"*/
-
 #include "Length.c"
-
 #include "Fitness.c"
-
-#include "Schema-gen.c"
-/*#include "ArrayTilBlokke.c"*/ /*Not used for anything. + got a main in it*/
 #include "Mutation.c"
+#include "Selection_Roulette.c"
+
+
+
+
+
+
+/*#include "ArrayTilBlokke.c"*/ /*Not used for anything. + got a main in it*/
+
 #include "Skemaprint.c"
 #include "amountOfDays.c"
 /*#include "crossoverConcept.c"*/ /*Right now, of no use.*/

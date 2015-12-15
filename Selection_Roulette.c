@@ -16,7 +16,7 @@ void fill(Exam_block_t *****dest, Exam_block_t *****src);
 void kill(int position, Exam_block_t *****genome);
 void nextGen(int breed, int survivors, fitness_struct fit[], Exam_block_t *****genome);
 void child(int numOfParents, int numOfChildren, fitness_struct fit[], Exam_block_t *****genome);
-void makeChild(int parent1Pos, int parent2pos, int childPos, Exam_block_t *****genome);
+void makeChild(int parent1Pos, int parent2pos, int childPos1,int childPos2, Exam_block_t *****genome);
 void insert(int childPos, Exam_block_t *****genome);
 void moving(Exam_block_t *****child, Exam_block_t *****parent, int genome, int p1_day, int p1_week, int p2_week, int p2_day);
 void Crossover_1(int genome_p1,int genome_p2, Exam_block_t *****parent, Exam_block_t *****child);
@@ -45,7 +45,7 @@ void selection(Exam_block_t *****genome_data){
 
     for (i = 0; i < GENERATION_SIZE; i++)
     {
-        tempFitness[i].fitness = genome_data[i][0][0][0][0];
+        tempFitness[i].fitness = genome_data[i][0][0][0][0].fitness;
         tempFitness[i].position = i;
         tempFitness[i].saved = false;
     }
@@ -80,7 +80,7 @@ void selection(Exam_block_t *****genome_data){
 
     for (i = 0; i < GENERATION_SIZE; i++)
     {
-        if (tempFitness[i].saved = false){
+        if (tempFitness[i].saved == false){
             kill(tempFitness[i].position, temp_genome);
             tempFitness[i].fitness = 0;
         }
@@ -126,7 +126,7 @@ float select(){
 }
 
 void fill(Exam_block_t *****dest, Exam_block_t *****src){
-    int i, k, l, m, n;
+    int i, k, l, m, n,numOfRooms,numOfWeeks,numOfExams;
 
     numOfRooms = getConfig("s.numberOfRooms");
     numOfWeeks = getConfig("s.numberOfWeeks");
@@ -265,7 +265,7 @@ void makeChild(int parent1Pos, int parent2pos, int child1Pos, int child2Pos, Exa
 }
 
 void insert(int childPos, Exam_block_t *****genome){
-    int k, l, m, n;
+    int k, l, m, n,numOfRooms,numOfWeeks,numOfExams;
 
     numOfRooms = (int)getConfig("s.numberOfRooms");
     numOfWeeks = (int)getConfig("s.numberOfWeeks");
@@ -298,7 +298,6 @@ printf("stop crossover\n");
 void Crossover_1(int genome_p1,int genome_p2, Exam_block_t *****parent, Exam_block_t *****child){ /* pladser fra 1 og eksamner fra 2 */
     int i, j, k; /* parent1 */
     int h = 0, m = 0, l = 0; /* parent2*/
-    int q;
 
     printf("first step crossover_1\n");
     for ( i = 0; i < WEEK_SIZE; i++){ /* finder pladsen */
@@ -327,8 +326,9 @@ void Crossover_1(int genome_p1,int genome_p2, Exam_block_t *****parent, Exam_blo
 }
 
 void moving(Exam_block_t *****child, Exam_block_t *****parent, int genome, int p1_day, int p1_week, int p2_week, int p2_day){
-    printf("moving started\n");
+    
     int j, k;
+    printf("moving started\n");
 
 
     for ( j = 0; j < ROOM_SIZE; j++){
