@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
 void mutation(int genome, Exam_block_t *****genome_data)
 {
     int i, j, k, l,
