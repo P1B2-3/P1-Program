@@ -209,8 +209,10 @@ void PopulateNextGen(Exam_block_t *****solutions, rankings_t rankArray[], int ge
 /*---------------------------------------------------------------------------*/
 
 void KillPercentage(Exam_block_t *****solutions, Exam_block_t *****parents, rankings_t rankArray[], int generationNo) {
-    int killAmount = (killPerGeneration * GENERATION_SIZE) % (GENERATION_SIZE/2 + 1);
-    int survivingAmount = (GENERATION_SIZE - killAmount);
+    int tmp = killPerGeneration * GENERATION_SIZE;
+    int killAmount = (tmp != GENERATION_SIZE && tmp != 0)?(tmp):(Printf("Invalid killPerGeneration.")));
+    int tmp = GENERATION_SIZE - killAmount;
+    int survivingAmount = (tmp >= GENERATION_HALF)?(tmp):(Printf("Invalid killPerGeneration."));
     /*FUNGERER DETTE? KillPerGen er en double.*/
     int i, j, k = 0, l, m, n, o, rand1, skip, ;
     int survivors[survivingAmount]; 
