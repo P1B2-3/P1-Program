@@ -28,8 +28,9 @@ We love you special kids! <3
 #include "configParser.c"
 /*
 #include "ReturnSpecificData.c"
-*/
+*//*
 #include "geneticAlgorithm.c"
+*/
 /*#include "Selection_Roulette.c"*/
 
 #include "Length.c"
