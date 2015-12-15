@@ -9,30 +9,21 @@ crossoverType og crossoverSize benyttes ikke.
 
 Prop configs i funktionerne som parametre.
 
-Bør alle generation size osv laves til ikke-hardcodede værdier? Brug af malloc og lign.?
-
-Hvor skal fitness proppes hen? Skal det i rankarray? Så skal jeg sortere array vha. rankarray: 
-http://stackoverflow.com/questions/6076720/sorting-a-c-array-based-on-contents-of-another-array
-http://stackoverflow.com/questions/10584894/sort-an-array-based-on-members-of-another-array-in-c
-*/
+Bør alle generation size osv laves til ikke-hardcodede værdier? Brug af malloc og lign.?*/
 double killPerGeneration = 0.5;
 int elitismAmount = 1;
 /*From config.*/
 
-
-
-
 void RankFitness(rankings_t rankArray[]);
 void GeneticAlgorithm(Exam_block_t *****solutions);
 void Fitness(Exam_block_t *****solutions);
-int QsortByFitness (const void *a, const void *b);
+/*int QsortByFitness (const void *a, const void *b);*/
 int FindHighestFitness(rankings_t rankArray[]);
 int FitnessLimit(int bestFitness);
 void PopulateNextGen(Exam_block_t *****solutions, rankings_t rankArray[], int generationNo);
 void KillPercentage(Exam_block_t *****solutions, Exam_block_t *****parents, rankings_t rankArray[], int generationNo);
 void FillRest(Exam_block_t *****parents, Exam_block_t *****nextGen, rankings_t rankArray[], int generationNo, int nextGenCount);
 void ReplaceSolution(Exam_block_t ****old, Exam_block_t ****new);
-
 
 void GeneticAlgorithm(Exam_block_t *****solutions) {
     int i;
@@ -41,7 +32,7 @@ void GeneticAlgorithm(Exam_block_t *****solutions) {
     RankFitness(rankArray);
     for (i = 0; i < MAX_GENERATIONS; i++) {
         Fitness(solutions);
-        qsort(solutions, GENERATION_SIZE, sizeof(int), QsortByFitness);
+        /*qsort(solutions, GENERATION_SIZE, sizeof(int), QsortByFitness);*/
         if (FitnessLimit(FindHighestFitness(rankArray))){
             break;
         }
@@ -67,7 +58,7 @@ void Fitness(Exam_block_t *****solutions) {
 }
 
 /*---------------------------------------------------------------------------*/
-
+/*
 int QsortByFitness (const void *a, const void *b) {
     int f1, f2;
 
@@ -82,12 +73,12 @@ int QsortByFitness (const void *a, const void *b) {
     }
     else {
         return 0;
-        /*Lige nu er der bias for dem, som starter øverst på arrayet. 
-        Vurderet til at være ok.*/
+        Lige nu er der bias for dem, som starter øverst på arrayet. 
+        Vurderet til at være ok.
     }
 }
 
-/*GØR SÅLEDES DET SORTERER SOLUTIONS ARRAY VHA. HVAD DER STÅR I RANKARRAY.*/
+GØR SÅLEDES DET SORTERER SOLUTIONS ARRAY VHA. HVAD DER STÅR I RANKARRAY.*/
 
 /*---------------------------------------------------------------------------*/
 
