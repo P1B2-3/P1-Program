@@ -49,6 +49,15 @@ typedef struct{
     char classname;
 }Exam_block_t;
 
+/*Length*/
+
+typedef struct{
+    int year;
+    char Class;
+    int t_or_f;
+    int days;
+} temp_t;
+
 /*Genetic algorithm structs*/
 typedef struct {
     int max, 

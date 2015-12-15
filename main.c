@@ -18,18 +18,26 @@
 #define HOURS 8
 #define DAYS 5
 #define WEEKS 4
+
+#define SIZE_OF_NAMES 200
+#define AMOUNT_OF_STUDENTS 624
+#define STUDENDTS_IN_CLASS 30
+#define NUMBER_OF_SUBJECTS 40
 #define MONTHS 1
 
 #define true 1
 #define false 0
 
 #include "TheIncludeFile.h" /*File to include!*/
-
-
-int main (void){
-
+ 
+/* defines for schema-gen */
+ 
+int main (void) {
+ 
     Exam_block_t *****schema_data = Make_schema();
-
+    int **array = Make_2D_Array_int(SCHEMA_SIZE, 100000);
+ 
+ 
     int i,j;
     for (i = 0; i < ROOM_SIZE; i++)
     {
@@ -38,9 +46,9 @@ int main (void){
             printf("year %i, day %i, room %i\n",schema_data[0][0][j][i][0].year, j, i);
         }
     }
-
+    length(schema_data, array);
+ 
     return 0;
 }
-
 /* items */
 /* databasen */
