@@ -12,7 +12,7 @@ typedef struct{
 
 int sortFitness (const void *a, const void *b);
 float select();
-void fill(Exam_block_t *****filled_data, Exam_block_t *****filling_data);
+void fill(Exam_block_t *****dest, Exam_block_t *****src);
 void kill(int position, Exam_block_t *****genome);
 void nextGen(int breed, int survivors, fitness_struct fit[], Exam_block_t *****genome);
 void child(int numOfParents, int numOfChildren, fitness_struct fit[], Exam_block_t *****genome);
@@ -125,7 +125,7 @@ float select(){
     return ((float)interger / 100);
 }
 
-void fill(Exam_block_t *****filled_data, Exam_block_t *****filling_data){
+void fill(Exam_block_t *****dest, Exam_block_t *****src){
     int i, k, l, m, n;
 
     numOfRooms = getConfig("s.numberOfRooms");
@@ -137,7 +137,7 @@ void fill(Exam_block_t *****filled_data, Exam_block_t *****filling_data){
             for (l = 0; l < 5; l++) {
                 for (m = 0; m < numOfRooms; m++) {
                     for (n = 0; n < numOfExams; n++) {
-                        filled_data[i][k][l][m][n] = filling_data[i][k][l][m][n];
+                        dest[i][k][l][m][n] = src[i][k][l][m][n];
                     }
                 }
             }
