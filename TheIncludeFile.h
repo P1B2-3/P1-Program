@@ -34,7 +34,7 @@ We love you special kids! <3
 
 #include "Length.c"
 
-#include "Fintness.c"
+#include "Fitness.c"
 
 #include "Schema-gen.c"
 /*#include "ArrayTilBlokke.c"*/ /*Not used for anything. + got a main in it*/
