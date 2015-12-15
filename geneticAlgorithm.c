@@ -15,7 +15,7 @@ Hvor skal fitness proppes hen? Skal det i rankarray? Så skal jeg sortere array 
 http://stackoverflow.com/questions/6076720/sorting-a-c-array-based-on-contents-of-another-array
 http://stackoverflow.com/questions/10584894/sort-an-array-based-on-members-of-another-array-in-c
 */
-int killPerGeneration = 0.5;
+double killPerGeneration = 0.5;
 int elitismAmount = 1;
 /*From config.*/
 
@@ -210,8 +210,12 @@ void PopulateNextGen(Exam_block_t *****solutions, rankings_t rankArray[], int ge
 
 void KillPercentage(Exam_block_t *****solutions, Exam_block_t *****parents, rankings_t rankArray[], int generationNo) {
     int killAmount = (killPerGeneration * GENERATION_SIZE) % (GENERATION_SIZE/2 + 1);
-    int i, j, k = 0, l, m, n, o, rand1, skip;
-    int survivors[killAmount - GENERATION_SIZE]; /*ULOVLIGHEDER!!!! "ISO C90 forbids variable length array ‘survivors’"*/
+    int survivingAmount = (GENERATION_SIZE - killAmount);
+    /*FUNGERER DETTE? KillPerGen er en double.*/
+    int i, j, k = 0, l, m, n, o, rand1, skip, ;
+    int survivors[survivingAmount]; 
+    memset(survivors, (survivingAmount + 1), survivingAmount);
+    /*ULOVLIGHEDER!!!! "ISO C90 forbids variable length array ‘survivors’"*/
     /*Der bliver ikke lagt noget over i survivors, så det du har her er et array fyldt med predeffinerede tegn, not good for buisness :P
       Find ud af hvad der skal være i survivors, og kom tilbage til denher :P*/
     
