@@ -15,7 +15,7 @@ int sortFitness (const void *a, const void *b);
 float select();
 void fill(Exam_block_t *****filled_data, Exam_block_t *****filling_data);
 void kill(int position, Exam_block_t *****genome);
-void breed(int breed, int survivors, fitness_struct fit[], Exam_block_t *****genome);
+void nextGen(int breed, int survivors, fitness_struct fit[], Exam_block_t *****genome);
 void child(int numOfParents, int numOfChildren, fitness_struct fit[], Exam_block_t *****genome);
 void makeChild(int parentPos, int childPos, Exam_block_t *****genome);
 
@@ -83,7 +83,7 @@ void selection(Exam_block_t *****genome_data, int fitness[]){
         }
     }
 
-    breed(breedPerGen, survivors, tempFitness, temp_genome);
+    nextGen(breedPerGen, survivors, tempFitness, temp_genome);
 
     for (i = 0; i < GENERATION_SIZE; i++)
     {
@@ -168,7 +168,7 @@ void kill(int position, Exam_block_t *****genome){
     free(zero);
 }
 
-void breed(int breed, int survivors, fitness_struct fit[], Exam_block_t *****genome){
+void nextGen(int breed, int survivors, fitness_struct fit[], Exam_block_t *****genome){
     int i,
         missing;
 
