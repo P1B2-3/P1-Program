@@ -34,27 +34,27 @@ Exam_block_t *****Make_5D_Array( int genom, int week, int day, int room, int exa
     Exam_block_t *****schema_data;
     schema_data = (Exam_block_t *****) calloc(genom,sizeof(Exam_block_t*****));
         if (schema_data == NULL)
-            printf("error not memori for Make_5D_Array(1)\n");      /* fejl kode, hvor at (x) er hvilken dimission der er fejl i */
+            printf("Error: Not enough memory for Make_5D_Array(1)\n");      /* fejl kode, hvor at (x) er hvilken dimission der er fejl i */
 
         for (i = 0; i < genom; i++) {
             schema_data[i] = (Exam_block_t ****) calloc(week,sizeof(Exam_block_t ***));
             if (schema_data == NULL)
-                printf("error not memori for Make_5D_Array(2)\n");
+                printf("Error: Not enough memory for Make_5D_Array(2)\n");
 
             for (j = 0; j < week; j++) {
                 schema_data[i][j] = (Exam_block_t ***)calloc(day,sizeof(Exam_block_t**));
                 if (schema_data == NULL)
-                    printf("error not memori for Make_5D_Array(3)\n");
+                    printf("Error: Not enough memory for Make_5D_Array(3)\n");
 
                 for (k = 0; k < day; k++) {
                     schema_data[i][j][k] = (Exam_block_t **)calloc(room,sizeof(Exam_block_t*));
                     if (schema_data == NULL)
-                        printf("error not memori for Make_5D_Array(4)\n");
+                        printf("Error: Not enough memory for Make_5D_Array(4)\n");
 
                     for (n = 0; n < room; n++) {
                         schema_data[i][j][k][n] = (Exam_block_t *)calloc(exam,sizeof(Exam_block_t));
                         if (schema_data == NULL)
-                            printf("error not memori for Make_5D_Array(5)\n");
+                            printf("Error: Not enough memory for Make_5D_Array(5)\n");
                     }
                 }
             }
@@ -75,7 +75,7 @@ Exam_block_t **Make_2D_Array( int day, int exam){ /* laver et temp-array som ska
         }
 
     if (temp_class_block == NULL){
-        printf("error not memori\n");
+        printf("Error: Not enough memory\n");
     }
 
     return temp_class_block;
