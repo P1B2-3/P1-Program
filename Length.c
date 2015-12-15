@@ -27,6 +27,8 @@ void Length(Exam_block_t *****schema_data, int **Day_Array) {
     int q, u, e;
     int t = 0, skip;
     int temp_day = 0, counter = 0;
+    char current_class_letter;
+    int current_class_no;
 
     temp_t activeclass[24];
     
@@ -38,8 +40,7 @@ void Length(Exam_block_t *****schema_data, int **Day_Array) {
         activeclass[i].days = 0;
     }
 
-    char current_class_letter;
-    int current_class_no;
+   
 
     for (l = 0; l < SCHEMA_SIZE; l++) {           /* genonom */
         counter = 0;

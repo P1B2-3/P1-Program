@@ -47,6 +47,7 @@ typedef struct{
         days;
     int year;
     char classname;
+    int fitness;
 }Exam_block_t;
 
 /*Length*/

@@ -40,8 +40,8 @@ int main (void) {
 
     for (i = 0; i < 1000; i++)
     {
-        length(schema_data, array)
-        Selection(schema_data, Fitness(schema_data, array));
+        Length(schema_data, array);
+        selection(schema_data, fintness(schema_data, array));
     }
 
     return 0;

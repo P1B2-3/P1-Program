@@ -207,10 +207,10 @@ void KillPercentage(Exam_block_t *****solutions, Exam_block_t *****parents, rank
     
     
     tmp = killPerGeneration * GENERATION_SIZE;
-    killAmount = (tmp != GENERATION_SIZE && tmp != 0) ? (tmp) : (Printf("Invalid killPerGeneration."));
+    killAmount = (tmp != GENERATION_SIZE && tmp != 0) ? (tmp) : (0);
 
     tmp = GENERATION_SIZE - killAmount;
-    survivingAmount = (tmp >= GENERATION_SIZE/2)?(tmp):(Printf("Invalid killPerGeneration."));
+    survivingAmount = (tmp >= GENERATION_SIZE/2)?(tmp):(0);
 
     memset(survivors, (survivingAmount + 1), survivingAmount);
     /*ULOVLIGHEDER!!!! "ISO C90 forbids variable length array ‘survivors’"*/
