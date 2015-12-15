@@ -15,10 +15,10 @@ OF LINES IN THE CONFIG.INI FILE*/
 /*STRUCT TO STORE EACH LINE'S STRING AND VALUE*/
 struct line{
     char line[1024];
-    double value;
+    int value;
 };
 
-double getConfig(char* in) {
+int getConfig(char* in) {
 
     struct line line[LINES_TO_READ];
     int i;
@@ -29,7 +29,7 @@ double getConfig(char* in) {
 
     /*LOAD LINES INTO STRUCT*/
     for(i = 0; i <= LINES_TO_READ; i++){
-        fscanf(file," %[a-zA-Z.] - %lf" ,line[i].line, &line[i].value);
+        fscanf(file," %[a-zA-Z.] - %i" ,line[i].line, &line[i].value);
         fgetc(file);
 
         if (feof(file)){
