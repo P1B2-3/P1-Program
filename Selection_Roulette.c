@@ -93,6 +93,7 @@ void selection(Exam_block_t *****genome_data, int fitness[]){
     }
 
     fill(genome_data, temp_genome);
+    free(temp_genome);
 }
 
 int sortFitness (const void *a, const void *b){
