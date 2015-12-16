@@ -210,6 +210,7 @@ void NextGen(int survivors, fitness_struct fit[], Exam_block_t *****genome) {
 
     while (missing < SCHEMA_SIZE)
     {
+        printf("%i\n",missing );
         child(missing, fit, genome);
     }
 }
