@@ -104,7 +104,7 @@ void Length(Exam_block_t *****schema_data, int **Day_Array) {
                 }
             }
         }
-        Day_Array[l][counter+1] = 1000;
+        Day_Array[l][counter] = 1000;
     }
     
 }

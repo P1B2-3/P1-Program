@@ -1,12 +1,14 @@
 void CalcFitnessOneGeneration( Exam_block_t *****schema_data,  int **array) {
     int fitness = 0;
-    int i, j, k, r, p;
+    int i, j, k, r = 0, p;
     
 for (i = 0; i < SCHEMA_SIZE; i++) {
-        
+
         /* læser alle tal i arrayet ud fra r. */
         while (array[i][r] < 1000) { /* vi ved sætter ne stop blok ind i vores array, og da vi ved at der aldrig er 1000 dagen i en eksamens periode*/
+
             if (array[i][r] >= 2) {
+
                 fitness++;
             }
         r++;
@@ -23,5 +25,6 @@ for (i = 0; i < SCHEMA_SIZE; i++) {
         }
     schema_data[i][0][0][0][0].fitness = fitness;
     fitness = 0;
+    r = 0;
     }
 }
