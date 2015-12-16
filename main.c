@@ -31,6 +31,10 @@
 /* defines for schema-gen */
  
 int main (void) {
+
+ 
+    Exam_block_t ;
+    int **array;
     int i;
     time_t t;
     Exam_block_t *****schema_data;
@@ -43,12 +47,10 @@ int main (void) {
     
     
 
-    for (i = 0; i < 1000; i++)
-    {
+    for (i = 0; i < 1000; i++) {
         Length(schema_data, array);
         CalcFitnessOneGeneration(schema_data, array);
         Selection(schema_data);
-
     }
     
     Free5DArray(schema_data);
