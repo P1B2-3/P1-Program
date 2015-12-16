@@ -166,6 +166,7 @@ void Fill(Exam_block_t *****dest, Exam_block_t *****src) {
                 for (m = 0; m < numOfRooms; m++) {
                     for (n = 0; n < numOfExams; n++) {
                         dest[i][k][l][m][n] = src[i][k][l][m][n];
+                        printf("cpy\n");
                     }
                 }
             }
@@ -223,16 +224,16 @@ void child(int numOfChildren, fitness_struct fit[], Exam_block_t *****genome) {
           breedingChance[SCHEMA_SIZE];
 
     for (i = 0; i < SCHEMA_SIZE; i++)
-    {
+    {   printf("Fit1 er en int: %i\n",fit[i].fitness);
         if (fit[i].fitness > 0) {
 
             totFitness += fit[i].fitness;
         }
     }
 
-
+    printf("mellem forloops\n");
     for (i = 0; i < SCHEMA_SIZE; i++)
-    {
+    {   printf("Fit2 er en int: %i\n",fit[i].fitness);
         
         if (fit[i].fitness > 0) {
 
@@ -245,6 +246,7 @@ void child(int numOfChildren, fitness_struct fit[], Exam_block_t *****genome) {
     Selected2 = Select();
 
     for (i = 0; i < SCHEMA_SIZE; i++) {
+        printf("%f og %f\n",parent1,parent2 );
         parent1 += breedingChance[i];
         if (parent1 > Selected1) {
 
@@ -333,7 +335,7 @@ void MakeCrossover(int genome_p1, int genome_p2, Exam_block_t *****parent, Exam_
 void DoCrossover(int genome_p1,int genome_p2, Exam_block_t *****parent, Exam_block_t *****child) { /* pladser fra 1 og eksamner fra 2 */
     int i, j, k; /* parent1 */
     int h = 0, m = 0, l = 0; /* parent2*/
-
+    printf("fisk\n");
     for ( i = 0; i < WEEK_SIZE; i++) { /* finder pladsen */
         for ( j = 0; j < DAY_SIZE; j++) {
             for ( k = 0; k < ROOM_SIZE; k++) {
