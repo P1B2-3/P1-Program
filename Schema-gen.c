@@ -18,17 +18,17 @@ Exam_block_t *****MakeSchema(){
             printf("No free memory for class data\n");
             return (0);
         }
-            printf("Hej\n");
+
 
     ClassGenerator(classdata); 
-    printf("A\n");
+
     TeacherGenerator(classdata);
-    printf("b\n");
+
 
     PreExamBlock(classdata, schema_data,temp_class_block,24, SCHEMA_SIZE);
-    printf("c\n");
+    
     Free2DArray_Ex(temp_class_block,DAY_SIZE);
-    printf("Farvel\n");
+    
     return schema_data;
 }
 
@@ -165,12 +165,12 @@ void PreExamBlock(Class_t classdata[], Exam_block_t *****schema_data, Exam_block
         for (i = 0; i < class_no; i++){     /* for skellige klasser */
 
             for (j = 0; j < 34; j++){       /* hvor mange eksamner der er */
-                printf("Foerste if\n");
+                
                 if(classdata[i].subjects[j].y_or_n == true && classdata[i].subjects[j].verbal){ /* kigger om de skal op til eksamen */
 
                     move_phase = true;
                     while(move_phase == true){ /* køre indtil at der bliver fundet en plads der er fri i data blokken */
-                        printf("j = %i\n",j );
+                        
                         runes++;
                         room = rand()% ROOM_SIZE;
                         day  = rand()% DAY_SIZE;
