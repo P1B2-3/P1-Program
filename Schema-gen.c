@@ -18,12 +18,17 @@ Exam_block_t *****MakeSchema(){
             printf("No free memory for class data\n");
             return (0);
         }
+            printf("Hej\n");
 
     ClassGenerator(classdata); 
+    printf("A\n");
     TeacherGenerator(classdata);
+    printf("b\n");
 
     PreExamBlock(classdata, schema_data,temp_class_block,24, SCHEMA_SIZE);
+    printf("c\n");
     Free2DArray_Ex(temp_class_block,DAY_SIZE);
+    printf("Farvel\n");
     return schema_data;
 }
 
@@ -33,28 +38,41 @@ Exam_block_t *****Make_5D_Array( int genom, int week, int day, int room, int exa
 
     Exam_block_t *****schema_data;
     schema_data = (Exam_block_t *****) calloc(genom,sizeof(Exam_block_t*****));
-        if (schema_data == NULL)
+        if (schema_data == NULL) {
             printf("Error: Not enough memory for Make_5D_Array(1)\n");      /* fejl kode, hvor at (x) er hvilken dimission der er fejl i */
+            assert(0);
+        }
+            
 
         for (i = 0; i < genom; i++) {
             schema_data[i] = (Exam_block_t ****) calloc(week,sizeof(Exam_block_t ***));
-            if (schema_data == NULL)
+            if (schema_data == NULL) {
                 printf("Error: Not enough memory for Make_5D_Array(2)\n");
+                assert(0);
+            }
+                
 
             for (j = 0; j < week; j++) {
                 schema_data[i][j] = (Exam_block_t ***)calloc(day,sizeof(Exam_block_t**));
-                if (schema_data == NULL)
+                if (schema_data == NULL) {
                     printf("Error: Not enough memory for Make_5D_Array(3)\n");
+                    assert(0);
+                }
+                    
 
                 for (k = 0; k < day; k++) {
                     schema_data[i][j][k] = (Exam_block_t **)calloc(room,sizeof(Exam_block_t*));
-                    if (schema_data == NULL)
+                    if (schema_data == NULL) {
                         printf("Error: Not enough memory for Make_5D_Array(4)\n");
+                        assert(0);
+                    }
 
                     for (n = 0; n < room; n++) {
                         schema_data[i][j][k][n] = (Exam_block_t *)calloc(exam,sizeof(Exam_block_t));
-                        if (schema_data == NULL)
+                        if (schema_data == NULL) {
                             printf("Error: Not enough memory for Make_5D_Array(5)\n");
+                            assert(0);
+                        }
                     }
                 }
             }
@@ -76,6 +94,7 @@ Exam_block_t **Make_2D_Array( int day, int exam){ /* laver et temp-array som ska
 
     if (temp_class_block == NULL){
         printf("Error: Not enough memory\n");
+        assert(0);
     }
 
     return temp_class_block;
@@ -146,16 +165,18 @@ void PreExamBlock(Class_t classdata[], Exam_block_t *****schema_data, Exam_block
         for (i = 0; i < class_no; i++){     /* for skellige klasser */
 
             for (j = 0; j < 34; j++){       /* hvor mange eksamner der er */
-
+                printf("Foerste if\n");
                 if(classdata[i].subjects[j].y_or_n == true && classdata[i].subjects[j].verbal){ /* kigger om de skal op til eksamen */
 
                     move_phase = true;
                     while(move_phase == true){ /* køre indtil at der bliver fundet en plads der er fri i data blokken */
+                        printf("j = %i\n",j );
                         runes++;
                         room = rand()% ROOM_SIZE;
                         day  = rand()% DAY_SIZE;
                         week = rand()% WEEK_SIZE;
                         days = Examblock(classdata[i],j,temp_block, room);/* return fra 1-> antal dage eksamen fylder */
+
                         if(schema_data[k][week][day][room][0].year == 0){ /* hvis lokalet er firt på dagen */
 
                             if( day + days > 4){  /* hvis at eksamne kan være i den nuværende uge, og ikke er sidste uge*/
@@ -175,9 +196,9 @@ void PreExamBlock(Class_t classdata[], Exam_block_t *****schema_data, Exam_block
                                 }
                             }
                     
-                            if(runes > 10000000){
-                                printf("Not enough space for examens\nrunes :%i\nAnother run could solve it\n", runes);
-                                break;
+                            if(runes > 150000){
+                                printf("Not enough space for examens\nrunes :%i\nRerun the program plz\n", runes);
+                                assert(0);
                             }
                         }
                     }

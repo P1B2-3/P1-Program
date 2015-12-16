@@ -31,26 +31,43 @@
 /* defines for schema-gen */
  
 int main (void) {
-    int i;
+    int k,i;
     time_t t;
     Exam_block_t *****schema_data;
     int **array;
-
+    printf("-2\n");
     srand((unsigned) time(&t)); /* seeder vores random */
+    printf("-1\n");
     schema_data = MakeSchema();
-    array = Make_2D_Array_int(SCHEMA_SIZE, 100000);
-
+    printf("0\n");
+    array = Make_2D_Array_int(SCHEMA_SIZE, 1000);
+    
+    for(k = 0; k < 10; k++) {
+        printf("Klasse navn: %c\n",schema_data[0][0][0][0][k].classname );
+        printf("Klasse navn: %c\n",schema_data[0][0][0][1][k].classname );
+        printf("Klasse navn: %c\n",schema_data[0][0][0][2][k].classname );
+        printf("Klasse navn: %c\n",schema_data[0][0][0][3][k].classname );
+        printf("Klasse navn: %c\n",schema_data[0][0][0][4][k].classname );
+        printf("Klasse navn: %c\n",schema_data[0][0][0][5][k].classname );
+        printf("Klasse navn: %c\n",schema_data[0][0][0][6][k].classname );
+        printf("Klasse navn: %c\n",schema_data[0][0][0][7][k].classname );
+        printf("Klasse navn: %c\n",schema_data[0][0][0][8][k].classname );
+        printf("Klasse navn: %c\n",schema_data[0][0][0][9][k].classname );
+        printf("-------------------------------------------------------\n");
+    }
     
     
-
-    for (i = 0; i < 1000; i++) {
+    for (i = 0; i < 20; i++) {
+        printf("%i\n",i );
         Length(schema_data, array);
         CalcFitnessOneGeneration(schema_data, array);
         Selection(schema_data);
     }
+
+    Free2DArray_int(array, SCHEMA_SIZE);
     
     Free5DArray(schema_data);
-    Free2DArray_int(array, SCHEMA_SIZE);
+    
 
     return 0;
 }

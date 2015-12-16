@@ -233,10 +233,12 @@ void child(int numOfChildren, fitness_struct fit[], Exam_block_t *****genome) {
 
     for (i = 0; i < SCHEMA_SIZE; i++)
     {
+        
         if (fit[i].fitness > 0) {
 
             breedingChance[i] = (((float)fit[i].fitness / (float)totFitness) * 100);
         }
+
     }
 
     Selected1 = Select();
