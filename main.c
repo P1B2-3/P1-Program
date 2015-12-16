@@ -34,14 +34,13 @@
  
 int main (void) {
  
-    Exam_block_t *****schema_data = Make_schema();
+    Exam_block_t *****schema_data = MakesSchema();
     int **array = Make_2D_Array_int(SCHEMA_SIZE, 100000);
     int i;
 
-    for (i = 0; i < 1000; i++)
-    {
+    for (i = 0; i < 1000; i++) {
         Length(schema_data, array);
-        calc_fitness_one_generation(schema_data, array);
+        CalcFitnessOneGeneration(schema_data, array);
         selection(schema_data);
     }
 
