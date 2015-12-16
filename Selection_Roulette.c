@@ -31,8 +31,9 @@ void Selection(Exam_block_t *****genome_data) {
 
     /*ændrer procentsats til brøk, f.eks. 50% -> 1/2. Tager dog kun heltalsbrøk*/
                 savePerGen =  100 / (100 - GetConfig("a.killPerGeneration"));
+                printf("i will not fail\n");
                 Fill(temp_genome, genome_data);
-
+                printf("i did not fail\n");
                 for (i = 0; i < SCHEMA_SIZE; i++) {
             		tempFitness[i].fitness  = genome_data[i][0][0][0][0].fitness;
             		tempFitness[i].position = i;
@@ -123,7 +124,7 @@ void Fill(Exam_block_t *****dest, Exam_block_t *****src) {
     numOfRooms = GetConfig("s.numberOfRooms");
     numOfWeeks = GetConfig("s.numberOfWeeks");
     numOfExams = GetConfig("s.numberOfExams");
-    
+    printf("start\n");
     for (i = 0; i < SCHEMA_SIZE; i++) {
         for (k = 0; k < numOfWeeks; k++) {
             for (l = 0; l < 5; l++) {
@@ -135,6 +136,7 @@ void Fill(Exam_block_t *****dest, Exam_block_t *****src) {
             }
         }
     }
+    printf("slut\n");
 }
 
 

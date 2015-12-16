@@ -19,16 +19,16 @@ Exam_block_t *****MakeSchema(){
             return (0);
         }
 
-
+    printf("asger er en kegle\n");
     ClassGenerator(classdata); 
-
+    printf("asger er to kegler\n");
     TeacherGenerator(classdata);
 
-
+    printf("asger er tre kegler %c\n", classdata[0].name);
     PreExamBlock(classdata, schema_data,temp_class_block,24, SCHEMA_SIZE);
-    
+    printf("asger er keglen der crasher %c\n", classdata[0].name);
     Free2DArray_Ex(temp_class_block,DAY_SIZE);
-    
+    printf("asger er den sidste kegle\n");
     return schema_data;
 }
 
@@ -117,7 +117,7 @@ int Examblock(Class_t classdata, int l, Exam_block_t **temp_class_block, int roo
     else{
         total_days = (amount_of_students / 10);
     }
-
+        /*printf("yolo %c\n", classdata.name);*/
     for(i = 0; i < amount_of_students; i++){                    /* elevere, eve test med print i */
         temp_elevblock[i].student   = classdata.students[i];  
         temp_elevblock[i].subjects  = classdata.subjects[l];                                 
@@ -157,16 +157,16 @@ void PreExamBlock(Class_t classdata[], Exam_block_t *****schema_data, Exam_block
         move_phase,
         week_split; /* 0 er uden split af uger, 1 er med */
     /* variabler som bruges som tællere */
-    int i,j,k,o,l;
+    int i = 0,j,k,o,l;
     int runes = 0;
 
     for (k = 0; k < genom; k++){             /* Løsninger(hele Exam_blocker)*/
 
-        for (i = 0; i < class_no; i++){     /* for skellige klasser */
+        for (; i < class_no; i++){     /* for skellige klasser */
 
             for (j = 0; j < 34; j++){       /* hvor mange eksamner der er */
-                
-                if(classdata[i].subjects[j].y_or_n == true && classdata[i].subjects[j].verbal){ /* kigger om de skal op til eksamen */
+
+                if(classdata[i].subjects[j].y_or_n && classdata[i].subjects[j].verbal){ /* kigger om de skal op til eksamen */
 
                     move_phase = true;
                     while(move_phase == true){ /* køre indtil at der bliver fundet en plads der er fri i data blokken */
@@ -175,6 +175,7 @@ void PreExamBlock(Class_t classdata[], Exam_block_t *****schema_data, Exam_block
                         room = rand()% ROOM_SIZE;
                         day  = rand()% DAY_SIZE;
                         week = rand()% WEEK_SIZE;
+                        printf("i %i cd %c\n", i, classdata[i].name);
                         days = Examblock(classdata[i],j,temp_block, room);/* return fra 1-> antal dage eksamen fylder */
 
                         if(schema_data[k][week][day][room][0].year == 0){ /* hvis lokalet er firt på dagen */
@@ -237,7 +238,7 @@ void ClassGenerator(Class_t classdata[]) {
         unikID=0,
         temp_nr,
         k,
-        tempP=0;
+        tempP=-1;
 
     /* Array med fornavne, og tallene til siden, er hvor mange navne der er talt op indtil da.*/
     const char *elev_for_navn[] = {"Mathias", "Mads", "Magnus", "Emil", "Jakob", 
@@ -1454,10 +1455,10 @@ void ClassGenerator(Class_t classdata[]) {
 
         classdata[i].student_num = 26;
             /*Vi ved der er 9 klasser på hvert år*/
-            if(i<=8) {
+            if(i<8) {
                 classdata[i].year = 3;
             }
-            else if(i > 8 && i<=16) {
+            else if(i >= 8 && i<16) {
                 classdata[i].year = 2;
             }
             else {
@@ -1494,17 +1495,17 @@ void ClassGenerator(Class_t classdata[]) {
                       || (i == 22 && classdata[i].year == 1)) ? 'G' : 'H';
 
 
-        for(k = 1; k < 27; k++) {
+        for(k = 0; k < 26; k++) {
             /*Genere elever yd fra klasser, der er 8 klaaser af 3 årgange, og i dette tilfælde er der 26 elever i hver klasse, dette giver 624 elver ialt.
               dette bliver der holdt styr på ved hjælp af unikID som er en tæller der tæller 1 op for hver elev. (og derfor er det nemmere at holde styr på.*/
 
             unikID++;
 
-            classdata[i].students[k-1].unikID = unikID;
+            classdata[i].students[k].unikID = unikID;
             
-            strcpy(classdata[i].students[k-1].name,elev_for_navn[rand()%182]);
-            strcpy(classdata[i].students[k-1].surname,elev_efternavn[rand()%234]);
-            classdata[i].students[k-1].exam_number = k;
+            strcpy(classdata[i].students[k].name,elev_for_navn[rand()%182]);
+            strcpy(classdata[i].students[k].surname,elev_efternavn[rand()%234]);
+            classdata[i].students[k].exam_number = k;
         } 
     }
 }
