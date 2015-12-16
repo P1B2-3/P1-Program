@@ -30,11 +30,11 @@ void Mutation(int genome, Exam_block_t *****genome_data) {
         /*while-løkken sørger for at ændringerne er acceptable*/
         while(k < 30000) {
             k++;
-            week = rand() % (numOfWeeks-1); /*eksamensperiode længde, standard er 8*/
+            week = rand() % (numOfWeeks); /*eksamensperiode længde, standard er 8*/
             day = rand() % 5;                 /*antal dage på en uge*/
             room = rand() % numOfRooms; /*antal rum, standard er 10*/
 
-            gWeek = rand() % (numOfWeeks-1);
+            gWeek = rand() % (numOfWeeks);
             gDay = rand() % 5;
             gRoom = rand() % numOfRooms;
 
@@ -82,7 +82,8 @@ void Mutation(int genome, Exam_block_t *****genome_data) {
                 }
             }
             else if (day > 2 && gDay <= 2) {
-                if (genome_data[genome][week][day][room][0].year != 0 && 
+                if (week != 7 &&
+                    genome_data[genome][week][day][room][0].year != 0 && 
                     genome_data[genome][week+1][day-xamLenght][room][0].year != 0 &&
                     genome_data[genome][week][day][room][0].classname == genome_data[genome][week+1][day-xamLenght][room][0].classname &&
                     genome_data[genome][week][day][room][0].year      == genome_data[genome][week+1][day-xamLenght][room][0].year){
@@ -104,10 +105,11 @@ void Mutation(int genome, Exam_block_t *****genome_data) {
                         }
                         break;
                     }
-                    else if (genome_data[genome][gWeek][gDay][gRoom][0].year   != 0 && 
-                    genome_data[genome][gWeek][gDay+gXamLenght-1][gRoom][0].year != 0 && 
-                    genome_data[genome][gWeek][gDay][gRoom][0].classname       == genome_data[genome][gWeek][gDay+gXamLenght-1][gRoom][0].classname &&
-                    genome_data[genome][gWeek][gDay][gRoom][0].year            == genome_data[genome][gWeek][gDay+gXamLenght-1][gRoom][0].year) {
+                    else if (week != 7 &&
+                             genome_data[genome][gWeek][gDay][gRoom][0].year   != 0 && 
+                             genome_data[genome][gWeek][gDay+gXamLenght-1][gRoom][0].year != 0 && 
+                             genome_data[genome][gWeek][gDay][gRoom][0].classname       == genome_data[genome][gWeek][gDay+gXamLenght-1][gRoom][0].classname &&
+                             genome_data[genome][gWeek][gDay][gRoom][0].year            == genome_data[genome][gWeek][gDay+gXamLenght-1][gRoom][0].year) {
                         for (i = 0; i < numOfExams; i++) {
                             for (j = 0; j < xamLenght; j++) {
                                 if (day + j <= 4) {
@@ -127,7 +129,8 @@ void Mutation(int genome, Exam_block_t *****genome_data) {
                 }
             }
             else if (day <= 2 && gDay > 2){
-                if (genome_data[genome][week][day][room][0].year != 0 && 
+                if (gWeek != 7 &&
+                    genome_data[genome][week][day][room][0].year != 0 && 
                     genome_data[genome][week][day+xamLenght-1][room][0].year != 0 && 
                     genome_data[genome][week][day][room][0].classname      == genome_data[genome][week][day+xamLenght-1][room][0].classname &&
                     genome_data[genome][week][day][room][0].year           == genome_data[genome][week][day+xamLenght-1][room][0].year){
@@ -148,10 +151,11 @@ void Mutation(int genome, Exam_block_t *****genome_data) {
                         }
                         break;
                     }
-                    else if (genome_data[genome][gWeek][gDay][gRoom][0].year     != 0 && 
-                    genome_data[genome][gWeek+1][gDay-gXamLenght][gRoom][0].year != 0 && 
-                    genome_data[genome][gWeek][gDay][gRoom][0].classname         == genome_data[genome][gWeek+1][gDay-gXamLenght][gRoom][0].classname &&
-                    genome_data[genome][gWeek][gDay][gRoom][0].year              == genome_data[genome][gWeek+1][gDay-gXamLenght][gRoom][0].year) {
+                    else if (gWeek != 7 &&
+                             genome_data[genome][gWeek][gDay][gRoom][0].year != 0 && 
+                             genome_data[genome][gWeek+1][gDay-gXamLenght][gRoom][0].year != 0 && 
+                             genome_data[genome][gWeek][gDay][gRoom][0].classname         == genome_data[genome][gWeek+1][gDay-gXamLenght][gRoom][0].classname &&
+                             genome_data[genome][gWeek][gDay][gRoom][0].year              == genome_data[genome][gWeek+1][gDay-gXamLenght][gRoom][0].year) {
                         for (i = 0; i < numOfExams; i++) {
                             for (j = 0; j < xamLenght; j++) {
                                 if (gDay + j <= 4) {
@@ -172,7 +176,8 @@ void Mutation(int genome, Exam_block_t *****genome_data) {
             }
             else if (day > 2 && gDay > 2) {
 
-                if (genome_data[genome][week][day][room][0].year != 0 && 
+                if (week != 7 && gWeek != 7 &&
+                    genome_data[genome][week][day][room][0].year != 0 && 
                     genome_data[genome][week+1][day-xamLenght][room][0].year != 0 &&
                     genome_data[genome][week][day][room][0].classname == genome_data[genome][week+1][day-xamLenght][room][0].classname &&
                     genome_data[genome][week][day][room][0].year == genome_data[genome][week+1][day-xamLenght][room][0].year) {
@@ -200,10 +205,11 @@ void Mutation(int genome, Exam_block_t *****genome_data) {
                         }
                         break;
                     }
-                    else if (genome_data[genome][gWeek][gDay][gRoom][0].year     != 0 && 
-                    genome_data[genome][gWeek+1][gDay-gXamLenght][gRoom][0].year != 0 && 
-                    genome_data[genome][gWeek][gDay][gRoom][0].classname         == genome_data[genome][gWeek+1][gDay-gXamLenght][gRoom][0].classname &&
-                    genome_data[genome][gWeek][gDay][gRoom][0].year              == genome_data[genome][gWeek+1][gDay-gXamLenght][gRoom][0].year) {
+                    else if (week != 7 && gWeek != 7 &&
+                             genome_data[genome][gWeek][gDay][gRoom][0].year != 0 && 
+                             genome_data[genome][gWeek+1][gDay-gXamLenght][gRoom][0].year != 0 && 
+                             genome_data[genome][gWeek][gDay][gRoom][0].classname         == genome_data[genome][gWeek+1][gDay-gXamLenght][gRoom][0].classname &&
+                             genome_data[genome][gWeek][gDay][gRoom][0].year              == genome_data[genome][gWeek+1][gDay-gXamLenght][gRoom][0].year) {
 
                         for (i = 0; i < numOfExams; i++) {
                             for (j = 0; j < xamLenght; j++) {
