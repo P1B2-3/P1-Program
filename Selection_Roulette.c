@@ -166,7 +166,6 @@ void Fill(Exam_block_t *****dest, Exam_block_t *****src) {
                 for (m = 0; m < numOfRooms; m++) {
                     for (n = 0; n < numOfExams; n++) {
                         dest[i][k][l][m][n] = src[i][k][l][m][n];
-                        printf("cpy\n");
                     }
                 }
             }
