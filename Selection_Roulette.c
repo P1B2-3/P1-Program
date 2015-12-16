@@ -67,6 +67,8 @@ void selection(Exam_block_t *****genome_data){
         
         selected = select();
 
+        chosen = 0;
+        
         for ( i = GENERATION_SIZE; i > 0; i++)
         {
             chosen += survivalChance[i];
