@@ -1,7 +1,6 @@
 int **Make_2D_Array_int( int day, int exam);
 void Length(Exam_block_t *****schema_data, int **Day_Array);
 
-
 int **Make_2D_Array_int( int day, int exam) { /* laver et temp-array som skal bruges til klasse-blokken */
     /* allocering af et 2 dimensionel array "dag, examen"*/
     int i;
@@ -22,25 +21,22 @@ int **Make_2D_Array_int( int day, int exam) { /* laver et temp-array som skal br
 
 void Length(Exam_block_t *****schema_data, int **Day_Array) {
     /* finder længden mellemde for skellige eksamner  */
-    int i, j, k; /* indre loop */
-    int l, m, n, h;
-    int q, u, e;
-    int t = 0, skip;
-    int temp_day = 0, counter = 0;
+    int i, j, k;        /* indre loop */
+    int l, m, n, h;     /* ydre loop*/
+    int q, u, e;        /* andre tællere*/
+    int t = 0, skip;    /* skip  */
+    int temp_day = 0, counter = 0; /* antal dage, og plads den skal ind i arrayet*/
     char current_class_letter;
     int current_class_no;
 
-    temp_t activeclass[24];
+    temp_t activeclass[24]; /* temp storrage for klasserne*/
     
-    for ( i = 0; i < 24; ++i) {
-        
+    for ( i = 0; i < 24; ++i) { /* overskrivning med 0 på alle pladser */
         activeclass[i].year = 0;
         activeclass[i].Class = '0';
         activeclass[i].t_or_f = true;
         activeclass[i].days = 0;
     }
-
-   
 
     for (l = 0; l < SCHEMA_SIZE; l++) {           /* genonom */
         counter = 0;
@@ -49,12 +45,13 @@ void Length(Exam_block_t *****schema_data, int **Day_Array) {
                 
                     for ( q = 0; q < 24; q++) {
                         if(activeclass[q].days > 0){
-                            activeclass[q].days--;}
+                            activeclass[q].days--;
+                        }
 
-                    if(activeclass[q].days == 0) {
-                        /*printf("derper\n");*/
-                        activeclass[q].t_or_f = false;
-                    }
+                        if(activeclass[q].days == 0) {
+                            /*printf("derper\n");*/
+                            activeclass[q].t_or_f = false;
+                        }
                 }
 
                 for (h = 0; h < ROOM_SIZE; h++) { /* room*/
@@ -72,7 +69,7 @@ void Length(Exam_block_t *****schema_data, int **Day_Array) {
                         }
 
                         for (u = 0; u < 24; u++) {
-                            skip = 0;
+                            skip = false;
 
                             if( activeclass[u].t_or_f == false && activeclass[u].year == current_class_no && activeclass[u].Class == current_class_letter) {
         
@@ -82,7 +79,7 @@ void Length(Exam_block_t *****schema_data, int **Day_Array) {
                                 
                                 classfound:
 
-                                if(skip != 1) {
+                                if(skip != true) {
                                     for (; k < WEEK_SIZE; k++) {        /* week */
                                         for (; j < DAY_SIZE; j++) {     /* day */
                                             temp_day++;                     /* tæller for dage mellem eksamner*/
@@ -94,7 +91,7 @@ void Length(Exam_block_t *****schema_data, int **Day_Array) {
                                                     counter++;
                                                     /*printf("%i\n", counter);*/
                                                     temp_day = 0;
-                                                    skip = 1;
+                                                    skip = true;
                                                     j = k = 0;
                                                    /* printf("they see me rolling\n");*/
                                                     goto classfound;
