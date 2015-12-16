@@ -179,39 +179,31 @@ void kill(int position, Exam_block_t *****genome){
 
 void nextGen(int survivors, fitness_struct fit[], Exam_block_t *****genome){
     int i,
-        missing;
+        *missing;
 
-    missing = GENERATION_SIZE - survivors;
+    *missing = GENERATION_SIZE - survivors;
 
-    while (missing < GENERATION_SIZE)
+    while (*missing < GENERATION_SIZE)
     {
-        for (i = 0; i < GENERATION_SIZE; i++)
-        {
-            if (fit[i].saved == false)
-            {
-                child(missing, fit, genome);
-                fit[i].saved = true;
-                break;
-            }
-        }
+        child(*missing, fit, genome);
     }
 }
 
-void child(int numOfChildren, fitness_struct fit[], Exam_block_t *****genome){
+void child(int *numOfChildren, fitness_struct fit[], Exam_block_t *****genome){
     int i, j, k, l,
         totFitness;
     float parent1, parent2,
           selected1, selected2,
           breedingChance[GENERATION_SIZE];
 
-    for (i = 0; i < numOfChildren; i++)
+    for (i = 0; i < GENERATION_SIZE; i++)
     {
         if (fit[i].fitness > 0){
             totFitness += fit[i].fitness;
         }
     }
 
-    for (i = 0; i < numOfChildren; i++)
+    for (i = 0; i < GENERATION_SIZE; i++)
     {
         if (fit[i].fitness > 0){
             breedingChance[i] = (((float)fit[i].fitness / (float)totFitness) * 100);
@@ -221,25 +213,28 @@ void child(int numOfChildren, fitness_struct fit[], Exam_block_t *****genome){
     selected1 = select();
     selected2 = select();
 
-    for (i = 0; i < numOfChildren; i++)
+    for (i = 0; i < GENERATION_SIZE; i++)
     {
         parent1 += breedingChance[i];
         if (parent1 > selected1)
         {
-            for (k = 0; k < numOfChildren; k++)
+            for (k = 0; k < GENERATION_SIZE; k++)
             {
                 parent2 += breedingChance[i];
                 if (parent2 > selected2){
-                    for (j = 0; j < numOfChildren; j++)
+                    for (j = 0; j < GENERATION_SIZE; j++)
                     {
                         if (fit[j].fitness == 0)
                         {
-                            for (l = j+1; l < numOfChildren; l++)
+                            for (l = j+1; l < GENERATION_SIZE; l++)
                             {
                                 if (fit[l].fitness == 0){
                                     makeChild(fit[i].position, fit[k].position, fit[j].position, fit[l].position, genome);
                                     fit[j].fitness = -1;
+                                    fit[j].saved = true;
                                     fit[l].fitness = -1;
+                                    fit[l].saved = true;
+                                    *numOfChildren -= 2;
                                     break;    
                                 }
                             }
