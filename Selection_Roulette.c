@@ -15,8 +15,8 @@ void doCrossover(int genome_p1,int genome_p2, Exam_block_t *****parent, Exam_blo
 void makeCrossover(int genome_p1, int genome_p2, Exam_block_t *****parent, Exam_block_t *****child_1, Exam_block_t *****child_2);
 void insert(int childPos, Exam_block_t *****genome);
 void makeChild(int parent1Pos, int parent2pos, int childPos1,int childPos2, Exam_block_t *****genome);
-void child(int numOfParents, int numOfChildren, fitness_struct fit[], Exam_block_t *****genome);
-void nextGen(int breed, int survivors, fitness_struct fit[], Exam_block_t *****genome);
+void child(int numOfChildren, fitness_struct fit[], Exam_block_t *****genome);
+void nextGen(int survivors, fitness_struct fit[], Exam_block_t *****genome);
 void kill(int position, Exam_block_t *****genome);
 void fill(Exam_block_t *****dest, Exam_block_t *****src);
 float select();
@@ -30,7 +30,6 @@ void selection(Exam_block_t *****genome_data){
         chosen,
         mutationRate,
         savePerGen,
-        breedPerGen,
         totFitness;
     float survivalChance[GENERATION_SIZE],
           selected;
@@ -41,7 +40,6 @@ void selection(Exam_block_t *****genome_data){
 
     /*ændrer procentsats til brøk, f.eks. 50% -> 1/2. Tager dog kun heltalsbrøk*/
     savePerGen =  100 / (100 - getConfig("a.killPerGeneration"));
-    breedPerGen = 100 / getConfig("a.breedPerGeneration");
     fill(temp_genome, genome_data);
 
     for (i = 0; i < GENERATION_SIZE; i++)
@@ -68,7 +66,7 @@ void selection(Exam_block_t *****genome_data){
         selected = select();
 
         chosen = 0;
-        
+
         for ( i = GENERATION_SIZE; i > 0; i++)
         {
             chosen += survivalChance[i];
@@ -89,7 +87,7 @@ void selection(Exam_block_t *****genome_data){
         }
     }
 
-    nextGen(breedPerGen, survivors, tempFitness, temp_genome);
+    nextGen(survivors, tempFitness, temp_genome);
 
     for (i = 0; i < GENERATION_SIZE; i++)
     {
@@ -179,7 +177,7 @@ void kill(int position, Exam_block_t *****genome){
     free(zero);
 }
 
-void nextGen(int breed, int survivors, fitness_struct fit[], Exam_block_t *****genome){
+void nextGen(int survivors, fitness_struct fit[], Exam_block_t *****genome){
     int i,
         missing;
 
@@ -191,7 +189,7 @@ void nextGen(int breed, int survivors, fitness_struct fit[], Exam_block_t *****g
         {
             if (fit[i].saved == false)
             {
-                child(breed, missing, fit, genome);
+                child(missing, fit, genome);
                 fit[i].saved = true;
                 break;
             }
@@ -199,7 +197,7 @@ void nextGen(int breed, int survivors, fitness_struct fit[], Exam_block_t *****g
     }
 }
 
-void child(int numOfParents, int numOfChildren, fitness_struct fit[], Exam_block_t *****genome){
+void child(int numOfChildren, fitness_struct fit[], Exam_block_t *****genome){
     int i, j, k, l,
         totFitness;
     float parent1, parent2,
