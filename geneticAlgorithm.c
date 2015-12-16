@@ -27,12 +27,12 @@ void ReplaceSolution(Exam_block_t ****old, Exam_block_t ****new);
 
 void GeneticAlgorithm(Exam_block_t *****solutions) {
     int i;
-    rankings_t rankArray[GENERATION_SIZE];
+    rankings_t rankArray[SCHEMA_SIZE];
 
     RankFitness(rankArray);
     for (i = 0; i < MAX_GENERATIONS; i++) {
         Fitness(solutions);
-        /*qsort(solutions, GENERATION_SIZE, sizeof(int), QsortByFitness);*/
+        /*qsort(solutions, SCHEMA_SIZE, sizeof(int), QsortByFitness);*/
         if (FitnessLimit(FindHighestFitness(rankArray))){
             break;
         }
@@ -42,7 +42,7 @@ void GeneticAlgorithm(Exam_block_t *****solutions) {
 
 void RankFitness(rankings_t rankArray[]) {
     int i, curr;
-    for (i = 0, curr = 0; i < GENERATION_SIZE; i++) {
+    for (i = 0, curr = 0; i < SCHEMA_SIZE; i++) {
         rankArray[i].min = curr;
         curr += i;
         rankArray[i].max = curr;
@@ -54,7 +54,7 @@ int FindHighestFitness(rankings_t rankArray[]) {
 rankArray this function simply finds the best fitness.*/
 int i, bestFitness = 0;
 
-    for (i = 0; i < GENERATION_SIZE; i++) {
+    for (i = 0; i < SCHEMA_SIZE; i++) {
         if (rankArray[i].fitness > bestFitness) {
             bestFitness = rankArray[i].fitness;
         }
@@ -138,7 +138,7 @@ void PopulateNextGen(Exam_block_t *****solutions, rankings_t rankArray[], int ge
     /*Put the surviving solution chromosomes into parent array*/
     
     FillRest(parents, nextGen, rankArray, generationNo, j);
-    for (i = 0; i < GENERATION_SIZE; i++) {
+    for (i = 0; i < SCHEMA_SIZE; i++) {
         /*Mutation(int genome, Exam_block_t *****genome_data);*/ /*<------- ATTENTION!!!!!!!!!!1!!*/
     }
 
@@ -146,7 +146,7 @@ void PopulateNextGen(Exam_block_t *****solutions, rankings_t rankArray[], int ge
     At this time there are 300 solutions per generation. Each solution
     contains 8 weeks, that each contain 5 days, that each contain 10 
     rooms. Every single room contains a maximum of 10 filled hours.*/
-    for (i = elitismAmount, j = 0; i < GENERATION_SIZE; i++, j++) {
+    for (i = elitismAmount, j = 0; i < SCHEMA_SIZE; i++, j++) {
         for (k = 0; k < AMOUNT_OF_WEEKS; k++) {
             for (l = 0; l < AMOUNT_OF_DAYS; l++) {
                 for (m = 0; m < AMOUNT_OF_ROOMS; m++) {
@@ -158,6 +158,9 @@ void PopulateNextGen(Exam_block_t *****solutions, rankings_t rankArray[], int ge
         }
 
     }
+
+    Free5DArray(nextGen);
+    Free5DArray(parents);
     /*As many individuals, as have been noted in config, 
     stay unchanged in the array.*/
 }
@@ -167,15 +170,15 @@ void PopulateNextGen(Exam_block_t *****solutions, rankings_t rankArray[], int ge
 void KillPercentage(Exam_block_t *****solutions, Exam_block_t *****parents, rankings_t rankArray[], int generationNo) {
     int tmp, i, j, k = 0, l, m, n, o, rand1, skip;
     int killAmount, survivingAmount;
-    int survivors[(tmp >= GENERATION_SIZE/2)?(tmp):(0)]; 
+    int survivors[(tmp >= SCHEMA_SIZE/2)?(tmp):(0)]; 
     /*FUNGERER DETTE? KillPerGen er en double.*/
     
     
-    tmp = killPerGeneration * GENERATION_SIZE;
-    killAmount = (tmp != GENERATION_SIZE && tmp != 0) ? (tmp) : (0);
+    tmp = killPerGeneration * SCHEMA_SIZE;
+    killAmount = (tmp != SCHEMA_SIZE && tmp != 0) ? (tmp) : (0);
 
-    tmp = GENERATION_SIZE - killAmount;
-    survivingAmount = (tmp >= GENERATION_SIZE/2)?(tmp):(0);
+    tmp = SCHEMA_SIZE - killAmount;
+    survivingAmount = (tmp >= SCHEMA_SIZE/2)?(tmp):(0);
 
     memset(survivors, (survivingAmount + 1), survivingAmount);
     /*ULOVLIGHEDER!!!! "ISO C90 forbids variable length array ‘survivors’"*/
@@ -188,11 +191,11 @@ void KillPercentage(Exam_block_t *****solutions, Exam_block_t *****parents, rank
     Maximally half the generation, otherwise the array could 
     overflow if crossover was being used*/
 
-    srand((unsigned) generationNo);
+
     for (i = 0; i < killAmount; i++) {
 
         do {
-            rand1 = rand() % rankArray[GENERATION_SIZE].max;
+            rand1 = rand() % rankArray[SCHEMA_SIZE].max;
             /*The solution that has rand1 within its rank fitness will survive
             to build the next generation.*/
             for (j = 0; 
@@ -229,9 +232,8 @@ void KillPercentage(Exam_block_t *****solutions, Exam_block_t *****parents, rank
 void FillRest(Exam_block_t *****parents, Exam_block_t *****nextGen, rankings_t rankArray[], int generationNo, int nextGenCount) {
     int i, rand1;
 
-    srand((unsigned) generationNo);
-    for (; nextGenCount < GENERATION_SIZE; nextGenCount++) {
-        rand1 = rand() % rankArray[GENERATION_SIZE/2].max;
+    for (; nextGenCount < SCHEMA_SIZE; nextGenCount++) {
+        rand1 = rand() % rankArray[SCHEMA_SIZE/2].max;
         /*The solution that has rand1 within its rank fitness will survive
         to build the next generation*/
         for (i = 0; 

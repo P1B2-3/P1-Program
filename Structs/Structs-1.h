@@ -50,6 +50,14 @@ typedef struct{
     int fitness;
 }Exam_block_t;
 
+/*Selection Roulette*/
+typedef struct{
+    int fitness,
+        position,
+        saved;
+} fitness_struct;
+
+
 /*Length*/
 
 typedef struct{

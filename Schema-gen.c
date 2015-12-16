@@ -23,7 +23,7 @@ Exam_block_t *****MakeSchema(){
     TeacherGenerator(classdata);
 
     PreExamBlock(classdata, schema_data,temp_class_block,24, SCHEMA_SIZE);
-
+    Free2DArray_Ex(temp_class_block,DAY_SIZE);
     return schema_data;
 }
 
@@ -140,8 +140,6 @@ void PreExamBlock(Class_t classdata[], Exam_block_t *****schema_data, Exam_block
     /* variabler som bruges som tællere */
     int i,j,k,o,l;
     int runes = 0;
-    time_t t;
-    srand((unsigned) time(&t)); /* seeder vores random */
 
     for (k = 0; k < genom; k++){             /* Løsninger(hele Exam_blocker)*/
 

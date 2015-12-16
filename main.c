@@ -1,6 +1,4 @@
 /*Defines*/
-#define GENERATION_SIZE 300
-
 #define MAX_GENERATIONS 1000
 #define ENOUGH_FITNESS 666
 #define AMOUNT_OF_WEEKS 6
@@ -33,17 +31,28 @@
 /* defines for schema-gen */
  
 int main (void) {
- 
-    Exam_block_t *****schema_data = Make_schema();
-    int **array = Make_2D_Array_int(SCHEMA_SIZE, 100000);
     int i;
+    time_t t;
+    Exam_block_t *****schema_data;
+    int **array;
+
+    srand((unsigned) time(&t)); /* seeder vores random */
+    schema_data = MakeSchema();
+    array = Make_2D_Array_int(SCHEMA_SIZE, 100000);
+
+    
+    
 
     for (i = 0; i < 1000; i++)
     {
         Length(schema_data, array);
-        calc_fitness_one_generation(schema_data, array);
-        selection(schema_data);
+        CalcFitnessOneGeneration(schema_data, array);
+        Selection(schema_data);
+
     }
+    
+    Free5DArray(schema_data);
+    Free2DArray_int(array, SCHEMA_SIZE);
 
     return 0;
 }

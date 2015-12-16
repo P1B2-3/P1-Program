@@ -20,7 +20,9 @@ We love you special kids! <3
 /*Files*/
 /*#include "Structs/DATA_BASE.h"*/ /*Right now, of no use.*/
 #include "Structs/Structs-1.h"
+#include "Free5Darray.c"
 #include "Schema-gen.c"
+
 /*#include "readWrite/Write/DaysWhereTeacherIsAbcent.c"*/ /*Right now, of no use.*/
 #include "readWrite/Write/StudentData.c"
 #include "readWrite/Write/TeacherData.c"

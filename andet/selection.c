@@ -18,7 +18,7 @@ http://stackoverflow.com/questions/10584894/sort-an-array-based-on-members-of-an
 
 #include <stdio.h>
 #include <stdlib.h>
-#define GENERATION_SIZE 300
+#define SCHEMA_SIZE 300
 #define MAX_GENERATIONS 1000
 #define ENOUGH_FITNESS 666
 
@@ -39,12 +39,12 @@ typedef struct{
 
 void GeneticAlgorithm(Data_block_t *****solutions) {
     int i;
-    rankings rankArray[GENERATION_SIZE];
+    rankings rankArray[SCHEMA_SIZE];
 
     RankFitness(rankArray);
     for (i = 0; i < MAX_GENERATIONS; i++) {
         Fitness(solutions);
-        qsort(solutions, GENERATION_SIZE, sizeof(int), QsortByFitness);
+        qsort(solutions, SCHEMA_SIZE, sizeof(int), QsortByFitness);
         if (FitnessLimit(FindHighestFitness(rankArray))){
             break;
         }
@@ -56,7 +56,7 @@ void GeneticAlgorithm(Data_block_t *****solutions) {
 
 void RankFitness(rankings rankArray[]) {
     int i, curr;
-    for (i = 0, curr = 0; i < GENERATION_SIZE; i++) {
+    for (i = 0, curr = 0; i < SCHEMA_SIZE; i++) {
         rankArray[i].min = curr;
         curr += i;
         rankArray[i].max = curr;
@@ -95,7 +95,7 @@ void FindHighestFitness(rankings rankArray[]) {
 rankArray this function simply finds the best fitness.*/
 int i, bestFitness = 0;
 
-    for (i = 0; i < GENERATION_SIZE; i++) {
+    for (i = 0; i < SCHEMA_SIZE; i++) {
         if (rankArray[i].fitness > bestFitness) {
             bestFitness = rankArray[i].fitness;
         }
@@ -117,7 +117,7 @@ int FitnessLimit(int bestFitness) {
 
 void PopulateNextGen(Data_block_t *****solutions, rankings rankArray[], int generationNo) {
     int i, j, k, l, m, n;
-    Data_block_t nextGen[GENERATION_SIZE], 
+    Data_block_t nextGen[SCHEMA_SIZE], 
                  parents[GENERATION_HALF];
 
 /*LAV MAYBE MALLOC FUNCTION HER!*/
@@ -126,7 +126,7 @@ void PopulateNextGen(Data_block_t *****solutions, rankings rankArray[], int gene
     /*Put the surviving solution chromosomes into parent array*/
     
     FillRest(parents, nextGen, rankArray, generationNo, j);
-    for (i = 0; i < GENERATION_SIZE; i++) {
+    for (i = 0; i < SCHEMA_SIZE; i++) {
         Mutation(i, nextGen);
     }
 
@@ -134,7 +134,7 @@ void PopulateNextGen(Data_block_t *****solutions, rankings rankArray[], int gene
     At this time there are 300 solutions per generation. Each solution
     contains 8 weeks, that each contain 5 days, that each contain 10 
     rooms. Every single room contains a maximum of 10 filled hours.*/
-    for (i = elitismAmount, j = 0; i < GENERATION_SIZE; i++, j++) {
+    for (i = elitismAmount, j = 0; i < SCHEMA_SIZE; i++, j++) {
         for (k = 0; k < AMOUNT_OF_WEEKS; k++) {
             for (l = 0; l < AMOUNT_OF_DAYS; l++) {
                 for (m = 0; m < AMOUNT_OF_ROOMS; m++) {
@@ -152,9 +152,9 @@ void PopulateNextGen(Data_block_t *****solutions, rankings rankArray[], int gene
 /*---------------------------------------------------------------------------*/
 
 void KillPercentage(Data_block_t *****solutions, Data_block_t *****parents, rankings rankArray[], int generationNo) {
-    killAmount = (killPerGeneration * GENERATION_SIZE) % (GENERATION_HALF + 1);
+    killAmount = (killPerGeneration * SCHEMA_SIZE) % (GENERATION_HALF + 1);
     int i, j, k = 0, l, m, n, o, rand1, killAmount = GENERATION_HALF, 
-        survivors[killAmount - GENERATION_SIZE], skip;
+        survivors[killAmount - SCHEMA_SIZE], skip;
         /*NOGET MED MEMSET 999 ELLER LIGN, således den ikke skipper det nulte array*/
 
     /*killPerGeneration from config is used. 
@@ -165,7 +165,7 @@ void KillPercentage(Data_block_t *****solutions, Data_block_t *****parents, rank
 
 
         do {
-            rand1 = rand() % rankArray[GENERATION_SIZE].max;
+            rand1 = rand() % rankArray[SCHEMA_SIZE].max;
             /*The solution that has rand1 within its rank fitness will survive
             to build the next generation.*/
             for (j = 0; 
@@ -204,7 +204,7 @@ void FillRest(Data_block_t *****parents, Data_block_t *****nextGen, rankings ran
     int i, rand1;
 
     srand((unsigned) generationNo);
-    for (; nextGenCount < GENERATION_SIZE; nextGenCount++) {
+    for (; nextGenCount < SCHEMA_SIZE; nextGenCount++) {
         rand1 = rand() % rankArray[GENERATION_HALF].max;
         /*The solution that has rand1 within its rank fitness will survive
         to build the next generation*/
