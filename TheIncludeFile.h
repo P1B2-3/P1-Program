@@ -50,4 +50,5 @@ We love you special kids! <3
 
 /*#include "Skemaprint.c"*/
 #include "amountOfDays.c"
+#include "readWrite/Write/ResOut.c"
 /*#include "crossoverConcept.c"*/ /*Right now, of no use.*/

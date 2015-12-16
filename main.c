@@ -64,7 +64,7 @@ int main (void) {
         printf("fitness: %i\n",fitsum);
         fitsum = 0;
     }
-
+    ResultOut(schema_data);
     Free2DArray_int(array, SCHEMA_SIZE);
     
     Free5DArray(schema_data);
