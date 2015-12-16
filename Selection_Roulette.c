@@ -258,7 +258,9 @@ void MakeChild(int parent1Pos, int parent2pos, int Child1Pos, int Child2Pos, Exa
     Exam_block_t *****Child2_genome = Make_5D_Array(SCHEMA_SIZE, WEEK_SIZE, DAY_SIZE, ROOM_SIZE, EXAM_SIZE);
 
     MakeCrossover(parent1Pos, parent2pos, genome, Child1_genome, Child2_genome);
-
+    if(Child1Pos > 299 || Child2Pos > 299) 
+        printf("Din mor er en hamster.qsort\n");
+    
     Insert(Child1Pos, Child1_genome,genome);
     Insert(Child2Pos, Child2_genome,genome);
 
@@ -284,9 +286,9 @@ void Insert(int ChildPos, Exam_block_t ***** Child_genome, Exam_block_t *****gen
 
 
                     genome[ChildPos][k][l][m][n] = Child_genome[0][k][l][m][n];
-
+                    /*
                     genome[ChildPos][k][l][m][n] = genome[0][k][l][m][n];
-
+                    */
                 }
             }
         }

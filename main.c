@@ -42,27 +42,27 @@ int main (void) {
     
     array = Make_2D_Array_int(SCHEMA_SIZE, 1000);
     
-    for (i = 0; i < 20; i++) {
+    for (i = 0; i < 1000; i++) {
         for(k = 0; k < 8; k++) {
             for(n = 0; n < 5; n++) {
                 for(p = 0; p < 10; p++) {
                     for(q = 0; q < 10; q++) {
                         sum += schema_data[0][k][n][p][q].year;
-                                             }
+                    }
                 }
                
             }
         } 
-        for(k = 0; k < 300; k++) {
-            fitsum += schema_data[k][0][0][0][0].fitness;
-        }
         printf("%i: \n",i );
         printf("AAR: %i\n",sum);
-        printf("fitness: %i\n",fitsum );
         Length(schema_data, array);
         CalcFitnessOneGeneration(schema_data, array);
         Selection(schema_data);
-
+        for(k = 0; k < 300; k++) {
+            fitsum += schema_data[k][0][0][0][0].fitness;
+        }
+        printf("fitness: %i\n",fitsum);
+        fitsum = 0;
     }
 
     Free2DArray_int(array, SCHEMA_SIZE);
