@@ -47,7 +47,7 @@ char * ReturnSpeceficData(char * indput, datint indput_nr_class,   datint indput
             return tempStr;
         }else if(indput_nr_teacher == -1 
              && indput_nr_censor  == -1
-             && indput_nr_student != -1){
+             && indput_nr_student != -1) {
             strcpy(tempStr,datablock[indput_nr_datablock].student[indput_nr_student].name);
             strcat(tempStr," ");
             strcat(tempStr,datablock[indput_nr_datablock].student[indput_nr_student].surname);

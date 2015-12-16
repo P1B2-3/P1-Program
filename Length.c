@@ -32,10 +32,10 @@ void Length(Exam_block_t *****schema_data, int **Day_Array) {
     temp_t activeclass[24]; /* temp storrage for klasserne*/
     
     for ( i = 0; i < 24; ++i) { /* overskrivning med 0 på alle pladser */
-        activeclass[i].year = 0;
-        activeclass[i].Class = '0';
+        activeclass[i].year   = 0;
+        activeclass[i].Class  = '0';
         activeclass[i].t_or_f = true;
-        activeclass[i].days = 0;
+        activeclass[i].days   = 0;
     }
 
     for (l = 0; l < SCHEMA_SIZE; l++) {           /* genonom */
@@ -49,7 +49,6 @@ void Length(Exam_block_t *****schema_data, int **Day_Array) {
                         }
 
                         if(activeclass[q].days == 0) {
-                            /*printf("derper\n");*/
                             activeclass[q].t_or_f = false;
                         }
                 }
@@ -57,13 +56,13 @@ void Length(Exam_block_t *****schema_data, int **Day_Array) {
                 for (h = 0; h < ROOM_SIZE; h++) { /* room*/
 
                    if (schema_data[l][m][n][h][0].year != 0) { /* 0 is default if there is no data */
-                            current_class_no = schema_data[l][m][n][h][0].year;
+                            current_class_no     = schema_data[l][m][n][h][0].year;
                             current_class_letter = schema_data[l][m][n][h][0].classname;
 
                         for(e = 0; e < 24; e++) {
                             if(activeclass[e].Class != current_class_letter && activeclass[e].year != current_class_no) {
                                 activeclass[t].Class = current_class_letter;
-                                activeclass[t].year = current_class_no;
+                                activeclass[t].year  = current_class_no;
                                 t++;
                             }
                         }
@@ -89,11 +88,9 @@ void Length(Exam_block_t *****schema_data, int **Day_Array) {
 
                                                     Day_Array[l][counter] = temp_day;
                                                     counter++;
-                                                    /*printf("%i\n", counter);*/
                                                     temp_day = 0;
-                                                    skip = true;
-                                                    j = k = 0;
-                                                   /* printf("they see me rolling\n");*/
+                                                    skip     = true;
+                                                    j        = k = 0;
                                                     goto classfound;
                                                     }
                                                 }

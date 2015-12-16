@@ -1,16 +1,16 @@
 
 /* Skema generator */
-void Class_Generator(Class_t classdata[]);
-void Teacher_Generator(Class_t classdata[]);
-/* pre-Exam_block */
+void ClassGenerator(Class_t classdata[]);
+void TeacherGenerator(Class_t classdata[]);
+/* pre-Examblock */
 Exam_block_t *****Make_5D_Array( int genom, int week, int day, int room, int exam);
 Exam_block_t    **Make_2D_Array( int day, int exam);
-int Exam_block(Class_t classdata, int l, Exam_block_t **temp_class_block, int room);
-void Pre_Exam_block(Class_t classdata[], Exam_block_t *****schema_data, Exam_block_t **temp_block, int class_no, int genom);
+int Examblock(Class_t classdata, int l, Exam_block_t **temp_class_block, int room);
+void PreExamBlock(Class_t classdata[], Exam_block_t *****schema_data, Exam_block_t **temp_block, int class_no, int genom);
 
-Exam_block_t *****Make_schema(){
+Exam_block_t *****MakeSchema(){
 
-    Exam_block_t *****schema_data =       Make_5D_Array(SCHEMA_SIZE, WEEK_SIZE, DAY_SIZE, ROOM_SIZE, EXAM_SIZE);  /* Exam_blocket med alle uger og timer */
+    Exam_block_t *****schema_data      =  Make_5D_Array(SCHEMA_SIZE, WEEK_SIZE, DAY_SIZE, ROOM_SIZE, EXAM_SIZE);  /* Exam_blocket med alle uger og timer */
     Exam_block_t    **temp_class_block =  Make_2D_Array(DAY_SIZE,EXAM_SIZE);                                      /* et array for dage og timer */
     Class_t     *classdata;
     classdata = (Class_t *) calloc(30 , sizeof(Class_t));
@@ -19,10 +19,10 @@ Exam_block_t *****Make_schema(){
             return (0);
         }
 
-    Class_Generator(classdata); 
-    Teacher_Generator(classdata);
+    ClassGenerator(classdata); 
+    TeacherGenerator(classdata);
 
-    Pre_Exam_block(classdata, schema_data,temp_class_block,24, SCHEMA_SIZE);
+    PreExamBlock(classdata, schema_data,temp_class_block,24, SCHEMA_SIZE);
 
     return schema_data;
 }
@@ -81,7 +81,7 @@ Exam_block_t **Make_2D_Array( int day, int exam){ /* laver et temp-array som ska
     return temp_class_block;
 }
 
-int Exam_block(Class_t classdata, int l, Exam_block_t **temp_class_block, int room){ 
+int Examblock(Class_t classdata, int l, Exam_block_t **temp_class_block, int room){ 
     /* returner antal dage der er sat af */
     int i, g;
     int dag = 0, timer = 0, tid = 815, total_days;
@@ -129,7 +129,7 @@ int Exam_block(Class_t classdata, int l, Exam_block_t **temp_class_block, int ro
     return dag- 1;
 }
 
-void Pre_Exam_block(Class_t classdata[], Exam_block_t *****schema_data, Exam_block_t **temp_block, int class_no, int genom){
+void PreExamBlock(Class_t classdata[], Exam_block_t *****schema_data, Exam_block_t **temp_block, int class_no, int genom){
     /* variabler som bruges i segmenterne */
     int days,
         day,
@@ -151,13 +151,13 @@ void Pre_Exam_block(Class_t classdata[], Exam_block_t *****schema_data, Exam_blo
 
                 if(classdata[i].subjects[j].y_or_n == true && classdata[i].subjects[j].verbal){ /* kigger om de skal op til eksamen */
 
-                    move_phase = 1;
-                    while(move_phase == 1){ /* køre indtil at der bliver fundet en plads der er fri i data blokken */
+                    move_phase = true;
+                    while(move_phase == true){ /* køre indtil at der bliver fundet en plads der er fri i data blokken */
                         runes++;
                         room = rand()% ROOM_SIZE;
                         day  = rand()% DAY_SIZE;
                         week = rand()% WEEK_SIZE;
-                        days = Exam_block(classdata[i],j,temp_block, room);/* return fra 1-> antal dage eksamen fylder */
+                        days = Examblock(classdata[i],j,temp_block, room);/* return fra 1-> antal dage eksamen fylder */
                         if(schema_data[k][week][day][room][0].year == 0){ /* hvis lokalet er firt på dagen */
 
                             if( day + days > 4){  /* hvis at eksamne kan være i den nuværende uge, og ikke er sidste uge*/
@@ -165,32 +165,32 @@ void Pre_Exam_block(Class_t classdata[], Exam_block_t *****schema_data, Exam_blo
                                     week += 1;
                                     day  -= days+1;
                                     if(schema_data[k][week][day][room][0].year == 0){ /* hvis at year er så er lokalet firt. da intet data */
-                                        move_phase = 0;
-                                        week_split = 1;
+                                        move_phase = false;
+                                        week_split = true;
                                     }
                                 }
                             }
                             else{ /* hvis at det ikke kan være i nuværende uge, så tag og træk nuværende fra antal af dage den tager*/
                                 if(schema_data[k][week][day+days][room][0].year == 0){
-                                move_phase = 0;
-                                week_split = 0;
+                                move_phase = false;
+                                week_split = false;
                                 }
                             }
                     
                             if(runes > 10000000){
-                                printf("Not enough space for examens\nrunes :%i\nanother run could solve it\n", runes);
+                                printf("Not enough space for examens\nrunes :%i\nAnother run could solve it\n", runes);
                                 break;
                             }
                         }
                     }
-                    /* flytning af temp til schema_data(altså det fulde array)-> Exam_block */
+                    /* flytning af temp til schema_data(altså det fulde array)-> Examblock */
                     for ( o = 0; o <= days; o++){
-                        if(week_split == 0){
+                        if(week_split == false){
                             for(l = 0; l < 10; l++){
                                 schema_data[k][week][day+o][room][l] = temp_block[o][l];
                             }
                         }
-                        else if(week_split == 1){ /* fyldning af array hvis at arrayet er over 2 uger */
+                        else if(week_split == true){ /* fyldning af array hvis at arrayet er over 2 uger */
 
                             for(l = 0; l < 10; l++){
                                 if (day + o <= 4){
@@ -208,7 +208,7 @@ void Pre_Exam_block(Class_t classdata[], Exam_block_t *****schema_data, Exam_blo
     }
 }
 
-void Class_Generator(Class_t classdata[]) {
+void ClassGenerator(Class_t classdata[]) {
 
     foersteG TEMP_1G;
     andenG TEMP_2G; 
@@ -1490,7 +1490,7 @@ void Class_Generator(Class_t classdata[]) {
     }
 }
 /*Genere tilfældige lærere*/
-void Teacher_Generator(Class_t classdata[]) {
+void TeacherGenerator(Class_t classdata[]) {
     int i,j,unikID_teacher=0, unikID_censor=0;
     char examType[SIZE_OF_NAMES];
             /* Array med fornavne, og tallene til siden, er hvor mange navne der er talt op indtil da.*/

@@ -1,6 +1,6 @@
 /*
 ENOUGH_FITNESS er ikke definerert? Skal den i config? Hvad bestemmer den?
-Skriv mutationsfunktionen om således den passer til den måde den bruges heri. 
+Skriv Mutationsfunktionen om således den passer til den måde den bruges heri. 
 QsortByFitness skal kunne sortere hovedarrayet. 
 
 Tror ikke de forskellige srand skal bruges. Bare træk det i main, no?
@@ -16,7 +16,7 @@ int elitismAmount = 1;
 
 void RankFitness(rankings_t rankArray[]);
 void GeneticAlgorithm(Exam_block_t *****solutions);
-void Fitness(Exam_block_t *****solutions);
+
 /*int QsortByFitness (const void *a, const void *b);*/
 int FindHighestFitness(rankings_t rankArray[]);
 int FitnessLimit(int bestFitness);
@@ -40,8 +40,6 @@ void GeneticAlgorithm(Exam_block_t *****solutions) {
     }
 }
 
-/*---------------------------------------------------------------------------*/
-
 void RankFitness(rankings_t rankArray[]) {
     int i, curr;
     for (i = 0, curr = 0; i < GENERATION_SIZE; i++) {
@@ -50,37 +48,6 @@ void RankFitness(rankings_t rankArray[]) {
         rankArray[i].max = curr;
     }
 }
-
-/*---------------------------------------------------------------------------*/
-
-void Fitness(Exam_block_t *****solutions) {
-/*Fill the array/struct with the fitness of the individuals.*/
-}
-
-/*---------------------------------------------------------------------------*/
-/*
-int QsortByFitness (const void *a, const void *b) {
-    int f1, f2;
-
-    f1 = (((struct rankArray*)a)->fitness);
-    f2 = (((struct rankArray*)b)->fitness);
-
-    if (f1 < f2) {
-        return 1;
-    }
-    else if (f1 > f2) {
-        return -1;
-    }
-    else {
-        return 0;
-        Lige nu er der bias for dem, som starter øverst på arrayet. 
-        Vurderet til at være ok.
-    }
-}
-
-GØR SÅLEDES DET SORTERER SOLUTIONS ARRAY VHA. HVAD DER STÅR I RANKARRAY.*/
-
-/*---------------------------------------------------------------------------*/
 
 int FindHighestFitness(rankings_t rankArray[]) {
 /*Only solution array was qsorted. To avoid having to sort the whole 
@@ -95,7 +62,6 @@ int i, bestFitness = 0;
     return bestFitness;
 }
 
-/*---------------------------------------------------------------------------*/
 
 int FitnessLimit(int bestFitness) {
 /*Check whether the top solution is good enough*/
@@ -105,7 +71,6 @@ int FitnessLimit(int bestFitness) {
     return 0;
 }
 
-/*---------------------------------------------------------------------------*/
 
 void PopulateNextGen(Exam_block_t *****solutions, rankings_t rankArray[], int generationNo) {
     int i, j, k, l, m, n;
@@ -174,7 +139,7 @@ void PopulateNextGen(Exam_block_t *****solutions, rankings_t rankArray[], int ge
     
     FillRest(parents, nextGen, rankArray, generationNo, j);
     for (i = 0; i < GENERATION_SIZE; i++) {
-        /*mutation(int genome, Exam_block_t *****genome_data);*/ /*<------- ATTENTION!!!!!!!!!!1!!*/
+        /*Mutation(int genome, Exam_block_t *****genome_data);*/ /*<------- ATTENTION!!!!!!!!!!1!!*/
     }
 
     /*Replace the chromosomes in each solution in each generation.
@@ -260,7 +225,6 @@ void KillPercentage(Exam_block_t *****solutions, Exam_block_t *****parents, rank
     }
 }
 
-/*---------------------------------------------------------------------------*/
 
 void FillRest(Exam_block_t *****parents, Exam_block_t *****nextGen, rankings_t rankArray[], int generationNo, int nextGenCount) {
     int i, rand1;
@@ -280,7 +244,6 @@ void FillRest(Exam_block_t *****parents, Exam_block_t *****nextGen, rankings_t r
     }
 }
 
-/*---------------------------------------------------------------------------*/
 
 void ReplaceSolution(Exam_block_t ****old, Exam_block_t ****new) {
 int i, j, k, l;
@@ -295,5 +258,3 @@ int i, j, k, l;
         }
     }
 }
-
-/*---------------------------------------------------------------------------*/
