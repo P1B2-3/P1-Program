@@ -1,29 +1,10 @@
-<<<<<<< HEAD
-
-void Moving(Exam_block_t *****Child, Exam_block_t *****parent, int genome, int p1_day, int p1_week, int p2_week, int p2_day);
-void DoCrossover(int genome_p1,int genome_p2, Exam_block_t *****parent, Exam_block_t *****Child);
-void MakeCrossover(int genome_p1, int genome_p2, Exam_block_t *****parent, Exam_block_t *****Child_1, Exam_block_t *****Child_2);
-void Insert(int ChildPos, Exam_block_t ***** Child_genome, Exam_block_t *****genome);
-void MakeChild(int parent1Pos, int parent2pos, int ChildPos1,int ChildPos2, Exam_block_t *****genome);
-=======
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
-#define GENERATION_SIZE 300
-
-typedef struct{
-    int fitness,
-        position,
-        saved;
-} fitness_struct;
 
 void Moving(Exam_block_t *****child, Exam_block_t *****parent, int genome, int p1_day, int p1_week, int p2_week, int p2_day);
 void DoCrossover(int genome_p1,int genome_p2, Exam_block_t *****parent, Exam_block_t *****child);
 void MakeCrossover(int genome_p1, int genome_p2, Exam_block_t *****parent, Exam_block_t *****child_1, Exam_block_t *****child_2);
 void Insert(int childPos, Exam_block_t *****genome);
 void MakeChild(int parent1Pos, int parent2pos, int childPos1,int childPos2, Exam_block_t *****genome);
-void Child(int numOfChildren, fitness_struct fit[], Exam_block_t *****genome);
+void child(int numOfChildren, fitness_struct fit[], Exam_block_t *****genome);
 void NextGen(int survivors, fitness_struct fit[], Exam_block_t *****genome);
 void Kill(int position, Exam_block_t *****genome);
 void Fill(Exam_block_t *****dest, Exam_block_t *****src);
@@ -87,30 +68,30 @@ void Selection(Exam_block_t *****genome_data) {
     savePerGen =  100 / (100 - getConfig("a.killPerGeneration"));
     Fill(temp_genome, genome_data);
 
-    for (i = 0; i < GENERATION_SIZE; i++) {
+    for (i = 0; i < SCHEMA_SIZE; i++) {
 		tempFitness[i].fitness  = genome_data[i][0][0][0][0].fitness;
 		tempFitness[i].position = i;
 		tempFitness[i].saved    = false;
     }
 
-    qsort(tempFitness, GENERATION_SIZE, sizeof(int), SortFitness);
+    qsort(tempFitness, SCHEMA_SIZE, sizeof(int), SortFitness);
 
-    for (i = 0; i < GENERATION_SIZE; i++) {
+    for (i = 0; i < SCHEMA_SIZE; i++) {
         totFitness += tempFitness[i].fitness;
     }
 
-    while (survivors < GENERATION_SIZE / savePerGen) {
-        for (i = 0; i < GENERATION_SIZE; i++) {
+    while (survivors < SCHEMA_SIZE / savePerGen) {
+        for (i = 0; i < SCHEMA_SIZE; i++) {
             survivalChance[i] = (((float)tempFitness[i].fitness / (float)totFitness) * 100.00);
         }
         
-        selected = Select();
+        Selected = Select();
 
         chosen = 0;
 
-        for ( i = GENERATION_SIZE; i > 0; i++) {
+        for ( i = SCHEMA_SIZE; i > 0; i++) {
             chosen += survivalChance[i];
-            if (chosen > selected) {
+            if (chosen > Selected) {
 
                 tempFitness[i].saved = true;
                 survivors++;
@@ -229,11 +210,11 @@ void NextGen(int survivors, fitness_struct fit[], Exam_block_t *****genome) {
 
     while (missing < SCHEMA_SIZE)
     {
-        Child(missing, fit, genome);
+        child(missing, fit, genome);
     }
 }
 
-void Child(int numOfChildren, fitness_struct fit[], Exam_block_t *****genome) {
+void child(int numOfChildren, fitness_struct fit[], Exam_block_t *****genome) {
 
     int i, j, k, l,
         totFitness;
@@ -285,28 +266,28 @@ void Child(int numOfChildren, fitness_struct fit[], Exam_block_t *****genome) {
                                     fit[l].saved = true;
                                     numOfChildren -= 2;
 
-    selected1 = Select();
-    selected2 = Select();
+    Selected1 = Select();
+    Selected2 = Select();
 
-    for (i = 0; i < GENERATION_SIZE; i++) {
+    for (i = 0; i < SCHEMA_SIZE; i++) {
         parent1 += breedingChance[i];
-        if (parent1 > selected1) {
+        if (parent1 > Selected1) {
 
-            for (k = 0; k < GENERATION_SIZE; k++) {
+            for (k = 0; k < SCHEMA_SIZE; k++) {
                 parent2 += breedingChance[i];
-                if (parent2 > selected2){
+                if (parent2 > Selected2){
 
-                    for (j = 0; j < GENERATION_SIZE; j++) {
+                    for (j = 0; j < SCHEMA_SIZE; j++) {
                         if (fit[j].fitness == 0) {
 
-                            for (l = j+1; l < GENERATION_SIZE; l++) {
+                            for (l = j+1; l < SCHEMA_SIZE; l++) {
                                 if (fit[l].fitness == 0){
                                     MakeChild(fit[i].position, fit[k].position, fit[j].position, fit[l].position, genome);
 									fit[j].fitness = -1;
 									fit[j].saved   = true;
 									fit[l].fitness = -1;
 									fit[l].saved   = true;
-									*numOfChildren -= 2;
+									numOfChildren -= 2;
 
                                     break;    
                                 }
@@ -325,14 +306,14 @@ void Child(int numOfChildren, fitness_struct fit[], Exam_block_t *****genome) {
 
 
 
-void MakeChild(int parent1Pos, int parent2pos, int child1Pos, int child2Pos, Exam_block_t *****genome) {
-    Exam_block_t *****child1_genome = Make_5D_Array(GENERATION_SIZE, WEEK_SIZE, DAY_SIZE, ROOM_SIZE, EXAM_SIZE);
-    Exam_block_t *****child2_genome = Make_5D_Array(GENERATION_SIZE, WEEK_SIZE, DAY_SIZE, ROOM_SIZE, EXAM_SIZE);
+void MakeChild(int parent1Pos, int parent2pos, int Child1Pos, int Child2Pos, Exam_block_t *****genome) {
+    Exam_block_t *****Child1_genome = Make_5D_Array(SCHEMA_SIZE, WEEK_SIZE, DAY_SIZE, ROOM_SIZE, EXAM_SIZE);
+    Exam_block_t *****Child2_genome = Make_5D_Array(SCHEMA_SIZE, WEEK_SIZE, DAY_SIZE, ROOM_SIZE, EXAM_SIZE);
 
-    MakeCrossover(parent1Pos, parent2pos, genome, child1_genome, child2_genome);
+    MakeCrossover(parent1Pos, parent2pos, genome, Child1_genome, Child2_genome);
 
-    Insert(child1Pos, child1_genome);
-    Insert(child2Pos, child2_genome);
+    Insert(Child1Pos, Child1_genome);
+    Insert(Child2Pos, Child2_genome);
 
     Free5DArray(Child1_genome);
     Free5DArray(Child2_genome);
@@ -357,7 +338,7 @@ void Insert(int ChildPos, Exam_block_t ***** Child_genome, Exam_block_t *****gen
 
                     genome[ChildPos][k][l][m][n] = Child_genome[0][k][l][m][n];
 
-                    genome[childPos][k][l][m][n] = genome[0][k][l][m][n];
+                    genome[ChildPos][k][l][m][n] = genome[0][k][l][m][n];
 
                 }
             }
@@ -365,8 +346,6 @@ void Insert(int ChildPos, Exam_block_t ***** Child_genome, Exam_block_t *****gen
     }
 }
 
-
-v
 void MakeCrossover(int genome_p1, int genome_p2, Exam_block_t *****parent, Exam_block_t *****child_1, Exam_block_t *****child_2) {
     printf("start crossover\n");
 
@@ -388,7 +367,7 @@ void DoCrossover(int genome_p1,int genome_p2, Exam_block_t *****parent, Exam_blo
                         for ( ; m < DAY_SIZE; m++){
                             for ( ; l < ROOM_SIZE; l++){
                                 if(parent[genome_p2][h][m][l][0].year != 0){
-                                    Moving( Child, parent, genome_p2, i, j, h, m);
+                                    Moving( child, parent, genome_p2, i, j, h, m);
                         for ( ; m < DAY_SIZE; m++) {
                             for ( ; l < ROOM_SIZE; l++) {
                                 if(parent[genome_p2][h][m][l][0].year != 0) {
@@ -412,12 +391,12 @@ void Moving(Exam_block_t *****child, Exam_block_t *****parent, int genome, int p
             for ( k = 0; k < 10; k++){ /* hvor mange der er på en dag */
 
                 printf("%i\n", parent[genome][p2_week][p2_day][j][0].year);
-                Child[0][p1_week][p1_day][j][k].student      = parent[genome][p2_week][p2_day][j][k].student;
-                Child[0][p1_week][p1_day][j][k].subjects     = parent[genome][p2_week][p2_day][j][k].subjects;
-                Child[0][p1_week][p1_day][j][k].period_start = parent[genome][p2_week][p2_day][j][k].period_start;
-                Child[0][p1_week][p1_day][j][k].days         = parent[genome][p2_week][p2_day][j][k].days;
-                Child[0][p1_week][p1_day][j][k].year         = parent[genome][p2_week][p2_day][j][k].year;
-                Child[0][p1_week][p1_day][j][k].classname    = parent[genome][p2_week][p2_day][j][k].classname;
+                child[0][p1_week][p1_day][j][k].student      = parent[genome][p2_week][p2_day][j][k].student;
+                child[0][p1_week][p1_day][j][k].subjects     = parent[genome][p2_week][p2_day][j][k].subjects;
+                child[0][p1_week][p1_day][j][k].period_start = parent[genome][p2_week][p2_day][j][k].period_start;
+                child[0][p1_week][p1_day][j][k].days         = parent[genome][p2_week][p2_day][j][k].days;
+                child[0][p1_week][p1_day][j][k].year         = parent[genome][p2_week][p2_day][j][k].year;
+                child[0][p1_week][p1_day][j][k].classname    = parent[genome][p2_week][p2_day][j][k].classname;
             }
         }
     }

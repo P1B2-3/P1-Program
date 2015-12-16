@@ -20,6 +20,7 @@ We love you special kids! <3
 /*Files*/
 /*#include "Structs/DATA_BASE.h"*/ /*Right now, of no use.*/
 #include "Structs/Structs-1.h"
+#include "configParser.c"
 #include "Free5Darray.c"
 #include "Schema-gen.c"
 
@@ -28,7 +29,7 @@ We love you special kids! <3
 #include "readWrite/Write/TeacherData.c"
 /*#include "Sorting/Get_exames_student.c"
 #include "Sorting/Sort_for_examns.c"*/ /*Right now, of no use*/
-#include "configParser.c"
+
 /*
 #include "ReturnSpecificData.c"
 *//*
@@ -46,6 +47,6 @@ We love you special kids! <3
 
 /*#include "ArrayTilBlokke.c"*/ /*Not used for anything. + got a main in it*/
 
-#include "Skemaprint.c"
+/*#include "Skemaprint.c"*/
 #include "amountOfDays.c"
 /*#include "crossoverConcept.c"*/ /*Right now, of no use.*/

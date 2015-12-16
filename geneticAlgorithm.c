@@ -203,7 +203,7 @@ void KillPercentage(Exam_block_t *****solutions, Exam_block_t *****parents, rank
                 rand1 <= rankArray[j].max; 
                 j++) {
             }
-            /*Find the position of the selected solution.*/
+            /*Find the position of the Selected solution.*/
             
             skip = 0;
             for (o = 0; o < i; o++) {
@@ -241,7 +241,7 @@ void FillRest(Exam_block_t *****parents, Exam_block_t *****nextGen, rankings_t r
             rand1 <= rankArray[i].max; 
             i++) {
         }
-        /*Find the position of the selected solution*/
+        /*Find the position of the Selected solution*/
         ReplaceSolution (nextGen[nextGenCount], parents[i]);
     }
 }
