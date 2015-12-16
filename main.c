@@ -31,37 +31,38 @@
 /* defines for schema-gen */
  
 int main (void) {
-    int k,i;
+    int k,i,n,p,q,sum = 0,fitsum = 0;
     time_t t;
     Exam_block_t *****schema_data;
     int **array;
-    printf("-2\n");
+    
     srand((unsigned) time(&t)); /* seeder vores random */
-    printf("-1\n");
+    
     schema_data = MakeSchema();
-    printf("0\n");
+    
     array = Make_2D_Array_int(SCHEMA_SIZE, 1000);
     
-    for(k = 0; k < 10; k++) {
-        printf("Klasse navn: %c\n",schema_data[0][0][0][0][k].classname );
-        printf("Klasse navn: %c\n",schema_data[0][0][0][1][k].classname );
-        printf("Klasse navn: %c\n",schema_data[0][0][0][2][k].classname );
-        printf("Klasse navn: %c\n",schema_data[0][0][0][3][k].classname );
-        printf("Klasse navn: %c\n",schema_data[0][0][0][4][k].classname );
-        printf("Klasse navn: %c\n",schema_data[0][0][0][5][k].classname );
-        printf("Klasse navn: %c\n",schema_data[0][0][0][6][k].classname );
-        printf("Klasse navn: %c\n",schema_data[0][0][0][7][k].classname );
-        printf("Klasse navn: %c\n",schema_data[0][0][0][8][k].classname );
-        printf("Klasse navn: %c\n",schema_data[0][0][0][9][k].classname );
-        printf("-------------------------------------------------------\n");
-    }
-    
-    
     for (i = 0; i < 20; i++) {
-        printf("%i\n",i );
+        for(k = 0; k < 8; k++) {
+            for(n = 0; n < 5; n++) {
+                for(p = 0; p < 10; p++) {
+                    for(q = 0; q < 10; q++) {
+                        sum += schema_data[0][k][n][p][q].year;
+                                             }
+                }
+               
+            }
+        } 
+        for(k = 0; k < 300; k++) {
+            fitsum += schema_data[k][0][0][0][0].fitness;
+        }
+        printf("%i: \n",i );
+        printf("AAR: %i\n",sum);
+        printf("fitness: %i\n",fitsum );
         Length(schema_data, array);
         CalcFitnessOneGeneration(schema_data, array);
         Selection(schema_data);
+
     }
 
     Free2DArray_int(array, SCHEMA_SIZE);
