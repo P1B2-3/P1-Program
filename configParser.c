@@ -1,9 +1,9 @@
 /*
-The function getConfig(string) will search for, and read a given string's value
+The function GetConfig(string) will search for, and read a given string's value
 in the config.ini file.
 
 example:
-getConfig("s.numberOfStudents") - returns the value 24
+GetConfig("s.numberOfStudents") - returns the value 24
 */
 
 
@@ -18,7 +18,7 @@ struct line{
     int value;
 };
 
-int getConfig(char* in) {
+int GetConfig(char* in) {
 
     struct line line[LINES_TO_READ];
     int i;

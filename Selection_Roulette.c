@@ -2,7 +2,7 @@
 void Moving(Exam_block_t *****child, Exam_block_t *****parent, int genome, int p1_day, int p1_week, int p2_week, int p2_day);
 void DoCrossover(int genome_p1,int genome_p2, Exam_block_t *****parent, Exam_block_t *****child);
 void MakeCrossover(int genome_p1, int genome_p2, Exam_block_t *****parent, Exam_block_t *****child_1, Exam_block_t *****child_2);
-void Insert(int childPos, Exam_block_t *****genome);
+void Insert(int ChildPos, Exam_block_t ***** Child_genome, Exam_block_t *****genome);
 void MakeChild(int parent1Pos, int parent2pos, int childPos1,int childPos2, Exam_block_t *****genome);
 void child(int numOfChildren, fitness_struct fit[], Exam_block_t *****genome);
 void NextGen(int survivors, fitness_struct fit[], Exam_block_t *****genome);
@@ -27,11 +27,11 @@ void Selection(Exam_block_t *****genome_data) {
     fitness_struct tempFitness[SCHEMA_SIZE];      
     Exam_block_t *****temp_genome = Make_5D_Array(SCHEMA_SIZE, WEEK_SIZE, DAY_SIZE, ROOM_SIZE, EXAM_SIZE);
 
-    mutationRate = getConfig("a.mutationRate");
+    mutationRate = GetConfig("a.mutationRate");
 
     /*ændrer procentsats til brøk, f.eks. 50% -> 1/2. Tager dog kun heltalsbrøk*/
 
-    savePerGen =  100 / (100 - getConfig("a.KillPerGeneration"));
+    savePerGen =  100 / (100 - GetConfig("a.KillPerGeneration"));
     Fill(temp_genome, genome_data);
 
     for (i = 0; i < SCHEMA_SIZE; i++)
@@ -65,67 +65,69 @@ void Selection(Exam_block_t *****genome_data) {
             if (chosen > Selected)
             {
 
-    savePerGen =  100 / (100 - getConfig("a.killPerGeneration"));
-    Fill(temp_genome, genome_data);
+                savePerGen =  100 / (100 - GetConfig("a.killPerGeneration"));
+                Fill(temp_genome, genome_data);
 
-    for (i = 0; i < SCHEMA_SIZE; i++) {
-		tempFitness[i].fitness  = genome_data[i][0][0][0][0].fitness;
-		tempFitness[i].position = i;
-		tempFitness[i].saved    = false;
-    }
+                for (i = 0; i < SCHEMA_SIZE; i++) {
+            		tempFitness[i].fitness  = genome_data[i][0][0][0][0].fitness;
+            		tempFitness[i].position = i;
+            		tempFitness[i].saved    = false;
+                }
 
-    qsort(tempFitness, SCHEMA_SIZE, sizeof(int), SortFitness);
+                qsort(tempFitness, SCHEMA_SIZE, sizeof(int), SortFitness);
 
-    for (i = 0; i < SCHEMA_SIZE; i++) {
-        totFitness += tempFitness[i].fitness;
-    }
+                for (i = 0; i < SCHEMA_SIZE; i++) {
+                    totFitness += tempFitness[i].fitness;
+                }
 
-    while (survivors < SCHEMA_SIZE / savePerGen) {
-        for (i = 0; i < SCHEMA_SIZE; i++) {
-            survivalChance[i] = (((float)tempFitness[i].fitness / (float)totFitness) * 100.00);
-        }
-        
-        Selected = Select();
+                while (survivors < SCHEMA_SIZE / savePerGen) {
+                    for (i = 0; i < SCHEMA_SIZE; i++) {
+                        survivalChance[i] = (((float)tempFitness[i].fitness / (float)totFitness) * 100.00);
+                    }
+                    
+                    Selected = Select();
 
-        chosen = 0;
+                    chosen = 0;
 
-        for ( i = SCHEMA_SIZE; i > 0; i++) {
-            chosen += survivalChance[i];
-            if (chosen > Selected) {
+                    for ( i = SCHEMA_SIZE; i > 0; i++) {
+                        chosen += survivalChance[i];
+                        if (chosen > Selected) {
 
-                tempFitness[i].saved = true;
-                survivors++;
-                break;
+                            tempFitness[i].saved = true;
+                            survivors++;
+                            break;
+                        }
+                    }
+                }
+
+                for (i = 0; i < SCHEMA_SIZE; i++)
+                {
+                    if (tempFitness[i].saved == false){
+                        Kill(tempFitness[i].position, temp_genome);
+                        tempFitness[i].fitness = 0;
+                    }
+                }
+
+                NextGen(survivors, tempFitness, temp_genome);
+
+
+                for (i = 0; i < SCHEMA_SIZE; i++)
+                {
+                    if (rand() % 100 < mutationRate){
+                        Mutation(i, temp_genome);
+                    }
+                }
+
+                Fill(genome_data, temp_genome);
+
+                Free5DArray(temp_genome);
+
+                free(temp_genome);
+
             }
         }
     }
-
-    for (i = 0; i < SCHEMA_SIZE; i++)
-    {
-        if (tempFitness[i].saved == false){
-            Kill(tempFitness[i].position, temp_genome);
-            tempFitness[i].fitness = 0;
-        }
-    }
-
-    NextGen(survivors, tempFitness, temp_genome);
-
-
-    for (i = 0; i < SCHEMA_SIZE; i++)
-    {
-        if (rand() % 100 < mutationRate){
-            mutation(i, temp_genome);
-        }
-    }
-
-    Fill(genome_data, temp_genome);
-
-    Free5DArray(temp_genome);
-
-    free(temp_genome);
-
 }
-
 int SortFitness (const void *a, const void *b){
     int f1 = ((fitness_struct *)a)->fitness;
     int f2 = ((fitness_struct *)b)->fitness;
@@ -149,8 +151,6 @@ float Select(){
     return ((float)interger / 100);
 }
 
-
-void Fill(Exam_block_t *****dest, Exam_block_t *****src){
 
 void Fill(Exam_block_t *****dest, Exam_block_t *****src) {
 
@@ -185,9 +185,9 @@ void Kill(int position, Exam_block_t *****genome) {
     /*laver et struct som er fyldt med 0*/
     zero = (Exam_block_t *)calloc(1,sizeof(Exam_block_t));
 
-    numOfRooms = getConfig("s.numberOfRooms");
-    numOfWeeks = getConfig("s.numberOfWeeks");
-    numOfExams = getConfig("s.numberOfExams");
+    numOfRooms = GetConfig("s.numberOfRooms");
+    numOfWeeks = GetConfig("s.numberOfWeeks");
+    numOfExams = GetConfig("s.numberOfExams");
 
     
     for (k = 0; k < numOfWeeks; k++) {
@@ -239,33 +239,6 @@ void child(int numOfChildren, fitness_struct fit[], Exam_block_t *****genome) {
         }
     }
 
-
-    Selected1 = Select();
-    Selected2 = Select();
-
-    for (i = 0; i < SCHEMA_SIZE; i++)
-    {
-        parent1 += breedingChance[i];
-        if (parent1 > Selected1)
-        {
-            for (k = 0; k < SCHEMA_SIZE; k++)
-            {
-                parent2 += breedingChance[i];
-                if (parent2 > Selected2){
-                    for (j = 0; j < SCHEMA_SIZE; j++)
-                    {
-                        if (fit[j].fitness == 0)
-                        {
-                            for (l = j+1; l < SCHEMA_SIZE; l++)
-                            {
-                                if (fit[l].fitness == 0){
-                                    MakeChild(fit[i].position, fit[k].position, fit[j].position, fit[l].position, genome);
-                                    fit[j].fitness = -1;
-                                    fit[j].saved = true;
-                                    fit[l].fitness = -1;
-                                    fit[l].saved = true;
-                                    numOfChildren -= 2;
-
     Selected1 = Select();
     Selected2 = Select();
 
@@ -312,8 +285,8 @@ void MakeChild(int parent1Pos, int parent2pos, int Child1Pos, int Child2Pos, Exa
 
     MakeCrossover(parent1Pos, parent2pos, genome, Child1_genome, Child2_genome);
 
-    Insert(Child1Pos, Child1_genome);
-    Insert(Child2Pos, Child2_genome);
+    Insert(Child1Pos, Child1_genome,genome);
+    Insert(Child2Pos, Child2_genome,genome);
 
     Free5DArray(Child1_genome);
     Free5DArray(Child2_genome);
@@ -323,9 +296,9 @@ void Insert(int ChildPos, Exam_block_t ***** Child_genome, Exam_block_t *****gen
 
     int k, l, m, n,numOfRooms,numOfWeeks,numOfExams;
 
-    numOfRooms = (int)getConfig("s.numberOfRooms");
-    numOfWeeks = (int)getConfig("s.numberOfWeeks");
-    numOfExams = (int)getConfig("s.numberOfExams");
+    numOfRooms = (int)GetConfig("s.numberOfRooms");
+    numOfWeeks = (int)GetConfig("s.numberOfWeeks");
+    numOfExams = (int)GetConfig("s.numberOfExams");
 
     for (k = 0; k < numOfWeeks; k++)  {
 
@@ -364,10 +337,6 @@ void DoCrossover(int genome_p1,int genome_p2, Exam_block_t *****parent, Exam_blo
             for ( k = 0; k < ROOM_SIZE; k++) {
                 if(parent[genome_p1][i][j][k][0].year != 0) {
                     for ( ; h < WEEK_SIZE; h++){ /* finder pladsen */
-                        for ( ; m < DAY_SIZE; m++){
-                            for ( ; l < ROOM_SIZE; l++){
-                                if(parent[genome_p2][h][m][l][0].year != 0){
-                                    Moving( child, parent, genome_p2, i, j, h, m);
                         for ( ; m < DAY_SIZE; m++) {
                             for ( ; l < ROOM_SIZE; l++) {
                                 if(parent[genome_p2][h][m][l][0].year != 0) {

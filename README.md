@@ -11,7 +11,7 @@
   2. Brug komando: _make -f makefile.make_
  
 # FUNKTIONER
-  - <b>getConfig(string)</b> _configParser.c_ <br>
+  - <b>GetConfig(string)</b> _configParser.c_ <br>
  Denne funktion retunerer en double-værdi, korresponderende med den givne string. Denne bruges til at hente data fra config.ini filen, i resten af programmet. <br>
 F.eks. <br>
 _getConfig("s.numberOfStudents")_ retunerer int-værdien _24.00_

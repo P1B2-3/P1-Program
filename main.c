@@ -31,10 +31,6 @@
 /* defines for schema-gen */
  
 int main (void) {
-
- 
-    Exam_block_t ;
-    int **array;
     int i;
     time_t t;
     Exam_block_t *****schema_data;
