@@ -218,8 +218,8 @@ void NextGen(int survivors, fitness_struct fit[], Exam_block_t *****genome) {
 void child(int numOfChildren, fitness_struct fit[], Exam_block_t *****genome) {
 
     int i, j, k, l,
-        totFitness;
-    float parent1, parent2,
+        totFitness = 0;
+    float parent1 = 0.0, parent2 = 0.0,
           Selected1, Selected2,
           breedingChance[SCHEMA_SIZE];
 
@@ -228,6 +228,7 @@ void child(int numOfChildren, fitness_struct fit[], Exam_block_t *****genome) {
         if (fit[i].fitness > 0) {
 
             totFitness += fit[i].fitness;
+            printf("tot : %i\n",totFitness );
         }
     }
 
@@ -238,6 +239,10 @@ void child(int numOfChildren, fitness_struct fit[], Exam_block_t *****genome) {
         if (fit[i].fitness > 0) {
 
             breedingChance[i] = (((float)fit[i].fitness / (float)totFitness) * 100);
+            printf("breeding chance : %f\n",breedingChance[i] );
+        }
+        else {
+            breedingChance[i] = 0.0;
         }
 
     }
@@ -246,11 +251,13 @@ void child(int numOfChildren, fitness_struct fit[], Exam_block_t *****genome) {
     Selected2 = Select();
 
     for (i = 0; i < SCHEMA_SIZE; i++) {
-        printf("%f og %f\n",parent1,parent2 );
+        
         parent1 += breedingChance[i];
+        printf("par1: %f \n",parent1);
         if (parent1 > Selected1) {
 
             for (k = 0; k < SCHEMA_SIZE; k++) {
+                printf("par2: %f \n",parent2);
                 parent2 += breedingChance[i];
                 if (parent2 > Selected2){
 
