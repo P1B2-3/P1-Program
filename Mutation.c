@@ -144,7 +144,7 @@ void Mutation(int genome, Exam_block_t *****genome_data) {
                     }
                     break;
                 }
-            }/*
+            }/* DOES NOT WORK
             else if (day <= 2 && gDay > 2)
             {
                 if (genome_data[genome][week][day][room][0].year != 0 && 

@@ -5,7 +5,7 @@
 #define AMOUNT_OF_DAYS 5
 #define AMOUNT_OF_HOURS 8
 #define AMOUNT_OF_ROOMS 10
-#define RUNS 400
+#define RUNS 300
 
 #define SCHEMA_SIZE 80
 #define WEEK_SIZE 8
