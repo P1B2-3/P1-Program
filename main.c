@@ -71,6 +71,7 @@ int main (void) {
         Selection(schema_data);
         data[i] = schema_data[i][0][0][0][0].fitness;
     }
+    ResultDataOut(data);
     ResultOut(schema_data);
     Free2DArray_int(array, SCHEMA_SIZE);
     
