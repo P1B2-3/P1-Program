@@ -19,16 +19,16 @@ Exam_block_t *****MakeSchema(){
             return (0);
         }
 
-    printf("asger er en kegle\n");
+
     ClassGenerator(classdata); 
-    printf("asger er to kegler\n");
+
     TeacherGenerator(classdata);
 
-    printf("asger er tre kegler %c\n", classdata[0].name);
+
     PreExamBlock(classdata, schema_data,temp_class_block,24, SCHEMA_SIZE);
-    printf("asger er keglen der crasher %c\n", classdata[0].name);
+
     Free2DArray_Ex(temp_class_block,DAY_SIZE);
-    printf("asger er den sidste kegle\n");
+
     return schema_data;
 }
 
@@ -46,7 +46,7 @@ Exam_block_t *****Make_5D_Array( int genom, int week, int day, int room, int exa
 
         for (i = 0; i < genom; i++) {
             schema_data[i] = (Exam_block_t ****) calloc(week,sizeof(Exam_block_t ***));
-            if (schema_data == NULL) {
+            if (schema_data[i] == NULL) {
                 printf("Error: Not enough memory for Make_5D_Array(2)\n");
                 assert(0);
             }
@@ -54,7 +54,7 @@ Exam_block_t *****Make_5D_Array( int genom, int week, int day, int room, int exa
 
             for (j = 0; j < week; j++) {
                 schema_data[i][j] = (Exam_block_t ***)calloc(day,sizeof(Exam_block_t**));
-                if (schema_data == NULL) {
+                if (schema_data[i][j] == NULL) {
                     printf("Error: Not enough memory for Make_5D_Array(3)\n");
                     assert(0);
                 }
@@ -62,14 +62,14 @@ Exam_block_t *****Make_5D_Array( int genom, int week, int day, int room, int exa
 
                 for (k = 0; k < day; k++) {
                     schema_data[i][j][k] = (Exam_block_t **)calloc(room,sizeof(Exam_block_t*));
-                    if (schema_data == NULL) {
+                    if (schema_data[i][j][k] == NULL) {
                         printf("Error: Not enough memory for Make_5D_Array(4)\n");
                         assert(0);
                     }
 
                     for (n = 0; n < room; n++) {
                         schema_data[i][j][k][n] = (Exam_block_t *)calloc(exam,sizeof(Exam_block_t));
-                        if (schema_data == NULL) {
+                        if (schema_data[i][j][k][n] == NULL) {
                             printf("Error: Not enough memory for Make_5D_Array(5)\n");
                             assert(0);
                         }
@@ -162,7 +162,7 @@ void PreExamBlock(Class_t classdata[], Exam_block_t *****schema_data, Exam_block
 
     for (k = 0; k < genom; k++){             /* Løsninger(hele Exam_blocker)*/
 
-        for (; i < class_no; i++){     /* for skellige klasser */
+        for (i = 0; i < class_no; i++){     /* forskellige klasser */
 
             for (j = 0; j < 34; j++){       /* hvor mange eksamner der er */
 
@@ -175,7 +175,6 @@ void PreExamBlock(Class_t classdata[], Exam_block_t *****schema_data, Exam_block
                         room = rand()% ROOM_SIZE;
                         day  = rand()% DAY_SIZE;
                         week = rand()% WEEK_SIZE;
-                        printf("i %i cd %c\n", i, classdata[i].name);
                         days = Examblock(classdata[i],j,temp_block, room);/* return fra 1-> antal dage eksamen fylder */
 
                         if(schema_data[k][week][day][room][0].year == 0){ /* hvis lokalet er firt på dagen */
@@ -225,6 +224,7 @@ void PreExamBlock(Class_t classdata[], Exam_block_t *****schema_data, Exam_block
                 }
             }
         }
+        printf("gange %i\n", k);
     }
 }
 

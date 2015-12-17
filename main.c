@@ -6,7 +6,7 @@
 #define AMOUNT_OF_HOURS 8
 #define AMOUNT_OF_ROOMS 10
 
-#define SCHEMA_SIZE 300
+#define SCHEMA_SIZE 80
 #define WEEK_SIZE 8
 #define DAY_SIZE 5
 #define ROOM_SIZE 10
@@ -41,8 +41,11 @@ int main (void) {
     schema_data = MakeSchema();
     
     array = Make_2D_Array_int(SCHEMA_SIZE, 1000);
+
+
     
-    for (i = 0; i < 1000; i++) {
+    for (i = 0; i < 5; i++) {
+
         for(k = 0; k < 8; k++) {
             for(n = 0; n < 5; n++) {
                 for(p = 0; p < 10; p++) {
@@ -53,16 +56,19 @@ int main (void) {
                
             }
         } 
+
         printf("%i: \n",i );
         printf("AAR: %i\n",sum);
+        sum = 0;
         Length(schema_data, array);
         CalcFitnessOneGeneration(schema_data, array);
-        Selection(schema_data);
-        for(k = 0; k < 300; k++) {
+        for(k = 0; k < SCHEMA_SIZE; k++) {
             fitsum += schema_data[k][0][0][0][0].fitness;
         }
         printf("fitness: %i\n",fitsum);
         fitsum = 0;
+        Selection(schema_data);
+
     }
     ResultOut(schema_data);
     Free2DArray_int(array, SCHEMA_SIZE);
