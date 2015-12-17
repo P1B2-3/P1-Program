@@ -32,7 +32,7 @@
 /* defines for schema-gen */
  
 int main (void) {
-    int i,b = 0, max = 200;
+    int k,i,n,p,q,sum = 0,fitsum = 0;
     time_t t;
     Exam_block_t *****schema_data;
     int **array;
@@ -44,21 +44,30 @@ int main (void) {
     array = Make_2D_Array_int(SCHEMA_SIZE, 1000);
 
 
-<<<<<<< HEAD
     
     for (i = 0; i < RUNS; i++) {
-=======
-    printf("Enter for loekke\n");
-    for (i = 0; i < max; i++) {
 
-        LoadingScreen(i, max % 20, max-1, b);
-        if(i % 20 == max % 20)
-            b += 10;
->>>>>>> origin/master
+        for(k = 0; k < 8; k++) {
+            for(n = 0; n < 5; n++) {
+                for(p = 0; p < 10; p++) {
+                    for(q = 0; q < 10; q++) {
+                        sum += schema_data[0][k][n][p][q].year;
+                    }
+                }
+               
+            }
+        } 
 
-
+        printf("%i: \n",i );
+        printf("AAR: %i\n",sum);
+        sum = 0;
         Length(schema_data, array);
         CalcFitnessOneGeneration(schema_data, array);
+        for(k = 0; k < SCHEMA_SIZE; k++) {
+            fitsum += schema_data[k][0][0][0][0].fitness;
+        }
+        printf("fitness: %i\n",fitsum);
+        fitsum = 0;
         Selection(schema_data);
         data[i] = schema_data[i][0][0][0][0].fitness;
     }
