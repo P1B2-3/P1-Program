@@ -6,12 +6,12 @@ void ResultDataOut(int data[]) {
 
       
     if ((fptr=fopen("schema_data.txt","r"))==NULL){
-        printf("Schema not existing creating new.\n");
-        WriteToFile(schema_data,fptr);
+        printf("Data not existing creating new.\n");
+        WriteDataToFile(data,fptr);
     }
     else {
 
-        printf("!Schema existing!\n Do you want to create new? [Y]es or [N]o: ");
+        printf("!Data existing!\n Do you want to create new? [Y]es or [N]o: ");
         do{
             scanf("%c", &temp_char);
             printf("\n");
@@ -20,7 +20,7 @@ void ResultDataOut(int data[]) {
                 assert(0);
             }
             else if(temp_char == 'Y' || temp_char == 'y') {
-                WriteToFile(schema_data,fptr);
+                WriteDataToFile(data,fptr);
                 break;
             }
             else {
@@ -32,13 +32,13 @@ void ResultDataOut(int data[]) {
     
     fclose(fptr);
 }
-void WriteToFile(int data[], FILE *fptr) {
+void WriteDataToFile(int data[], FILE *fptr) {
     int i;
     fptr = fopen("schema_data.txt", "w");
-    fprintf(fptr,"data | run\n");
+    fprintf(fptr,"Run  | Data\n");
     
     for(i = 0; i < RUNS; i++)
     {
-        fprintf(fptr, "%i,%i\n",data[i],i);
+        fprintf(fptr, "%3i %5i\n",i, data[i]);
     } 
 }

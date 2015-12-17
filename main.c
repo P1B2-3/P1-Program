@@ -36,15 +36,15 @@ int main (void) {
     time_t t;
     Exam_block_t *****schema_data;
     int **array;
-    int data[400];
+    int data[RUNS];
     srand((unsigned) time(&t)); /* seeder vores random */
     
     schema_data = MakeSchema();
     
     array = Make_2D_Array_int(SCHEMA_SIZE, 1000);
 
-    
     for (i = 0; i < RUNS; i++) {
+
         for(k = 0; k < 8; k++) {
             for(n = 0; n < 5; n++) {
                 for(p = 0; p < 10; p++) {
@@ -52,19 +52,22 @@ int main (void) {
                         sum += schema_data[0][k][n][p][q].year;
                     }
                 }
-               
             }
         } 
+
+        printf("%i: \n",i );
+        printf("AAR: %i\n",sum);
+        sum = 0;
         Length(schema_data, array);
         CalcFitnessOneGeneration(schema_data, array);
         for(k = 0; k < SCHEMA_SIZE; k++) {
             fitsum += schema_data[k][0][0][0][0].fitness;
         }
         printf("fitness: %i\n",fitsum);
-        fitsum = 0;
+        
         Selection(schema_data);
-        data[i] = schema_data[i][0][0][0][0].fitness;
-
+        data[i] = fitsum / SCHEMA_SIZE;
+        fitsum = 0;
     }
     ResultDataOut(data);
     ResultOut(schema_data);
