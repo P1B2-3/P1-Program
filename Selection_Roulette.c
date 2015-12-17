@@ -176,7 +176,6 @@ void NextGen(int survivors, fitness_struct fit[], Exam_block_t *****genome) {
     {
         child(&missing, fit, genome);
     }
-    printf("%i\n", SCHEMA_SIZE + missing);
 }
 
 void child(int *numOfChildren, fitness_struct fit[], Exam_block_t *****genome) {
