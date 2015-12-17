@@ -45,14 +45,11 @@ int main (void) {
 
     printf("Enter for loekke\n");
     for (i = 0; i < max; i++) {
-    
-<<<<<<< HEAD
+
         LoadingScreen(i, max % 20, max-1, b);
         if(i % 20 == max % 20)
             b += 10;
-=======
-    for (i = 0; i < 1000; i++) {
->>>>>>> e7b0a84799898bac0c2a7122e80ef3ac999226f4
+
 
         Length(schema_data, array);
         CalcFitnessOneGeneration(schema_data, array);
