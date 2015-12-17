@@ -28,19 +28,24 @@ We love you special kids! <3
 /*#include "readWrite/Write/DaysWhereTeacherIsAbcent.c"*/ /*Right now, of no use.*/
 #include "readWrite/Write/StudentData.c"
 #include "readWrite/Write/TeacherData.c"
-/*#include "Sorting/Get_exames_student.c"
-#include "Sorting/Sort_for_examns.c"*/ /*Right now, of no use*/
+
+/*
+#include "Sorting/Get_exames_student.c"
+#include "Sorting/Sort_for_examns.c"
+*/ /*Right now, of no use*/
 
 /*
 #include "ReturnSpecificData.c"
-*//*
+ */
+
+/*
 #include "geneticAlgorithm.c"
-*/
+ */
 #include "Length.c"
 #include "Fitness.c"
 #include "Mutation.c"
 #include "Selection_Roulette.c"
-
+#include "LoadingScreen.c"
 
 
 

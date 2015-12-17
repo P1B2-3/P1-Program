@@ -5,7 +5,7 @@ void ResultOut(Exam_block_t *****schema_data) {
     FILE *fptr;
 
       
-    if ((fptr=fopen("data/StudentData.txt","r"))==NULL){
+    if ((fptr=fopen("best_schema.txt","r"))==NULL){
         printf("Schema not existing creating new.\n");
         WriteToFile(schema_data,fptr);
     }
