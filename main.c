@@ -5,6 +5,7 @@
 #define AMOUNT_OF_DAYS 5
 #define AMOUNT_OF_HOURS 8
 #define AMOUNT_OF_ROOMS 10
+#define RUNS 400
 
 #define SCHEMA_SIZE 80
 #define WEEK_SIZE 8
@@ -35,7 +36,7 @@ int main (void) {
     time_t t;
     Exam_block_t *****schema_data;
     int **array;
-    
+    int data[400];
     srand((unsigned) time(&t)); /* seeder vores random */
     
     schema_data = MakeSchema();
@@ -44,7 +45,7 @@ int main (void) {
 
 
     
-    for (i = 0; i < 1000; i++) {
+    for (i = 0; i < RUNS; i++) {
 
         for(k = 0; k < 8; k++) {
             for(n = 0; n < 5; n++) {
@@ -68,7 +69,7 @@ int main (void) {
         printf("fitness: %i\n",fitsum);
         fitsum = 0;
         Selection(schema_data);
-
+        data[i] = schema_data[i][0][0][0][0].fitness;
     }
     ResultOut(schema_data);
     Free2DArray_int(array, SCHEMA_SIZE);
