@@ -266,8 +266,71 @@ void MakeCrossover(int genome_p1, int genome_p2, Exam_block_t *****parent, Exam_
 }
 
 void DoCrossover(int genome_p1,int genome_p2, Exam_block_t *****parent, Exam_block_t *****child) { /* pladser fra 1 og eksamner fra 2 */
+	int p1_done = 0, p2_done = 0;
+
+	int i,j,k;
+	int h,m,l;
 
 
+	while(h < WEEK_SIZE){
+
+		if(p1_done != false){
+			for (i = i ; i < WEEK_SIZE; i++) {
+
+        		for (j = j ; j < DAY_SIZE; j++) {
+
+            		for (k = 0; k < ROOM_SIZE; k++) {
+
+		                if(parent[genome_p1][i][j][k][0].year != 0) {
+		                	p1_done = true;
+		                }
+		                if(k == 9){
+	                    	k = 0;
+	                    	j++;
+	                    	printf("reset k\n");
+	                    }
+		            }
+		            if(j == 4){
+                    	j = 0;
+                    	i++;
+                    	printf("reset j\n");
+                    }
+		        }
+		    }
+		}
+
+		if(p2_done != false){
+
+			for (h = h; h < WEEK_SIZE; h++) {
+
+                for (m = m ; m < DAY_SIZE; m++) {
+
+                    for (l = 0 ; l < ROOM_SIZE; l++) {
+
+                        if(parent[genome_p2][h][m][l][0].year != 0) {
+                        	p2_done = true;
+                        }
+                        if(l == 9){
+	                    	l = 0;
+	                    	m++;
+	                    	printf("reset l\n");
+	                    }
+                    }
+                    if(m == 4){
+                    	m = 0;
+                    	h++;
+                    	printf("reset m\n");
+                    }
+                }
+            }
+		}
+
+		if(p1_done == false && p2_done == false){
+			Moving( child, parent, genome_p2, j, i, h, m);
+			p1_done = p2_done = true;
+		}
+	}
+}
 void Moving(Exam_block_t *****child, Exam_block_t *****parent, int genome, int p1_day, int p1_week, int p2_week, int p2_day) {
     int j, k;
 
@@ -284,61 +347,3 @@ void Moving(Exam_block_t *****child, Exam_block_t *****parent, int genome, int p
         }
     }
 }
-
-/*    int i, j, k;
-    int h = 0, m = 0, l = 0;
-    int phase;
-    for ( i = 0; i < WEEK_SIZE; i++) {
-
-        for ( j = 0; j < DAY_SIZE; j++) {
-
-            for ( k = 0; k < ROOM_SIZE; k++) {
-
-                if(parent[genome_p1][i][j][k][0].year != 0) {
-
-                    phase = true;
-        
-                    if(phase == true){
-
-                        for (; h < WEEK_SIZE; h++){
-
-                            for ( ; m < DAY_SIZE;) {
-
-                                for (l = 0 ; l < ROOM_SIZE;) {
-
-                                    if(parent[genome_p2][h][m][l][0].year != 0) {
-
-                                        Moving( child, parent, genome_p2, j, i, h, m);
-                                        phase = false;
-                                    }
-                                    if(phase == false){
-                                        m++;
-                                        if (m < 4){
-                                            m = 0;
-                                        }
-                                        break;
-                                    }
-                                }
-                                if(phase == false){
-                                    l++;
-                                    if (l < 9){
-                                        l = 0;
-                                    }
-                                    break;
-                                }
-                            }
-                            if(phase == false){
-                                h++;
-                                if (h < 7){
-                                    l = 0;
-                                }
-                                break;
-                            }
-                        }
-                    }
-                }
-
-            }
-        }
-    }
-}*/
