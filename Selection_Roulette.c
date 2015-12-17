@@ -18,11 +18,10 @@ void Selection(Exam_block_t *****genome_data) {
 
     int i, 
         survivors = 0,
-        chosen,
         mutationRate,
         savePerGen,
         totFitness;
-    float survivalChance[SCHEMA_SIZE],
+    float survivalChance[SCHEMA_SIZE], chosen,
           Selected;
     fitness_struct tempFitness[SCHEMA_SIZE];      
     Exam_block_t *****temp_genome = Make_5D_Array(SCHEMA_SIZE, WEEK_SIZE, DAY_SIZE, ROOM_SIZE, EXAM_SIZE);
@@ -30,68 +29,70 @@ void Selection(Exam_block_t *****genome_data) {
     mutationRate = GetConfig("a.mutationRate");
 
     /*ændrer procentsats til brøk, f.eks. 50% -> 1/2. Tager dog kun heltalsbrøk*/
-                savePerGen =  100 / (100 - GetConfig("a.killPerGeneration"));
-                printf("i will not fail\n");
-                Fill(temp_genome, genome_data);
-                printf("i did not fail\n");
-                for (i = 0; i < SCHEMA_SIZE; i++) {
-            		tempFitness[i].fitness  = genome_data[i][0][0][0][0].fitness;
-            		tempFitness[i].position = i;
-            		tempFitness[i].saved    = false;
-                }
+    savePerGen =  100 / (100 - GetConfig("a.killPerGeneration"));
 
-                qsort(tempFitness, SCHEMA_SIZE, sizeof(int), SortFitness);
+    Fill(temp_genome, genome_data);
 
-                for (i = 0; i < SCHEMA_SIZE; i++) {
-                    totFitness += tempFitness[i].fitness;
-                }
+    for (i = 0; i < SCHEMA_SIZE; i++) {
+		tempFitness[i].fitness  = genome_data[i][0][0][0][0].fitness;
+		tempFitness[i].position = i;
+		tempFitness[i].saved    = 0;
+    }
 
-                while (survivors < SCHEMA_SIZE / savePerGen) {
-                    for (i = 0; i < SCHEMA_SIZE; i++) {
-                        survivalChance[i] = (((float)tempFitness[i].fitness / (float)totFitness) * 100.00);
-                    }
-                    
-                    Selected = Select();
+    qsort(tempFitness, SCHEMA_SIZE, sizeof(fitness_struct), SortFitness);
 
-                    chosen = 0;
+    for (i = 0; i < SCHEMA_SIZE; i++) {
+        totFitness += tempFitness[i].fitness;
+    }
 
-                    for ( i = SCHEMA_SIZE; i > 0; i++) {
-                        chosen += survivalChance[i];
-                        if (chosen > Selected) {
+    while (survivors < SCHEMA_SIZE / savePerGen) {
 
-                            tempFitness[i].saved = true;
-                            survivors++;
-                            break;
-                        }
-                    }
-                }
+        for (i = 0; i < SCHEMA_SIZE; i++) {
+            survivalChance[i] = (((float)tempFitness[i].fitness / (float)totFitness) * 100.00);
 
-                for (i = 0; i < SCHEMA_SIZE; i++)
-                {
-                    if (tempFitness[i].saved == false){
-                        Kill(tempFitness[i].position, temp_genome);
-                        tempFitness[i].fitness = 0;
-                    }
-                }
+        }
 
-                NextGen(survivors, tempFitness, temp_genome);
+        Selected = Select();
 
+        chosen = 0;
 
-                for (i = 0; i < SCHEMA_SIZE; i++)
-                {
-                    if (rand() % 100 < mutationRate){
-                        
-                        Mutation(i, temp_genome);
-                    }
-                }
-
-                Fill(genome_data, temp_genome);
-
-                Free5DArray(temp_genome);
-
-                free(temp_genome);
-
+        for ( i = 0; i < SCHEMA_SIZE; i++) {
+            chosen += survivalChance[i];
+            if (chosen > Selected) {
+                tempFitness[i].saved = 1;
+                survivors++;
+                break;
             }
+        }
+    }
+    for (i = 0; i < SCHEMA_SIZE; i++)
+    {
+
+        if (tempFitness[i].saved == 0){
+            /*
+            Kill(tempFitness[i].position, temp_genome);
+            */
+            tempFitness[i].fitness = 0;
+        }
+
+    }
+
+    NextGen(survivors, tempFitness, temp_genome);
+
+    
+    for (i = 0; i < SCHEMA_SIZE; i++)
+    {
+        if (rand() % 100 < mutationRate){
+            
+            Mutation(i, temp_genome);
+        }
+    }
+
+    Fill(genome_data, temp_genome);
+
+    Free5DArray(temp_genome);
+
+}
         
 int SortFitness (const void *a, const void *b){
     int f1 = ((fitness_struct *)a)->fitness;
@@ -124,7 +125,7 @@ void Fill(Exam_block_t *****dest, Exam_block_t *****src) {
     numOfRooms = GetConfig("s.numberOfRooms");
     numOfWeeks = GetConfig("s.numberOfWeeks");
     numOfExams = GetConfig("s.numberOfExams");
-    printf("start\n");
+
     for (i = 0; i < SCHEMA_SIZE; i++) {
         for (k = 0; k < numOfWeeks; k++) {
             for (l = 0; l < 5; l++) {
@@ -136,11 +137,10 @@ void Fill(Exam_block_t *****dest, Exam_block_t *****src) {
             }
         }
     }
-    printf("slut\n");
 }
 
 
-void Kill(int position, Exam_block_t *****genome) {
+/*void Kill(int position, Exam_block_t *****genome) {
 
     int k, l, m, n,
         numOfRooms,
@@ -148,7 +148,6 @@ void Kill(int position, Exam_block_t *****genome) {
         numOfExams;
     Exam_block_t *zero;
 
-    /*laver et struct som er fyldt med 0*/
     zero = (Exam_block_t *)calloc(1,sizeof(Exam_block_t));
 
     numOfRooms = GetConfig("s.numberOfRooms");
@@ -166,18 +165,18 @@ void Kill(int position, Exam_block_t *****genome) {
         }
     }
     free(zero);
-}
+}*/
 
 
 void NextGen(int survivors, fitness_struct fit[], Exam_block_t *****genome) {
     int missing;
 
     missing = SCHEMA_SIZE - survivors;
-
     while (missing < SCHEMA_SIZE)
     {
         child(&missing, fit, genome);
     }
+    printf("%i\n", SCHEMA_SIZE + missing);
 }
 
 void child(int *numOfChildren, fitness_struct fit[], Exam_block_t *****genome) {
@@ -193,11 +192,9 @@ void child(int *numOfChildren, fitness_struct fit[], Exam_block_t *****genome) {
         if (fit[i].fitness > 0) {
 
             totFitness += fit[i].fitness;
-            
         }
     }
 
-   
     for (i = 0; i < SCHEMA_SIZE; i++)
     { 
         
@@ -208,9 +205,8 @@ void child(int *numOfChildren, fitness_struct fit[], Exam_block_t *****genome) {
         else {
             breedingChance[i] = 0.0;
         }
-
     }
-    
+
     Selected1 = Select();
     Selected2 = Select();
 
@@ -230,13 +226,13 @@ void child(int *numOfChildren, fitness_struct fit[], Exam_block_t *****genome) {
                            
                             for (l = j+1; l < SCHEMA_SIZE; l++) {
                                 if (fit[l].fitness == 0){
-                                    
                                     MakeChild(fit[i].position, fit[k].position, fit[j].position, fit[l].position, genome);
 									fit[j].fitness = -1;
 									fit[j].saved   = true;
 									fit[l].fitness = -1;
 									fit[l].saved   = true;
 									*numOfChildren = *numOfChildren+2;
+
 
                                     break;    
                                 }
@@ -260,14 +256,13 @@ void MakeChild(int parent1Pos, int parent2pos, int Child1Pos, int Child2Pos, Exa
     Exam_block_t *****Child2_genome = Make_5D_Array(SCHEMA_SIZE, WEEK_SIZE, DAY_SIZE, ROOM_SIZE, EXAM_SIZE);
 
     MakeCrossover(parent1Pos, parent2pos, genome, Child1_genome, Child2_genome);
-    if(Child1Pos > 299 || Child2Pos > 299) 
-        printf("Din mor er en hamster.qsort\n");
-    
+
     Insert(Child1Pos, Child1_genome,genome);
     Insert(Child2Pos, Child2_genome,genome);
 
     Free5DArray(Child1_genome);
     Free5DArray(Child2_genome);
+
 }
 
 void Insert(int ChildPos, Exam_block_t ***** Child_genome, Exam_block_t *****genome) {
