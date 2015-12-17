@@ -45,11 +45,14 @@ int main (void) {
 
     printf("Enter for loekke\n");
     for (i = 0; i < max; i++) {
+
         
         LoadingScreen(i, max % 2, max-1, b);
 
         if(i % 2 == max % 2)
             b += 1;
+
+
 
         
         Length(schema_data, array);
