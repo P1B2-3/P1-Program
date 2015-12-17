@@ -43,17 +43,8 @@ int main (void) {
     
     array = Make_2D_Array_int(SCHEMA_SIZE, 1000);
 
-<<<<<<< HEAD
-
     
     for (i = 0; i < RUNS; i++) {
-=======
-    for (i = 0; i < max; i++) {
-
-        
-        LoadingScreen(i, max % 2, max-1, b);
->>>>>>> origin/master
-
         for(k = 0; k < 8; k++) {
             for(n = 0; n < 5; n++) {
                 for(p = 0; p < 10; p++) {
@@ -64,17 +55,7 @@ int main (void) {
                
             }
         } 
-
-<<<<<<< HEAD
-        printf("%i: \n",i );
-        printf("AAR: %i\n",sum);
-        sum = 0;
-=======
-        if(i % 2 == max % 2)
-            b += 1;
->>>>>>> origin/master
         Length(schema_data, array);
-        /*
         CalcFitnessOneGeneration(schema_data, array);
         for(k = 0; k < SCHEMA_SIZE; k++) {
             fitsum += schema_data[k][0][0][0][0].fitness;
@@ -82,7 +63,6 @@ int main (void) {
         printf("fitness: %i\n",fitsum);
         fitsum = 0;
         Selection(schema_data);
-        */
         data[i] = schema_data[i][0][0][0][0].fitness;
 
     }
