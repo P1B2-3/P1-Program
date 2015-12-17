@@ -6,7 +6,7 @@ void Mutation(int genome, Exam_block_t *****genome_data) {
         week, gWeek,
         day, gDay,
         room, gRoom,
-        derp = 100000,
+        maxLoop = 100000,
         numOfMut,
         numOfRooms,
         numOfWeeks,
@@ -33,7 +33,7 @@ void Mutation(int genome, Exam_block_t *****genome_data) {
     for (l = 0; l < numOfMut; l++) 
     {
         /*while-løkken sørger for at ændringerne er acceptable*/
-        while(k < derp) 
+        while(k < maxLoop) 
         {
             k++;
             week = rand() % (numOfWeeks); /*eksamensperiode længde, standard er 8*/

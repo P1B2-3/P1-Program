@@ -32,42 +32,47 @@
 /* defines for schema-gen */
  
 int main (void) {
-    int k,i,n,p,q,sum = 0,fitsum = 0;
-    time_t t;
-    Exam_block_t *****schema_data;
+    int k,i,n,p,q,sum = 0,fitsum = 0,b = 0,percent;
     int **array;
     int data[RUNS];
+    time_t t;
+    Exam_block_t *****schema_data;
+    double tempPercent;
+
     srand((unsigned) time(&t)); /* seeder vores random */
+    
+    
+    tempPercent =  RUNS / 100;
+    percent = (int)tempPercent;
     
     schema_data = MakeSchema();
     
     array = Make_2D_Array_int(SCHEMA_SIZE, 1000);
 
     for (i = 0; i < RUNS; i++) {
+        
+        if(i == 0) {
+            fprintf(stderr,"                                                                   %i%%",i );
+            b++;
+        }
+            
+        else if(i % percent == 0 && i != 0) {
+            fprintf(stderr,"\r                                                                   %i%%",b);
+            b++;
+        }         
 
-        for(k = 0; k < 8; k++) {
-            for(n = 0; n < 5; n++) {
-                for(p = 0; p < 10; p++) {
-                    for(q = 0; q < 10; q++) {
-                        sum += schema_data[0][k][n][p][q].year;
-                    }
-                }
-            }
-        } 
+        else if(i % percent == 0 && b == 100 ){
+            fprintf(stderr,"\r                                                                   %i%%\n",b );
+        }
 
-        printf("%i: \n",i );
-        printf("AAR: %i\n",sum);
-        sum = 0;
         Length(schema_data, array);
         CalcFitnessOneGeneration(schema_data, array);
-        for(k = 0; k < SCHEMA_SIZE; k++) {
-            fitsum += schema_data[k][0][0][0][0].fitness;
-        }
-        printf("fitness: %i\n",fitsum);
+        
         
         Selection(schema_data);
+        
         data[i] = fitsum / SCHEMA_SIZE;
-        fitsum = 0;
+
     }
     ResultDataOut(data);
     ResultOut(schema_data);

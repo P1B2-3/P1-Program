@@ -32,7 +32,7 @@ void Selection(Exam_block_t *****genome_data) {
     savePerGen =  100 / (100 - GetConfig("a.killPerGeneration"));
 
     Fill(temp_genome, genome_data);
-    
+/*    
     for (i = 0; i < SCHEMA_SIZE; i++) {
 		tempFitness[i].fitness  = genome_data[i][0][0][0][0].fitness;
 		tempFitness[i].position = i;
@@ -75,7 +75,7 @@ void Selection(Exam_block_t *****genome_data) {
 
 
     NextGen(survivors, tempFitness, temp_genome);
-    
+ */   
     
     for (i = 0; i < SCHEMA_SIZE; i++)
     {
