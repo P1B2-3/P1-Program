@@ -1,4 +1,5 @@
 void ZeroMem(Exam_block_t *****genome_data, int genome, int week, int day, int room, int exam);
+int IsClassname(Exam_block_t *****genome_data, int genome, int week, int day, int room, int exam);
 
 void Mutation(int genome, Exam_block_t *****genome_data) {
     int i, j, k, l,
@@ -130,24 +131,28 @@ void Mutation(int genome, Exam_block_t *****genome_data) {
                         break;
                     }
                 }
-            }
+            }/*
             else if (day <= 2 && gDay > 2){
                 if (gWeek != 7 &&
                     genome_data[genome][week][day][room][0].year != 0 && 
                     genome_data[genome][week][day+xamLenght-1][room][0].year != 0 && 
                     genome_data[genome][week][day][room][0].classname      == genome_data[genome][week][day+xamLenght-1][room][0].classname &&
                     genome_data[genome][week][day][room][0].year           == genome_data[genome][week][day+xamLenght-1][room][0].year){
-                    if (genome_data[genome][gWeek][gDay][gRoom][0].year == 0 && genome_data[genome][gWeek+1][gDay-gXamLenght][gRoom][0].year == 0) {
+                    if (genome_data[genome][gWeek][gDay][gRoom][0].year == 0 && 
+                        genome_data[genome][gWeek+1][gDay-gXamLenght][gRoom][0].year == 0 &&
+                        IsClassname(genome_data, genome, gWeek, gDay, gRoom, 0) &&
+                        IsClassname(genome_data, genome, gWeek+1, gDay-gXamLenght, gRoom, 0)) {
 
                         for (i = 0; i < numOfExams; i++) {
                             for (j = 0; j < xamLenght; j++) {
-                                /*if (gDay + j <= 4) {
+                                if (gDay + j <= 4) {
                                     genome_data[genome][gWeek][gDay+j][gRoom][i] = genome_data[genome][week][day+j][room][i];
+                                    ZeroMem(genome_data,genome,week,day+j,room,i);
                                 }
                                 else{
                                     genome_data[genome][gWeek+1][gDay+j-5][gRoom][i] = genome_data[genome][week][day+j][room][i];
+                                    ZeroMem(genome_data,genome,week,day+j,room,i);
                                 }
-                                ZeroMem(genome_data,genome,week,day+j,room,i);*/
                             }
                         }
                         break;
@@ -174,7 +179,6 @@ void Mutation(int genome, Exam_block_t *****genome_data) {
                 }
             }
             else if (day > 2 && gDay > 2) {
-
                 if (week != 7 && gWeek != 7 &&
                     genome_data[genome][week][day][room][0].year != 0 && 
                     genome_data[genome][week+1][day-xamLenght][room][0].year != 0 &&
@@ -184,7 +188,7 @@ void Mutation(int genome, Exam_block_t *****genome_data) {
 
                         for (i = 0; i < numOfExams; i++) {
                             for (j = 0; j < xamLenght; j++){
-                                /*if (gDay + j <= 4 && day + j <= 4) {
+                                if (gDay + j <= 4 && day + j <= 4) {
                                     genome_data[genome][gWeek][gDay+j][gRoom][i] = genome_data[genome][week][day+j][room][i];
                                     ZeroMem(genome_data,genome,week,day+j,room,i);
                                 }
@@ -199,7 +203,7 @@ void Mutation(int genome, Exam_block_t *****genome_data) {
                                 else {
                                     genome_data[genome][gWeek+1][gDay+j-5][gRoom][i] = genome_data[genome][week+1][day+j-5][room][i];
                                     ZeroMem(genome_data,genome,week+1,day+j-5,room,i);
-                                }*/
+                                }
                             }
                         }
                         break;
@@ -238,7 +242,7 @@ void Mutation(int genome, Exam_block_t *****genome_data) {
                         break;
                     }
                 }
-            }
+            }*/
         }
         k = 0;
     }
@@ -264,4 +268,18 @@ void ZeroMem(Exam_block_t *****genome_data, int genome, int week, int day, int r
     genome_data[genome][week][day][room][exam].days = 0;
     genome_data[genome][week][day][room][exam].year = 0;
     genome_data[genome][week][day][room][exam].fitness = 0;
+}
+
+int IsClassname(Exam_block_t *****genome_data, int genome, int week, int day, int room, int exam){
+    if (genome_data[genome][week][day][room][exam].classname == 'A' ||
+        genome_data[genome][week][day][room][exam].classname == 'B' ||
+        genome_data[genome][week][day][room][exam].classname == 'C' ||
+        genome_data[genome][week][day][room][exam].classname == 'D' ||
+        genome_data[genome][week][day][room][exam].classname == 'E' ||
+        genome_data[genome][week][day][room][exam].classname == 'F' ||
+        genome_data[genome][week][day][room][exam].classname == 'G' ||
+        genome_data[genome][week][day][room][exam].classname == 'H'){
+        return 0;
+    }
+    return 1;
 }
