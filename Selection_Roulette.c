@@ -34,9 +34,9 @@ void Selection(Exam_block_t *****genome_data) {
     Fill(temp_genome, genome_data);
 
     for (i = 0; i < SCHEMA_SIZE; i++) {
-		tempFitness[i].fitness  = genome_data[i][0][0][0][0].fitness;
-		tempFitness[i].position = i;
-		tempFitness[i].saved    = 0;
+        tempFitness[i].fitness  = genome_data[i][0][0][0][0].fitness;
+        tempFitness[i].position = i;
+        tempFitness[i].saved    = 0;
     }
 
     qsort(tempFitness, SCHEMA_SIZE, sizeof(fitness_struct), SortFitness);
@@ -76,9 +76,9 @@ void Selection(Exam_block_t *****genome_data) {
         }
 
     }
-
+    /*
     NextGen(survivors, tempFitness, temp_genome);
-
+    */
     
     for (i = 0; i < SCHEMA_SIZE; i++)
     {
@@ -176,6 +176,7 @@ void NextGen(int survivors, fitness_struct fit[], Exam_block_t *****genome) {
     {
         child(&missing, fit, genome);
     }
+    printf("%i\n", SCHEMA_SIZE + missing);
 }
 
 void child(int *numOfChildren, fitness_struct fit[], Exam_block_t *****genome) {
@@ -226,11 +227,11 @@ void child(int *numOfChildren, fitness_struct fit[], Exam_block_t *****genome) {
                             for (l = j+1; l < SCHEMA_SIZE; l++) {
                                 if (fit[l].fitness == 0){
                                     MakeChild(fit[i].position, fit[k].position, fit[j].position, fit[l].position, genome);
-									fit[j].fitness = -1;
-									fit[j].saved   = true;
-									fit[l].fitness = -1;
-									fit[l].saved   = true;
-									*numOfChildren = *numOfChildren+2;
+                                    fit[j].fitness = -1;
+                                    fit[j].saved   = true;
+                                    fit[l].fitness = -1;
+                                    fit[l].saved   = true;
+                                    *numOfChildren = *numOfChildren+2;
 
 
                                     break;    
@@ -282,9 +283,6 @@ void Insert(int ChildPos, Exam_block_t ***** Child_genome, Exam_block_t *****gen
 
 
                     genome[ChildPos][k][l][m][n] = Child_genome[0][k][l][m][n];
-                    /*
-                    genome[ChildPos][k][l][m][n] = genome[0][k][l][m][n];
-                    */
                 }
             }
         }
@@ -316,6 +314,7 @@ void DoCrossover(int genome_p1,int genome_p2, Exam_block_t *****parent, Exam_blo
                         }
                     }
                 }
+
             }
         }
     }
