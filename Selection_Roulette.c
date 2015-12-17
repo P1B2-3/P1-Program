@@ -69,9 +69,9 @@ void Selection(Exam_block_t *****genome_data) {
     {
 
         if (tempFitness[i].saved == 0){
-
+            /*
             Kill(tempFitness[i].position, temp_genome);
-
+            */
             tempFitness[i].fitness = 0;
         }
 
@@ -79,7 +79,7 @@ void Selection(Exam_block_t *****genome_data) {
 
     NextGen(survivors, tempFitness, temp_genome);
 
-
+    
     for (i = 0; i < SCHEMA_SIZE; i++)
     {
         if (rand() % 100 < mutationRate){
@@ -140,7 +140,7 @@ void Fill(Exam_block_t *****dest, Exam_block_t *****src) {
 }
 
 
-void Kill(int position, Exam_block_t *****genome) {
+/*void Kill(int position, Exam_block_t *****genome) {
 
     int k, l, m, n,
         numOfRooms,
@@ -148,7 +148,6 @@ void Kill(int position, Exam_block_t *****genome) {
         numOfExams;
     Exam_block_t *zero;
 
-    /*laver et struct som er fyldt med 0*/
     zero = (Exam_block_t *)calloc(1,sizeof(Exam_block_t));
 
     numOfRooms = GetConfig("s.numberOfRooms");
@@ -166,14 +165,14 @@ void Kill(int position, Exam_block_t *****genome) {
         }
     }
     free(zero);
-}
+}*/
 
 
 void NextGen(int survivors, fitness_struct fit[], Exam_block_t *****genome) {
     int missing;
 
     missing = SCHEMA_SIZE - survivors;
-    while (missing+2 < SCHEMA_SIZE)
+    while (missing < SCHEMA_SIZE)
     {
         child(&missing, fit, genome);
     }
