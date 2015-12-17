@@ -44,7 +44,7 @@ int main (void) {
 
 
     
-    for (i = 0; i < 5; i++) {
+    for (i = 0; i < 1000; i++) {
 
         for(k = 0; k < 8; k++) {
             for(n = 0; n < 5; n++) {

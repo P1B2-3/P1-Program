@@ -76,9 +76,9 @@ void Selection(Exam_block_t *****genome_data) {
         }
 
     }
-
+    /*
     NextGen(survivors, tempFitness, temp_genome);
-
+    */
     
     for (i = 0; i < SCHEMA_SIZE; i++)
     {
@@ -283,9 +283,6 @@ void Insert(int ChildPos, Exam_block_t ***** Child_genome, Exam_block_t *****gen
 
 
                     genome[ChildPos][k][l][m][n] = Child_genome[0][k][l][m][n];
-                    /*
-                    genome[ChildPos][k][l][m][n] = genome[0][k][l][m][n];
-                    */
                 }
             }
         }
@@ -317,6 +314,7 @@ void DoCrossover(int genome_p1,int genome_p2, Exam_block_t *****parent, Exam_blo
                         }
                     }
                 }
+
             }
         }
     }
