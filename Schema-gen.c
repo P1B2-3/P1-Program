@@ -224,6 +224,7 @@ void PreExamBlock(Class_t classdata[], Exam_block_t *****schema_data, Exam_block
                 }
             }
         }
+        printf("gange %i\n", k);
     }
 }
 

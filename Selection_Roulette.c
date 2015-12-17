@@ -32,7 +32,7 @@ void Selection(Exam_block_t *****genome_data) {
     savePerGen =  100 / (100 - GetConfig("a.killPerGeneration"));
 
     Fill(temp_genome, genome_data);
-
+    
     for (i = 0; i < SCHEMA_SIZE; i++) {
 		tempFitness[i].fitness  = genome_data[i][0][0][0][0].fitness;
 		tempFitness[i].position = i;
@@ -65,20 +65,17 @@ void Selection(Exam_block_t *****genome_data) {
             }
         }
     }
+
     for (i = 0; i < SCHEMA_SIZE; i++)
     {
-
         if (tempFitness[i].saved == 0){
-            /*
-            Kill(tempFitness[i].position, temp_genome);
-            */
             tempFitness[i].fitness = 0;
         }
-
     }
-    /*
+
+
     NextGen(survivors, tempFitness, temp_genome);
-    */
+    
     
     for (i = 0; i < SCHEMA_SIZE; i++)
     {
@@ -139,35 +136,6 @@ void Fill(Exam_block_t *****dest, Exam_block_t *****src) {
     }
 }
 
-
-/*void Kill(int position, Exam_block_t *****genome) {
-
-    int k, l, m, n,
-        numOfRooms,
-        numOfWeeks,
-        numOfExams;
-    Exam_block_t *zero;
-
-    zero = (Exam_block_t *)calloc(1,sizeof(Exam_block_t));
-
-    numOfRooms = GetConfig("s.numberOfRooms");
-    numOfWeeks = GetConfig("s.numberOfWeeks");
-    numOfExams = GetConfig("s.numberOfExams");
-
-    
-    for (k = 0; k < numOfWeeks; k++) {
-        for (l = 0; l < 5; l++) {
-            for (m = 0; m < numOfRooms; m++) {
-                for (n = 0; n < numOfExams; n++) {
-                    genome[position][k][l][m][n] = zero[0];
-                }
-            }
-        }
-    }
-    free(zero);
-}*/
-
-
 void NextGen(int survivors, fitness_struct fit[], Exam_block_t *****genome) {
     int missing;
 
@@ -176,7 +144,6 @@ void NextGen(int survivors, fitness_struct fit[], Exam_block_t *****genome) {
     {
         child(&missing, fit, genome);
     }
-    printf("%i\n", SCHEMA_SIZE + missing);
 }
 
 void child(int *numOfChildren, fitness_struct fit[], Exam_block_t *****genome) {
@@ -211,21 +178,24 @@ void child(int *numOfChildren, fitness_struct fit[], Exam_block_t *****genome) {
     Selected2 = Select();
 
     for (i = 0; i < SCHEMA_SIZE; i++) {
-        
+
         parent1 += breedingChance[i];
         
         if (parent1 > Selected1) {
-            
+
             for (k = 0; k < SCHEMA_SIZE; k++) {
-               
+
                 parent2 += breedingChance[k];
                 if (parent2 > Selected2){
-                   
+
                     for (j = 0; j < SCHEMA_SIZE; j++) {
+
                         if (fit[j].fitness == 0) {
                            
                             for (l = j+1; l < SCHEMA_SIZE; l++) {
+
                                 if (fit[l].fitness == 0){
+
                                     MakeChild(fit[i].position, fit[k].position, fit[j].position, fit[l].position, genome);
 									fit[j].fitness = -1;
 									fit[j].saved   = true;
@@ -281,7 +251,6 @@ void Insert(int ChildPos, Exam_block_t ***** Child_genome, Exam_block_t *****gen
 
                 for (n = 0; n < numOfExams; n++)  {
 
-
                     genome[ChildPos][k][l][m][n] = Child_genome[0][k][l][m][n];
                 }
             }
@@ -297,28 +266,6 @@ void MakeCrossover(int genome_p1, int genome_p2, Exam_block_t *****parent, Exam_
 }
 
 void DoCrossover(int genome_p1,int genome_p2, Exam_block_t *****parent, Exam_block_t *****child) { /* pladser fra 1 og eksamner fra 2 */
-    int i, j, k; /* parent1 */
-    int h = 0, m = 0, l = 0; /* parent2*/
-
-    for ( i = 0; i < WEEK_SIZE; i++) { /* finder pladsen */
-        for ( j = 0; j < DAY_SIZE; j++) {
-            for ( k = 0; k < ROOM_SIZE; k++) {
-                if(parent[genome_p1][i][j][k][0].year != 0) {
-                    for ( ; h < WEEK_SIZE; h++){ /* finder pladsen */
-                        for ( ; m < DAY_SIZE; m++) {
-                            for ( ; l < ROOM_SIZE; l++) {
-                                if(parent[genome_p2][h][m][l][0].year != 0) {
-                                    Moving( child, parent, genome_p2, i, j, h, m);
-                                }
-                            }
-                        }
-                    }
-                }
-
-            }
-        }
-    }
-}
 
 
 void Moving(Exam_block_t *****child, Exam_block_t *****parent, int genome, int p1_day, int p1_week, int p2_week, int p2_day) {
@@ -327,7 +274,6 @@ void Moving(Exam_block_t *****child, Exam_block_t *****parent, int genome, int p
     for ( j = 0; j < ROOM_SIZE; j++) {
         if(parent[genome][p2_week][p2_day][j][0].year != 0) {
             for ( k = 0; k < 10; k++){ /* hvor mange der er på en dag */
-
                 child[0][p1_week][p1_day][j][k].student      = parent[genome][p2_week][p2_day][j][k].student;
                 child[0][p1_week][p1_day][j][k].subjects     = parent[genome][p2_week][p2_day][j][k].subjects;
                 child[0][p1_week][p1_day][j][k].period_start = parent[genome][p2_week][p2_day][j][k].period_start;
@@ -338,3 +284,61 @@ void Moving(Exam_block_t *****child, Exam_block_t *****parent, int genome, int p
         }
     }
 }
+
+/*    int i, j, k;
+    int h = 0, m = 0, l = 0;
+    int phase;
+    for ( i = 0; i < WEEK_SIZE; i++) {
+
+        for ( j = 0; j < DAY_SIZE; j++) {
+
+            for ( k = 0; k < ROOM_SIZE; k++) {
+
+                if(parent[genome_p1][i][j][k][0].year != 0) {
+
+                    phase = true;
+        
+                    if(phase == true){
+
+                        for (; h < WEEK_SIZE; h++){
+
+                            for ( ; m < DAY_SIZE;) {
+
+                                for (l = 0 ; l < ROOM_SIZE;) {
+
+                                    if(parent[genome_p2][h][m][l][0].year != 0) {
+
+                                        Moving( child, parent, genome_p2, j, i, h, m);
+                                        phase = false;
+                                    }
+                                    if(phase == false){
+                                        m++;
+                                        if (m < 4){
+                                            m = 0;
+                                        }
+                                        break;
+                                    }
+                                }
+                                if(phase == false){
+                                    l++;
+                                    if (l < 9){
+                                        l = 0;
+                                    }
+                                    break;
+                                }
+                            }
+                            if(phase == false){
+                                h++;
+                                if (h < 7){
+                                    l = 0;
+                                }
+                                break;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}*/
