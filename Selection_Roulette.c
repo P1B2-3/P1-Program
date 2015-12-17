@@ -297,18 +297,43 @@ void MakeCrossover(int genome_p1, int genome_p2, Exam_block_t *****parent, Exam_
 }
 
 void DoCrossover(int genome_p1,int genome_p2, Exam_block_t *****parent, Exam_block_t *****child) { /* pladser fra 1 og eksamner fra 2 */
-    int i, j, k; /* parent1 */
-    int h = 0, m = 0, l = 0; /* parent2*/
-
+    int i, j, k; /* parent1 */              /* place holder*/
+    int h = 0, m = 0, l = 0; /* parent2*/   /* data */
+    int phase, t = 0;
+    printf("do crossover\n");
     for ( i = 0; i < WEEK_SIZE; i++) { /* finder pladsen */
         for ( j = 0; j < DAY_SIZE; j++) {
             for ( k = 0; k < ROOM_SIZE; k++) {
                 if(parent[genome_p1][i][j][k][0].year != 0) {
-                    for ( ; h < WEEK_SIZE; h++){ /* finder pladsen */
-                        for ( ; m < DAY_SIZE; m++) {
-                            for ( ; l < ROOM_SIZE; l++) {
-                                if(parent[genome_p2][h][m][l][0].year != 0) {
-                                    Moving( child, parent, genome_p2, i, j, h, m);
+                    t = 0;
+                    phase = true;
+        
+                    if(phase == true){
+                        for (; h < WEEK_SIZE; h++){ /* finder pladsen */
+                        t++;
+                        printf("weeks %i\n", t);
+                            for ( ; m < DAY_SIZE; m++) {
+                                for (l = 0 ; l < ROOM_SIZE; l++) {
+                                    if(parent[genome_p2][h][m][l][0].year != 0) {
+                                        /*printf("%i %i %i \n", h,m,l);*/
+                                        printf("--p1d%i p1w%i p2d%i p2w%i\n", j,i,h,m);
+                                        printf("lokale %i\n", l);
+                                        Moving( child, parent, genome_p2, j, i, h, m);
+                                        phase = false;
+                                       
+                                       if(phase == false){
+
+                                        break;
+                                       }
+                                    }
+                                    if(phase == false){
+                                        m++;
+                                        break;
+                                    }
+                                }
+                                if(phase == false){
+                                    l++;
+                                    break;
                                 }
                             }
                         }
@@ -320,14 +345,14 @@ void DoCrossover(int genome_p1,int genome_p2, Exam_block_t *****parent, Exam_blo
     }
 }
 
-
 void Moving(Exam_block_t *****child, Exam_block_t *****parent, int genome, int p1_day, int p1_week, int p2_week, int p2_day) {
     int j, k;
+    char temp[100];
 
     for ( j = 0; j < ROOM_SIZE; j++) {
+        printf("p1d%i p1w%i p2d%i p2w%i\n", p1_day,p1_week,p2_day,p2_week);
         if(parent[genome][p2_week][p2_day][j][0].year != 0) {
             for ( k = 0; k < 10; k++){ /* hvor mange der er på en dag */
-
                 child[0][p1_week][p1_day][j][k].student      = parent[genome][p2_week][p2_day][j][k].student;
                 child[0][p1_week][p1_day][j][k].subjects     = parent[genome][p2_week][p2_day][j][k].subjects;
                 child[0][p1_week][p1_day][j][k].period_start = parent[genome][p2_week][p2_day][j][k].period_start;
@@ -337,4 +362,5 @@ void Moving(Exam_block_t *****child, Exam_block_t *****parent, int genome, int p
             }
         }
     }
+    printf("done\n");
 }
