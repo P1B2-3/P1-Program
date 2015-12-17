@@ -5,6 +5,7 @@
 #define AMOUNT_OF_DAYS 5
 #define AMOUNT_OF_HOURS 8
 #define AMOUNT_OF_ROOMS 10
+#define RUNS 400
 
 #define SCHEMA_SIZE 80
 #define WEEK_SIZE 8
@@ -35,32 +36,30 @@ int main (void) {
     time_t t;
     Exam_block_t *****schema_data;
     int **array;
-    
+    int data[400];
     srand((unsigned) time(&t)); /* seeder vores random */
     
     schema_data = MakeSchema();
     
     array = Make_2D_Array_int(SCHEMA_SIZE, 1000);
 
-
-    printf("Enter for loekke\n");
     for (i = 0; i < max; i++) {
 
         
         LoadingScreen(i, max % 2, max-1, b);
 
+
         if(i % 2 == max % 2)
             b += 1;
-
-
-
-        
         Length(schema_data, array);
         /*
         CalcFitnessOneGeneration(schema_data, array);
         Selection(schema_data);
         */
+        data[i] = schema_data[i][0][0][0][0].fitness;
+
     }
+    ResultDataOut(data);
     ResultOut(schema_data);
     Free2DArray_int(array, SCHEMA_SIZE);
     
